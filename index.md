@@ -54,7 +54,7 @@ Final Fantasy VIII came after the mega hit [Final Fantasy VII](FF7 "wikilink"), 
 
 ### Field files
 
--   [Opcodes](FF8/Field/Script/Opcodes.md) Field script opcodes
+-   [Opcodes](FF8/Field/Opcodes/Opcodes.md) Field script opcodes
 -   [\[MCH](FF8/Field/FileFormat/FileFormat_MCH.md)\] Field Character Models
 -   [\[ONE](FF8/Field/FileFormat/FileFormat_ONE.md)\] Field Character Models Container
 -   [\[MIM](FF8/Field/FileFormat/FileFormat_MIM.md)\] Field Background Image Data

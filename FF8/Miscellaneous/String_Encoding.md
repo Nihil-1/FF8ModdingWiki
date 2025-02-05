@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Miscellaneous
 title: String_Encoding
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: WorldMap
 title: WorldMapCamera
 ---
 

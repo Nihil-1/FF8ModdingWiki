@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Main
 title: Main_kernel
 ---
 

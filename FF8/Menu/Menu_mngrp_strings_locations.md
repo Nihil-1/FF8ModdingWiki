@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Menu
 title: Menu_mngrp_strings_locations
 ---
 

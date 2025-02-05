@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Item_Codes
+parent: List
 ---
 
 | Index | Item Name                |

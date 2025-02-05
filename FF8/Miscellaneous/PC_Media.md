@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Miscellaneous
 title: PC_Media
 ---
 

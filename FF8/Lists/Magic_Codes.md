@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Magic_Codes
+parent: List
 ---
 
 | Index | Spell      |

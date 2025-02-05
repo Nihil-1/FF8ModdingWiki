@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Field
+parent: FieldFileFormat
 title: FileFormat_JSM
 ---
 
@@ -51,4 +51,4 @@ The position is relative to *offsetScriptData*. The meaning of the flag is unkno
 
 Each opcode is 4 bytes.
 
-[Opcode List](../Script/Opcodes.md)
+[Opcode List](../Opcodes/Opcodes.md)

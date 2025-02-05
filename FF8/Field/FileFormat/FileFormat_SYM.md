@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Field
+parent: FieldFileFormat
 title: FileFormat_SYM
 ---
 
