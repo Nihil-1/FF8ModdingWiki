@@ -1,6 +1,4 @@
 ---
-layout: default
-parent: Battle
 title: FileFormat_DAT
 layout: default
 parent: Battle

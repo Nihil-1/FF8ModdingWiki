@@ -1,6 +1,8 @@
 ---
-title: Main FF8
-layout: default
+title: FF8 Home
+layout: home
+nav_order: 1
+permalink: /
 ---
 
 # Contents
