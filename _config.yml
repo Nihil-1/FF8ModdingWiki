@@ -27,3 +27,5 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 enable_copy_code_button: true
+
+logo: "/assets/images/ff8-mod-logo.png"
