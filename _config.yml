@@ -5,9 +5,6 @@ theme: just-the-docs
 
 url: https://hobbitdur.github.io/FF8ModdingWiki
 
-aux_links: # remove if you don't want this link to appear on your pages
-  Template Repository: https://github.com/hobbitdur/FF8ModdingWiki
-
 # Repository settings
 github:
   # Replace with your GitHub username and repository name
