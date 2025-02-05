@@ -1,6 +1,6 @@
 ---
 title: Main FF8
-layout: Home
+layout: default
 ---
 
 # Contents
