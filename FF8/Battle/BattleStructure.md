@@ -1,6 +1,7 @@
 ---
 layout: default
 title: BattleStructure
+parent: Battle
 ---
 
 By JeMaCheHi

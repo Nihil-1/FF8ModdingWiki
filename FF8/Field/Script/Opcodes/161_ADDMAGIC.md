@@ -24,4 +24,4 @@ none
 
 #### Description
 
-Does exactly what you think. See [Magic Codes](../../../Magic_Codes.md) for a list of magic codes.
+Does exactly what you think. See [Magic Codes](../../../Lists/Magic_Codes.md) for a list of magic codes.

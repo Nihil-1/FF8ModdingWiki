@@ -9,7 +9,7 @@ By MaKiPL. Thanks for help in research for: shakotay2 (XeNTaX), Halfer, Yagami L
 
 .X file is uncompressed 3D stage model with texture embedeed. The file contains unused info (not used by FF8 engine), camera data, movement, translations and geometry data.
 
-Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](BattleStage/Pointers.md)
+Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](Pointers.md)
 
 | Name                      | Usually starting with:                  | Description                                                             |
 |---------------------------|-----------------------------------------|-------------------------------------------------------------------------|

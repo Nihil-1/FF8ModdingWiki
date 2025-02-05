@@ -23,7 +23,7 @@ AKAO frame holds "win" music.
 
 ## Font Section
 
-Copied from myst6re [.TDW file](FileFormat_TDW.md)
+Copied from myst6re [.TDW file](../Field/FileFormat/FileFormat_TDW.md)
 
 | Offset       | Size                      | Data                                             |
 |--------------|---------------------------|--------------------------------------------------|

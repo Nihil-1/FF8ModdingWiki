@@ -22,4 +22,4 @@ none
 
 #### Description
 
-Does exactly what you think. See [Item Codes](../../../Item_Codes.md) for a list of item codes.
+Does exactly what you think. See [Item Codes](../../../Lists/Item_Codes.md) for a list of item codes.

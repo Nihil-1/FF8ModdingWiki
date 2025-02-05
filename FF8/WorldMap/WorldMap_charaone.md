@@ -3,7 +3,7 @@ layout: default
 title: WorldMap_charaone
 ---
 
-by Maki file is different than field [\[ONE](FileFormat_ONE.md) and then again with argument 0x12 having pointer to data as in Wiki in EAX. It's like:
+by Maki file is different than field [\[ONE](../Field/FileFormat/FileFormat_ONE.md) and then again with argument 0x12 having pointer to data as in Wiki in EAX. It's like:
 
 `uint myPointer = charaOneFunction(pointer_to_Chara_section, 0x11...);`  
 `charaOneFunction(myPointer, 0x12...);`

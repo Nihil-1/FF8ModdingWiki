@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Pointers
+title: Battle Stage Pointers
 ---
 
 By MaKiPL.
 
-FF8 engine reads [Battle Stage files](../FileFormat_X.md)
+FF8 engine reads [Battle Stage files](FileFormat_X.md)
 
 **Here's the list:**
 

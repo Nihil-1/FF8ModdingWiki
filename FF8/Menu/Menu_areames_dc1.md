@@ -9,7 +9,7 @@ Same format as: **[Menu\_mngrp\_strings\_locations](http://wiki.ffrtt.ru/index.p
 
 ## Contents
 
-Contains area strings. **Offsets\[Location number from save\]** gets the string that shows on the menu/load/save screens. The special character **0xE\#\#** is 2 bytes. Subtract **0xE20** and you get the desired in **[namedec.bin](Main_namedic.md)**.
+Contains area strings. **Offsets\[Location number from save\]** gets the string that shows on the menu/load/save screens. The special character **0xE\#\#** is 2 bytes. Subtract **0xE20** and you get the desired in **[namedec.bin](../Main/Main_namedic.md)**.
 
 ### Example
 

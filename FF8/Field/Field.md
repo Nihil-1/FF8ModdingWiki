@@ -9,4 +9,4 @@ Links:
 
 [Scripts](Field/Script.md).
 
-[Opcodes](Field/Script/Opcodes.md).
+[Opcodes](Script/Opcodes.md).
