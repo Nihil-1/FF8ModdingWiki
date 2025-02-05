@@ -6,7 +6,7 @@ title: WorldMap_wmset
 
 ## File general info
 
-Please reefer to [WmsetXX.obj](WorldMap_wmsetxx.md) for more specific info.
+Please reefer to [WmsetXX.obj](WorldMap_wmsetxx) for more specific info.
 
 ## Models section
 

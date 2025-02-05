@@ -37,7 +37,7 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 
 ## Texture-Data
 
-[TIM format](../PSX/TIM_format.md)
+[TIM format](../PSX/TIM_format)
 
 `(for each Texture)`  
   

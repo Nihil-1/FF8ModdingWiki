@@ -21,4 +21,4 @@ none
 
 #### Description
 
-Sets up which disc is asked for when [DISCJUMP](038_DISCJUMP.md) is called.
+Sets up which disc is asked for when [DISCJUMP](038_DISCJUMP) is called.

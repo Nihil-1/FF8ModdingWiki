@@ -13,7 +13,7 @@ By myst6re.
 | 0      | 9        | Name of field (\\0 terminated)                                                        |
 | 9      | 1        | Control Direction                                                                     |
 | 10     | 6        | Unknown                                                                               |
-| 16     | 2        | Like [\[PVP](FileFormat_PVP.md)\] value                                   |
+| 16     | 2        | Like [\[PVP](FileFormat_PVP)\] value                                   |
 | 18     | 2        | Height to focus the camera on the character (0= Focus on the feet, 200= normal focus) |
 | 20     | 8\*8     | Camera Ranges                                                                         |
 | 84     | 2\*8     | Screen Ranges                                                                         |
@@ -67,7 +67,7 @@ For each trigger:
 
 # Old formats
 
-In the PC version, you can sometimes see older versions of this format, there are three that are more similar to the format of [Final Fantasy VII](../FF7/Field/Triggers.md).
+In the PC version, you can sometimes see older versions of this format, there are three that are more similar to the format of [Final Fantasy VII](../FF7/Field/Triggers).
 
 ## 672 bytes format
 

@@ -15,7 +15,7 @@ none
 #### Stack
 
   
-*[Encounter ID](../../Battle/Encounter_Codes.md)*
+*[Encounter ID](../../Battle/Encounter_Codes)*
 
 *Battle Flags*
 

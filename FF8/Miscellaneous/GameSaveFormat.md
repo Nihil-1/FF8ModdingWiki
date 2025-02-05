@@ -105,7 +105,7 @@ PC steam version: Offsets start from at 384 (0x0180). File is compressed with LZ
 | 0x0D68 | 3\*1 bytes          | Direction (party1, party2, party3)                                                  |
 | 0x0D6B | 1 byte              | *Padding*                                                                           |
 | 0x0D6C | 4 bytes             | Unknown                                                                             |
-| 0x0D70 | 256 + 1024 bytes    | [Field vars](Variables.md)                                              |
+| 0x0D70 | 256 + 1024 bytes    | [Field vars](Variables)                                              |
 | 0x1270 | 128 bytes           | Worldmap (TODO)                                                                     |
 | 0x12F0 | 128 bytes           | Triple Triad (TODO)                                                                 |
 | 0x1370 | 64 bytes            | Chocobo World (TODO)                                                                |

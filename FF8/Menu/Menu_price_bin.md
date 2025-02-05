@@ -6,7 +6,7 @@ title: Menu_price_bin
 
 ### price.bin
 
-Shop prices - 4 bytes per [item](../Lists/Item_Codes.md)
+Shop prices - 4 bytes per [item](../Lists/Item_Codes)
 
 | Type   | Size | Value           |
 |--------|------|-----------------|

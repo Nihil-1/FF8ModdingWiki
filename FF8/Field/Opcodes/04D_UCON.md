@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Enables user control. See [UCOFF](04E_UCOFF.md) for details.
+Enables user control. See [UCOFF](04E_UCOFF) for details.

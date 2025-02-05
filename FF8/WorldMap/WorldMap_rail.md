@@ -12,7 +12,7 @@ Rail.obj is a file containing key locations of train movement. It stores locatio
 
 ### File scheme
 
-The file is built the similiar way as [World map WMX.obj](WorldMap_wmx.md).
+The file is built the similiar way as [World map WMX.obj](WorldMap_wmx).
 
   
   

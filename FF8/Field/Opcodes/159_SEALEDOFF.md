@@ -23,7 +23,7 @@ none
 
 Enables features of the game pertaining to the last dungeon's mechanic (items, saving, etc).
 
-Whether or not these are enabled/disabled is stored in [byte 334](../../Miscellaneous/Variables.md). 0=Sealed, 1=Unsealed
+Whether or not these are enabled/disabled is stored in [byte 334](../../Miscellaneous/Variables). 0=Sealed, 1=Unsealed
 
 Flags:
 

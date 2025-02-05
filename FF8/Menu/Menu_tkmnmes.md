@@ -20,5 +20,5 @@ First one is usually <strong>0x36</strong></p></td></tr></tbody></table>
 
 ### String
 
-Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding.md).  
+Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding).  
 **\[Start of string location\]** = **\[Start of file\]** + **\[Padding value\]** + **\[String offset value\]**

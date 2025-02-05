@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Disables this entity's "push" script. See [PUSHON](059_PUSHON.md).
+Disables this entity's "push" script. See [PUSHON](059_PUSHON).

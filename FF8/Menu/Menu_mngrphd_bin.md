@@ -4,7 +4,7 @@ parent: Menu
 title: Menu_mngrphd_bin
 ---
 
-This is the map for [mngrp.bin](Menu_mngrp_bin.md). Locations to data and the size of the section.
+This is the map for [mngrp.bin](Menu_mngrp_bin). Locations to data and the size of the section.
 
 ## Entry
 

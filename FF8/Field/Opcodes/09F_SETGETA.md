@@ -23,4 +23,4 @@ none
 
 ?
 
-[Category:Unfinished FF8 Opcodes](../../../../Category:Unfinished_FF8_Opcodes.md)
+[Category:Unfinished FF8 Opcodes](../../../../Category:Unfinished_FF8_Opcodes)

@@ -25,4 +25,4 @@ none
 
 Turns this entity counterclockwise to face some direction. The only noticeable difference between this and the other turn functions is that the turn is always counterclockwise.
 
-It is unknown how this differs from [UNKNOWN9](174_UNKNOWN9.md).
+It is unknown how this differs from [UNKNOWN9](174_UNKNOWN9).

@@ -15,5 +15,5 @@ Many strings.
 
 ### String
 
-Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding.md).  
+Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding).  
 **\[Start of string location\]** = **\[Start of file\]** + **\[String offset value\]**

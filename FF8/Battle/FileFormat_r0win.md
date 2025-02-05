@@ -32,7 +32,7 @@ EOF
 
 ### SECTION2 (camera animation)
 
-For camera data structure please head over to [Battle stage model file](FileFormat_X.md)
+For camera data structure please head over to [Battle stage model file](FileFormat_X)
 
 ### SECTION3 (UNKNOWN)
 

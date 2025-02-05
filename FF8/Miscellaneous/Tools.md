@@ -6,7 +6,7 @@ title: Tools
 
 ## Essentials
 
-The entries in this section are to enable you to play [Final Fantasy VIII](../FF8.md) should you encounter issues in running the game.
+The entries in this section are to enable you to play [Final Fantasy VIII](../FF8) should you encounter issues in running the game.
 
 | Name                    | Description                                                                                                       | Author                                                          | Version / Status | Links                                                                                                                                                                                         |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -15,7 +15,7 @@ The entries in this section are to enable you to play [Final Fantasy VIII](../FF
 
 ## Modifications
 
-The following section maintains a list of projects that can be used in conjunction with [Final Fantasy VIII](../FF8.md) to enhance the game beyond starting and playing the game as normal; these range from patches used to enhance graphics, to viewers and editors for game data. Entries are listed by category, then alphabetically.
+The following section maintains a list of projects that can be used in conjunction with [Final Fantasy VIII](../FF8) to enhance the game beyond starting and playing the game as normal; these range from patches used to enhance graphics, to viewers and editors for game data. Entries are listed by category, then alphabetically.
 
 ### Patches
 

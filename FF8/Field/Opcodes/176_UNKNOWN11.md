@@ -23,4 +23,4 @@ none
 
 #### Description
 
-This is some kind of weird wait command. [UNKNOWN12](177_UNKNOWN12.md).
+This is some kind of weird wait command. [UNKNOWN12](177_UNKNOWN12).

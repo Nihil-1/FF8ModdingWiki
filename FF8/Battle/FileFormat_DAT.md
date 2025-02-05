@@ -337,7 +337,7 @@ Contains AKAO sequence + unknown data (can be empty).
 
 ## Section 11: Textures
 
-Contains some [TIMs](../PSX/TIM_format.md).
+Contains some [TIMs](../PSX/TIM_format).
 
 | Offset          | Length            | Description    |
 |-----------------|-------------------|----------------|

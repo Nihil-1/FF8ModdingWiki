@@ -18,4 +18,4 @@ The first section contains the palettes, either 24 or 16 palettes of 256 colors 
 
 The actual image data can be read as a single 256 pixels high image, 1664 pixels wide (0x68000 bytes) for type 1, 1536 pixels wide (0x60000 bytes) for type 2. One byte is one pixel and pixel values of 0 are transparent. FF8 splits the image into multiple textures, each one 128x256, this is not necessary on modern hardware.
 
-The image contained in the MIM file is just a jumble of 16x16 tiles, to draw them properly you have to read the tile data from the [.map](FileFormat_MAP.md) file.
+The image contained in the MIM file is just a jumble of 16x16 tiles, to draw them properly you have to read the tile data from the [.map](FileFormat_MAP) file.

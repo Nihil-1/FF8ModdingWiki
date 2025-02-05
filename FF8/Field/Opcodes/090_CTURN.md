@@ -23,4 +23,4 @@ none
 
 #### Description
 
-Make this entity face the entity with the ID of the first parameter. That parameter is always set with [PUSHAC](013_PSHAC.md).
+Make this entity face the entity with the ID of the first parameter. That parameter is always set with [PUSHAC](013_PSHAC).

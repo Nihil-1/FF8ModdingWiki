@@ -23,6 +23,6 @@ none
 
 #### Description
 
-Popup a message window, and wait for the player to dismiss it before continuing. The size of the message window can be set with [WINSIZE](04B_WINSIZE.md).
+Popup a message window, and wait for the player to dismiss it before continuing. The size of the message window can be set with [WINSIZE](04B_WINSIZE).
 
 This is never used anywhere in the game, but it works. It was replaced by AMESW, which has built-in position and size parameters.

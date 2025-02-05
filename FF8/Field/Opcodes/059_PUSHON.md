@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Enables "pushing" this entity. An entity's "push" script is run when the player walks into it. Detection range can presumably be set with [PUSHRADIUS](063_PUSHRADIUS.md)
+Enables "pushing" this entity. An entity's "push" script is run when the player walks into it. Detection range can presumably be set with [PUSHRADIUS](063_PUSHRADIUS)

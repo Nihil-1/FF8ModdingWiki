@@ -4,13 +4,13 @@ parent: Battle
 title: FileFormat_X
 ---
 
-By MaKiPL. Thanks for help in research for: shakotay2 (XeNTaX), Halfer, Yagami Light. Complete list of original battle stages by Kaspar01: [List of battle stages](BS_list.md)
+By MaKiPL. Thanks for help in research for: shakotay2 (XeNTaX), Halfer, Yagami Light. Complete list of original battle stages by Kaspar01: [List of battle stages](BS_list)
 
 ## Info
 
 .X file is uncompressed 3D stage model with texture embedeed. The file contains unused info (not used by FF8 engine), camera data, movement, translations and geometry data.
 
-Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](Pointers.md)
+Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](Pointers)
 
 | Name                      | Usually starting with:                  | Description                                                             |
 |---------------------------|-----------------------------------------|-------------------------------------------------------------------------|
@@ -331,7 +331,7 @@ Complete list (without replacing bit order - as is in HEX editor/memory):
 
 ## Texture
 
-Contains one [TIMs](../PSX/TIM_format.md).
+Contains one [TIMs](../PSX/TIM_format).
 
 ### UV calculation algorithm
 

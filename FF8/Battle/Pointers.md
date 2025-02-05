@@ -6,7 +6,7 @@ title: Battle Stage Pointers
 
 By MaKiPL.
 
-FF8 engine reads [Battle Stage files](FileFormat_X.md)
+FF8 engine reads [Battle Stage files](FileFormat_X)
 
 **Here's the list:**
 

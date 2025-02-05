@@ -23,7 +23,7 @@ none
 
 #### Description
 
-Prepares a FMV movie to be played with [MOVIE](04F_MOVIE.md). The second parameter is either 0 or 1, but I have no idea what it does.
+Prepares a FMV movie to be played with [MOVIE](04F_MOVIE). The second parameter is either 0 or 1, but I have no idea what it does.
 
 The movie that plays depends on which disc is currently active.
 

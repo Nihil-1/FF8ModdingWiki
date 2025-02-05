@@ -27,4 +27,4 @@ none
 
 #### Description
 
-Pop up a message window and wait for the player to hit "ok." Unlike [AMESW](064_AMESW.md), RAMESW will let the script continue running.
+Pop up a message window and wait for the player to hit "ok." Unlike [AMESW](064_AMESW), RAMESW will let the script continue running.

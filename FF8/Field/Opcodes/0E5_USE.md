@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Opposite of [UNUSE](01A_UNUSE.md).
+Opposite of [UNUSE](01A_UNUSE).

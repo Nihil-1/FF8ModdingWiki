@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Plays a FMV movie prepared by [MOVIEREADY](0A3_MOVIEREADY.md).
+Plays a FMV movie prepared by [MOVIEREADY](0A3_MOVIEREADY).

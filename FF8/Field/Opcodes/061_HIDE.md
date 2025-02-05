@@ -18,4 +18,4 @@ none
 
 #### Description
 
-Hides this entity's model on the field. See also [SHOW](060_SHOW.md).
+Hides this entity's model on the field. See also [SHOW](060_SHOW).

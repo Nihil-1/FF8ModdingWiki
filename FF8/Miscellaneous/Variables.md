@@ -4,7 +4,7 @@ parent: Miscellaneous
 title: Variables
 ---
 
-By [Shard](../User:Shard.md).
+By [Shard](../User:Shard).
 
 Game variables can be accessed using the PSHM family of script functions, and can be written to by using the POPM family of functions. Which one you use depends on the size of the variable. The variables are all stored in save files, with the save block starting at address 0xD10 on uncompressed PC saves. The parameter to access a variable in the game scripts is basically the offset from this point in the variable block. For example, getting main story progress (word 256, which is word 0x100 in hex) just gets the two bytes starting at address 0xD10 + 0x100 = 0xE10. The varmap is continuous in memory while the game is running as well. In the en-US version of the original and SE releases (and likely most other versions), the varblock begins at 0x18fe9b8. You can use this [Cheat Engine Table](https://www.mediafire.com/?ucolf65ewq1yoty) to track them as you play.
 
@@ -73,7 +73,7 @@ Items in grey are unused by field scripts (some of them may be used in battle sc
 | Byte        | 306-319     | Reserved for Hacktuar / FF8Voice                                                                                                                                        |
 | Byte        | 320-332     | Ultimecia Gallery related (pictures viewed?)                                                                                                                            |
 | Byte        | 333         | Ultimecia Armory chest flags                                                                                                                                            |
-| Byte        | 334         | Ultimecia Castle seals. See [SEALEDOFF](../Field/Opcodes/159_SEALEDOFF.md) for details.                                                                 |
+| Byte        | 334         | Ultimecia Castle seals. See [SEALEDOFF](../Field/Opcodes/159_SEALEDOFF) for details.                                                                 |
 | Byte        | 335         | Card related                                                                                                                                                            |
 | Byte        | 336         | Deling City bus related                                                                                                                                                 |
 | Byte        | 338-340     | Deling Sewer gates opened                                                                                                                                               |

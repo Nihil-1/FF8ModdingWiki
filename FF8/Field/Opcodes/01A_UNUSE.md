@@ -18,4 +18,4 @@ No change.
 
 #### Description
 
-Disable this entity's scripts, hides its model, and makes it throughable. Call [USE](0E5_USE.md) to re-enable.
+Disable this entity's scripts, hides its model, and makes it throughable. Call [USE](0E5_USE) to re-enable.
