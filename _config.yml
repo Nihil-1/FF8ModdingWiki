@@ -20,6 +20,7 @@ favicon_ico: "/assets/images/favicon.ico"
 
 search_enabled: true
 nav_enabled: true
+nav_fold: true
 heading_anchors: true
 
 # Back to top link
@@ -29,3 +30,20 @@ back_to_top_text: "Back to top"
 enable_copy_code_button: true
 
 logo: "/assets/images/ff8-mod-logo.png"
+
+permalink: pretty
+
+
+# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.6"
+  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
+  # See also docs/ui-components/code
+  # To load mermaid from a local library, also use the `path` key to specify the location of the library; e.g.
+  # for (v10+):
+  # path: "/assets/js/mermaid.esm.min.mjs"
+  # for (<v10):
+  # path: "/assets/js/mermaid.min.js"
+  # Note: copy both `mermaid.esm.min.mjs` (v10+) or `mermaid.min.js` (<v10) and the associated `.map` file from the specified version of `mermaid/dist` to `/assets/js/`.
