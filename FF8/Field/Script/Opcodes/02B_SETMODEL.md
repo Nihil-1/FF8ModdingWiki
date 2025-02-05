@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 02B_SETMODEL
 ---
 

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 06B_BATTLEON
 ---
 

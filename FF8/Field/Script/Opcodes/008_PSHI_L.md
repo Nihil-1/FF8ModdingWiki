@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 008_PSHI_L
 ---
 

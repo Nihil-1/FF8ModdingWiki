@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 12E_MENUSAVE
 ---
 

@@ -1,4 +1,6 @@
 ---
+layout: default
+layout: default
 title: BS_list
 ---
 

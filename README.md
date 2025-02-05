@@ -57,7 +57,8 @@ Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key inst
 1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
 
     ```yaml
-    title: YOUR TITLE
+    layout: default
+title: YOUR TITLE
     description: YOUR DESCRIPTION
     theme: just-the-docs
 

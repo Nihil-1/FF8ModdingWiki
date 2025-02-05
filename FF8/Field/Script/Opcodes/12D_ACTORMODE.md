@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 12D_ACTORMODE
 ---
 

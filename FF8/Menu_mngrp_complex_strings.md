@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Menu_mngrp_complex_strings
 ---
 

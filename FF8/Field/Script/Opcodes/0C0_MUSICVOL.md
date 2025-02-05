@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 0C0_MUSICVOL
 ---
 

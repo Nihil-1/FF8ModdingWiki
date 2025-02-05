@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 01E_SET3
 ---
 

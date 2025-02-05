@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Menu_areames_dc1
 ---
 

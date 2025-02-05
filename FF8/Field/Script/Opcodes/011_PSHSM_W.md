@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 011_PSHSM_W
 ---
 

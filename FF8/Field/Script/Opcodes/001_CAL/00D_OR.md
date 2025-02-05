@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 00D_OR
 ---
 

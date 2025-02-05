@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 11D_GETPARTY
 ---
 

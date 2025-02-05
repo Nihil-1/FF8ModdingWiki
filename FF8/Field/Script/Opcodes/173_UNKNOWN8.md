@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 173_UNKNOWN8
 ---
 

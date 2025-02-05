@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 00A_PSHM_B
 ---
 

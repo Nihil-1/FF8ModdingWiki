@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 126_SETWITCH
 ---
 

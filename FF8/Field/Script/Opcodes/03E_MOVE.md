@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 03E_MOVE
 ---
 

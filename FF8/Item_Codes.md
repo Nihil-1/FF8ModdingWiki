@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Item_Codes
 ---
 

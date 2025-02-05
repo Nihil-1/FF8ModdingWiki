@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 059_PUSHON
 ---
 

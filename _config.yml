@@ -1,5 +1,5 @@
 
-title: FF8 Modding wiki
+layout: default FF8 Modding wiki
 description: You will find here all info to mod your game
 theme: just-the-docs
 
@@ -18,3 +18,6 @@ color_scheme: dark
 
 favicon_ico: "/assets/images/favicon.ico"
 
+search_enabled: true
+nav_enabled: true
+heading_anchors: true

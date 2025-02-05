@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 0BD_EFFECTLOAD
 ---
 

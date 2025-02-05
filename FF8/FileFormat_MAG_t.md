@@ -1,4 +1,5 @@
 ---
+layout: default
 title: FileFormat_MAG_t
 ---
 
