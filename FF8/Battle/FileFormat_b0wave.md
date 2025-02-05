@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Battle
 title: FileFormat_b0wave
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: default
+parent: Battle
 layout: default
+parent: Battle
 title: BS_list
 ---
 

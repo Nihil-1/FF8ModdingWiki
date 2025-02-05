@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Battle
 title: Encounter_Codes
 ---
 

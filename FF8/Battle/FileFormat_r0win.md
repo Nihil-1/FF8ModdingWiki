@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Battle
 title: FileFormat_r0win
 ---
 

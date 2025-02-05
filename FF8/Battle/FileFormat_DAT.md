@@ -1,7 +1,9 @@
 ---
 layout: default
+parent: Battle
 title: FileFormat_DAT
 layout: default
+parent: Battle
 ---
 
 By Mirex, JWP, random\_npc and myst6re (and now HobbitDur too). Edit: We now know the animation and skeleton- see <https://github.com/MaKiPL/OpenVIII/blob/4ac151daad7cd1475eb0694dd0715bc35d7a4b39/FF8/debug_battleDat.cs>

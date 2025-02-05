@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Battle
 title: Battle Stage Pointers
 ---
 
