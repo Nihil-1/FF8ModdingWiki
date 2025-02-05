@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 012_PSHSM_L
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 09F_SETGETA
 ---
 

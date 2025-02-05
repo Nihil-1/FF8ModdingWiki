@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 157_LASTIN
 ---
 

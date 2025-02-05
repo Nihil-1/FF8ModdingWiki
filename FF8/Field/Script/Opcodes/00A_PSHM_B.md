@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 00A_PSHM_B
 ---
 

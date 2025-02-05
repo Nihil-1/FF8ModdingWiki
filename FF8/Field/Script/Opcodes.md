@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Opcodes
+parent: Script
 ---
 
 By Aali, myst6re and Shard.

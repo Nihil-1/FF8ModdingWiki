@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 148_MOVEFLUSH
 ---
 

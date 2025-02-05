@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 036_RCANIMELOOP
 ---
 

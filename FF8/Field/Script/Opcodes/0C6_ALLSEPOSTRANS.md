@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 0C6_ALLSEPOSTRANS
 ---
 

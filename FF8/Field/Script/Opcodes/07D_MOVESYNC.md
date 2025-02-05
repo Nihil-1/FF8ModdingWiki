@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 07D_MOVESYNC
 ---
 

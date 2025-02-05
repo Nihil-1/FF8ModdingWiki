@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 008_PSHI_L
 ---
 

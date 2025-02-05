@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 03E_MOVE
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 060_SHOW
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 011_PSHSM_W
 ---
 

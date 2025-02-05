@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 03D_MSPEED
 ---
 

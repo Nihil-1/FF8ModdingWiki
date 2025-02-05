@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 05C_MAPJUMPO
 ---
 

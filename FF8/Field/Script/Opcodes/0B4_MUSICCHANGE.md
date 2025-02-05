@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Opcodes
 title: 0B4_MUSICCHANGE
 ---
 
