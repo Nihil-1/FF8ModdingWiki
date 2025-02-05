@@ -2,6 +2,7 @@
 layout: default
 title: FieldOpcodes
 parent: Field
+nav_order: 2
 ---
 
 By Aali, myst6re and Shard.
