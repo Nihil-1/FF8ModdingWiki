@@ -1,9 +1,5 @@
-@media (min-width: 50rem) .site-header{
-  max-height:inherit
-  height:inherit
-}
-
 .site-header{
+    max-height:inherit !important;
     height:200px !important;
     width:200px !important;
 }
