@@ -477,7 +477,7 @@ Correspond to 2 or 3 hexa values that activate a certain code from the game, so 
 
 The new page is a special one on himself, I don't know for sure what it does exactly, but should create a "new page"
 The end of string is an empty character, but that is stored in hex as 0x00 to tell the game the string is over.
-See [FF8 string format](FF8_string.md) for more info
+See [FF8 String]({{site.baseurl}}/FF8/TechnicalReference/Miscellaneous/FF8String) for more info
 
 | Hex value | Char      | Size |
 |-----------|-----------|------|

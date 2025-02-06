@@ -163,4 +163,4 @@ Each m00x file has a specific number of entries, which are listed here.
 # MSG
 
 Text offsets are in [bin](#BIN) files, and are
-classic [FF8 String](https://github.com/HobbitDur/ShumiTranslator/wiki/FF8_string)
+classic [FF8 String]({{site.baseurl}}/FF8/TechnicalReference/Miscellaneous/FF8String)
