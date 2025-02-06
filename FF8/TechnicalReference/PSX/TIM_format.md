@@ -1,5 +1,6 @@
 ---
 title: Tim File Format
+parent: PSX
 ---
 
 ## Introduction

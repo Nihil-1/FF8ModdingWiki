@@ -1,5 +1,6 @@
 ---
 title: HRC
+parent: PSX
 ---
 
 ## HRC Hierarchy data format

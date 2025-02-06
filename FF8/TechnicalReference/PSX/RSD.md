@@ -1,5 +1,6 @@
 ---
 title: RSD
+parent: PSX
 ---
 
 ## RSD resource data format
