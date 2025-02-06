@@ -26,20 +26,21 @@ layout: table_wrappers
 {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
 
 {% comment %} Remove only the trailing slash if it exists {% endcomment %}
-{% if current_path ends_with "/" %}
+{% assign last_char = current_path | slice: -1, 1 %}
+{% if last_char == "/" %}
   {% assign current_path = current_path | slice: 0, current_path.size | minus: 1 %}
 {% endif %}
 
 {% if current_path == "" %}
-  {% comment %} If we're at the root, create "new_file.md" in the root {% endcomment %}
   {% assign new_file_path = "new_file.md" %}
 {% else %}
-  {% comment %} Otherwise, create "new_file.md" in the current directory {% endcomment %}
   {% assign new_file_path = current_path | append: "/new_file.md" %}
 {% endif %}
 
 {% assign encoded_path = new_file_path | url_encode %}
-{% assign new_file_url = repo_url | append: encoded_path %}
+
+{% assign prefill_content = "---\ntitle: New Page\n---\n\nWrite your content here." | url_encode %}
+{% assign new_file_url = repo_url | append: encoded_path | append: "?filename=" | append: encoded_path | append: "&value=" | append: prefill_content %}
 
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
 
