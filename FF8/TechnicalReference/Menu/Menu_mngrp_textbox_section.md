@@ -14,7 +14,7 @@ They can be composed of:
 * An ID
 * A title
 * A parent TextBox ID (the one we used to get to the current TextBox)
-* Often different [cursor location id]({{site.baseurl}}/TechnicalReference/FF8/TechnicalReference/FF8Char#cursor-location-id)
+* Often different [cursor location id]({{site.baseurl}}/FF8/TechnicalReference/Miscellaneous/FF8Char#cursor-location-id)
 * Button info
 * And sometimes a left box id and/or a right box id to be able to move with the left or right cross.
 

@@ -6,11 +6,11 @@ title: areames.dc1 File Format
 
 ## Format
 
-Same format as: **[Menu\_mngrp\_strings\_locations](http://wiki.ffrtt.ru/index.php/FF8/Menu_mngrp_strings_locations)**
+Same format as: **[Menu mngrp string section](../Menu_mngrp_strings_section)**
 
 ## Contents
 
-Contains area strings. **Offsets\[Location number from save\]** gets the string that shows on the menu/load/save screens. The special character **0xE\#\#** is 2 bytes. Subtract **0xE20** and you get the desired in **[namedec.bin](../Main/Main_namedic)**.
+Contains area strings. **Offsets\[Location number from save\]** gets the string that shows on the menu/load/save screens. The special character **0xE\#\#** is 2 bytes. Subtract **0xE20** and you get the desired in **[namedec.bin]({{site.baseurl}}/FF8/TechnicalReference/Main/Main_namedic)**.
 
 ### Example
 
