@@ -1,19 +1,24 @@
 ---
 layout: default
 parent: Menu
-title: Menu_mngrp_strings_locations
+title: Mngrp String Section
 ---
+# Header String Offsets
 
-Many strings.
+Offset with value **0x0000** must be ignored when reading, but they must stay in place when writting, they cannot be removed.
 
-### Header String Offsets
+| Type                    | Size               | Value         | Description                                                                   |
+|-------------------------|--------------------|---------------|-------------------------------------------------------------------------------|
+| UInt16                  | 2                  | Offset\_Count | Number of offsets before strings start                                        |
+| UInt16\[Offset\_Count\] | 2 \* Offset\_count | Offsets       | The offset value points to start of a string. <br/> **0x0000** must be ignored. |
 
-| Type                    | Size               | Value         | Description                                                               |
-|-------------------------|--------------------|---------------|---------------------------------------------------------------------------|
-| UInt16                  | 2                  | Offset\_Count | Number of offsets before strings start                                    |
-| UInt16\[Offset\_Count\] | 2 \* Offset\_count | Offsets       | The offset value points to start of a string Can be **0x00** ignore those |
+# String
 
-### String
+They are in [FF8 String](FF8ModdingWiki/FF8/Miscellaneous/FF8String) format 
 
-Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding).  
-**\[Start of string location\]** = **\[Start of file\]** + **\[String offset value\]**
+**\[Start of string location\]** = **\[Start of section\]** + **\[String offset value\]**
+
+
+# Test seed cases
+
+For test seed cases, the string start with either a 0 or 1 that is the expected result of the test (0 for yes, 1 for no). New values can be added with new cursor locaation id and the first byte can be set to any value instead of just 0 or 1.
