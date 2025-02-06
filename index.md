@@ -28,8 +28,8 @@ For text menu, there is a dedicated wiki in the [ShumiTranslator](https://github
 -   [mngrphd.bin](FF8/TechnicalReference/Menu/Menu_mngrphd_bin)
 -   [mngrp.bin](FF8/TechnicalReference/Menu/Menu_mngrp_bin)
 -   [tkmnmes\*.bin](FF8/TechnicalReference/Menu/Menu_tkmnmes)
--   [mngrp strings](FF8/TechnicalReference/Menu/Menu_mngrp_strings_locations)
--   [mngrp complex strings](FF8/TechnicalReference/Menu/Menu_mngrp_textbox_section.)
+-   [mngrp strings](FF8/TechnicalReference/Menu/Menu_mngrp_strings_section)
+-   [mngrp complex strings](FF8/TechnicalReference/Menu/Menu_mngrp_textbox_section)
 -   [m00\*.bin and m00\*.msg](FF8/TechnicalReference/Menu/Menu_m000_m004)
 
 For shop, you can also find the info on the wiki of the [TonberryShop](https://github.com/HobbitDur/TonberryShop/wiki) tool done by HobbitDur which detail the following file (link is kept here to the old wiki for archive purpose):

@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Menu
-title: Tknmnesx.bin File Format
+title: TknmnesX.bin File Format
 ---
 These files have a good deal of the Menu text.
 
@@ -16,7 +16,7 @@ The data consist of a header that contains the __paddings__, corresponding to th
 
 # Header
 
-Padding values **0x0000** must be ignored when reading but must be kept in the same place when writting.
+Padding values **0x0000** must be ignored when reading but must be kept in the same place when writing.
 
 | Type   | Size          | Value     | Description                                                                                                               |
 |--------|---------------|-----------|---------------------------------------------------------------------------------------------------------------------------|
@@ -24,6 +24,6 @@ Padding values **0x0000** must be ignored when reading but must be kept in the s
 | UInt16 | 2 * Pad_count | Paddings  | The padding value leads to the start of string section offsets.<br/> **0x0000** must be ignored.  |
 
 # String section
-Each string section correspond to a [[Mngrp string|Mngrp_string_section]]
+Each string section correspond to a [Mngrp string section](Menu_mngrp_strings_section)
 
 **\[Start of string location\]** = **\[Start of file\]** + **\[Padding value\]** + **\[String offset value\]**
