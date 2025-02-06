@@ -32,7 +32,7 @@ layout: table_wrappers
 
 
 {% if path_segments_without_last == "" %}
-    {% assign current_path = "index.md" %}
+    {% assign current_path = "/" %}
 {% else %}
     {% assign current_path = path_segments_without_last | append: "/" %}
 {% endif %}
