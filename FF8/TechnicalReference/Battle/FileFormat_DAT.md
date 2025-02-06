@@ -2,9 +2,13 @@
 title: Monster files (c0mxxx.dat)
 layout: default
 parent: Battle
+author:
+  - Mirex
+  - JWP
+  - random_npc
+  - myst6re
+  - HobbitDur
 ---
-
-By Mirex, JWP, random\_npc and myst6re (and now HobbitDur too). Edit: We now know the animation and skeleton- see <https://github.com/MaKiPL/OpenVIII/blob/4ac151daad7cd1475eb0694dd0715bc35d7a4b39/FF8/debug_battleDat.cs>
 
 ## Header
 
@@ -17,6 +21,7 @@ DAT file is divided into 11 sections (except for c0m127.dat, which contains only
 | 4 + nbSections \* 4 | 4 bytes               | File size                                              |
 
 ## Section 1: Skeleton
+More info on [OpenVIII](https://github.com/MaKiPL/OpenVIII/blob/4ac151daad7cd1475eb0694dd0715bc35d7a4b39/FF8/debug_battleDat.cs)
 
 | Offset | Length                      | Description     |
 |--------|-----------------------------|-----------------|
@@ -106,6 +111,7 @@ struct quad {
 (sizeof = 20)
 
 ## Section 3: Model animation
+More info on [OpenVIII](https://github.com/MaKiPL/OpenVIII/blob/4ac151daad7cd1475eb0694dd0715bc35d7a4b39/FF8/debug_battleDat.cs)
 
 ### Header (data sub table)
 
@@ -338,7 +344,7 @@ Contains AKAO sequence + unknown data (can be empty).
 
 ## Section 11: Textures
 
-Contains some [TIMs](../PSX/TIM_format).
+Contains some [TIMs]({{site.baseurl}}/FF8/TechnicalReference/PSX/TIM_Format).
 
 | Offset          | Length            | Description    |
 |-----------------|-------------------|----------------|

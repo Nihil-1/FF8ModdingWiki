@@ -2,15 +2,20 @@
 layout: default
 parent: Battle
 title:  Battle Stage (.X)
+author: 
+  - MaKiPL
+  - shakotay2 (XeNTaX)
+  - Halfer
+  - Yagami Light
 ---
 
-By MaKiPL. Thanks for help in research for: shakotay2 (XeNTaX), Halfer, Yagami Light. Complete list of original battle stages by Kaspar01: [List of battle stages](BS_list)
+Complete list of original battle stages: [List of battle stages](../BS_list)
 
 ## Info
 
 .X file is uncompressed 3D stage model with texture embedeed. The file contains unused info (not used by FF8 engine), camera data, movement, translations and geometry data.
 
-Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](Pointers)
+Battle stages **DOES NOT** contain pointers to next sections. All pointers are **HARDCODED** in FF8.EXE. [Click me for battle stage pointer list](../Pointers)
 
 | Name                      | Usually starting with:                  | Description                                                             |
 |---------------------------|-----------------------------------------|-------------------------------------------------------------------------|
@@ -112,7 +117,7 @@ Seems to be 8 pointers in each set.
 
 ## Camera Animation (WIP)
 
-`All this is based on best effort knowledge from reversing by Maki. I'm just trying to understand it.`
+`All this is based on best effort knowledge from reversing by Maki. I'm just trying to understand it.`
 
 ### Control Word
 
@@ -122,7 +127,7 @@ Seems to be 8 pointers in each set.
 
 #### FOV
 
-`Control Word & 0b0000'0000'1100'0000U`
+`Control Word & 0b0000'0000'1100'0000U`
 
 ##### 1 Default
 
@@ -149,7 +154,7 @@ Seems to be 8 pointers in each set.
 
 #### ROLL
 
-`Control Word & 0b0000'0011'0000'0000U`
+`Control Word & 0b0000'0011'0000'0000U`
 
 ##### 0 Unknown
 
@@ -178,11 +183,11 @@ Seems to be 8 pointers in each set.
 
 #### LAYOUT
 
-`Control Word & 0b0000'0000'0000'0001U`
+`Control Word & 0b0000'0000'0000'0001U`
 
 ##### 0 Default
 
-`You'll loop through the data till the first value is less than 0. pushing back to a variable length container.`
+`You'll loop through the data till the first value is less than 0. pushing back to a variable length container.`
 
 | Offset | Length   | Description                                         |
 |--------|----------|-----------------------------------------------------|
@@ -195,7 +200,7 @@ Seems to be 8 pointers in each set.
 
 ### Time
 
-`Time is calculated from number of frames. You basically set starting position World+lookat and ending position, then mark number of frames to interpolate between them. Every frame is one draw call and it costs 16. Starting time needs to be equal or higher for next animation frame to be read; If next frame==0xFFFF then it's all done.`
+`Time is calculated from number of frames. You basically set starting position World+lookat and ending position, then mark number of frames to interpolate between them. Every frame is one draw call and it costs 16. Starting time needs to be equal or higher for next animation frame to be read; If next frame==0xFFFF then it's all done.`
 
 ### Animation Frame
 
@@ -208,15 +213,15 @@ Seems to be 8 pointers in each set.
 
 ##### Dependency
 
-`  CAMERA:`  
-`  -Camera Settings`  
-`  -Camera Animation Collection (even three collections in a0stg006.x and up to 7 in a0stg101.x!)`  
-`     |`  
-`     |`  
-`      -Camera animation Set (Always 8 camera animations, may be empty (0xFFFF); look for example to a0stg127.x collectionId==1; there are 8 animations, but 7 of them are 0xFFFF (pointers increase by 2))`  
-`         |`  
-`         |`  
-`          - Camera animation`
+`  CAMERA:`  
+`  -Camera Settings`  
+`  -Camera Animation Collection (even three collections in a0stg006.x and up to 7 in a0stg101.x!)`  
+`     |`  
+`     |`  
+`      -Camera animation Set (Always 8 camera animations, may be empty (0xFFFF); look for example to a0stg127.x collectionId==1; there are 8 animations, but 7 of them are 0xFFFF (pointers increase by 2))`  
+`         |`  
+`         |`  
+`          - Camera animation`
 
 ##### Example
 
@@ -331,19 +336,19 @@ Complete list (without replacing bit order - as is in HEX editor/memory):
 
 ## Texture
 
-Contains one [TIMs](../PSX/TIM_format).
+Contains one [TIMs]({{site.baseurl}}/FF8/TechnicalReference/PSX/TIM_Format)..
 
 ### UV calculation algorithm
 
-`Float U = (float)U_Byte / (float)(TIM_Texture_Width * 2) + ((float)Texture_Page/(TIM_Texture_Width * 2));`
+`Float U = (float)U_Byte / (float)(TIM_Texture_Width * 2) + ((float)Texture_Page/(TIM_Texture_Width * 2));`
 
 ### Texture page calculation
 
-`Byte TPage = InputBytes[TexturePage_index] & 0F;`
+`Byte TPage = InputBytes[TexturePage_index] & 0F;`
 
 Bitwise TPage byte AND 0F, to delete first 4 bits
 
-`int TPageINT = TPage * 64;`
+`int TPageINT = TPage * 64;`
 
 For 16 bit TIM's, the texture page is 64 pixels wide
 
@@ -351,21 +356,21 @@ For 16 bit TIM's, the texture page is 64 pixels wide
 
 For 24-bit TIM:
 
-`0xB2 byte is: 2*48 = 96`
+`0xB2 byte is: 2*48 = 96`
 
 Unsure about this one. It could be 42.667 instead of 48. It takes 1.5x the space of 16 bit. I haven't seen a file that uses 24-bit yet.
 
 For 16-bit TIM:
 
-`0xB2 byte is: 2*64= 128`
+`0xB2 byte is: 2*64= 128`
 
 For 8-bit TIM:
 
-`0xB2 byte is: 2*128 = 256`
+`0xB2 byte is: 2*128 = 256`
 
 For 4-bit TIM:
 
-`0xB2 byte is: 2*256 = 512`
+`0xB2 byte is: 2*256 = 512`
 
 Each time you half the number of bits you double the amount of data you can store in the same space. So the calculated Texture Page is different.
 
@@ -373,34 +378,34 @@ Each time you half the number of bits you double the amount of data you can stor
 
 #### Quad wing order
 
-` ABCD ---> ABDC`  
-` example:`  
-`  f 1 2 3 4`  
-` to:`  
-`  f 1 2 4 3`
+` ABCD ---> ABDC`  
+` example:`  
+`  f 1 2 3 4`  
+` to:`  
+`  f 1 2 4 3`
 
 #### Quad triangulation face order
 
-` ABDC > ABD`  
-`        ACD (same for VT)`  
-` example:`  
-` f 1 2 4 3`  
-` to:`  
-` f 1 2 4`  
-` f 1 3 4`
+` ABDC > ABD`  
+`        ACD (same for VT)`  
+` example:`  
+` f 1 2 4 3`  
+` to:`  
+` f 1 2 4`  
+` f 1 3 4`
 
 #### Triangles VT order
 
-` A/T1 > A/T2`  
-` B/T2 > B/T3`  
-` C/T3 > C/T1`
+` A/T1 > A/T2`  
+` B/T2 > B/T3`  
+` C/T3 > C/T1`
 
 #### Example
 
-` (Also with quad triangulation face order!)`  
-` f 1/1 2/2 7/4 6/3`  
-` to:`  
-` f 1/1 2/2 7/4`  
-` f 1/1 6/3 7/4`  
-` where:`  
-` A=1 B=2 C=6 D=7`
+` (Also with quad triangulation face order!)`  
+` f 1/1 2/2 7/4 6/3`  
+` to:`  
+` f 1/1 2/2 7/4`  
+` f 1/1 6/3 7/4`  
+` where:`  
+` A=1 B=2 C=6 D=7`
