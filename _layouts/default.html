@@ -71,7 +71,8 @@ Add this for this title to not be included in the toc
 
 
 {% assign repo_url2 = "https://github.com/hobbitdur/FF8ModdingWiki/edit/main/" %}
-{% assign current_path2 = page.url | remove_first: "/" | remove: ".html" | append: ".md" %}
+{% assign current_path2 = page.url | remove_first: "/" | remove: ".html"  %}
+{% assign current_path2 = page.url | append: ".md"  %}
 {% comment %} Remove trailing slash if it exists {% endcomment %}
 {% assign last_char = current_path2 | slice: -1, 1 %}
 {% if last_char == "/" %}
