@@ -6,7 +6,7 @@ title: Price (price.bin)
 
 ### price.bin
 
-Shop prices - 4 bytes per [item](../Lists/Item_Codes)
+Shop prices - 4 bytes per [item](../Lists/Item_list)
 
 | Type   | Size | Value           |
 |--------|------|-----------------|

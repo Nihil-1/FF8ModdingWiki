@@ -23,4 +23,4 @@ none
 
 #### Description
 
-Does exactly what you think. See [Item Codes](../../Lists/Item_Codes) for a list of item codes.
+Does exactly what you think. See [Item Codes](../../Lists/Item_list) for a list of item codes.

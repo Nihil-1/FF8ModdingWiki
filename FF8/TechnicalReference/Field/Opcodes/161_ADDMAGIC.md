@@ -25,4 +25,4 @@ none
 
 #### Description
 
-Does exactly what you think. See [Magic Codes](../../Lists/Magic_Codes) for a list of magic codes.
+Does exactly what you think. See [Magic Codes](../../Lists/Magic_list) for a list of magic codes.
