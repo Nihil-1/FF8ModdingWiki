@@ -65,11 +65,12 @@
       {% endif %}
     {% endfor %}
   {% endif %}
-  {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
-{% assign current_path = page.url | remove_first: "/" | split: "/" | slice: 0, -1 | join: "/" %}
-{% assign new_file_url = repo_url | append: current_path %}
 
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
+{% assign current_path = page.url | remove_first: "/" | remove: ".html" | append: "/" %}
+{% assign new_file_url = repo_url | append: current_path %}
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
+
 </nav>
 
 {% if site.nav_error_report %}

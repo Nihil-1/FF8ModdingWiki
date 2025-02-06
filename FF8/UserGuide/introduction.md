@@ -122,7 +122,7 @@ Many others, @mcindus you are welcome to give me a description so I can add them
     - _Authors_: @axlrose 
     - _Description_: FMV remake under development
     - _Download link_: [Direct link](https://download.tsunamods.com/?id=14)
-    - _Compatibility_ : FFNx/Remaster
+    - _Compatibility_ : [JunctionVIII](https://www.tsunamods.com/junction-viii/)
 
 ## __Sound mod__
   - _FFNxFF8Music_ 
