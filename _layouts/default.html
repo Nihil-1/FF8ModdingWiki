@@ -38,9 +38,14 @@ layout: table_wrappers
 {% assign new_file_url = repo_url | append: encoded_path %}
 
 
-{% assign prefill_content = "---\nlayout: default\ntitle: A new page\nparent: " | append: last_segment | append: "\n---\n\nWrite your content here." | url_encode %}
+{% assign prefill_content = "---
+layout: default
+title: A new page
+parent: " | append: last_segment | append: "
+---
 
-      
+Write your content here." | url_encode %}
+
 {% assign file_name = "new_file.md" | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
 
