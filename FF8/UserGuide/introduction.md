@@ -118,7 +118,7 @@ Many others, @mcindus you are welcome to give me a description so I can add them
   - _Axlrose - Cinemra-RF_ 
     - _Authors_: @axlrose 
     - _Description_: FMV remake under development
-    - _Download link_: [Discord chanel](https://discord.com/channels/318179907098116106/1103880668624199740)
+    - _Download link_: [Direct link](https://download.tsunamods.com/?id=14)
     - _Compatibility_ : FFNx/Remaster
 
 ## __Sound mod__
