@@ -22,17 +22,25 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
 
 
-{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main" %}
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
 {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
 {% if current_path == "" %}
   {% assign current_path = "index.md" %}
 {% else %}
   {% assign current_path = current_path | append: "/" %}
 {% endif %}
+
+{% comment %} Extract the last segment of the path {% endcomment %}
+{% assign path_segments = current_path | split: "/" %}
+{% assign last_segment = path_segments | last %}
+
 {% assign encoded_path = current_path | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path %}
 
-{% assign prefill_content = "---\ntitle: New Page\n---\n\nWrite your content here." | url_encode %}
+
+{% assign prefill_content = "---\nlayout: default\ntitle: A new page\nparent: " | append: last_segment | append: "\n---\n\nWrite your content here." | url_encode %}
+
+      
 {% assign file_name = "new_file.md" | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
 
