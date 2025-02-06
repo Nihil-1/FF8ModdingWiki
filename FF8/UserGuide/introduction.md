@@ -7,6 +7,9 @@ parent: User Guide
 
 You'll find here an overview of what exist and what is happening in the FF8 community.
 
+1. TOC
+{:toc}
+
 # __The discords__
  They are 3 main discord around FF8 modding:
 -  **Qhimm discord**
