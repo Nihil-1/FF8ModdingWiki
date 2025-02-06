@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Battle
+title: UserGuide
 nav_order: 3
 ---
