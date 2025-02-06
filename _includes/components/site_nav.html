@@ -83,7 +83,8 @@
 
 {% assign encoded_path = new_file_path | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path %}
-
+<p>Page Path: {{ page.path }}</p>
+<p>Page URL: {{ page.url }}</p>
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new Markdown page here</a>
 
 </nav>
