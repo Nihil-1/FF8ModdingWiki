@@ -1,8 +1,8 @@
 ---
 layout: default
-title: UserGuideIntroduction
+title: User Guide Introduction
 nav_order: 1
-parent: UserGuide
+parent: User Guide
 ---
 
 You'll find here an overview of what exist and what is happening in the FF8 community.

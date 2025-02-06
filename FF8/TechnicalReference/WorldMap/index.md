@@ -2,5 +2,5 @@
 layout: default
 title: WorldMap
 nav_order: 6
-parent: TechnicalReference
+parent: Technical Reference
 ---

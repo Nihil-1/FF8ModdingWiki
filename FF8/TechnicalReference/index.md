@@ -1,5 +1,5 @@
 ---
-title: TechnicalReference
+title: Technical Reference
 layout: default
 nav_order: 3
 ---

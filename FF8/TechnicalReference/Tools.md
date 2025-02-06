@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: TechnicalReference
+parent: Technical Reference
 title: Tools
 nav_order: 10
 ---

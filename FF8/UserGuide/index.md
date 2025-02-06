@@ -1,5 +1,5 @@
 ---
 layout: default
-title: UserGuide
+title: User Guide
 nav_order: 2
 ---

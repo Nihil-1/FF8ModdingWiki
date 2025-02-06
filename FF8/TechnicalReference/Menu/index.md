@@ -2,5 +2,5 @@
 layout: default
 title: Menu
 nav_order: 5
-parent: TechnicalReference
+parent: Technical Reference
 ---
