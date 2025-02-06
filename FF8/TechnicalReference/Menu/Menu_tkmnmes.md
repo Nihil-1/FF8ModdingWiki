@@ -10,7 +10,7 @@ These files have a good deal of the Menu text.
 * tknmnes2.bin
 * tknmnes3.bin
 
-Note that those files are actually not use, but instead the one contains in the archive [Mngrp.bin](Mngrp.bin File Format)
+Note that those files are actually not use, but instead the one contains in the archive [Mngrp.bin](Menu_mngrp_bin)
 
 The data consist of a header that contains the __paddings__, corresponding to the offset to string section. Each string section contains a list of offset, followed by the strings.
 
