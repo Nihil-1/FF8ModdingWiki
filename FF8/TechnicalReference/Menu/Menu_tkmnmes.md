@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Menu
+title: Tknmnesx.bin File Format
+---
 These files have a good deal of the Menu text.
 
 3 files are concerned:
