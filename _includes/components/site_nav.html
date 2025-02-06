@@ -65,7 +65,7 @@
       {% endif %}
     {% endfor %}
   {% endif %}
-  {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/docs/" %}
+  {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
 {% assign current_path = page.url | remove_first: "/" | split: "/" | slice: 0, -1 | join: "/" %}
 {% assign new_file_url = repo_url | append: current_path %}
 
