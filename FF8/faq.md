@@ -4,7 +4,12 @@ title: FAQ
 nav_order: 4
 ---
 
+
 # F.A.Q.
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 ## __When a 60 FPS mod will come ?__
 
