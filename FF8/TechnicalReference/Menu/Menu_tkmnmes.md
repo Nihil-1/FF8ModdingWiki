@@ -1,24 +1,24 @@
----
-layout: default
-parent: Menu
-title: Menu_tkmnmes
----
-
 These files have a good deal of the Menu text.
 
-### Header
+3 files are concerned:
+* tknmnes1.bin
+* tknmnes2.bin
+* tknmnes3.bin
 
-<table><thead><tr class="header"><th><p>Type</p></th><th><p>Size</p></th><th><p>Value</p></th><th><p>Description</p></th></tr></thead><tbody><tr class="odd"><td><p>UInt16</p></td><td><p>2</p></td><td><p>Pad_Count</p></td><td><p>Always <strong>16</strong></p></td></tr><tr class="even"><td><p>UInt16[Pad_Count]</p></td><td><p>2 * Pad_count</p></td><td><p>Paddings</p></td><td><p>The padding value leads to start of string offsets Can be <strong>0x00</strong> ignore those<br />
-First one is usually <strong>0x36</strong></p></td></tr></tbody></table>
+Note that those files are actually not use, but instead the one contains in the archive [Mngrp.bin](Mngrp.bin File Format)
 
-### String Offsets
+The data consist of a header that contains the __paddings__, corresponding to the offset to string section. Each string section contains a list of offset, followed by the strings.
 
-| Type                    | Size               | Value         | Description                                                               |
-|-------------------------|--------------------|---------------|---------------------------------------------------------------------------|
-| UInt16                  | 2                  | Offset\_Count | Number of offsets before strings start                                    |
-| UInt16\[Offset\_Count\] | 2 \* Offset\_count | Offsets       | The offset value points to start of a string Can be **0x00** ignore those |
+# Header
 
-### String
+Padding values **0x0000** must be ignored when reading but must be kept in the same place when writting.
 
-Strings end with **0x00**. [Strings are encoded](../Miscellaneous/String_Encoding).  
+| Type   | Size          | Value     | Description                                                                                                               |
+|--------|---------------|-----------|---------------------------------------------------------------------------------------------------------------------------|
+| UInt16 | 2             | Pad_Count | The number of padding. Always **16**.<br/>The real number of padding is the value read + 1 (so 17 in unmodified file).                                                                                    |
+| UInt16 | 2 * Pad_count | Paddings  | The padding value leads to the start of string section offsets.<br/> **0x0000** must be ignored.  |
+
+# String section
+Each string section correspond to a [[Mngrp string|Mngrp_string_section]]
+
 **\[Start of string location\]** = **\[Start of file\]** + **\[Padding value\]** + **\[String offset value\]**

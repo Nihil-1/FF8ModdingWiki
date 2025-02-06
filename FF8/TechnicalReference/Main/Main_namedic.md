@@ -1,19 +1,16 @@
 ---
 layout: default
 parent: Main
-title: Main_namedic
+title: Game region (namedic.bin)
 ---
-
-  For namedic, you can also find the info on the wiki of the [ShumiTranslator](https://github.com/HobbitDur/ShumiTranslator/wiki/Namedic_bin) tool done by HobbitDur which detail the following file (link is kept here to the old wiki for archive purpose):
-  -   [namedic.bin](FF8/TechnicalReference/Main/Main_namedic)
 
 ## Format
 
-Same format as: **[Menu\_mngrp\_strings\_locations](http://wiki.ffrtt.ru/index.php/FF8/Menu_mngrp_strings_locations)**
+Same format as: [Mngrp string section](Mngrp_string_section.md)
 
 ## Contents
 
-Contains ingame region names and other misc strings.
+Contains in game region names and other misc strings.
 
 ### Dump
 
