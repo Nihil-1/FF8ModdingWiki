@@ -28,17 +28,18 @@ layout: table_wrappers
 {% comment %} Split the path into segments and remove the last segment {% endcomment %}
 {% assign path_segments = current_path | split: "/" %}
 {% assign path_segments_size = path_segments | size %}
+
+{% comment %} Remove the last segment {% endcomment %}
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
 
+{% comment %} Extract the second-to-last segment for the parent {% endcomment %}
+{% assign parent_segment = path_segments | reverse | shift | first %}
 
 {% if path_segments_without_last == "" %}
-    {% assign current_path = "/" %}
+    {% assign current_path = "index.md" %}
 {% else %}
     {% assign current_path = path_segments_without_last | append: "/" %}
 {% endif %}
-
-{% comment %} Extract the last segment of the path {% endcomment %}
-{% assign last_segment = path_segments | last %}
 
 {% assign encoded_path = current_path | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path %}
@@ -46,7 +47,7 @@ layout: table_wrappers
 {% assign prefill_content = "---
 layout: default
 title: A new page
-parent: " | append: last_segment | append: "
+parent: " | append: parent_segment | append: "
 ---
 
 Write your content here." | url_encode %}
