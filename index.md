@@ -6,7 +6,7 @@ permalink: /
 ---
 
 
-This wiki will be divided in 3 main sections
+This wiki will be divided in 3 main sections. For easier navigation you can use the side bar on the left.
 
 - [Modding user guide]({{site.baseurl}}/FF8/UserGuide/index)
 - [Modding technical reference]({{site.baseurl}}/FF8/TechnicalReference/index)

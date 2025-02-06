@@ -48,137 +48,139 @@ Files starting with 10 00 00 00 09 00 00 00 are obviously TIM texture. Files sta
 Example: 09 00 9f 01 means there's 9f 01 (415) polygons of type 0x9. Therefore: 28\*415=11620 bytes to next polygon type or vertices if FF FF FF FF.
 
 GF Environment (stages like Cerberus gate; Alexander backdrop and etc.) geometry contains many polygon types (sic!). Every single polygon type is different than other.
-
-`       private int[] _knownPolygons = new int[] `  
-`       {`  
-`           0x2,`  
-`           0x6,`  
-`           0x7,`  
-`           0x8,`  
-`           0x9,`  
-`           0xC,`  
-`           0x10,`  
-`           0x12,`  
-`           0x11,`  
-`           0x13,`  
-`       };`
-
+```
+private int[] _knownPolygons = new int[]   
+{  
+   0x2,  
+   0x6,  
+   0x7,  
+   0x8,  
+   0x9,  
+   0xC,  
+   0x10,  
+   0x12,  
+   0x11,  
+   0x13,  
+};
+```
 0xC points to geometry section. If \*0xC (pointers to geometries) is == 0, then file has no geometry (it is possible. Some files are only texture, some only geometry, some are only animation and some are everything). There should be no single case where the number of models in file exceed 12.
-
-`0xC:`  
-` PointersToModel:`  
-`    Example object (let's call it modOffset)`
-
-`uint _objCount = *modOffset;`  
-`ushort _vertexCount = *(modOffset + 24);`  
-`ushort _verticesOffset = *(modOffset + 20);`
+```
+0xC:  
+ PointersToModel:  
+    Example object (let's call it modOffset)
+```
+```
+uint _objCount = *modOffset;  
+ushort _vertexCount = *(modOffset + 24);  
+ushort _verticesOffset = *(modOffset + 20);
+```
 
 Polygon parsing based on types (C\#):
+```
+int relativeJump = *(modOffset + 8);  
+int *localoffset = modOffset + _relativeJump + 4;
 
-`int relativeJump = *(modOffset + 8);`  
-`int *localoffset = modOffset + _relativeJump + 4;`
+               if (polygonType == 0x02)  
+               {  
+                   for (int i = 0; i < polygons * 20; i += 20)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)} {GetPolygon(localoffset + i + 0x10)}\n";  
+                   }  
+                   safeHandle = polygons * 20;  
+               }
 
-`               if (polygonType == 0x02)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 20; i += 20)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)} {GetPolygon(localoffset + i + 0x10)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 20;`  
-`               }`
+               if (polygonType == 0x06)  
+               {  
+                   for (int i = 0; i < polygons * 12; i += 12)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 0x4)} {GetPolygon(localoffset + i + 0x6)} {GetPolygon(localoffset + i + 0x08)}\n";  
+                   }  
+                   safeHandle = polygons * 12;  
+               }
 
-`               if (polygonType == 0x06)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 12; i += 12)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 0x4)} {GetPolygon(localoffset + i + 0x6)} {GetPolygon(localoffset + i + 0x08)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 12;`  
-`               }`
+               if (polygonType == 0x07)  
+               {  
+                   for (int i = 0; i < polygons * 20; i += 20)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)} {GetPolygon(localoffset + i + 0x10)}\n";  
+                   }  
+                   safeHandle = polygons * 20;  
+               }
 
-`               if (polygonType == 0x07)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 20; i += 20)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)} {GetPolygon(localoffset + i + 0x10)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 20;`  
-`               }`
+               if (polygonType == 0x09)  
+               {  
+                   for (int i = 0; i < polygons * 28; i += 28)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 20)} {GetPolygon(localoffset + i + 22)}\n";  
+                   }  
+                   safeHandle = polygons * 28;  
+               }
 
-`               if (polygonType == 0x09)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 28; i += 28)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 20)} {GetPolygon(localoffset + i + 22)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 28;`  
-`               }`
+               if (polygonType == 0x08)  
+               {  
+                   for (int i = 0; i < polygons * 20; i += 20)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 0xA)} {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)}\n";  
+                   }  
+                   safeHandle = polygons * 20;  
+               }
 
-`               if (polygonType == 0x08)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 20; i += 20)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 0xA)} {GetPolygon(localoffset + i + 0xC)} {GetPolygon(localoffset + i + 0xE)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 20;`  
-`               }`
+               if (polygonType == 12)  
+               {  
+                   for (int i = 0; i < polygons * 28; i += 28)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 20)} {GetPolygon(localoffset + i + 22)} {GetPolygon(localoffset + i + 26)} {GetPolygon(localoffset + i + 24)}\n";  
+                   }  
+                   safeHandle = polygons * 28;  
+               }
 
-`               if (polygonType == 12)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 28; i += 28)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 20)} {GetPolygon(localoffset + i + 22)} {GetPolygon(localoffset + i + 26)} {GetPolygon(localoffset + i + 24)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 28;`  
-`               }`
+               if (polygonType == 0x12)  
+               {  
+                   for (int i = 0; i < polygons * 24; i += 24)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 12)} {GetPolygon(localoffset + i + 14)} {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 16)}\n";  
+                   }  
+                   safeHandle = polygons * 24;  
+               }
 
-`               if (polygonType == 0x12)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 24; i += 24)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 12)} {GetPolygon(localoffset + i + 14)} {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 16)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 24;`  
-`               }`
+               if (polygonType == 0x13)  
+               {  
+                   for (int i = 0; i < polygons * 36; i += 36)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 24)} {GetPolygon(localoffset + i + 26)} {GetPolygon(localoffset + i + 30)} {GetPolygon(localoffset + i + 28)}\n";  
+                   }  
+                   safeHandle = polygons * 36;  
+               }
 
-`               if (polygonType == 0x13)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 36; i += 36)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 24)} {GetPolygon(localoffset + i + 26)} {GetPolygon(localoffset + i + 30)} {GetPolygon(localoffset + i + 28)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 36;`  
-`               }`
+               if (polygonType == 0x11)  
+               {  
+                   for (int i = 0; i < polygons * 24; i += 24)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 16)} {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 22)} {GetPolygon(localoffset + i + 20)}\n";  
+                   }  
+                   safeHandle = polygons * 24;  
+               }
 
-`               if (polygonType == 0x11)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 24; i += 24)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 16)} {GetPolygon(localoffset + i + 18)} {GetPolygon(localoffset + i + 22)} {GetPolygon(localoffset + i + 20)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 24;`  
-`               }`
+               if (polygonType == 0x10)  
+               {  
+                   for (int i = 0; i < polygons * 12; i += 12)  
+                   {  
+                       f += $"f {GetPolygon(localoffset + i + 4)} {GetPolygon(localoffset + i + 6)} {GetPolygon(localoffset + i + 10)} {GetPolygon(localoffset + i + 8)}\n";  
+                   }  
+                   safeHandle = polygons * 12;  
+               }
 
-`               if (polygonType == 0x10)`  
-`               {`  
-`                   for (int i = 0; i < polygons * 12; i += 12)`  
-`                   {`  
-`                       f += $"f {GetPolygon(localoffset + i + 4)} {GetPolygon(localoffset + i + 6)} {GetPolygon(localoffset + i + 10)} {GetPolygon(localoffset + i + 8)}\n";`  
-`                   }`  
-`                   safeHandle = polygons * 12;`  
-`               }`
-
-`               uint isNext = *(localoffset + safeHandle);`  
-`               if (isNext == 0xFFFFFFFF) //FFFFFFFF breaks the polygons reading`  
-`                   break;`
-
+               uint isNext = *(localoffset + safeHandle);  
+               if (isNext == 0xFFFFFFFF) //FFFFFFFF breaks the polygons reading  
+                   break;
+```
 Vertex:
-
-`short x`  
-`short z`  
-`short y`  
-`short w //rarely used, for skeleton weighting`
-
+```
+short x  
+short z  
+short y  
+short w //rarely used, for skeleton weighting
+```
 ## Textures
 
 1\. See 0x08, it points almost always to null data, but also indicates where to stop watching texture pointers

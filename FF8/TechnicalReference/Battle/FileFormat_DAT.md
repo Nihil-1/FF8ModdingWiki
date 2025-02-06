@@ -75,34 +75,34 @@ DAT file is divided into 11 sections (except for c0m127.dat, which contains only
 | 4      | nbVertices \* 6 bytes | Vertices (nbVertices \* 3 shorts) |
 
 #### Useful structures
-
-`struct vertice {`  
-`     sint16    x, y, z;`  
-`};`
-
+```
+struct vertice {  
+     sint16    x, y, z;  
+};
+```
 (sizeof = 6)
-
-`struct triangle {`  
-`     uint16    vertex_indexes[3]; // vertex_indexes[0] &= 0xFFF, other bits are unknown`  
-`     uint8 texCoords1[2];`  
-`     uint8 texCoords2[2];`  
-`     uint16    textureID_related;`  
-`     uint8 texCoords3[2];`  
-`     uint16    u; // textureID_related2`  
-`};`
-
+```
+struct triangle {  
+     uint16    vertex_indexes[3]; // vertex_indexes[0] &= 0xFFF, other bits are unknown  
+     uint8 texCoords1[2];  
+     uint8 texCoords2[2];  
+     uint16    textureID_related;  
+     uint8 texCoords3[2];  
+     uint16    u; // textureID_related2  
+};
+```
 (sizeof = 16)
-
-`struct quad {`  
-`     uint16    vertex_indexes[4]; // vertex_indexes[0] &= 0xFFF, other bits are unknown`  
-`     uint8 texCoords1[2];`  
-`     uint16    textureID_related;`  
-`     uint8 texCoords2[2];`  
-`     uint16    u; // textureID_related2`  
-`     uint8 texCoords3[2];`  
-`     uint8 texCoords4[2];`  
-`};`
-
+```
+struct quad {  
+     uint16    vertex_indexes[4]; // vertex_indexes[0] &= 0xFFF, other bits are unknown  
+     uint8 texCoords1[2];  
+     uint16    textureID_related;  
+     uint8 texCoords2[2];  
+     uint16    u; // textureID_related2  
+     uint8 texCoords3[2];  
+     uint8 texCoords4[2];  
+};
+```
 (sizeof = 20)
 
 ## Section 3: Model animation
@@ -275,28 +275,29 @@ Not analysed, but defined camera work.
 
 
 ### Abilities
-
-`typedef struct {`  
-`    uint8 kernel_id;`  
-`    uint8 unknown;`  
-`    uint16 ability_id;`  
-`}`
+```
+typedef struct {  
+    uint8 kernel_id;  
+    uint8 unknown;  
+    uint16 ability_id;  
+}
+```
 
 kernel\_id is the used table in kernel.bin. May be 0x02 (= magic), 0x04 (= item) or 0x08 (= monster ability). ability\_id is the ability in the selected kernel table.
 
 ### Draw/mug/drop
-
-`typedef struct {`  
-`    uint8 id_1; // magic_id for draw, item_id for mug & drop`  
-`    uint8 qty_1; // quantities are always 0 for draw`  
-`    uint8 id_2;`  
-`    uint8 qty_2;`  
-`    uint8 id_3;`  
-`    uint8 qty_3;`  
-`    uint8 id_4;`  
-`    uint8 qty_4;`  
-`}`
-
+```
+typedef struct {  
+    uint8 id_1; // magic_id for draw, item_id for mug & drop  
+    uint8 qty_1; // quantities are always 0 for draw  
+    uint8 id_2;  
+    uint8 qty_2;  
+    uint8 id_3;  
+    uint8 qty_3;  
+    uint8 id_4;  
+    uint8 qty_4;  
+}
+```
 ## Section 8: Battle scripts/AI
 
 | Offset | Length  | Description                |

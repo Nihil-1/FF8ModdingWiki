@@ -6,6 +6,7 @@ title: Battle Files
 
 Kernel32.dll LoadFile is started at 0x55d323 and 0x55d27b (FF8.EXE). Use below list to observe loaded files and manipulate it if needed. Throughout the code, only thing you'll find is index of below array, so... no names, nothing.
 
+```
     char *BattleFiles[1117] =
     {
      "A0STG000.X",
@@ -1126,3 +1127,4 @@ Kernel32.dll LoadFile is started at 0x55d323 and 0x55d27b (FF8.EXE). Use below l
      "MAG348.X",
      "MAG349.X"
     };
+```

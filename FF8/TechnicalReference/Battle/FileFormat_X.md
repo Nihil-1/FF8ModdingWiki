@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: .X File Format
+title:  Battle Stage (.X)
 ---
 
 By MaKiPL. Thanks for help in research for: shakotay2 (XeNTaX), Halfer, Yagami Light. Complete list of original battle stages by Kaspar01: [List of battle stages](BS_list)
