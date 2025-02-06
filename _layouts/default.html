@@ -22,7 +22,7 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
 
 
-{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/docs/" %}
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main" %}
 {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
 {% if current_path == "" %}
   {% assign current_path = "index.md" %}
@@ -38,9 +38,6 @@ layout: table_wrappers
 
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
 
-
-
-<a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
 
       <div id="main-content" class="main-content">
         <main>
