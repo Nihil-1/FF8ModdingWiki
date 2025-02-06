@@ -24,14 +24,13 @@ layout: table_wrappers
 
         {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
         {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
-        {% assign current_path = current_path | remove_first: "/" | remove: ".html" %}
 
 
         {% comment %} Extract the last segment of the path {% endcomment %}
         {% assign path_segments = current_path | split: "/" %}
         {% assign last_segment = path_segments | last %}
 
-        {% assign current_path = current_path | remove: last_segment %}
+        {% assign current_path = current_path | remove_first: last_segment %}
 
 
         {% assign encoded_path = current_path | url_encode %}
