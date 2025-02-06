@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: FieldFileFormat
+parent: Battle
 title: FileFormat_magfiles
 ---
 

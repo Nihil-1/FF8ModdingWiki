@@ -11,53 +11,6 @@ This wiki will be divided in 3 main sections:
 - [Modding technical reference](#modding-technical)
 - [FAQ](faq)
 
-# Modding user guide
-This part can contains any guide the community wanna share on how to mod the game.
-[]
-
-
-
-
-### Game engine
--   [Final Fantasy VIII's Engine](FF8/TechnicalReference/Engine/Engine)
--   [Array of Battle files](FF8/TechnicalReference/Engine/BattleFiles)
-
-### Details of the Game
-
--   [Final Fantasy VIII's Kernel](FF8/TechnicalReference/Main/Kernel) Empty file for the moment
--   [Game variables used in scripting](FF8/TechnicalReference/Miscellaneous/Variables)
--   [World map camera](FF8/TechnicalReference/WorldMap/WorldMapCamera)
--   [Battle encounters list](FF8/TechnicalReference/Battle/Encounter_Codes)
-
-  For String encoding, you can  find the info on the wiki of the [ShumiTranslator](https://github.com/HobbitDur/ShumiTranslator/wiki/FF8_char) tool done by HobbitDur which detail the following file (link is kept here to the old wiki for archive purpose):
--   [String Encoding](FF8/TechnicalReference/Miscellaneous/String_Encoding)
-
-### Media Formats
-
--   [Final Fantasy VIII PS1](FF8/TechnicalReference/Miscellaneous/PlaystationMedia) media information.
--   [Final Fantasy VIII PC](FF8/TechnicalReference/Miscellaneous/PC_Media) media information.
--   [Final Fantasy VIII Save data](FF8/TechnicalReference/Miscellaneous/GameSaveFormat)
-
-  
-## File formats
-
-### Movie Files
-
--   [\[PAK](FF8/TechnicalReference/Field/FileFormat/FileFormat_PAK)\] Movie Archives
-
-### Sound Files
-
--   [\[FMT](FF8/TechnicalReference/Field/FileFormat/FileFormat_FMT)\] Sound Archives
-
-### Battle files
-
--   [\[X](FF8/TechnicalReference/Battle/FileFormat_X)\] Battle Fields
--   [\[DAT](FF8/TechnicalReference/Battle/FileFormat_DAT)\] Battle Models
--   [Scene.out](FF8/TechnicalReference/Battle/BattleStructure) Battle encounter data
--   [r0win.dat](FF8/TechnicalReference/Battle/FileFormat_r0win) Winning sequence
--   [b0wave.dat](FF8/TechnicalReference/Battle/FileFormat_b0wave)
--   [a9btlfnt.bft](FF8/TechnicalReference/Field/FileFormat/FileFormat_TDW)
--   [.mag files](FF8/TechnicalReference/Field/FileFormat/FileFormat_magfiles) - MAG files
 
 ### Field files
 
@@ -72,7 +25,7 @@ This part can contains any guide the community wanna share on how to mod the gam
 -   [\[INF](FF8/TechnicalReference/Field/FileFormat/FileFormat_INF)\] Field Gateways
 -   [\[ID](FF7/Field/Walkmesh)\] Walkmesh field (from FF7)
 -   [\[CA](FF8/TechnicalReference/Field/FileFormat/FileFormat_CA)\] Field Camera
--   [\[TDW](FF8/TechnicalReference/Field/FileFormat/FileFormat_TDW)\] Extra font
+-   [\[TDW](FF8/TechnicalReference/Field/FileFormat/FileFormat_TDW.md)\] Extra font
 -   [\[MSK](FF8/TechnicalReference/Field/FileFormat/FileFormat_MSK)\] Mask files
 -   [\[RAT](FF8/TechnicalReference/Field/FileFormat/FileFormat_RAT_MRT) & \[MRT\]\] Battle related
 -   [\[PMD](FF8/FileFormat_PMD)\] Particle Info

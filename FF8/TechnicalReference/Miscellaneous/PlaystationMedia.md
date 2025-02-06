@@ -74,7 +74,7 @@ There are three LZSed files for each field: EXAMPLE.MIM, EXAMPLE.DAT and EXAMPLE
 | 4                    | 4        | Location of section 4 in PSX RAM                             |
 | 8                    | 4        | [Unknown data \[PVP](FileFormat_PVP)\]        |
 | 12                   | 438272   | [Background data \[MIM](../Field/FileFormat/FileFormat_MIM)\]     |
-| 438284 (section 3)   | *Varies* | [Font data \[TDW](../Field/FileFormat/FileFormat_TDW)\]           |
+| 438284 (section 3)   | *Varies* | [Font data \[TDW](../Field/FileFormat/FileFormat_TDW.md)\]           |
 | *Varies* (section 4) | *Varies* | [Particle Image Data \[PMP](../Field/FileFormat/FileFormat_PMP)\] |
 
 ### Second file (\*.DAT)

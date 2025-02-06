@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: FieldFileFormat
+parent: Battle
 title: FileFormat_MAG_t
 ---
 
@@ -50,7 +50,7 @@ Example:
 
 -   Note: yes, there's no texture sign in name
 
-To know, how to find out if the given file is texture, please reffer to [MAGfiles\_Generic](FileFormat_magfiles)
+To know, how to find out if the given file is texture, please reffer to [MAGfiles\_Generic](FileFormat_magfiles.md)
 
 ### Type C (chaos like)
 
@@ -64,4 +64,4 @@ Example:
 
 -   Note: yes, there's no texture sign in name
 
-To know, how to find out if the given file is texture, please reffer to [MAGfiles\_Generic](FileFormat_magfiles)
+To know, how to find out if the given file is texture, please reffer to [MAGfiles\_Generic](FileFormat_magfiles.md)
