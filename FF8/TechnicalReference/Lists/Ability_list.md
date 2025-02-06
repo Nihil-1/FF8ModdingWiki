@@ -13,11 +13,11 @@ This ID define which list should be check. Seifer is a special case for seifer b
 | ID   | Name                                                                          |
 |------|-------------------------------------------------------------------------------|
 | 0    | Not defined                                                                   |
-| 2    | [Magic]({{site.baseurl}}/FF8/TechnicalReference/List/Magic_list)              |
-| 4    | [Item]({{site.baseurl}}/FF8/TechnicalReference/List/Item_list)                |
-| 8    | [Custom]({{site.baseurl}}/FF8/TechnicalReference/List/Ability_list#abilities) |
+| 2    | [Magic]({{site.baseurl}}/FF8/TechnicalReference/Lists/Magic_list)              |
+| 4    | [Item]({{site.baseurl}}/FF8/TechnicalReference/Lists/Item_list)                |
+| 8    | [Custom]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities) |
 | 179  | Ultimecia_weird_file_127                                                      |
-| 236  | [Seifer]({{site.baseurl}}/FF8/TechnicalReference/List/Ability_list#abilities) |
+| 236  | [Seifer]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities) |
 
 # Abilities
 

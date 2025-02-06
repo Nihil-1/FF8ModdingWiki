@@ -265,8 +265,8 @@ Not analysed, but defined camera work.
 | 245    | 1 byte     | High level start                                                                                                                                                                                                                       |
 | 246    | 1 byte     | Unknown (flags, 3 bits used)                                                                                                                                                                                                           |
 | 247    | 1 byte     | [LSB] Zombie / Fly / zz1 / LvUp-Down Immunity / HP Hidden / Auto-Reflect / Auto-Shell / Auto-Protect [MSB]                                                                                                                             |
-| 248    | 3 bytes    | [Card]({{site.baseurl}}/FF8/TechnicalReference/List/Card_list#card-info) (low/med/high)                                                                                                                                                |
-| 251    | 3 bytes    | [Devour]({{site.baseurl}}/FF8/TechnicalReference/List/Devour_list#devour-effects) (low/med/high)                                                                                                                                       |
+| 248    | 3 bytes    | [Card]({{site.baseurl}}/FF8/TechnicalReference/Lists/Card_list#card-info) (low/med/high)                                                                                                                                                |
+| 251    | 3 bytes    | [Devour]({{site.baseurl}}/FF8/TechnicalReference/Lists/Devour_list#devour-effects) (low/med/high)                                                                                                                                       |
 | 254    | 1 byte     | [LSB] zz1 / zz2 / unused / unused / unused / unused / Gravity Immunity / Always obtains card [MSB]                                                                                                                                     |
 | 255    | 1 byte     | Unknown (flags, 4 bits used)                                                                                                                                                                                                           |
 | 256    | 2 bytes    | Extra EXP                                                                                                                                                                                                                              |
@@ -294,9 +294,9 @@ Abilities are composed of:
 
 | Length | Description                                                                               |
 |--------|-------------------------------------------------------------------------------------------|
-| 1 byte | [AbilityTYpeID]({{site.baseurl}}/FF8/TechnicalReference/List/Ability_list#abilities-type) |
+| 1 byte | [AbilityTYpeID]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities-type) |
 | 1 byte | [AnimationSequenceID](#animationsequenceid)                                               |
-| 2 byte | [AbilityID]({{site.baseurl}}/FF8/TechnicalReference/List/Ability_list#abilities)          |
+| 2 byte | [AbilityID]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities)          |
 
 #### AnimationSequenceID
 
@@ -304,12 +304,12 @@ Refer to a sequence in the [Section 5](#section-5-animation-sequences)
 
 ### Renzokuken data
 
-The data is 8*2 bytes, each 2 bytes corresponding to an ID on the [Special Action list]({{site.baseurl}}/FF8/TechnicalReference/List/Specialaction_list)
+The data is 8*2 bytes, each 2 bytes corresponding to an ID on the [Special Action list]({{site.baseurl}}/FF8/TechnicalReference/Lists/Specialaction_list)
 
 ### Draw Mug Drop
 
-Each section is composed of 8 bytes corresponding to 4 id ([magic]({{site.baseurl}}/FF8/TechnicalReference/List/Magic_list) for
-draw, [Item]({{site.baseurl}}/FF8/TechnicalReference/List/Item_list) for mug & drop) and 4 quantity.
+Each section is composed of 8 bytes corresponding to 4 id ([magic]({{site.baseurl}}/FF8/TechnicalReference/Lists/Magic_list) for
+draw, [Item]({{site.baseurl}}/FF8/TechnicalReference/Lists/Item_list) for mug & drop) and 4 quantity.
 Quantity is not used for draw (always 0 but no impact on game when changing it)
 
 | Length | Description |
