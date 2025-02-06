@@ -69,6 +69,20 @@ Add this for this title to not be included in the toc
 
 <a href="{{ new_file_url }}" target="_blank" style="font-size: 12px;">➕ Add a new page here</a>
 
+
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/edit/main/" %}
+{% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
+
+{% comment %} Ensure the current path ends with .md {% endcomment %}
+{% unless current_path ends with ".md" %}
+    {% assign current_path = current_path | append: ".md" %}
+{% endunless %}
+
+{% assign encoded_path = current_path | url_encode %}
+{% assign edit_page_url = repo_url | append: encoded_path %}
+
+<a href="{{ edit_page_url  }}" target="_blank" style="font-size: 12px;">✏️ Edit this page</a>
+
       <div id="main-content" class="main-content">
         <main>
           {% if site.heading_anchors != false %}
