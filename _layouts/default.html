@@ -54,7 +54,7 @@ Write your content here." | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
 
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
-        
+
       <div id="main-content" class="main-content">
         <main>
           {% if site.heading_anchors != false %}
