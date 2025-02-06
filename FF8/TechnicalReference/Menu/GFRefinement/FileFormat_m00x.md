@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Menu
+parent: GF Refinement
 title: Refine abilities
 ---
 

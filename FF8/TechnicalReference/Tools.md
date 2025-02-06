@@ -65,7 +65,7 @@ nav_order: 10
 - **StepTriangulator**: _Autohotkey script designed to help with modding work & adding footsteps to FF8_
     - __Author(s)__: @gensoul
     - __Link__:   [Download link](https://github.com/Gensoul44/FF8StepTriangulator/releases)
-- **TonberryShop**: _FF8 shop.bin editor to change items in shop _
+- **TonberryShop**: _FF8 shop.bin editor to change items in shop_
     - __Author(s)__: @hobbitdur
     - __Link__:   [Download link](https://github.com/HobbitDur/TonberryShop/releases)
 
