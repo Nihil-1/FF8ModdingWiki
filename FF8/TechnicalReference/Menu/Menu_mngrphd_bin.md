@@ -1,10 +1,14 @@
 ---
 layout: default
 parent: Menu
-title: Menu_mngrphd_bin
+title: Mngrphd.bin File Format
 ---
 
-This is the map for [mngrp.bin](Menu_mngrp_bin). Locations to data and the size of the section.
+This is the map for [[mngrp.bin|Mngrp_bin]]. Locations to data and the size of the section.
+
+Useless entry (with size = 0 or seek = 0xFF) need to be kept or the game crash.
+
+There is 255 sections with 117 useful section.
 
 ## Entry
 
