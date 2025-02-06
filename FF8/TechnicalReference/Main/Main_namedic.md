@@ -4,6 +4,9 @@ parent: Main
 title: Main_namedic
 ---
 
+  For namedic, you can also find the info on the wiki of the [ShumiTranslator](https://github.com/HobbitDur/ShumiTranslator/wiki/Namedic_bin) tool done by HobbitDur which detail the following file (link is kept here to the old wiki for archive purpose):
+  -   [namedic.bin](FF8/TechnicalReference/Main/Main_namedic)
+
 ## Format
 
 Same format as: **[Menu\_mngrp\_strings\_locations](http://wiki.ffrtt.ru/index.php/FF8/Menu_mngrp_strings_locations)**

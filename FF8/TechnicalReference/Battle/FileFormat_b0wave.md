@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: FileFormat_b0wave
+title: File Format b0wave.dat 
 ---
 
 By MaKiPL

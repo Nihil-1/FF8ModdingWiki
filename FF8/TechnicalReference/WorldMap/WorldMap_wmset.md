@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: WorldMap
-title: WorldMap_wmset
+title: WorldMap wmset File Format
 ---
 
 ## File general info

@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: WorldMap
-title: WorldMap_charaone
+title: WorldMap Character (chara.one)
 ---
 
 by Maki file is different than field [\[ONE](../Field/FileFormat/FileFormat_ONE) and then again with argument 0x12 having pointer to data as in Wiki in EAX. It's like:

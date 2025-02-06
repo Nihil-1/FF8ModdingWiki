@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Menu
-title: Menu_sp2
+title: .sp1, .sp2 File Format
 ---
 
 by MaKi  

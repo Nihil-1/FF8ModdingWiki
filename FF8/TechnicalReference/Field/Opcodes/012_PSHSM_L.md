@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: FieldOpcodes
+parent: Field Opcodes
 title: 012_PSHSM_L
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: FileFormat_DAT
+title: Monster files (c0mxxx.dat)
 layout: default
 parent: Battle
 ---

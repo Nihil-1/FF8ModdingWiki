@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Miscellaneous
-title: PC_Media
+title: PC Media
 ---
 
 # Data File Format

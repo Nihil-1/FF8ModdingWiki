@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Miscellaneous
-title: FileFormat_FMT
+title: Audio (audio.dat/audio.fmt)
 ---
 
 Final Fantasy 8's sound effects are stored within two files. The **audio.dat** contains the actual wav files, compressed as 4-bit ADPCM. The **audio.fmt** file is a locator for sounds in the dat.

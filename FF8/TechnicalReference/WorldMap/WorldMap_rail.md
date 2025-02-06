@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: WorldMap
-title: WorldMap_rail
+title: WorldMap Rail (train movement)
 ---
 
 By MaKiPL

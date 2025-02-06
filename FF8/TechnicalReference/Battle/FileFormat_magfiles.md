@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: FileFormat_magfiles
+title: Mag File Format
 ---
 
 By MaKiPL

@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Main
-title: Main_harata
+title: harata.cnf File Format
 ---
 
 By MaKiPL

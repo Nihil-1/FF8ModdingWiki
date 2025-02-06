@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: WorldMap
-title: WorldMapCamera
+title: WorldMap Camera
 ---
 
 By MaKiPL. :\*

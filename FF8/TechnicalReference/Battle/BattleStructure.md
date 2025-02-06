@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: BattleStructure
+title: Battle Structure (Scene.out)
 ---
 
 By JeMaCheHi

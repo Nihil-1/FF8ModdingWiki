@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: FieldOpcodes
+parent: Field Opcodes
 title: 0CA_SEPOSTRANS
 ---
 

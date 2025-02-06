@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Menu
-title: Menu_areames_dc1
+title: areames.dc1 File Format
 ---
 
 ## Format

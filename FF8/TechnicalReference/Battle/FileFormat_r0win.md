@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: FileFormat_r0win
+title: r0win.dat File Format
 ---
 
 By MaKiPL

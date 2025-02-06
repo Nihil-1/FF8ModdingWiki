@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: BS_list
+title: Battle Stage List
 ---
 
 This list was written by kaspar01.

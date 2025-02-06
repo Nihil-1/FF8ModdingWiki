@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Main
-title: Main_kernel
+title: Kernel.bin File Format
 ---
 
 **Kernel.bin** documentation is held on external wiki of Doomtrain (Kernel.bin editor) github page.

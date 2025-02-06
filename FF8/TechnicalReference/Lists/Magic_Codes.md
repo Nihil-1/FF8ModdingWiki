@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Magic_Codes
+title: Magic List
 parent: List
 ---
 

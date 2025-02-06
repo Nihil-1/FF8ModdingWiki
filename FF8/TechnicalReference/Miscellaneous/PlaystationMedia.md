@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Miscellaneous
-title: PlaystationMedia
+title: Playstation Media
 ---
 
 By myst6re

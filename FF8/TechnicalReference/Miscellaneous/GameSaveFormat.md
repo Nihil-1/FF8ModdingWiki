@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Miscellaneous
-title: GameSaveFormat
+title: Game Save Format
 ---
 
 By myst6re.

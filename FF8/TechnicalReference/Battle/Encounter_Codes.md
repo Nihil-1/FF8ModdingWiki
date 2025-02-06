@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Battle
-title: Encounter_Codes
+title: Encounter Codes
 ---
 
 ## Usable Encounters

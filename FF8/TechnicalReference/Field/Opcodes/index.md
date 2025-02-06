@@ -1,6 +1,6 @@
 ---
 layout: default
-title: FieldOpcodes
+title: Field Opcodes
 parent: Field
 nav_order: 2
 ---

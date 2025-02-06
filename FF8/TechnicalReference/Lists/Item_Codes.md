@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Item_Codes
+title: Item List
 parent: List
 ---
 

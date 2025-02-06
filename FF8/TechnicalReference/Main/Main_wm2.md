@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Main
-title: Main_wm2
+title: wm2field.tbl File Format
 ---
 
 By MaKiPL
