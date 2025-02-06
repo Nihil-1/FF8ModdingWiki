@@ -44,3 +44,5 @@ If you don't mind to play on PSX graphics, then go for FFNx, you'll find everyth
 Also, some MCINDUS mods have been already ported to FFNx (cf list above), and an installer for FFNx exist (https://discord.com/channels/318179907098116106/1277618050065104998/1277621238193328262)
 
 ## Will FFNx/JunctionVIII be compatible with remaster ?
+Short answer: Not soon
+Long answer: We hope it will happen but it is really complex to do so it totally depend on the workload done on it and luck. 
