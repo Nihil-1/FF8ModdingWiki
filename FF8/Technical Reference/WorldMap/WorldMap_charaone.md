@@ -4,7 +4,7 @@ parent: WorldMap
 title: WorldMap Character (chara.one)
 ---
 
-by Maki file is different than field [\[ONE](../Field/FileFormat/FileFormat_ONE) and then again with argument 0x12 having pointer to data as in Wiki in EAX. It's like:
+by Maki file is different than field [\[ONE](../Field/Field%20File%20Format/FileFormat_ONE) and then again with argument 0x12 having pointer to data as in Wiki in EAX. It's like:
 
 `uint myPointer = charaOneFunction(pointer_to_Chara_section, 0x11...);`  
 `charaOneFunction(myPointer, 0x12...);`
