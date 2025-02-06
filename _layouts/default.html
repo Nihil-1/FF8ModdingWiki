@@ -25,8 +25,10 @@ layout: table_wrappers
 {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
 {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
 
-{% comment %} Remove trailing slash if present {% endcomment %}
-{% assign current_path = current_path | remove: "/" %}
+{% comment %} Remove only the trailing slash if it exists {% endcomment %}
+{% if current_path ends_with "/" %}
+  {% assign current_path = current_path | slice: 0, current_path.size | minus: 1 %}
+{% endif %}
 
 {% if current_path == "" %}
   {% comment %} If we're at the root, create "new_file.md" in the root {% endcomment %}
