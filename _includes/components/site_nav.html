@@ -66,16 +66,16 @@
     {% endfor %}
   {% endif %}
 
-{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/docs/" %}
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
 {% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
 
 {% if current_path == "" %}
   {% assign current_path = "index.md" %}
 {% else %}
-  {% assign current_path = current_path | append: ".md" %}
+  {% assign current_path = current_path | append: "new.md" %}
 {% endif %}
 
-{% assign encoded_path = current_path | url_encode %}
+{% assign encoded_path = current_path %}
 {% assign new_file_url = repo_url | append: encoded_path %}
 
 <a href="{{ new_file_url }}" target="_blank">➕ Add a new Markdown page here</a>
