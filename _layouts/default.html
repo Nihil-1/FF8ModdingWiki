@@ -45,7 +45,7 @@ layout: table_wrappers
     {% assign current_path = path_segments_without_last | append: "/" %}
 {% endif %}
 
-{% assign encoded_path = current_path | url_encode %}
+{% assign encoded_path = current_path  %}
 {% assign new_file_url = repo_url | append: encoded_path %}
 
 {% assign prefill_content = "---
