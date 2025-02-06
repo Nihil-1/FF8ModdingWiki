@@ -14,7 +14,7 @@ Offset with value **0x0000** must be ignored when reading, but they must stay in
 
 # String
 
-They are in [FF8 String](FF8ModdingWiki/FF8/Miscellaneous/FF8String) format 
+They are in [FF8 String]({{site.baseurl}}/TechnicalReference/FF8/TechnicalReference/FF8String) format 
 
 **\[Start of string location\]** = **\[Start of section\]** + **\[String offset value\]**
 

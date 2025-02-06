@@ -6,7 +6,7 @@ title: Price (price.bin)
 
 ### price.bin
 
-Shop prices - 4 bytes per [item](../Lists/Item_list)
+Shop prices - 4 bytes per [Item]({{site.baseurl}}/TechnicalReference/FF8/List/item_list)
 
 | Type   | Size | Value           |
 |--------|------|-----------------|

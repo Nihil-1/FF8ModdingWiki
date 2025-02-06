@@ -79,7 +79,7 @@ The shop list is sorted, meaning that there is no offset, and the X<sub>eme</sub
 
 ## Items
 
-[Item list]({{site.baseurl}}/FF8/List/item_list)
+[Item list]({{site.baseurl}}/TechnicalReference/FF8/List/item_list)
 
 ## Shop name
 
