@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Miscellaneous
+title: PSX
 nav_order: 12
 parent: Technical Reference
 ---
