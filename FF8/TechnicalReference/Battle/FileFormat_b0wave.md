@@ -2,11 +2,8 @@
 layout: default
 parent: Battle
 title: File Format b0wave.dat 
+author: MaKiPL
 ---
-
-By MaKiPL
-
-------------------------------------------------------------------------
 
 b0wave.dat is file containing one 4BPP TIM texture with magic animation sequence, AKAO frame and font data. Current structure:
 

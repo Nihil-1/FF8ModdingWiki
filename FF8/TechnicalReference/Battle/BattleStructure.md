@@ -2,9 +2,8 @@
 layout: default
 parent: Battle
 title: Battle Structure (Scene.out)
+author: JeMaCheHi
 ---
-
-By JeMaCheHi
 
 Scene.out contains enemy placement data and flags for each of the game's battle encounters.
 

@@ -1,12 +1,9 @@
 ---
 layout: default
 parent: Battle
-title: r0win.dat File Format
+title: victory Sequence (r0win.dat)
+author: MakiPL
 ---
-
-By MaKiPL
-
-------------------------------------------------------------------------
 
 **R0win.dat** is loaded by the engine just after the battle ends with winning situation. This file is complete sequence and logic for battle winning scene.
 
