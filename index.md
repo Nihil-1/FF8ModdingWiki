@@ -128,5 +128,5 @@ For others files
 
 # Tools and Patches
 
--   [Tools and Patches](FF8/TechnicalReference/Miscellaneous/Tools)
+-   [Tools and Patches](FF8/TechnicalReference/Tools.md)
 
