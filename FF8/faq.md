@@ -18,6 +18,7 @@ Not soon, we just implemented the technical possibility, now someone need to cha
 ## Why FMV will not be in 4K ?
 
   Axlrose answer:
+
   I'll go 4k in the future, but for that to happen:
     - the FFNx driver for FF8 has to support 16:9 aspect and 60fps on FMVs, I have done the testing already, and at 4k 60fps, even 30fps 4k they feel pretty smooth, but, keeping the current aspect and going 4k (height), the video playback is laggy
     - I'll go 4k, only when at true 16:9, by filling out the areas on the side black bars by out-painting each frame (not by zoom/crop like others like to do, killing areas of the video), AIs are not mature enough for that yet (at least for video, they are pretty good for static images, but one AI is very promising for that and in early development, can't remember it's name)
