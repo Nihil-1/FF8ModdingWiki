@@ -20,27 +20,22 @@ layout: table_wrappers
     {% include components/header.html %}
     <div class="main-content-wrap">
       {% include components/breadcrumbs.html %}
-      {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
-{% assign current_path = page.path | remove: ".md" %}
 
-{% comment %} Remove the filename (e.g., "000_NOP") from the path {% endcomment %}
-{% assign path_parts = current_path | split: "/" %}
-{% assign filename = path_parts | last %}
-{% assign directory_path = current_path | remove: filename %}
 
-{% if directory_path == "" %}
-  {% assign directory_path = "/" %}
+{% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/new/main/" %}
+{% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
+
+{% if current_path == "" %}
+  {% assign current_path = "index.md" %}
+{% else %}
+  {% assign current_path = current_path | append: ".md" %}
 {% endif %}
 
-{% assign new_filename = "newfile.md" %} {% comment %} Default new filename {% endcomment %}
-{% assign new_file_path = directory_path | append: new_filename %}
-
-{% assign encoded_path = new_file_path | url_encode %}
+{% assign encoded_path = current_path | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path %}
-<p>Page Path: {{ page.path }}</p>
-<p>Page URL: {{ page.url }}</p>
-<a href="{{ new_file_url }}" target="_blank">➕ Add a new Markdown page here</a>
-      
+
+<a href="{{ new_file_url }}" target="_blank">➕ Add a new page here</a>
+
       <div id="main-content" class="main-content">
         <main>
           {% if site.heading_anchors != false %}
