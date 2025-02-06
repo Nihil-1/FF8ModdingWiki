@@ -71,9 +71,7 @@ Add this for this title to not be included in the toc
 
 
 {% assign repo_url = "https://github.com/hobbitdur/FF8ModdingWiki/edit/main/" %}
-{% assign current_path = page.url | remove_first: "/" | remove: ".html" %}
-{% assign current_path = current_path | append: ".md" %}
-        
+{% assign current_path = page.url | remove_first: "/" | remove: ".html" | append: ".md" %}
 {% assign edit_page_url = repo_url | append: current_path %}
 
 <a href="{{ edit_page_url }}" target="_blank" style="font-size: 12px;">✏️ Edit this page</a>
