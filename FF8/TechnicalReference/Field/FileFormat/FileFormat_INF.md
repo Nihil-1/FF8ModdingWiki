@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_INF
+parent: Field File Format
+title: Field Gateways
 ---
 
 By myst6re.

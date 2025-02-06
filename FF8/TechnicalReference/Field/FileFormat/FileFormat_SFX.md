@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_SFX
+parent: Field File Format
+title: Sound IDs
 ---
 
 By myst6re.

@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_SYM
+parent: Field File Format
+title: Script entity
 ---
 
 By myst6re.

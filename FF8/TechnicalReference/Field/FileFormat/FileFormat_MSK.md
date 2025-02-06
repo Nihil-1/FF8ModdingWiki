@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_MSK
+parent: Field File Format
+title: Mask files
 ---
 
 By myst6re.

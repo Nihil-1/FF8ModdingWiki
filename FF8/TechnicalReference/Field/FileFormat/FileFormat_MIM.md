@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_MIM
+parent: Field File Format
+title: Field Background Image Data
 ---
 
 By Aali.

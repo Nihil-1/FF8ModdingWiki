@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_RAT_MRT
+parent: Field File Format
+title: Battle related
 ---
 
 By myst6re.

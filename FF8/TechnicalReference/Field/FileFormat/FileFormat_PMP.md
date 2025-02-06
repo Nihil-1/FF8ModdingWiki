@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: FieldFileFormat
-title: FileFormat_PMP
+parent: Field File Format
+title: Particle Image Data
 ---
 
 By myst6re.
