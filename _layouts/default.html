@@ -33,7 +33,7 @@ layout: table_wrappers
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
 
 {% comment %} Extract the second-to-last segment for the parent {% endcomment %}
-{% if path_segments_size >= 2 %}
+{% if path_segments_size >= 3 %}
     {% assign parent_segment = path_segments | reverse | shift | first %}
 {% else %}
     {% assign parent_segment = "" %}
