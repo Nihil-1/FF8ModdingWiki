@@ -75,7 +75,7 @@ Add this for this title to not be included in the toc
 {% comment %} Remove trailing slash if it exists {% endcomment %}
 {% assign last_char = current_path2 | slice: -1, 1 %}
 {% if last_char == "/" %}
-    {% assign current_path2 = current_path | slice: 0, -1 %}
+    {% assign current_path2 = current_path2 | slice: 0, -1 %}
 {% endif %}
 
 {% assign edit_page_url = repo_url2 | append: current_path2 %}
