@@ -54,7 +54,15 @@ title: A new page
 parent: " | append: parent_segment | append: "
 ---
 
-Write your content here." | url_encode %}
+# Main Title
+
+To add a Table Of Contents, add this literally (keep the 1. TOC)
+1. TOC
+{:toc}
+
+## Second Title
+Add this for this title to not be included in the toc
+{: .no_toc }" | url_encode %}
 
 {% assign file_name = "new_file.md" | url_encode %}
 {% assign new_file_url = repo_url | append: encoded_path | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
