@@ -286,7 +286,7 @@ Not analysed, but defined camera work.
 | 335    | 1 byte     | APs                                                                                                                                                                                                                                    |
 | 336    | 16 bytes   | [Renzokuken data](#renzokuken-data)                                                                                                                                                                                                    |                                                                         
 | 352    | 8 bytes    | [Elemental resistance](#elemental-resistance) (Fire, Ice, Thunder, Earth, Poison, Wind, Water, Holy)                                                                                                                                   |
-| 360    | 20 bytes   | [Mental resistance](#mental-resistance) (Death, Poison, Petrify, Darkness, Silence, Berserk, Zombie, Sleep,<br> Haste, Slow, Stop, Regen, Reflect, Doom, Slow Petrify, Float, Confuse, Drain, Expulsion, VIT0(but unused by the game)) |
+| 360    | 20 bytes   | [Status resistance](#mental-resistance) (Death, Poison, Petrify, Darkness, Silence, Berserk, Zombie, Sleep,<br> Haste, Slow, Stop, Regen, Reflect, Doom, Slow Petrify, Float, Confuse, Drain, Expulsion, VIT0(but unused by the game)) |
 
 ### Abilities
 
@@ -294,7 +294,7 @@ Abilities are composed of:
 
 | Length | Description                                                                               |
 |--------|-------------------------------------------------------------------------------------------|
-| 1 byte | [AbilityTYpeID]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities-type) |
+| 1 byte | [AbilityTypeID]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities-type) |
 | 1 byte | [AnimationSequenceID](#animationsequenceid)                                               |
 | 2 byte | [AbilityID]({{site.baseurl}}/FF8/TechnicalReference/Lists/Ability_list#abilities)          |
 
@@ -331,7 +331,7 @@ value% = 900 - value_hex * 10
 and to revert back:
 value_hex = floor((900 - value%) / 10))
 
-### Mental resistance
+### Status resistance
 
 The % def value follow the formula:
 value% = value_hex - 100
