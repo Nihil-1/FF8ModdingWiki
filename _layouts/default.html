@@ -69,6 +69,20 @@ Add this for this title to not be included in the toc
 
 <a href="{{ new_file_url }}" target="_blank" style="font-size: 12px;">➕ Add a new page here</a>
         
+        {% if
+          site.gh_edit_link and
+          site.gh_edit_link_text and
+          site.gh_edit_repository and
+          site.gh_edit_branch and
+          site.gh_edit_view_mode
+        %}
+          <p class="text-small text-grey-dk-000 mb-0">
+            <a href="{{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ page.path }}" id="edit-this-page">{{ site.gh_edit_link_text }}</a>
+          </p>
+        {% endif %}
+
+
+
 
       <div id="main-content" class="main-content">
         <main>
