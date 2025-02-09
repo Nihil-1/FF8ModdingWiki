@@ -26,7 +26,7 @@ You'll find here an overview of what exist and what is happening in the FF8 comm
   - _Description:_ Graphical modder that produce all graphical enhancement for FF8
   - _Manager_: @mcindus 
   - _Main website:_ [Mcindus patreon](https://www.patreon.com/mcindusmods)
-  - _Invitation link: _ [Mcindus invitation](https://discord.gg/6b2HMJQYDS)
+  - _Invitation link:_ [Mcindus invitation](https://discord.gg/6b2HMJQYDS)
 
 ## __Qhimm FF8 Discord: The different part__
  - _General_
