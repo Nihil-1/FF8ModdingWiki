@@ -22,14 +22,23 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
 
 
+        {% if
+          site.gh_edit_link and
+          site.gh_edit_link_text and
+          site.gh_edit_repository and
+          site.gh_edit_branch and
+          site.gh_edit_view_mode
+        %}
+
 {% comment %} Remove the last segment {% endcomment %}
 
 {% comment %} Split the path into segments {% endcomment %}
+{% assign current_path = {{ site.gh_edit_repository }}/new/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/ %}
 {% assign path_segments = current_path | split: "/" %}
 {% assign path_segments_size = path_segments | size %}
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
 
-{% assign add_file_url = add_file_url | {{ site.gh_edit_repository }}/new/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ path_segments_without_last }}/new_page.md %}
+{% assign add_file_url = add_file_url | new_page.md %}
 
 {% assign prefill_content = "---
 layout: default
@@ -49,7 +58,10 @@ Add this for this title to not be included in the toc
 
 {% assign file_name = "new_file.md" | url_encode %}
 {% assign add_file_url = add_file_url | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
- <a style="font-size: 12px;" href="{{ add_file_url }}" target="_blank">➕ Add a new page here</a>
+
+
+            <a style="font-size: 12px;" href="{{ add_file_url }}" target="_blank">➕ Add a new page here</a>
+  {% endif %}
 
 
         {% if
