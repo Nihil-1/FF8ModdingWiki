@@ -8,7 +8,7 @@ author: nihil
 This section will list all opcode of the game, with a type list of parameters
 
 1. TOC
-{:toc}
+   {:toc}
 
 # Opcode list
 
@@ -42,9 +42,9 @@ None
 
 ### Parameters
 
-| Parameter name | Parameter type | Short Description     |
-|----------------|----------------|-----------------------|
-| **TextID**     | [int](#int)    | The index of the text |
+| Parameter position | Parameter name | Parameter type | Short Description     |
+|--------------------|----------------|----------------|-----------------------|
+| 1                  | **TextID**     | [int](#int)    | The index of the text |
 
 Text in combat are defined in [section 7](../FileFormat_DAT##section-7-informations--stats) of c0mxxx.dat files.  
 Each text as an ID starting from 0 to the number of text - 1.  
@@ -272,4 +272,5 @@ Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0
 # Type list
 
 ## int
+
 This type take literally the value of the parameter
