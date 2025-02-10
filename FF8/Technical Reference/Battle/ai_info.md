@@ -1,3 +1,9 @@
+---
+layout: default
+parent: Battle
+title: AI Info
+---
+
 # W.I.P
 
 ## Opcode 0x00 (0) - IfritAI name: return
