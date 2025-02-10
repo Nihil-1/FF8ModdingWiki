@@ -30,6 +30,10 @@ layout: table_wrappers
           site.gh_edit_view_mode
         %}
         {% comment %} Remove the last segment {% endcomment %}
+        
+{% comment %} Split the path into segments {% endcomment %}
+{% assign path_segments = current_path | split: "/" %}
+{% assign path_segments_size = path_segments | size %}
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
 
 {% assign add_file_url = add_file_url | {{ site.gh_edit_repository }}/new/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ path_segments_without_last }}/new_page.md %}
@@ -57,7 +61,7 @@ Add this for this title to not be included in the toc
             <a style="font-size: 12px;" href="{{ add_file_url }}" target="_blank">➕ Add a new page here</a>
   {% endif %}
 
-        
+
         {% if
           site.gh_edit_link and
           site.gh_edit_link_text and
