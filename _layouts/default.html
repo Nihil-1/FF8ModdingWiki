@@ -36,9 +36,10 @@ layout: table_wrappers
 {% assign current_path = site.gh_edit_repository | append: "/new/" | append: site.gh_edit_branch | append: "/"  | append: page.path %}
  <p>Debug: {{ current_path }}</p>
 {% assign path_segments = current_path | split: "/" %}
+         <p>Debug: {{ path_segments }}</p>
 {% assign path_segments_size = path_segments | size %}
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
-
+ <p>Debug: {{ path_segments_without_last }}</p>
 {% assign prefill_content = "---
 layout: default
 title: A new page
