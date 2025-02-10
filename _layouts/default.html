@@ -57,7 +57,7 @@ Add this for this title to not be included in the toc
 {: .no_toc }" | url_encode %}
 
 {% assign file_name = "new_file.md" | url_encode %}
-{% assign add_file_url = add_file_url | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
+{% assign add_file_url = path_segments_without_last | append: "?filename=" | append: file_name | append: "&value=" | append: prefill_content %}
 
 
             <a style="font-size: 12px;" href="{{ add_file_url }}" target="_blank">➕ Add a new page here</a>
