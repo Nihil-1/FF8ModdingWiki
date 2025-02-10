@@ -33,7 +33,7 @@ layout: table_wrappers
 {% comment %} Remove the last segment {% endcomment %}
 
 {% comment %} Split the path into segments {% endcomment %}
-{% assign current_path = site.gh_edit_repository | append: "/new/" | append: site.gh_edit_branch | append: page.path %}
+{% assign current_path = site.gh_edit_repository | append: "/new/" | append: site.gh_edit_branch | append: "/"  | append: page.path %}
 {% assign path_segments = current_path | split: "/" %}
 {% assign path_segments_size = path_segments | size %}
 {% assign path_segments_without_last = path_segments | reverse | shift | reverse | join: "/" %}
