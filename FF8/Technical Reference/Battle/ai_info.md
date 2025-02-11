@@ -46,7 +46,7 @@ None
 |--------------------|----------------|----------------|-----------------------|
 | 1                  | **TextID**     | [int](#int)    | The index of the text |
 
-Text in combat are defined in [section 7](../FileFormat_DAT##section-7-informations--stats) of c0mxxx.dat files.  
+Text in combat are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text as an ID starting from 0 to the number of text - 1.  
 **TextID** correspond to this ID
 
