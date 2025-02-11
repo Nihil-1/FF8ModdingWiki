@@ -8,7 +8,7 @@ author: nihil
 This section will list all opcode of the game, with a type list of parameters
 
 1. TOC
-   {:toc}
+{:toc}
 
 # Opcode list
 
