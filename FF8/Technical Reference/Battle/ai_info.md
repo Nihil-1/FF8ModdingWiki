@@ -2,10 +2,11 @@
 layout: default
 parent: Battle
 title: Opcode List
-author: nihil
+author: nihil, hobbitdur
 ---
 
 This section will list all opcode of the game, with a type list of parameters
+The point of view is of the monster. So when saying "Enemy team" means the squall team.
 
 1. TOC
 {:toc}
@@ -16,9 +17,9 @@ This section will list all opcode of the game, with a type list of parameters
 
 ### Summary
 
-| Opcode | IfritAI name | Short Description         |
-|--------|--------------|---------------------------|
-| 0x00   | return       | Exit the AI for this turn |
+| Opcode | IfritAI name | Size | Short Description         |
+|--------|--------------|------|---------------------------|
+| 0x00   | return       | 1    | Exit the AI for this turn |
 
 This function will stop the code execution and leave the AI turn.  
 It can be used to either stop in a condition or used at the end of the AI code.  
@@ -28,23 +29,21 @@ It is mandatory to have one **_return_** for every end of execution.
 
 None
 
-
-
 ---
 
 ## Opcode 0x01 (1) - print
 
 ### Summary
 
-| Opcode | IfritAI name | Short Description |
-|--------|--------------|-------------------|
-| 0x01   | print        | Print text        |
+| Opcode | IfritAI name | Size | Short Description   |
+|--------|--------------|------|---------------------|
+| 0x01   | print        | 2    | Print text          |
 
 ### Parameters
 
-| Parameter position | Parameter name | Parameter type | Short Description     |
-|--------------------|----------------|----------------|-----------------------|
-| 1                  | **TextID**     | [int](#int)    | The index of the text |
+| Position | Size | Name       | Yype                     | Short Description     |
+|----------|------|------------|--------------------------|-----------------------|
+| 1        | 1    | **TextID** | [int](../OpCodeType#int) | The index of the text |
 
 Text in combat are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text as an ID starting from 0 to the number of text - 1.  
@@ -52,26 +51,66 @@ Each text as an ID starting from 0 to the number of text - 1.
 
 ---
 
-## Opcode 0x02 (2) - If/Else Statement (7 args)
+## Opcode 0x02 (2) - if
 
-### IfritAI name: if
+### Summary
+The if opcode allow to execute code only on certain condition
 
-If and else jump
+| Opcode | IfritAI name | Size | Short Description |
+|--------|--------------|------|-------------------|
+| 0x02   | if           | 1    | Define condition  |
 
-### General Structure:
+### Parameters
 
-- **Byte #1:** Condition Type
-- **Byte #2:** Target / Parameter
-- **Byte #3:** Comparison Operator
-- **Byte #4:** Comparison Value
-- **Byte #5:** Always 0x00
-- **Byte #6 and #7:** Bytes to jump if condition is false
-    - **Byte #6:** (Bytes to Jump % 256)
-    - **Byte #7:** (Bytes to Jump // 256)
+The if opcode is a really complex one with lots of different possibilities.  
+It is composed of a subject that define how the other parameters are used.  
+Then it uses 3 parameters for the condition: the left part of the condition, the right part, and the comparator.  
+So it does something like this: \[LeftCondition\] \[Comparator\] \[RightCondition\], for ex: COMBAT SCENE == 76  
+Then there is a jump param to define the jump size if the condition is not met  
 
-### Condition Types:
+| Position | Size | Name               | Yype                                   | Short Description                                    |
+|----------|------|--------------------|----------------------------------------|------------------------------------------------------|
+| 1        | 1    | **SubjectID**      | [SubjectID](#subjectid)                | Define what the if will be about                     |
+| 2        | 1    | **LeftCondition**  | Vary                                   | The left condition                                   |
+| 3        | 1    | **Comparator**     | [Comparator](../OpCodeType#comparator) | The comparator of the condition                      |
+| 4        | 1    | **RightCondition** | Vary                                   | The right condition                                  |
+| 5        | 1    | **Padding**        | [Unused](../OpCodeType#unused)         | Always 0x00 (changing it has no impact)              |
+| 6        | 2    | **Jump**           | [int](../OpCodeType#int)               | The number of byte to jump if the condition is false |
 
-### 1. **Remaining HP Check**
+### SubjectID
+The **SubjectID** defines what will be the type of the left and right condition  
+The _Short text_ is a description of the subject id.  
+The _Left text_ is the meaning of the **LeftCondition**. {} is to be replaced with the value hold by **LeftCondition** depending of _Param left type_  
+The _Param left type_ define the type to use to translate the **LeftCondition**  
+Same logic for the **RightCondition**  
+The _Param list_ can feed the param type with additional info.  
+
+| SubjectID | Short text                | Left text                           | Param left type                                                    | Right text     | Param right type         | Param list |
+|-----------|---------------------------|-------------------------------------|--------------------------------------------------------------------|----------------|--------------------------|------------|
+| 0         | HP OF SPECIFIC TARGET     | HP_SPE of {}                        | [target_advanced_specific](../OpCodeType#target-advanced-specific) |                | percent                  |            |
+| 1         | HP OF GENERIC TARGET      | HP_GEN of {}                        | [target_advanced_generic](../OpCodeType#target-advanced-generic)   |                | percent                  |            |
+| 2         | RANDOM VALUE              | RANDOM VALUE BETWEEN 0 AND {}       | int_shift                                                          |                | int                      | [-1]       |
+| 3         | COMBAT SCENE              | COMBAT SCENE                        |                                                                    |                | int                      |            |
+| 4         | STATUS OF SPECIFIC TARGET | STATUS_SPE OF {}                    | target_advanced_specific                                           |                | status_ai                |            |
+| 5         | STATUS OF GENERIC TARGET  | STATUS_GEN OF {}                    | target_advanced_generic                                            |                | status_ai                |            |
+| 6         | NUMBER OF MEMBER          | NUMBER OF MEMBER OF {}              | target_advanced_generic                                            |                | int                      |            |
+| 9         | ALIVE                     | ALIVE                               |                                                                    |                | target_advanced_specific |            |
+| 10        | ATTACKER                  | ATTACKER                            | subject10                                                          |                | complex                  |            |
+| 14        | GROUP LEVEL               | GROUP LEVEL OF {}                   | target_advanced_generic                                            |                | int                      |            |
+| 15        | ALIVE IN SLOT             | ALLY IN SLOT {}                     | int_right                                                          | ALIVE          | alive                    |            |
+| 16        | GENDER CHECK              | AT LEAST ONE ENEMY ALIVE HAS GENDER |                                                                    |                | gender                   |            |
+| 17        | GFORCE OBTAINED           | Gforce to be stolen                 | const                                                              | Not yet stolen | const                    | [200, 204] |
+| 18        | ODIN OBTAINED             | {} POSSESS ODIN                     | target_advanced_generic                                            |                | int                      |            |
+| 19        | COUNTDOWN                 | COUNTDOWN                           |                                                                    |                | int                      |            |
+| 20        | STATUS OF ALL IN TEAM     | STATUS OF ALL IN {}                 | target_advanced_generic                                            |                | status_ai                |            |
+| \>20      | Var                       | var                                 | var_name                                                           |                | int                      |            |
+
+If the **SubjectID** is > 20, it means the subject is of type var, the **LeftCondition** is the ID of the var and the **RightCondition** the value of the var to be compared  
+
+#### Additional info:
+
+##### HP OF SPECIFIC TARGET
+The **LeftCondition** 0xCB (203) is persists across battles
 
 - **Byte #1:** 0x00 (Self / Last command user) or 0x01 (Any ally / opponent)
 - **Byte #2:**
@@ -269,8 +308,3 @@ Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0
 
 ---
 
-# Type list
-
-## int
-
-This type take literally the value of the parameter
