@@ -35,6 +35,14 @@ Here will be put all info on the exe editing. The base is version 2013 in englis
 0x08FE00: Maximum In-Battle Draw Cap (0x09 = 9)[byte] //Value to compare to. Setting this to 1 will make you always Draw the maximum amount (in battle).
 0x08FE04: Maximum In-Battle Draw Cap (0x00000009 = 9)[dword] //Value to set to if exceeds previous check.
 ```
+Example:
+```
+8FE00 =
+09 7E 05 B8 09 (Default: 9 max per draw)
+01 7E 05 B8 64 (Draw 100 so long as 1+ is drawn)
+09 7D 05 B8 09 (Draw minimum of 9, no upper cap - changes jump type to greater/equal)
+09 7D 05 B8 09 sets a minimum draw but with no upper cap so that your magic stat can influence how many you get
+```
 
 # Command
 ## Cover Command
@@ -56,6 +64,29 @@ Here will be put all info on the exe editing. The base is version 2013 in englis
 0x092D72: Kamikaze Damage Modifier (8D 04 80 - Damage = *6 of user's maximum HP)
 ```
 
+# Junction
+## Junction at max even with 1 magic
+
+### HP
+963CB = B3 64 90 90 90 90 90
+
+### Primary Stats
+966E5 = B2 64 90 90 90 90 90
+
+### Secondary Stats
+96788 = B2 64 90 90 90 90 90
+
+### Elemental Attack
+969D1 = B0 64 90 90 90 90 90
+
+### Elemental Defence
+96AAE = B1 64 90 90 90 90 90
+
+### Status Attack
+96BC1 = B0 64 90 90 90 90 90
+
+### Status Defence
+96C9D = B1 64 90 90 90 90 90
 
 # Others 
 ## Crisis Level 
