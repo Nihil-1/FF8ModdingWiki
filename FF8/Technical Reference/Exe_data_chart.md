@@ -12,6 +12,9 @@ Here will be put all info on the exe editing. The base is version 2013 in englis
 
 
 # Limit
+
+[Original Qhimm post](https://forums.qhimm.com/index.php?topic=15211.0)
+
 ## Damage limit
 
 ```
