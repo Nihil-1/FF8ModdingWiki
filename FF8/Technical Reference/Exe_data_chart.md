@@ -2,9 +2,10 @@
 layout: default
 title: Exe data
 parent: Technical Reference
+nav_order: 11
 ---
 
-here will be put all info on the exe editing. The base is version 2013 in english
+Here will be put all info on the exe editing. The base is version 2013 in english
 
 1. TOC
 {:toc}
