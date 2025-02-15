@@ -3,26 +3,31 @@
     height:193px !important;
     width:264px !important;
 }
-/* Ensure the whole page layout uses flexbox */
-.site {
-  display: flex;
-  flex-direction: row;
-  height: 100vh; /* Full height */
-}
 
-/* Sidebar stays a fixed width */
 .sidebar {
-  width: 200px; /* Adjust as needed */
-  max-width: 200px;
-  flex-shrink: 0;
-  overflow-y: auto; /* Allows scrolling if needed */
+  width: 200px !important;
+  max-width: 200px !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  overflow-y: auto !important;
 }
 
-/* Main content expands to take remaining space */
 .main {
-  flex-grow: 1; /* Takes up all available space */
-  max-width: calc(100% - 200px); /* Ensures it doesn't exceed available width */
-  margin-left: 0; /* No unnecessary margins */
-  padding: 1rem 2rem;
-  overflow-x: auto; /* Prevents horizontal overflow */
+  margin-left: 200px !important;
+  width: calc(100% - 200px) !important;
+  padding: 1rem 2rem !important;
+  overflow-x: auto !important;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px !important;
+  }
+
+  .main {
+    margin-left: 60px !important;
+    width: calc(100% - 60px) !important;
+  }
 }
