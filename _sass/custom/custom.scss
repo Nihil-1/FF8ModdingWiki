@@ -3,3 +3,23 @@
     height:193px !important;
     width:264px !important;
 }
+
+// Make the main container expand fully while keeping space for the sidebar
+.main {
+  max-width: 100%;
+  width: auto;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+// Adjust the main wrapper so it fills all available space
+.main-content {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+// Ensure the sidebar stays a fixed width
+.sidebar {
+  width: 250px; // Adjust if necessary
+  flex-shrink: 0;
+}
