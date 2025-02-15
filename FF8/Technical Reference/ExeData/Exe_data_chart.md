@@ -29,6 +29,8 @@ So for example, if the max damage limit is 9999, and the bonus damage is 50,001;
 
 The first offset (0x095A1C) is the value to compare to. Setting this to 1 will set all characters to have the Maximum HP of 9999 all the time. This also gives the "Maximum HP" Achievement.  
 The second offset (0x095A23) is the value that will be set if it exceed the previous value set at offset 0x095A1C.
+It is to be noted than when putting value > 9999, the game has strange behavior: value above 9999 start from 0 (so character don't really have 10000 HP).
+The menu and battle text can't handle it also.
 
 | Offset   | Size | Default value | Name                                              |
 |----------|------|---------------|---------------------------------------------------|
@@ -72,6 +74,7 @@ I don't know how it works, but here what seems to work:
 | Offset   | Size | Default value | Name                                              |
 |----------|------|---------------|---------------------------------------------------|
 | 0x086B0C | 2    | 0xC9FE        | Limitless magic in battle                         |
+
 Replace value by 0x9090
 
 Example:
@@ -81,6 +84,7 @@ Example:
 | Offset   | Size | Default value | Name                     |
 |----------|------|---------------|--------------------------|
 | 0x0F3027 | 2    | 0xCBFE        | Limitless magic in field |
+
 Replace value by 0x9090
 
 Example:
