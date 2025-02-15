@@ -3,32 +3,34 @@
     height:193px !important;
     width:264px !important;
 }
-
-// Disable the default flexbox layout
-.side-bar, .main {
-  display: block !important;
 }
+@media (min-width: 66.5rem) {
+    // Disable the default flexbox layout
+    .side-bar, .main {
+      display: block !important;
+    }
 
-// Fix the sidebar to the left
-.side-bar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  width: 300px !important; // Adjust the width as needed
-  overflow-y: auto !important; // Enable scrolling if content is too long
-  z-index: 100 !important; // Ensure the sidebar is above other content
-}
+    // Fix the sidebar to the left
+    .side-bar {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      width: 300px !important; // Adjust the width as needed
+      overflow-y: auto !important; // Enable scrolling if content is too long
+      z-index: 100 !important; // Ensure the sidebar is above other content
+    }
 
-// Adjust the main content to take up the remaining space
-.main {
-  margin-left: 300px !important; // Match the width of the sidebar
-  width: calc(100% - 300px) !important; // Take up the remaining space
-  padding: 2rem !important; // Add some padding for better readability
-}
+    // Adjust the main content to take up the remaining space
+    .main {
+      margin-left: 300px !important; // Match the width of the sidebar
+      width: calc(100% - 300px) !important; // Take up the remaining space
+      padding: 2rem !important; // Add some padding for better readability
+    }
 
-// Optional: Adjust the header to account for the fixed sidebar
-.header {
-  margin-left: 300px !important; // Match the width of the sidebar
-  width: calc(100% - 300px) !important; // Take up the remaining space
+    // Optional: Adjust the header to account for the fixed sidebar
+    .header {
+      margin-left: 300px !important; // Match the width of the sidebar
+      width: calc(100% - 300px) !important; // Take up the remaining space
+    }
 }
