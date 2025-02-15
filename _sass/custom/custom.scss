@@ -26,6 +26,7 @@
       margin-left: 300px !important; // Match the width of the sidebar
       width: calc(100% - 300px) !important; // Take up the remaining space
       padding: 2rem !important; // Add some padding for better readability
+      max-width:none !important;
     }
 
     // Optional: Adjust the header to account for the fixed sidebar
