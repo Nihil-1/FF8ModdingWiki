@@ -68,6 +68,7 @@ Example:
 I don't know how it works, but here what seems to work:
 
 ### In Battle
+
 | Offset   | Size | Default value | Name                                              |
 |----------|------|---------------|---------------------------------------------------|
 | 0x086B0C | 2    | 0xC9FE        | Limitless magic in battle                         |
