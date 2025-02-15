@@ -25,13 +25,13 @@ So for example, if the max damage limit is 9999, and the bonus damage is 50,001;
 
 ## Maximum HP
 
-```
-0x095A1C: Maximum HP Cap (0x0000270F = 9,999)[dword] //Value to compare to. Setting this the 1 will set all characters to have the Maximum HP of 9999 all the time. This also gives the "Maximum HP" Achievment.
-0x095A23: Maximum HP Cap (0x0000270F = 9,999)[dword] //Value to set to if exceeds previous check.
-```
-#Example Break HP Limit Party
-495A1A = 81 FA 0F 27 00 00
-495A22 = BA 0F 27 00 00
+The first offset (0x095A1C) is the value to compare to. Setting this to 1 will set all characters to have the Maximum HP of 9999 all the time. This also gives the "Maximum HP" Achievement.  
+The second offset (0x095A23) is the value that will be set if it exceed the previous value set at offset 0x095A1C.
+
+| Offset   | Size | Default value | Name                                              |
+|----------|------|---------------|---------------------------------------------------|
+| 0x095A1C | 4    | 0x0000270F    | Maximum HP Cap limit value                        |
+| 0x095A23 | 4    | 0x0000270F    | Maximum HP Cap value set if currenthp > cap value |
 
 ## Maximum draw
 
