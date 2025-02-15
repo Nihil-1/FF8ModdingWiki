@@ -3,23 +3,26 @@
     height:193px !important;
     width:264px !important;
 }
-
-// Make the main container expand fully while keeping space for the sidebar
-.main {
-  max-width: 100%;
-  width: auto;
-  margin: 0;
-  padding: 1rem 2rem;
+/* Ensure the whole page layout uses flexbox */
+.site {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full height */
 }
 
-// Adjust the main wrapper so it fills all available space
-.main-content {
-  max-width: 100%;
-  flex-grow: 1;
-}
-
-// Ensure the sidebar stays a fixed width
+/* Sidebar stays a fixed width */
 .sidebar {
-  width: 250px; // Adjust if necessary
+  width: 200px; /* Adjust as needed */
+  max-width: 200px;
   flex-shrink: 0;
+  overflow-y: auto; /* Allows scrolling if needed */
+}
+
+/* Main content expands to take remaining space */
+.main {
+  flex-grow: 1; /* Takes up all available space */
+  max-width: calc(100% - 200px); /* Ensures it doesn't exceed available width */
+  margin-left: 0; /* No unnecessary margins */
+  padding: 1rem 2rem;
+  overflow-x: auto; /* Prevents horizontal overflow */
 }
