@@ -25,6 +25,8 @@ So for example, if the max damage limit is 9999, and the bonus damage is 50,001;
 
 ## Maximum HP
 
+### Party
+
 The first offset (0x095A1C) is the value to compare to. Setting this to 1 will set all characters to have the Maximum HP of 9999 all the time. This also gives the "Maximum HP" Achievement.  
 The second offset (0x095A23) is the value that will be set if it exceed the previous value set at offset 0x095A1C.
 
@@ -33,34 +35,55 @@ The second offset (0x095A23) is the value that will be set if it exceed the prev
 | 0x095A1C | 4    | 0x0000270F    | Maximum HP Cap limit value                        |
 | 0x095A23 | 4    | 0x0000270F    | Maximum HP Cap value set if currenthp > cap value |
 
+### GF
+The first offset (0x095E6F) is the value to compare to. Setting this to 1 will set all GF to have the Maximum HP of 9999 all the time (this part to be confirmed).
+The second offset (0x095E76) is the value that will be set if it exceed the previous value set at offset 0x095E6F.
+
+| Offset   | Size | Default value | Name                                              |
+|----------|------|---------------|---------------------------------------------------|
+| 0x095E6F | 4    | 0x0000270F    | Maximum HP Cap limit value                        |
+| 0x095E76 | 4    | 0x0000270F    | Maximum HP Cap value set if currenthp > cap value |
+
 ## Maximum draw
 
-```
-0x08FE00: Maximum In-Battle Draw Cap (0x09 = 9)[byte] //Value to compare to. Setting this to 1 will make you always Draw the maximum amount (in battle).
-0x08FE04: Maximum In-Battle Draw Cap (0x00000009 = 9)[dword] //Value to set to if exceeds previous check.
-```
+The first offset (0x08FE00) is the value to compare to. Setting this to 1 will make you always Draw the maximum amount (in battle).
+The second offset (0x08FE04) is the value that will be set if it exceed the previous value set at offset 0x08FE00.
+
+| Offset   | Size | Default value | Name                                              |
+|----------|------|---------------|---------------------------------------------------|
+| 0x08FE00 | 1    | 0x09          | Maximum HP Cap limit value                        |
+| 0x08FE04 | 4    | 0x00000009    | Maximum HP Cap value set if currenthp > cap value |
+
 Example:
 ```
-8FE00 =
-09 7E 05 B8 09 (Default: 9 max per draw)
-01 7E 05 B8 64 (Draw 100 so long as 1+ is drawn)
-09 7D 05 B8 09 (Draw minimum of 9, no upper cap - changes jump type to greater/equal)
-09 7D 05 B8 09 sets a minimum draw but with no upper cap so that your magic stat can influence how many you get
+8FE00 =  
+09 7E 05 B8 09 (Default: 9 max per draw)  
+01 7E 05 B8 64 (Draw 100 so long as 1+ is drawn)  
+09 7D 05 B8 09 (Draw minimum of 9, no upper cap - changes jump type to greater/equal)  
+09 7D 05 B8 09 (Sets a minimum draw but with no upper cap so that your magic stat can influence how many you get)  
 ```
-
 
 ## Limitless magic
 
-#Battle
+I don't know how it works, but here what seems to work:
+
+### In Battle
+| Offset   | Size | Default value | Name                                              |
+|----------|------|---------------|---------------------------------------------------|
+| 0x086B0C | 2    | 0xC9FE        | Limitless magic in battle                         |
+Replace value by 0x9090
+
+Example:
 486B0C = 90 : 2
-#Field
+
+#### In Field
+| Offset   | Size | Default value | Name                     |
+|----------|------|---------------|--------------------------|
+| 0x0F3027 | 2    | 0xCBFE        | Limitless magic in field |
+Replace value by 0x9090
+
+Example:
 4F3027 = 90 : 2
-
-## Break HP Limit GF
-495E6D = 81 FA 0F 27 00 00
-495E75 = BA 0F 27 00 00
-
-
 
 # Command
 ## Cover Command
