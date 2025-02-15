@@ -8,19 +8,20 @@ author: SegaChief, HobbitDur
 Here will be put all info on the exe editing. The base is version 2013 in english.  
 The goal will be to put the value in the .exe reference, but for the moment there is a mix of RAM reference and EXE reference.  
 The RAM data start at +0x400000, so it's just a matter of shift.
+Keep in mind the values are in little endian, so when writing hext files, you need to write byte in the opposite order.
 
 # Limit
 
 [Original Qhimm post](https://forums.qhimm.com/index.php?topic=15211.0)
 
 ## Damage limit
+There is 2 values, the normal damage cap and the bonus damage cap for damage that can break the limit (Eden for example)  
+So for example, if the max damage limit is 9999, and the bonus damage is 50,001; the max damage limit for Eden is 60 000
 
-```
-0x091133: "No Damage Limit" Damage Bonus (0x0000C351 = 50,001)[dword]
-0x091139: Normal Damage Cap (0x0000270F = 9,999)[dword]
-```
-Example: 
-491137 = 81 C1 0F 27 00 00
+| Offset   | Size | Default value | Name                           |
+|----------|------|---------------|--------------------------------|
+| 0x091133 | 4    | 0x0000C351    | "No Damage Limit" Damage Bonus |
+| 0x091139 | 4    | 0x0000270F    | Normal Damage Cap              |
 
 ## Maximum HP
 
