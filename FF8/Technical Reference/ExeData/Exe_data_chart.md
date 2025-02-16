@@ -98,14 +98,67 @@ If replaced by 2 nop (0x9090), this avoid computing the damage.
 
 | Offset   | Size | Default value | Name                   |
 |----------|------|---------------|------------------------|
-| 0x091091 | 2    | 0xD1EE        | Cover damage reduction |
+| 0x091091 | 2    | 0xD1EE (/2)   | Cover damage reduction |
 
 ## Darkside Command
 
-```
-0x0905AF: HP Cost (C1 FA 02 - 10% HP Cost) //Determines how much HP% Darkside costs to use
-0x091069: Damage Modifier (8D 34 76 - *3 Damage) //Determines how much bonus damage Darkside inflicts
-```
+This command has 2 part, the damage taken, and the damage modifier.
+
+### Damage taken
+
+The damage taken percentage is computed by 2 function:
+- A magic number 0x0905A3 = 0x66666667 that allow to do a division by 10
+- A shift call of 3 byte at 0x0905AF by 34 (SAR EDX, 2) that shift this magical number to obtain the division by 10
+
+So in order to change the percentage, both those values need to be modified.
+
+| Offset   | Size | Default value | Name                                                |
+|----------|------|---------------|-----------------------------------------------------|
+| 0x0905A3 | 4    | 0x66666667    | Magic number for how much HP% Darkside costs to use |
+| 0x0905B1 | 1    | 0x02          | Shift for how much HP% Darkside costs to use        |
+
+If you need any percentage (e.g., 7%, 33%, etc.), follow these steps:
+- Compute the divisor:
+`D = 100 / (desired percentage)`
+- Compute the magic constant:
+`Magic = floor(2^32 / D) + 1`
+- Find the shift amount:
+  - Start with `log2(D) - 1` as a rule of thumb.
+  - Experiment with rounding correction.
+
+Here a table with some interesting value (you need the magic number and shift amount:
+
+| Percentage | Divisor (D) | Magic Number (Hex) | Shift Amount (SAR) |
+|------------|-------------|--------------------|--------------------|
+| 0%         | ∞           | 0x00000000         | N/A                |
+| 10%        | 10          | 0x66666667         | 2                  |
+| 20%        | 5           | 0x33333333         | 2                  |
+| 30%        | 3.33_       | 0x2AAAAAAB         | 1                  |
+| 40%        | 2.5         | 0x1999999A         | 1                  |
+| 50%        | 2           | 0x80000001         | 0                  |
+| 60%        | 1.66_       | 0xAAAAAAAB         | 0                  |
+| 70%        | 1.428571    | 0xBA2E8BA3         | 0                  |
+| 80%        | 1.25        | 0xCCCCCCCD         | 0                  |
+| 90%        | 1.11_       | 0xE38E38E4         | 0                  |
+| 100%       | 1           | 0xFFFFFFFF         | 0                  |
+
+
+### Damage modifier
+
+Determines how much bonus damage Darkside inflicts
+At offset 0x091069, there is a LEA instruction with the third byte having 2 bit that allow to multiply.
+
+| Offset   | Size | Default value | Name            |
+|----------|------|---------------|-----------------|
+| 0x09106B | 2    | 0x76          | Damage modifier |
+
+| Possible values | Result |
+|-----------------|--------|
+| 0x36            | x2     |
+| 0x76            | x3     |
+| 0xB6            | x5     |
+| 0xF6            | x9     |
+
 
 ## Kamikaze Command
 By default, the command kamikaze is x5 damage of the user's maximum HP
