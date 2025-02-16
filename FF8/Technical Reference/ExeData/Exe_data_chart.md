@@ -181,10 +181,6 @@ which give the following address multiplier: 2, 3, 5, 9
 | 0x80            | x5     |
 | 0xC0            | x9     |
 
-```
-0x092D72: Kamikaze Damage Modifier (8D 04 80 - Damage = *6 of user's maximum HP)
-```
-
 # Junction
 ## Junction at max even with 1 magic
 
