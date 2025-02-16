@@ -7,8 +7,10 @@ author: SegaChief, HobbitDur
 
 Here will be put all info on the exe editing. The base is version 2013 in english.  
 The goal will be to put the value in the .exe reference, but for the moment there is a mix of RAM reference and EXE reference.  
-The RAM data start at +0x400000, so it's just a matter of shift.
-Keep in mind the values are in little endian, so when writing hext files, you need to write byte in the opposite order.
+The RAM data start at +0x400000, so it's just a matter of shift.  
+Keep in mind the values are in little endian, so when writing hext files, you need to write byte in the opposite order.  
+In lots of cases, 0x9090 value is used, it's because 0x90 is a nop,  
+so if there is a computation that take 2 bytes and you want to cancel it, you replace it with 2 nop (0x9090)
 
 # Limit
 
@@ -40,6 +42,8 @@ The menu and battle text can't handle it also.
 ### GF
 The first offset (0x095E6F) is the value to compare to. Setting this to 1 will set all GF to have the Maximum HP of 9999 all the time (this part to be confirmed).
 The second offset (0x095E76) is the value that will be set if it exceed the previous value set at offset 0x095E6F.
+It is to be noted than when putting value > 9999, the game has strange behavior: value above 9999 start from 0 (so character don't really have 10000 HP).
+The menu and battle text can't handle it also.
 
 | Offset   | Size | Default value | Name                                              |
 |----------|------|---------------|---------------------------------------------------|
@@ -51,18 +55,17 @@ The second offset (0x095E76) is the value that will be set if it exceed the prev
 The first offset (0x08FE00) is the value to compare to. Setting this to 1 will make you always Draw the maximum amount (in battle).
 The second offset (0x08FE04) is the value that will be set if it exceed the previous value set at offset 0x08FE00.
 
-| Offset   | Size | Default value | Name                                              |
-|----------|------|---------------|---------------------------------------------------|
-| 0x08FE00 | 1    | 0x09          | Maximum HP Cap limit value                        |
-| 0x08FE04 | 4    | 0x00000009    | Maximum HP Cap value set if currenthp > cap value |
+| Offset   | Size | Default value | Name                                            |
+|----------|------|---------------|-------------------------------------------------|
+| 0x08FE00 | 1    | 0x09          | Maximum Draw limit value                        |
+| 0x08FE04 | 4    | 0x00000009    | Maximum Draw value set if drawvalue > cap value |
 
 Example:
 ```
 8FE00 =  
 09 7E 05 B8 09 (Default: 9 max per draw)  
 01 7E 05 B8 64 (Draw 100 so long as 1+ is drawn)  
-09 7D 05 B8 09 (Draw minimum of 9, no upper cap - changes jump type to greater/equal)  
-09 7D 05 B8 09 (Sets a minimum draw but with no upper cap so that your magic stat can influence how many you get)  
+09 7D 05 B8 09 (Draw minimum of 9, no upper cap - changes jump type to greater/equal, Sets a minimum draw but with no upper cap so that your magic stat can influence how many you get)   
 ```
 
 ## Limitless magic
@@ -75,27 +78,27 @@ I don't know how it works, but here what seems to work:
 |----------|------|---------------|---------------------------------------------------|
 | 0x086B0C | 2    | 0xC9FE        | Limitless magic in battle                         |
 
-Replace value by 0x9090
+Replace value by 0x9090 for limitless magic in battle
 
-Example:
-486B0C = 90 : 2
 
 #### In Field
+
 | Offset   | Size | Default value | Name                     |
 |----------|------|---------------|--------------------------|
 | 0x0F3027 | 2    | 0xCBFE        | Limitless magic in field |
 
-Replace value by 0x9090
-
-Example:
-4F3027 = 90 : 2
+Replace value by 0x9090 for limitless magic in field (using curaga on menu for example)
 
 # Command
+[Qhimm post](https://forums.qhimm.com/index.php?topic=17098.0)
 ## Cover Command
+At 0xD1EE there is a shift value  `v3 = (unsigned int)v3 >> 1;` means divided by 2
+This is used to compute the reduce damage.
+If replaced by 2 nop (0x9090), this avoid computing the damage.
 
-```
-0x091091: Cover Damage Reduction (D1 EE - Take half damage while covering)
-```
+| Offset   | Size | Default value | Name                   |
+|----------|------|---------------|------------------------|
+| 0x091091 | 2    | 0xD1EE        | Cover damage reduction |
 
 ## Darkside Command
 
@@ -105,6 +108,25 @@ Example:
 ```
 
 ## Kamikaze Command
+By default, the command kamikaze is x5 damage of the user's maximum HP
+At offset 0x92D72, 0x8D0480 correspond to this instruction:
+ - 0x8D: Opcode for LEA r32,m
+ - 0x04: Byte ModR/M (MOD = 00, REG = 00, R/M=100)
+ - 0x80: Byte SIB (Scale-Index-Base), where the 2 first bit are for the scale
+
+The multiplier is link to the scale which is on 2 bit, so we can have the following SIB multiplier: 1, 2, 4, 8  
+which give the following address multiplier: 2, 3, 5, 9
+
+| Offset  | Size | Default value | Name                       |
+|---------|------|---------------|----------------------------|
+| 0x92D74 | 1    | 0x80          | Kamikaze damage multiplier |
+
+| Possible values | Result |
+|-----------------|--------|
+| 0x00            | x2     |
+| 0x40            | x3     |
+| 0x80            | x5     |
+| 0xC0            | x9     |
 
 ```
 0x092D72: Kamikaze Damage Modifier (8D 04 80 - Damage = *6 of user's maximum HP)
