@@ -12,6 +12,10 @@ Keep in mind the values are in little endian, so when writing hext files, you ne
 In lots of cases, 0x9090 value is used, it's because 0x90 is a nop,  
 so if there is a computation that take 2 bytes and you want to cancel it, you replace it with 2 nop (0x9090)
 
+1. TOC
+{:toc}
+
+
 # Limit
 
 [Original Qhimm post](https://forums.qhimm.com/index.php?topic=15211.0)
@@ -30,8 +34,8 @@ So for example, if the max damage limit is 9999, and the bonus damage is 50,001;
 ### Party
 
 The first offset (0x095A1C) is the value to compare to. Setting this to 1 will set all characters to have the Maximum HP of 9999 all the time. This also gives the "Maximum HP" Achievement.  
-The second offset (0x095A23) is the value that will be set if it exceed the previous value set at offset 0x095A1C.
-It is to be noted than when putting value > 9999, the game has strange behavior: value above 9999 start from 0 (so character don't really have 10000 HP).
+The second offset (0x095A23) is the value that will be set if it exceed the previous value set at offset 0x095A1C.  
+It is to be noted than when putting value > 9999, the game has strange behavior: value above 9999 start from 0 (so character don't really have 10000 HP).  
 The menu and battle text can't handle it also.
 
 | Offset   | Size | Default value | Name                                              |
@@ -126,7 +130,7 @@ If you need any percentage (e.g., 7%, 33%, etc.), follow these steps:
   - Start with `log2(D) - 1` as a rule of thumb.
   - Experiment with rounding correction.
 
-Here a table with some interesting value (you need the magic number and shift amount:
+Here a table with some interesting value (you need the magic number and shift amount):
 
 | Percentage | Divisor (D) | Magic Number (Hex) | Shift Amount (SAR) |
 |------------|-------------|--------------------|--------------------|
@@ -161,7 +165,7 @@ At offset 0x091069, there is a LEA instruction with the third byte having 2 bit 
 
 
 ## Kamikaze Command
-By default, the command kamikaze is x5 damage of the user's maximum HP
+By default, the command kamikaze is x5 damage of the user's maximum HP  
 At offset 0x92D72, 0x8D0480 correspond to this instruction:
  - 0x8D: Opcode for LEA r32,m
  - 0x04: Byte ModR/M (MOD = 00, REG = 00, R/M=100)
@@ -184,6 +188,8 @@ which give the following address multiplier: 2, 3, 5, 9
 # Junction
 ## Junction at max even with 1 magic
 
+Here, the function computing the quantity of magic is directly replaced by a mov, 100 (0x64) followed by nop
+
 ### HP
 963CB = B3 64 90 90 90 90 90
 
@@ -205,7 +211,7 @@ which give the following address multiplier: 2, 3, 5, 9
 ### Status Defence
 96C9D = B1 64 90 90 90 90 90
 
-### Notes
+## Junction depending on level
 *Likely JWP is the author of this
 
 Assembly modifications so that Level determines the 'stock' of
