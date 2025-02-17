@@ -10,7 +10,8 @@ The goal will be to put the value in the .exe reference, but for the moment ther
 The RAM data start at +0x400000, so it's just a matter of shift.  
 Keep in mind the values are in little endian, so when writing hext files, you need to write byte in the opposite order.  
 In lots of cases, 0x9090 value is used, it's because 0x90 is a nop,  
-so if there is a computation that take 2 bytes and you want to cancel it, you replace it with 2 nop (0x9090)
+so if there is a computation that take 2 bytes and you want to cancel it, you replace it with 2 nop (0x9090)  
+For diff between 2000 version and 2013: [Qhimm post](https://forums.qhimm.com/index.php?topic=17753.0) (to be detailed here later)  
 
 1. TOC
 {:toc}
@@ -227,6 +228,20 @@ Array starts at offset 0x78E474. Each SeeD Rank salary is determined by two byte
 # Cheat function
 Fkey, to be tested. [Qhimm post](https://forums.qhimm.com/index.php?topic=18426.0)
 
+# Dollet mission
+## Judgment
+
+To modify the ifrit timer value, to be investigated : [Qhimm post](https://forums.qhimm.com/index.php?topic=17753.0)
+
+# Ai data
+Can be found at 0x00487DF0 [Qhimm post](https://forums.qhimm.com/index.php?topic=16838.0)
+
+# Magic info
+[Qhimm post](https://forums.qhimm.com/index.php?topic=16923.0)
+
+# Lvl-up/down
+[Qhimm post](https://forums.qhimm.com/index.php?topic=17104.0)
+
 # Junction
 ## Junction at max even with 1 magic
 
@@ -254,7 +269,8 @@ Here, the function computing the quantity of magic is directly replaced by a mov
 96C9D = B1 64 90 90 90 90 90
 
 ## Junction depending on level
-*Likely JWP is the author of this
+
+[Qhimm post](https://forums.qhimm.com/index.php?topic=18167.0)
 
 Assembly modifications so that Level determines the 'stock' of
 stat-junction bonuses. So if you junction Curaga, the stock is
