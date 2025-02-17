@@ -185,6 +185,48 @@ which give the following address multiplier: 2, 3, 5, 9
 | 0x80            | x5     |
 | 0xC0            | x9     |
 
+# SeeD rank salary
+
+[Qhimm post](https://forums.qhimm.com/index.php?topic=18496.0)  
+Array starts at offset 0x78E474. Each SeeD Rank salary is determined by two bytes, and each value gets multiplied by 10 before being shown in-game.
+
+| S-Rank | Offset  | Value  |
+|--------|---------|--------|
+| 01     | 78E476  | 32 00  |
+| 02     | 78E478  | 64 00  |
+| 03     | 78E47A  | 96 00  |
+| 04     | 78E47C  | C8 00  |
+| 05     | 78E47E  | 2C 01  |
+| 06     | 78E480  | 90 01  |
+| 07     | 78E482  | F4 01  |
+| 08     | 78E484  | 58 02  |
+| 09     | 78E486  | BC 02  |
+| 10     | 78E488  | 20 03  |
+| 11     | 78E48A  | 84 03  |
+| 12     | 78E48C  | E8 03  |
+| 13     | 78E48E  | 4C 04  |
+| 14     | 78E490  | B0 04  |
+| 15     | 78E492  | E2 04  |
+| 16     | 78E494  | 14 05  |
+| 17     | 78E496  | 46 05  |
+| 18     | 78E498  | 78 05  |
+| 19     | 78E49A  | AA 05  |
+| 20     | 78E49C  | DC 05  |
+| 21     | 78E49E  | 0E 06  |
+| 22     | 78E4A0  | 40 06  |
+| 23     | 78E4A2  | 72 06  |
+| 24     | 78E4A4  | A4 06  |
+| 25     | 78E4A6  | D6 06  |
+| 26     | 78E4A8  | 08 07  |
+| 27     | 78E4AA  | 3A 07  |
+| 28     | 78E4AC  | 6C 07  |
+| 29     | 78E4AE  | 9E 07  |
+| 30     | 78E4B0  | D0 07  |
+| 31     | 78E4B2  | B8 0B  |
+
+# Cheat function
+Fkey, to be tested. [Qhimm post](https://forums.qhimm.com/index.php?topic=18426.0)
+
 # Junction
 ## Junction at max even with 1 magic
 
