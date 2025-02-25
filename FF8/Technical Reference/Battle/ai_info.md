@@ -11,7 +11,7 @@ The point of view is of the monster. So when saying "Enemy team" means the squal
 1. TOC
 {:toc}
 
-# Opcode list
+# Op code list
 
 ## Opcode 0x00 (0) - return
 
@@ -80,12 +80,16 @@ Then there is a jump param to define the jump size if the condition is not met
 
 ### SubjectID
 
-The **SubjectID** defines what will be the type of the left and right condition  
+#### General info
+
+The **SubjectID** defines what will be the type of the left part and right part of the condition  
 The _Short text_ is a description of the subject id.  
 The _Left text_ is the meaning of the **ConditionLeftPart**. {} is to be replaced with the value hold by **ConditionLeftPart** depending of _Param left type_  
 The _Param left type_ define the type to use to translate the **ConditionLeftPart**  
 Same logic for the **ConditionRightPart**  
 The _Param list_ can feed the param type with additional info.
+
+#### Subject list
 
 | SubjectID | Short text                | Left text                           | Param left type                                                    | Right text     | Param right type         | Param list |
 |-----------|---------------------------|-------------------------------------|--------------------------------------------------------------------|----------------|--------------------------|------------|
@@ -111,6 +115,8 @@ If the **SubjectID** is > 20, it means the subject is of type var, the **Conditi
 
 #### Additional info:
 
+Here are additional info for some values
+
 ##### HP OF SPECIFIC TARGET
 
 The **ConditionLeftPart** 0xCB (203) is persists across battles
@@ -125,15 +131,15 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
     - 0x09 (9)  = 90%
     - . . .
 
-### 2. **Random Number Check**
+##### 2. **Random Number Check**
 
 - **Byte #1:** 0x02
 - **Byte #2:** Exclusive upper bound of range (0 to this value - 1)
 - **Byte #4:** Number to compare against
 
-### 3. **Status Check**
+##### 3. **Status Check**
 
-### At least 1 member:
+###### At least 1 member:
 
 - **Byte #1:** 0x04 (Self / Last command user) or 0x05 (Any ally / opponent)
 - **Byte #2:**
@@ -142,14 +148,14 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
     - 0xCB (203): Last command user / Unused
 - **Byte #4:** Status ID
 
-  ### All members of party:
+###### All members of party:
 - **Byte #1:** 0x14 (20)
 - **Byte #2:**
     - 0xC8 (200): Opposing part
     - 0xC9 (201): Own party
 - **Byte #4:** Status ID
 
-### 4. **Alive Count Check**
+##### 4. **Alive Count Check**
 
 - **Byte #1:** 0x06
 - **Byte #2:**
@@ -157,13 +163,13 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
     - 0xC9 (201): Own party
 - **Byte #4:** Number to compare against
 
-### 5. **Specific Entity Alive Check**
+##### 5. **Specific Entity Alive Check**
 
 - **Byte #1:** 0x09
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** Entity ID
 
-### 6. **Last Action / Turn Count Check**
+##### 6. **Last Action / Turn Count Check**
 
 - **Byte #1:** 0x0A (10)
 - **Byte #2:**
@@ -175,37 +181,37 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
     - 0x05: Element (Byte #4 = Element ID)
     - 0xCB (203): Last command user party (Byte #4: 0xC8 = Own part, 0xC9 = Opposing party)  **TO BE TESTED**
 
-### 7. **Entity Alive Check (In specific slot)**
+##### 7. **Entity Alive Check (In specific slot)**
 
 - **Byte #1:** 0x0F (15)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** Target slot + 3 (e.g., 0x03 for slot 0)
 
-### 8. **Sex check**
+##### 8. **Sex check**
 
 - **Byte #1:** 0x10 (16)
 - **Byte #4:**
     - 0xCA (202): Male
     - 0xCB (203): Female
 
-### 9. **GF Check (Not yet obtained)**
+##### 9. **GF Check (Not yet obtained)**
 
 - **Byte #1:** 0x11 (17)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** 0xCC (204)
 
-### 10. **Odin Acquisition Check (true if obtained)**
+##### 10. **Odin Acquisition Check (true if obtained)**
 
 - **Byte #1:** 0x12 (18)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** 0x00 / 0x01 (true / false)
 
-### 11. **Timer Check**
+##### 11. **Timer Check**
 
 - **Byte #1:** 0x13 (19)
 - **Byte #2:** 0xC8 (Unused?)
 
-### 12. **Variable Check**
+##### 12. **Variable Check**
 
 - **Byte #1:** Variable ID
 - **Byte #2:** 0xC8 (Unused?)
@@ -227,7 +233,7 @@ This opcode defines a target, and must be used before any action that target (li
 
 | Position | Size | Name            | Type                                      | Short Description |
 |----------|------|-----------------|-------------------------------------------|-------------------|
-| 1        | 1    | **BasicTarget** | [BasicTarget](../OpCodeType#basic-target) | The target        |
+| 1        | 1    | **Target** | [TargetBasic](../OpCodeType#target-basic) | The target        |
 
 ---
 
@@ -421,7 +427,7 @@ None
 
 ---
 
-# Opcode 0x2E - blowAway
+## Opcode 0x2E - blowAway
 ### Summary
 
 Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use)
