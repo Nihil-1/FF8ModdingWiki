@@ -265,8 +265,8 @@ Picks one of 3 abilities to use randomly, then uses it
 
 | Position | Size | Name                    | Type                                                     | Short Description       |
 |----------|------|-------------------------|----------------------------------------------------------|-------------------------|
-| 1        | 1    | **MonsterLineAbilit1** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
-| 2        | 1    | **MonsterLineAbilit2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
+| 1        | 1    | **MonsterLineAbility1** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
+| 2        | 1    | **MonsterLineAbility2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
 | 3        | 1    | **MonsterLineAbility3** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The third ability line  |
 
 ---
@@ -427,6 +427,7 @@ None
 ## Opcode 0x17 (23) - setEscape
 ### Summary
 
+Allows/Disallows escaping in the current battle.
 
 | Opcode | IfritAI name | Size | Short Description      |
 |--------|--------------|------|------------------------|
