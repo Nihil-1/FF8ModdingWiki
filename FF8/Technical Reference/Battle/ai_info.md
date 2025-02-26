@@ -68,7 +68,8 @@ Each text has an ID, starting from 0 and incrementing with each subsequent text.
 ## Opcode 0x02 (2) - if
 
 ### Summary
-The if opcode allows code to execute only when specific conditions are met.
+
+The if opcode allow to execute code only on certain condition
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
@@ -77,27 +78,32 @@ The if opcode allows code to execute only when specific conditions are met.
 ### Parameters
 
 The if opcode is a really complex one with lots of different possibilities.  
-The first parameter is the if type, theres many different types that can be used to check different proprieties,
-sometimes this doubles as the subject, in these cases 
-So it does something like this: \[LeftCondition\] \[Comparator\] \[RightCondition\], for ex: COMBAT SCENE == 76  
-Then there is a jump param to define the jump size if the condition is not met  
+It is composed of a subject that define how the other parameters are used.  
+Then it uses 3 parameters for the condition: the left part of the condition, the right part, and the comparator.  
+So it does something like this: \[ConditionLeftPart\] \[Comparator\] \[ConditionRightPart\], for ex: COMBAT SCENE == 76  
+Then there is a jump param to define the jump size if the condition is not met
 
-| Position | Size | Name               | Yype                                   | Short Description                                    |
-|----------|------|--------------------|----------------------------------------|------------------------------------------------------|
-| 1        | 1    | **SubjectID**      | [SubjectID](#subjectid)                | Define what the if will be about                     |
-| 2        | 1    | **LeftCondition**  | Vary                                   | The left condition                                   |
-| 3        | 1    | **Comparator**     | [Comparator](../OpCodeType#comparator) | The comparator of the condition                      |
-| 4        | 1    | **RightCondition** | Vary                                   | The right condition                                  |
-| 5        | 1    | **Padding**        | [Unused](../OpCodeType#unused)         | Always 0x00 (changing it has no impact)              |
-| 6        | 2    | **Jump**           | [int](../OpCodeType#int)               | The number of byte to jump if the condition is false |
+| Position | Size | Name                   | Type                                   | Short Description                                    |
+|----------|------|------------------------|----------------------------------------|------------------------------------------------------|
+| 1        | 1    | **SubjectID**          | [SubjectID](#subjectid)                | Define what the if will be about                     |
+| 2        | 1    | **ConditionLeftPart**  | Vary                                   | The left condition                                   |
+| 3        | 1    | **Comparator**         | [Comparator](../OpCodeType#comparator) | The comparator of the condition                      |
+| 4        | 1    | **ConditionRightPart** | Vary                                   | The right condition                                  |
+| 5        | 1    | **Padding**            | [Unused](../OpCodeType#unused)         | Always 0x00 (changing it has no impact)              |
+| 6        | 2    | **Jump**               | [int](../OpCodeType#int)               | The number of byte to jump if the condition is false |
 
 ### SubjectID
-The **SubjectID** defines what will be the type of the left and right condition  
+
+#### General info
+
+The **SubjectID** defines what will be the type of the left part and right part of the condition  
 The _Short text_ is a description of the subject id.  
-The _Left text_ is the meaning of the **LeftCondition**. {} is to be replaced with the value hold by **LeftCondition** depending of _Param left type_  
-The _Param left type_ define the type to use to translate the **LeftCondition**  
-Same logic for the **RightCondition**  
-The _Param list_ can feed the param type with additional info.  
+The _Left text_ is the meaning of the **ConditionLeftPart**. {} is to be replaced with the value hold by **ConditionLeftPart** depending of _Param left type_  
+The _Param left type_ define the type to use to translate the **ConditionLeftPart**  
+Same logic for the **ConditionRightPart**  
+The _Param list_ can feed the param type with additional info.
+
+#### Subject list
 
 | SubjectID | Short text                | Left text                           | Param left type                                                    | Right text     | Param right type         | Param list |
 |-----------|---------------------------|-------------------------------------|--------------------------------------------------------------------|----------------|--------------------------|------------|
@@ -119,12 +125,15 @@ The _Param list_ can feed the param type with additional info.
 | 20        | STATUS OF ALL IN TEAM     | STATUS OF ALL IN {}                 | target_advanced_generic                                            |                | status_ai                |            |
 | \>20      | Var                       | var                                 | var_name                                                           |                | int                      |            |
 
-If the **SubjectID** is > 20, it means the subject is of type var, the **LeftCondition** is the ID of the var and the **RightCondition** the value of the var to be compared  
+If the **SubjectID** is > 20, it means the subject is of type var, the **ConditionLeftPart** is the ID of the var and the **ConditionRightPart** the value of the var to be compared
 
 #### Additional info:
 
+Here are additional info for some values
+
 ##### HP OF SPECIFIC TARGET
-The **LeftCondition** 0xCB (203) is persists across battles
+
+The **ConditionLeftPart** 0xCB (203) is persists across battles
 
 - **Byte #1:** 0x00 (Self / Last command user) or 0x01 (Any ally / opponent)
 - **Byte #2:**
@@ -136,15 +145,15 @@ The **LeftCondition** 0xCB (203) is persists across battles
     - 0x09 (9)  = 90%
     - . . .
 
-### 2. **Random Number Check**
+##### 2. **Random Number Check**
 
 - **Byte #1:** 0x02
 - **Byte #2:** Exclusive upper bound of range (0 to this value - 1)
 - **Byte #4:** Number to compare against
 
-### 3. **Status Check**
+##### 3. **Status Check**
 
-### At least 1 member:
+###### At least 1 member:
 
 - **Byte #1:** 0x04 (Self / Last command user) or 0x05 (Any ally / opponent)
 - **Byte #2:**
@@ -153,14 +162,14 @@ The **LeftCondition** 0xCB (203) is persists across battles
     - 0xCB (203): Last command user / Unused
 - **Byte #4:** Status ID
 
-  ### All members of party:
+###### All members of party:
 - **Byte #1:** 0x14 (20)
 - **Byte #2:**
-    - 0xC8 (200): Opposing party
+    - 0xC8 (200): Opposing part
     - 0xC9 (201): Own party
 - **Byte #4:** Status ID
 
-### 4. **Alive Count Check**
+##### 4. **Alive Count Check**
 
 - **Byte #1:** 0x06
 - **Byte #2:**
@@ -168,13 +177,13 @@ The **LeftCondition** 0xCB (203) is persists across battles
     - 0xC9 (201): Own party
 - **Byte #4:** Number to compare against
 
-### 5. **Specific Entity Alive Check**
+##### 5. **Specific Entity Alive Check**
 
 - **Byte #1:** 0x09
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** Entity ID
 
-### 6. **Last Action / Turn Count Check**
+##### 6. **Last Action / Turn Count Check**
 
 - **Byte #1:** 0x0A (10)
 - **Byte #2:**
@@ -186,37 +195,37 @@ The **LeftCondition** 0xCB (203) is persists across battles
     - 0x05: Element (Byte #4 = Element ID)
     - 0xCB (203): Last command user party (Byte #4: 0xC8 = Own part, 0xC9 = Opposing party)  **TO BE TESTED**
 
-### 7. **Entity Alive Check (In specific slot)**
+##### 7. **Entity Alive Check (In specific slot)**
 
 - **Byte #1:** 0x0F (15)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** Target slot + 3 (e.g., 0x03 for slot 0)
 
-### 8. **Sex check**
+##### 8. **Sex check**
 
 - **Byte #1:** 0x10 (16)
 - **Byte #4:**
     - 0xCA (202): Male
     - 0xCB (203): Female
 
-### 9. **GF Check (Not yet obtained)**
+##### 9. **GF Check (Not yet obtained)**
 
 - **Byte #1:** 0x11 (17)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** 0xCC (204)
 
-### 10. **Odin Acquisition Check (true if obtained)**
+##### 10. **Odin Acquisition Check (true if obtained)**
 
 - **Byte #1:** 0x12 (18)
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** 0x00 / 0x01 (true / false)
 
-### 11. **Timer Check**
+##### 11. **Timer Check**
 
 - **Byte #1:** 0x13 (19)
 - **Byte #2:** 0xC8 (Unused?)
 
-### 12. **Variable Check**
+##### 12. **Variable Check**
 
 - **Byte #1:** Variable ID
 - **Byte #2:** 0xC8 (Unused?)
@@ -224,101 +233,227 @@ The **LeftCondition** 0xCB (203) is persists across battles
 
 ---
 
-## Opcode 0x04 (4) - IfritAI name: target (1 arg)
+## Opcode 0x04 (4) - target
 
-Defines target of battle ability
+### Summary
 
-- **Byte #1:** Basic target
+This opcode defines a target, it must be used before any opcode that requires a target (like launching an ability).
+
+| Opcode | IfritAI name | Size | Short Description |
+|--------|--------------|------|-------------------|
+| 0x04   | target       | 2    | Print text        |
+
+### Parameters
+
+| Position | Size | Name            | Type                                      | Short Description |
+|----------|------|-----------------|-------------------------------------------|-------------------|
+| 1        | 1    | **Target** | [TargetBasic](../OpCodeType#target-basic) | The target        |
 
 ---
 
-## Opcode 0x0B (11) - IfritAI name: useRandom (3 arg)
+## Opcode 0x0B (11) - useRandom
+
+### Summary
 
 Picks one of 3 abilities to use randomly, then uses it
 
-- **Byte #1 - Byte #3:** Monster ability ID (from the dat file)
+| Opcode | IfritAI name | Size | Short Description            |
+|--------|--------------|------|------------------------------|
+| 0x0B   | useRandom    | 4    | Use random ability between 3 |
+
+### Parameters
+
+| Position | Size | Name                    | Type                                                     | Short Description       |
+|----------|------|-------------------------|----------------------------------------------------------|-------------------------|
+| 1        | 1    | **MonsterLineAbilit1** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
+| 2        | 1    | **MonsterLineAbilit2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
+| 3        | 1    | **MonsterLineAbility3** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The third ability line  |
 
 ---
 
-## Opcode 0x0C (12) - IfritAI name: use (1 arg)
+## Opcode 0x0C (12) - use
 
-Uses ability
+### Summary
 
-- **Byte #1:** Monster ability ID (from the dat file)
+Use one ability
+
+| Opcode | IfritAI name | Size | Short Description |
+|--------|--------------|------|-------------------|
+| 0x0C   | use          | 2    | Use one ability   |
+
+### Parameters
+
+| Position | Size | Name                   | Type                                                     | Short Description |
+|----------|------|------------------------|----------------------------------------------------------|-------------------|
+| 1        | 1    | **MonsterLineAbility** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The ability line  |
 
 ---
 
-## Opcode 0x0E (14) - IfritAI name: var (2 args)
+## Opcode 0x0E (14) - var
 
-Sets local variable (accessible by this monster)
+### Summary
 
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to assign
+Sets local variable that will be only accessible by this monster during the battle
+
+| Opcode | IfritAI name | Size | Short Description               |
+|--------|--------------|------|---------------------------------|
+| 0x0E   | var          | 3    | Set local var to specific value |
+
+### Parameters
+
+| Position | Size | Name      | Type                                | Short Description             |
+|----------|------|-----------|-------------------------------------|-------------------------------|
+| 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data     |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value to set the var with |
 
 ---
 
-## Opcode 0x0F (15) - IfritAI name: gvar (2 args)
+## Opcode 0x0F (15) - gvar
 
 Sets global variable (accessible by all monsters)
 
 - **Byte #1:** Variable
 - **Byte #2:** Unsigned byte value to assign
 
----
+### Summary
 
-## Opcode 0x11 (17) - IfritAI name: svar (2 args)
+Sets global variable (accessible by all monsters)
 
-Sets savefile variable
+| Opcode | IfritAI name | Size | Short Description       |
+|--------|--------------|------|-------------------------|
+| 0x0F   | gvar         | 3    | Set global var to value |
 
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to assign
+### Parameters
 
----
-
-## Opcode 0x12 (18) - IfritAI name: add (2 args)
-
-Adds value to local variable (accessible by this monster)
-
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to add
+| Position | Size | Name      | Type                                 | Short Description             |
+|----------|------|-----------|--------------------------------------|-------------------------------|
+| 1        | 1    | **Var**   | [LocalVar](../OpCodeType#global-var) | The var to store the data     |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)             | The value to set the var with |
 
 ---
 
-## Opcode 0x13 (19) - IfritAI name: gadd (2 args)
+## Opcode 0x11 (17) - svar
 
-Adds value to battle variable (accessible by all monsters)
+### Summary
 
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to add
+Sets savemap variable (not sure how it it stored)
+
+| Opcode | IfritAI name | Size | Short Description        |
+|--------|--------------|------|--------------------------|
+| 0x11   | svar         | 3    | Set savemap var to value |
+
+### Parameters
+
+| Position | Size | Name      | Type                                    | Short Description             |
+|----------|------|-----------|-----------------------------------------|-------------------------------|
+| 1        | 1    | **Var**   | [SavemapVar](../OpCodeType#savemap-var) | The var to store the data     |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value to set the var with |
 
 ---
 
-## Opcode 0x15 (21) - IfritAI name: sadd (2 args)
+## Opcode 0x12 (18) - add (2 args)
 
-Adds value to savefile variable
+### Summary
 
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to add
+Adds value to local variable that will be only accessible by this monster during the battle
+
+| Opcode | IfritAI name | Size | Short Description      |
+|--------|--------------|------|------------------------|
+| 0x12   | add          | 3    | Add value to local var |
+
+### Parameters
+
+| Position | Size | Name      | Type                                | Short Description           |
+|----------|------|-----------|-------------------------------------|-----------------------------|
+| 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data   |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value to add to the var |
+
+---
+
+## Opcode 0x13 (19) - gadd
+
+### Summary
+
+Adds value to global var (accessible by all monsters)
+
+| Opcode | IfritAI name | Size | Short Description       |
+|--------|--------------|------|-------------------------|
+| 0x13   | gadd         | 3    | Add value to global var |
+
+### Parameters
+
+| Position | Size | Name      | Type                                  | Short Description           |
+|----------|------|-----------|---------------------------------------|-----------------------------|
+| 1        | 1    | **Var**   | [GlobalVar](../OpCodeType#global-var) | The var to store the data   |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)              | The value to add to the var |
+
+---
+
+## Opcode 0x15 (21) - sadd
+
+### Summary
+
+Adds value to savemap var (not sure where it is stored)
+
+| Opcode | IfritAI name | Size | Short Description        |
+|--------|--------------|------|--------------------------|
+| 0x15   | sadd         | 3    | Add value to savemap var |
+
+### Parameters
+
+| Position | Size | Name      | Type                                    | Short Description           |
+|----------|------|-----------|-----------------------------------------|-----------------------------|
+| 1        | 1    | **Var**   | [SavemapVar](../OpCodeType#savemap-var) | The var to store the data   |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value to add to the var |
 
 ---
 
 ## Opcode 0x16 (22) - IfritAI name: recover
 
+### Summary
+
 Sets remaining HP to max HP
 
+| Opcode | IfritAI name | Size | Short Description           |
+|--------|--------------|------|-----------------------------|
+| 0x16   | recover      | 1    | Sets remaining HP to max HP |
+
+### Parameters
+
+None
+
 ---
 
-## Opcode 0x17 (23) - IfritAI name: setEscape (1 arg)
+## Opcode 0x17 (23) - setEscape
+### Summary
 
-Sets ability to escape true / false
 
-- **Byte #1:** Boolean value
+| Opcode | IfritAI name | Size | Short Description      |
+|--------|--------------|------|------------------------|
+| 0x17   | setEscape    | 2    | Sets ability to escape |
+
+### Parameters
+
+| Position | Size | Name                | Type                       | Short Description                         |
+|----------|------|---------------------|----------------------------|-------------------------------------------|
+| 1        | 1    | **EscapeActivated** | [Bool](../OpCodeType#bool) | True to allow escape, False to deactivate |
+
 
 ---
 
-# Opcode 0x2E (46) - IfritAI name: blowAway
+## Opcode 0x2E - blowAway
+### Summary
 
-Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use)
+Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use).
+Note that blown away magic is removed from junctions too.
+
+| Opcode | IfritAI name | Size | Short Description |
+|--------|------------|------|------------------|
+| 0x2E   | blowAway   | 1    | Blow away magic  |
+
+### Parameters
+
+None
 
 ---
 
