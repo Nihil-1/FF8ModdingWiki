@@ -1,29 +1,43 @@
 ---
 layout: default
 parent: Battle
-title: Opcode List
+title: Battle Scripts
 author: nihil, hobbitdur
 ---
 
-This section will list all opcode of the game, with a type list of parameters
-The point of view is of the monster. So when saying "Enemy team" means the squall team.
+FF8 monster battle scripts are divided into 5 sections, **init**, **turn**, **counter**, **death** and **pre-counter**.
+Each section contains code that is executed at different times during the battle.
+- Init: executes once when the monster is loaded into battle.
+- Turn: executes once the monster's ATB bar fills. This happens after the monsters turn counter is incremented.
+- Counter: executes when the monster is targeted by a battle command.
+- Death: executes when the monster’s HP reaches 0 or it is afflicted with the *Death* status.  (Eject may not trigger this section - this needs further testing.)
+- Pre-Counter: similar to counter but executed before it. Needs further testing. Seems to be used mostly for checking if the monster has the *Death* status and then change its animation. Ifs, variable assignments and stat changes can also be used. Launching an attack from this section crashes the game.
+
+The order of execution when a monster is attacked is: **pre-counter** -> **death** (if killed) -> **counter**
+Note: **pre-counter** code will **ONLY** be executed after an attack that kills a monster if the monster's **death** section has code in it (apart from "return").
+Note: if the **death** section is empty, it will function like a **_die_** opcode.
+Note: if the **death** section is empty, it is mandatory for it to eventually execute a **_die_** opcode, otherwise the monster will continue, even on 0 HP, making the battle unwinnable for the player and forcing them to run. If running is not an option, this results in a soft locked.
+
 
 1. TOC
 {:toc}
 
-# Op code list
+# Opcodes
+
+Monster AI sections are composed of one-byte opcodes, each followed by a variable number of the bytes used as parameters.
+These opcodes define the monster's behaviour in battle.
+Note: descriptions are written from the monster's perspective, so "opposing party" refers to the party of playable characters.
 
 ## Opcode 0x00 (0) - return
 
 ### Summary
 
-| Opcode | IfritAI name | Size | Short Description         |
-|--------|--------------|------|---------------------------|
-| 0x00   | return       | 1    | Exit the AI for this turn |
+| Opcode | IfritAI name | Size | Short Description  |
+|--------|--------------|------|--------------------|
+| 0x00   | return       | 1    | End monster's turn |
 
-This function will stop the code execution and leave the AI turn.  
-It can be used to either stop in a condition or used at the end of the AI code.  
-It is mandatory to have one **_return_** for every end of execution.
+This opcode is used to end the monster's turn, preventing further execution of code.
+It is mandatory for every battle script section to end with a **_return_**.
 
 ### Parameters
 
@@ -35,9 +49,9 @@ None
 
 ### Summary
 
-| Opcode | IfritAI name | Size | Short Description |
-|--------|--------------|------|-------------------|
-| 0x01   | print        | 2    | Print text        |
+| Opcode | IfritAI name | Size | Short Description   |
+|--------|--------------|------|---------------------|
+| 0x01   | print        | 2    | Print text          |
 
 ### Parameters
 
@@ -45,9 +59,9 @@ None
 |----------|------|------------|--------------------------|-----------------------|
 | 1        | 1    | **TextID** | [int](../OpCodeType#int) | The index of the text |
 
-Text in combat are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
-Each text as an ID starting from 0 to the number of text - 1.  
-**TextID** correspond to this ID
+Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
+Each text has an ID, starting from 0 and incrementing with each subsequent text.  
+**TextID** correspond to this ID.
 
 ---
 
@@ -223,7 +237,7 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
 
 ### Summary
 
-This opcode defines a target, and must be used before any action that target (like launching an ability).
+This opcode defines a target, it must be used before any opcode that requires a target (like launching an ability).
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
@@ -251,8 +265,8 @@ Picks one of 3 abilities to use randomly, then uses it
 
 | Position | Size | Name                    | Type                                                     | Short Description       |
 |----------|------|-------------------------|----------------------------------------------------------|-------------------------|
-| 1        | 1    | **MonsterLineAbilit1y** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
-| 2        | 1    | **MonsterLineAbilit2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
+| 1        | 1    | **MonsterLineAbility1** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
+| 2        | 1    | **MonsterLineAbility2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
 | 3        | 1    | **MonsterLineAbility3** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The third ability line  |
 
 ---
@@ -379,7 +393,7 @@ Adds value to global var (accessible by all monsters)
 
 ### Summary
 
-Adds value to global var (not sure where it is stored)
+Adds value to savemap var (not sure where it is stored)
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
@@ -413,6 +427,7 @@ None
 ## Opcode 0x17 (23) - setEscape
 ### Summary
 
+Allows/Disallows escaping in the current battle.
 
 | Opcode | IfritAI name | Size | Short Description      |
 |--------|--------------|------|------------------------|
@@ -430,8 +445,8 @@ None
 ## Opcode 0x2E - blowAway
 ### Summary
 
-Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use)
-Blow away will remove a magic (not sure if the junction is kept)
+Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use).
+Note that blown away magic is removed from junctions too.
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|------------|------|------------------|
