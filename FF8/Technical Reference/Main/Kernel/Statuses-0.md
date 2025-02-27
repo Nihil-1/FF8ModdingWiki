@@ -1,0 +1,21 @@
+## Statuses 0 Flags List
+
+| ID     | Description |
+| ------ | ----------- |
+| 0x0000 | None        |
+| 0x0100 | Death       |
+| 0x0200 | Poison      |
+| 0x0400 | Petrify     |
+| 0x0800 | Darkness    |
+| 0x1000 | Silence     |
+| 0x2000 | Berserk     |
+| 0x4000 | Zombie      |
+| 0x8000 | Unused      |
+| 0x0001 | Unused      |
+| 0x0002 | Unused      |
+| 0x0004 | Unused      |
+| 0x0008 | Unused      |
+| 0x0010 | Unused      |
+| 0x0020 | Unused      |
+| 0x0040 | Unused      |
+| 0x0080 | Unused      |
