@@ -16,9 +16,9 @@ parent: Kernel
 | Offset | Length  | Description                                                        |
 |--------|---------|--------------------------------------------------------------------|
 | 0x0000 | 4 bytes | Number of sections                                                 |
-| 0x0004 | 4 bytes | Offset to **Battle commands** section                              |
-| 0x0008 | 4 bytes | Offset to **Magic data** section                                   |
-| 0x000C | 4 bytes | Offset to **Junctionable GFs** section                             |
+| 0x0004 | 4 bytes | Offset to [**Battle commands** section](./#battle-commands)        |
+| 0x0008 | 4 bytes | Offset to [**Magic data** section](../#magic)                      |
+| 0x000C | 4 bytes | Offset to [**Junctionable GFs** section](../#junctionable-gfs)     |
 | 0x0010 | 4 bytes | Offset to **Enemy attacks** section                                |
 | 0x0014 | 4 bytes | Offset to **Weapons** section                                      |
 | 0x0018 | 4 bytes | Offset to **Renzokuken finishers** section                         |

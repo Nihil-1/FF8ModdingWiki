@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Battle command
+title: Battle commands
 nav_order: 2
 parent: Kernel
 ---
