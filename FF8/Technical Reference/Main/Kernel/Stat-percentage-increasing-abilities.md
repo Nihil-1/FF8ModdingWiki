@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stat Percentage Increasing Abilities
+title: Stat percentage increasing abilities
 nav_order: 15
 parent: Kernel
 ---

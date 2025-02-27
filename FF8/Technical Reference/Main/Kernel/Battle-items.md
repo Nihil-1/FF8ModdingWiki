@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Battle Items
+title: Battle items
 nav_order: 9
 parent: Kernel
 ---

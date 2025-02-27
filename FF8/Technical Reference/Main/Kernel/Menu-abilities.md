@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Menu Abilities
+title: Menu abilities
 nav_order: 19
 parent: Kernel
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GF Abilities
+title: GF abilities
 nav_order: 18
 parent: Kernel
 ---

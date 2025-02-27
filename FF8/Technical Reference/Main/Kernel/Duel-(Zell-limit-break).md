@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Duel (Zell Limit Break)
+title: Duel (zell limit break)
 nav_order: 25
 parent: Kernel
 ---

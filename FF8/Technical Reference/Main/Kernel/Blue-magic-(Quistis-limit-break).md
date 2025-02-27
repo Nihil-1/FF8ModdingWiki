@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blue Magic
+title: Blue magic
 nav_order: 21
 parent: Kernel
 ---

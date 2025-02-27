@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Slot Sets
+title: Slot sets
 nav_order: 29
 parent: Kernel
 ---

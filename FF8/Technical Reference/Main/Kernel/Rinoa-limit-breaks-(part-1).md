@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rinoa Commands
+title: Rinoa commands
 nav_order: 26
 parent: Kernel
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Misc Text Pointers
+title: Misc text pointers
 nav_order: 32
 parent: Kernel
 ---

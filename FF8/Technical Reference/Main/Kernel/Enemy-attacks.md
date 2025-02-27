@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enemy Attacks
+title: Enemy attacks
 nav_order: 5
 parent: Kernel
 ---

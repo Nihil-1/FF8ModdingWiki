@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Shot (Irvine Limit Breaks)
+title: Shot (irvine limit breaks)
 nav_order: 23
 parent: Kernel
 ---

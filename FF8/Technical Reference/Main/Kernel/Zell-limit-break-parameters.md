@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Zell Limit Break Parameters
+title: Zell limit break parameters
 nav_order: 24
 parent: Kernel
 ---
