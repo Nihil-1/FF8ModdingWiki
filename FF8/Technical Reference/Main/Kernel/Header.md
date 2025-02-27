@@ -1,9 +1,15 @@
-##Header Section
+---
+layout: default
+title: Header
+nav_order: 1
+parent: Kernel
+---
+
 ## General
 | Offset        | Sections | Section Size |
 | ------------- | ---------| -------------|
 | 0x0000        | 1        | 228 bytes    |
-<br/>
+
 
 ## Section Structure
 | Offset        | Length        | Description           |

@@ -1,9 +1,16 @@
+---
+layout: default
+title: Battle command
+nav_order: 2
+parent: Kernel
+---
+
 # Battle Commands Data Section
 ## General
 | Offset        | Sections | Section Size |
 | ------------- | ---------| -------------|
 | 0x00E4        | 39       | 8 bytes      |
-<br/>
+
 
 ## Sections
 | Offset   | Ability     |
@@ -47,7 +54,7 @@
 | 0x0204   | Double      |
 | 0x020C   | Triple      |
 | 0x0214   | Minimog     |
-<br/>
+
 
 ## Section Structure
 | Offset        | Length        | Description                   |

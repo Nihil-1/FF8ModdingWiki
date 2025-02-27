@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Kernel
-nav_order: 1
-parent: Kernel
+parent: Main
 ---
 
 
