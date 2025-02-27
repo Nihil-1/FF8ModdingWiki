@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Header
+title: Weapons
 nav_order: 6
 parent: Kernel
 ---
-
-# Weapons Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x35B8 | 33       | 12 bytes     |
-
-<br/>
 
 ## Sections
 
@@ -52,8 +48,6 @@ parent: Kernel
 | 0x3720 | Laguna    | Machine Gun     |
 | 0x372C | Kiros     | Katal           |
 | 0x3738 | Ward      | Harpoon         |
-
-<br/>
 
 ## Section Structure
 

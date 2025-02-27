@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Command abilities gforce
+title: Command abilities GF
 nav_order: 14
 parent: Kernel
 ---

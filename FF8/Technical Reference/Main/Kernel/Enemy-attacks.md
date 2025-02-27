@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Header
+title: Enemy Attacks
 nav_order: 5
 parent: Kernel
 ---
-
-# Enemy Attacks Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x17B8 | 384      | 20 bytes     |
-
-<br/>
 
 ## Sections
 
@@ -403,8 +399,6 @@ parent: Kernel
 | 0x357C | 381 - Tornado                          |
 | 0x3590 | 382 - A382                             |
 | 0x35A4 | 383 - A383                             |
-
-<br/>
 
 ## Section Structure
 
