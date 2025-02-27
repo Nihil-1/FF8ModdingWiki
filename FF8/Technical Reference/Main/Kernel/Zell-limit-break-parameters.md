@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Zell limit break parameters
+title: Duel parameters
 nav_order: 24
 parent: Kernel
 ---

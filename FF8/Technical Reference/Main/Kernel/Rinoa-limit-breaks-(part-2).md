@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rinoa's combine limit break
+title: Rinoa combine limit break
 nav_order: 27
 parent: Kernel
 ---
