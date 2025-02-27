@@ -1,18 +1,15 @@
 ---
 layout: default
-title: Header
+title: Characters
 nav_order: 8
 parent: Kernel
 ---
-
-# Characters Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x37A4 | 11       | 36 bytes     |
-
 
 ## Sections
 
@@ -29,7 +26,6 @@ parent: Kernel
 | 0x38C4 | Laguna    |
 | 0x38E8 | Kiros     |
 | 0x390C | Ward      |
-
 
 ## Section Structure
 

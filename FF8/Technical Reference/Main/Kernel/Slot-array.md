@@ -1,13 +1,22 @@
-# Slot Array Data Section
+---
+layout: default
+title: Slot Array
+nav_order: 28
+parent: Kernel
+---
+
+
 ## General
-| Offset        | Sections | Section Size |
-| ------------- | ---------| -------------|
-| 0x4AD0        | 60       | 1 byte       |
-<br/>
+
+| Offset | Sections | Section Size |
+|--------|----------|--------------|
+| 0x4AD0 | 60       | 1 byte       |
+
 
 ## Sections
+
 | Offset | Ability       |
-| ------ | ------------- |
+|--------|---------------|
 | 0x4AD0 | Slot array 1  |
 | 0x4AD1 | Slot array 2  |
 | 0x4AD2 | Slot array 3  |
@@ -68,9 +77,10 @@
 | 0x4B09 | Slot array 58 |
 | 0x4B0A | Slot array 59 |
 | 0x4B0B | Slot array 60 |
-<br/>
+
 
 ## Section Structure
-| Offset        | Length        | Description |
-| ------------- | --------------| ----------- |
-| 0x0000        | 1 byte        | Slot Set ID |
+
+| Offset | Length | Description |
+|--------|--------|-------------|
+| 0x0000 | 1 byte | Slot Set ID |

@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Header
+title: Magic
 nav_order: 3
 parent: Kernel
 ---
-
-# Magic Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x021C | 57       | 60 bytes     |
-
-<br/>
 
 ## Sections
 
@@ -76,8 +72,6 @@ parent: Kernel
 | 0x0EC4 | Percent        |
 | 0x0F00 | Catastrophe    |
 | 0x0F3C | The End        |
-
-<br/>
 
 ## Section Structure
 

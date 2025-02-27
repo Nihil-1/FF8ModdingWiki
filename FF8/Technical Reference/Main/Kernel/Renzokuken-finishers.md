@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Header
+title: Renzokuken finishers
 nav_order: 7
 parent: Kernel
 ---
-
-# Renzokuken Finishers Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x3744 | 4        | 24 bytes     |
-
-<br/>
 
 ## Sections
 
@@ -23,8 +19,6 @@ parent: Kernel
 | 0x375C | Fated Circle  |
 | 0x3774 | Blasting Zone |
 | 0x378C | Lion Heart    |
-
-<br/>
 
 ## Section Structure
 

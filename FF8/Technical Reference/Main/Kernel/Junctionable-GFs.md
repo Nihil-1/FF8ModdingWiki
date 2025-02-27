@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Header
+title: Junctionable GFs
 nav_order: 4
 parent: Kernel
 ---
-
-# Junctionable GFs Data Section
 
 ## General
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
 | 0x0F78 | 16       | 132 bytes    |
-
-<br/>
 
 ## Sections
 
@@ -35,8 +31,6 @@ parent: Kernel
 | 0x162C | Cactuar    |
 | 0x16B0 | Tonberry   |
 | 0x1734 | Eden       |
-
-<br/>
 
 ## Section Structure
 

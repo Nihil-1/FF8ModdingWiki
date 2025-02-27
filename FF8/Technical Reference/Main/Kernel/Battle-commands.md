@@ -5,8 +5,6 @@ nav_order: 2
 parent: Kernel
 ---
 
-# Battle Commands Data Section
-
 ## General
 
 | Offset | Sections | Section Size |

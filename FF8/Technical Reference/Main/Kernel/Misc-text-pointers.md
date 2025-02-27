@@ -1,13 +1,20 @@
-# Misc Text Pointers Data Section
+---
+layout: default
+title: Misc Text Pointers
+nav_order: 32
+parent: Kernel
+---
+
 ## General
-| Offset        | Sections | Section Size |
-| ------------- | ---------| -------------|
-| 0x4D08        | 128      | 2 bytes      |
-<br/>
+
+| Offset | Sections | Section Size |
+|--------|----------|--------------|
+| 0x4D08 | 128      | 2 bytes      |
 
 ## Sections
+
 | Offset | Ability   |
-| ------ | --------- |
+|--------|-----------|
 | 0x4D08 | Some text |
 | 0x4D0A | Some text |
 | 0x4D0C | Some text |
@@ -136,9 +143,9 @@
 | 0x4E02 | Some text |
 | 0x4E04 | Some text |
 | 0x4E06 | Some text | 
-<br/>
 
 ## Section Structure
-| Offset        | Length        | Description    |
-| ------------- | --------------| -------------- |
-| 0x0000        | 2 bytes       | Offset to text |
+
+| Offset | Length  | Description    |
+|--------|---------|----------------|
+| 0x0000 | 2 bytes | Offset to text |
