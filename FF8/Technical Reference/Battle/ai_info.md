@@ -5,7 +5,7 @@ title: Battle Scripts
 author: nihil, hobbitdur
 ---
 
-FF8 monster battle scripts are divided into 5 sections, **init**, **turn**, **counter**, **death** and **pre-counter**.
+FF8 monster battle scripts are divided into 5 sections, **init**, **turn**, **counter**, **death** and **pre-counter**.  
 Each section contains code that is executed at different times during the battle.
 - Init: executes once when the monster is loaded into battle.
 - Turn: executes once the monster's ATB bar fills. This happens after the monsters turn counter is incremented.
@@ -13,10 +13,10 @@ Each section contains code that is executed at different times during the battle
 - Death: executes when the monster’s HP reaches 0 or it is afflicted with the *Death* status.  (Eject may not trigger this section - this needs further testing.)
 - Pre-Counter: similar to counter but executed before it. Needs further testing. Seems to be used mostly for checking if the monster has the *Death* status and then change its animation. Ifs, variable assignments and stat changes can also be used. Launching an attack from this section crashes the game.
 
-The order of execution when a monster is attacked is: **pre-counter** -> **death** (if killed) -> **counter**
-Note: **pre-counter** code will **ONLY** be executed after an attack that kills a monster if the monster's **death** section has code in it (apart from "return").
-Note: if the **death** section is empty, it will function like a **_die_** opcode.
-Note: if the **death** section is empty, it is mandatory for it to eventually execute a **_die_** opcode, otherwise the monster will continue, even on 0 HP, making the battle unwinnable for the player and forcing them to run. If running is not an option, this results in a soft locked.
+The order of execution when a monster is attacked is: **pre-counter** -> **death** (if killed) -> **counter**.  
+Note: **pre-counter** code will **ONLY** be executed after an attack that kills a monster if the monster's **death** section has code in it (apart from "return").  
+Note: if the **death** section is empty, it will function like a **_die_** opcode.  
+Note: if the **death** section is empty, it is mandatory for it to eventually execute a **_die_** opcode, otherwise the monster will continue, even on 0 HP, making the battle unwinnable for the player and forcing them to run. If running is not an option, this results in a soft locked.  
 
 
 1. TOC
@@ -24,9 +24,9 @@ Note: if the **death** section is empty, it is mandatory for it to eventually ex
 
 # Opcodes
 
-Monster AI sections are composed of one-byte opcodes, each followed by a variable number of the bytes used as parameters.
-These opcodes define the monster's behaviour in battle.
-Note: descriptions are written from the monster's perspective, so "opposing party" refers to the party of playable characters.
+Monster AI sections are composed of one-byte opcodes, each followed by a variable number of the bytes used as parameters.  
+These opcodes define the monster's behaviour in battle.  
+Note: descriptions are written from the monster's perspective, so "opposing party" refers to the party of playable characters.  
 
 ## Opcode 0x00 (0) - return
 
@@ -36,7 +36,7 @@ Note: descriptions are written from the monster's perspective, so "opposing part
 |--------|--------------|------|--------------------|
 | 0x00   | return       | 1    | End monster's turn |
 
-This opcode is used to end the monster's turn, preventing further execution of code.
+This opcode is used to end the monster's turn, preventing further execution of code.  
 It is mandatory for every battle script section to end with a **_return_**.
 
 ### Parameters
@@ -445,7 +445,7 @@ Allows/Disallows escaping in the current battle.
 ## Opcode 0x2E - blowAway
 ### Summary
 
-Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use).
+Makes previous ability blow away magic from target (use after opcode 0x0B or 0x0C, useRandom or use).  
 Note that blown away magic is removed from junctions too.
 
 | Opcode | IfritAI name | Size | Short Description |
