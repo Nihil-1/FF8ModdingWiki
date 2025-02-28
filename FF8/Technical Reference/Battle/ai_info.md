@@ -241,8 +241,8 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
 ### Summary
 
 This opcode defines a target, it must be used before any opcode that requires a target (like launching an ability).  
-If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted instead, if the original target was slot 0, the new target will be slot 1 instead.
-Note that the original target will still be targeted by opcodes **_draw_** and **_blowAway_**
+If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted instead, if the original target was slot 0, the new target will be slot 1 instead.  
+Note that the original target will still be targeted by opcodes **_draw_** and **_blowAway_**.
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
@@ -260,7 +260,7 @@ Note that the original target will still be targeted by opcodes **_draw_** and *
 
 ### Summary 
 
-Causes monster that executes this opcode to die
+Causes monster that executes this opcode to die.
 
 | Opcode | IfritAI name | Size | Short Description     |
 |--------|--------------|------|-----------------------|
@@ -276,7 +276,8 @@ None
 
 ### Summary
 
-Picks one of 3 abilities to use randomly, then uses it
+Picks one of 3 abilities to use randomly, then uses it.  
+Requires **_target_** to have been used.
 
 | Opcode | IfritAI name | Size | Short Description            |
 |--------|--------------|------|------------------------------|
@@ -287,7 +288,7 @@ Picks one of 3 abilities to use randomly, then uses it
 | Position | Size | Name                    | Type                                                     | Short Description       |
 |----------|------|-------------------------|----------------------------------------------------------|-------------------------|
 | 1        | 1    | **MonsterLineAbility1** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The first ability line  |
-| 2        | 1    | **MonsterLineAbility2**  | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
+| 2        | 1    | **MonsterLineAbility2** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The second ability line |
 | 3        | 1    | **MonsterLineAbility3** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The third ability line  |
 
 ---
@@ -296,7 +297,7 @@ Picks one of 3 abilities to use randomly, then uses it
 
 ### Summary
 
-Use one ability
+Use one ability, requires **_target_** to have been used.
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
@@ -314,7 +315,7 @@ Use one ability
 
 ### Summary
 
-Sets local variable that will be only accessible by this monster during the battle
+Sets local variable that will be only accessible by this monster during the battle.
 
 | Opcode | IfritAI name | Size | Short Description               |
 |--------|--------------|------|---------------------------------|
@@ -325,16 +326,13 @@ Sets local variable that will be only accessible by this monster during the batt
 | Position | Size | Name      | Type                                | Short Description             |
 |----------|------|-----------|-------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value to set the var with |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value var is set to       |
 
 ---
 
 ## Opcode 0x0F (15) - gvar
 
-Sets global variable (accessible by all monsters)
-
-- **Byte #1:** Variable
-- **Byte #2:** Unsigned byte value to assign
+Sets global variable (accessible by all monsters).
 
 ### Summary
 
@@ -349,7 +347,7 @@ Sets global variable (accessible by all monsters)
 | Position | Size | Name      | Type                                 | Short Description             |
 |----------|------|-----------|--------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#global-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)             | The value to set the var with |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)             | The value var is set to       |
 
 ---
 
@@ -357,7 +355,7 @@ Sets global variable (accessible by all monsters)
 
 ### Summary
 
-Sets savemap variable (not sure how it it stored)
+Sets savemap variable (not sure how it it stored).
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
@@ -368,15 +366,15 @@ Sets savemap variable (not sure how it it stored)
 | Position | Size | Name      | Type                                    | Short Description             |
 |----------|------|-----------|-----------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [SavemapVar](../OpCodeType#savemap-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value to set the var with |
+| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value var is set to       |
 
 ---
 
-## Opcode 0x12 (18) - add (2 args)
+## Opcode 0x12 (18) - add
 
 ### Summary
 
-Adds value to local variable that will be only accessible by this monster during the battle
+Adds value to local variable that will be only accessible by this monster during the battle.
 
 | Opcode | IfritAI name | Size | Short Description      |
 |--------|--------------|------|------------------------|
@@ -395,7 +393,7 @@ Adds value to local variable that will be only accessible by this monster during
 
 ### Summary
 
-Adds value to global var (accessible by all monsters)
+Adds value to global var (accessible by all monsters).
 
 | Opcode | IfritAI name | Size | Short Description       |
 |--------|--------------|------|-------------------------|
@@ -414,7 +412,7 @@ Adds value to global var (accessible by all monsters)
 
 ### Summary
 
-Adds value to savemap var (not sure where it is stored)
+Adds value to savemap var (not sure where it is stored).
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
@@ -429,11 +427,11 @@ Adds value to savemap var (not sure where it is stored)
 
 ---
 
-## Opcode 0x16 (22) - IfritAI name: recover
+## Opcode 0x16 (22) - recover
 
 ### Summary
 
-Sets remaining HP to max HP
+Sets remaining HP to max HP.
 
 | Opcode | IfritAI name | Size | Short Description           |
 |--------|--------------|------|-----------------------------|
@@ -549,9 +547,7 @@ None
 
 Makes previous ability draw magic from target (use after opcode **_useRandom_** or **_use_**).  
 This magic is stored, and if **_draw_** is used again, it will replace the previously stored magic.  
-In the case where **_draw_** is used on a playable character that has no magic or a monster,  
-the message showing what magic was stolen will appear only the first time and a nameless magic with no effect  
-that looks and sounds like _Cure_ will be stored.  
+In the case where **_draw_** is used on a playable character that has no magic or a monster, the message showing what magic was stolen will appear only the first time and a nameless magic with no effect that looks and sounds like _Cure_ will be stored.  
 If a monster uses **_draw_** on itself and then uses **_cast_**, the game will crash.
 
 | Opcode | IfritAI name | Size | Short Description |
@@ -587,7 +583,7 @@ None
 ### Summary
 
 Makes previous ability blow away magic from target (use after opcode **_useRandom_** or **_use_**).  
-Note that blown away magic is removed from junctions too.
+Note that blown away magic is removed from junctions too.  
 Does nothing if the target has no magic.  
 
 | Opcode | IfritAI name | Size | Short Description |
