@@ -63,7 +63,7 @@ Displays a battle message.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspond to this ID.  
+**TextID** correspondss to this ID.  
 Note that battle message speed is ignored.
 
 ---
@@ -479,7 +479,7 @@ Displays a battle message, respecting the _battle message speed_ setting.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspond to this ID.
+**TextID** correspondss to this ID.
 
 ---
 
@@ -559,7 +559,7 @@ Sets the extra scan text to a specific battle text.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspond to this ID.
+**TextID** corresponds to this ID.
 
 ---
 
