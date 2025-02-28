@@ -63,7 +63,7 @@ Displays a battle message.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspond to this ID.  
+**TextID** correspondss to this ID.  
 Note that battle message speed is ignored.
 
 ---
@@ -326,7 +326,7 @@ Sets local variable that will be only accessible by this monster during the batt
 | Position | Size | Name      | Type                                | Short Description             |
 |----------|------|-----------|-------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value var is set to       |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)            | The value var is set to       |
 
 ---
 
@@ -347,7 +347,7 @@ Sets global variable (accessible by all monsters)
 | Position | Size | Name      | Type                                 | Short Description             |
 |----------|------|-----------|--------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#global-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)             | The value var is set to       |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)             | The value var is set to       |
 
 ---
 
@@ -366,7 +366,7 @@ Sets savemap variable (not sure how it it stored).
 | Position | Size | Name      | Type                                    | Short Description             |
 |----------|------|-----------|-----------------------------------------|-------------------------------|
 | 1        | 1    | **Var**   | [SavemapVar](../OpCodeType#savemap-var) | The var to store the data     |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value var is set to       |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)                | The value var is set to       |
 
 ---
 
@@ -385,7 +385,7 @@ Adds value to local variable that will be only accessible by this monster during
 | Position | Size | Name      | Type                                | Short Description           |
 |----------|------|-----------|-------------------------------------|-----------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data   |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)            | The value to add to the var |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)            | The value to add to the var |
 
 ---
 
@@ -404,7 +404,7 @@ Adds value to global var (accessible by all monsters).
 | Position | Size | Name      | Type                                  | Short Description           |
 |----------|------|-----------|---------------------------------------|-----------------------------|
 | 1        | 1    | **Var**   | [GlobalVar](../OpCodeType#global-var) | The var to store the data   |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)              | The value to add to the var |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)              | The value to add to the var |
 
 ---
 
@@ -423,7 +423,7 @@ Adds value to savemap var (not sure where it is stored).
 | Position | Size | Name      | Type                                    | Short Description           |
 |----------|------|-----------|-----------------------------------------|-----------------------------|
 | 1        | 1    | **Var**   | [SavemapVar](../OpCodeType#savemap-var) | The var to store the data   |
-| 1        | 1    | **Value** | [int](../OpCodeType#int)                | The value to add to the var |
+| 2        | 1    | **Value** | [int](../OpCodeType#int)                | The value to add to the var |
 
 ---
 
@@ -479,7 +479,7 @@ Displays a battle message, respecting the _battle message speed_ setting.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspond to this ID.
+**TextID** correspondss to this ID.
 
 ---
 
@@ -538,6 +538,50 @@ Fills the monster's ATB bar, readying it for its turn.
 ### Parameters
 
 None
+
+---
+
+## Opcode 0x25 (37) - setScanText
+
+### Summary
+
+Sets the extra scan text to a specific battle text.
+
+| Opcode | IfritAI name | Size | Short Description       |
+|--------|--------------|------|-------------------------|
+| 0x25   | setScanText  | 2    | Sets extra scan text    |
+
+### Parameters
+
+| Position | Size | Name       | Type                     | Short Description     |
+|----------|------|------------|--------------------------|-----------------------|
+| 1        | 1    | **TextID** | [int](../OpCodeType#int) | The index of the text |
+
+Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
+Each text has an ID, starting from 0 and incrementing with each subsequent text.  
+**TextID** corresponds to this ID.
+
+---
+
+## Opcode 0x26 (38) - statChange
+
+### Summary
+
+Sets a multiplier that changes a selected stat.  
+The base stat does not get changed, so if for example we use *_statChange_* to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
+
+| Opcode | IfritAI name | Size | Short Description        |
+|--------|--------------|------|--------------------------|
+| 0x26   | statChange   | 3    | Changes a stat           |
+
+### Parameters
+
+| Position | Size | Name           | Type                                    | Short Description             |
+|----------|------|----------------|-----------------------------------------|-------------------------------|
+| 1        | 1    | **Stat**       | [Stat](../OpCodeType#stat)              | The stat that will be changed |
+| 2        | 1    | **Multiplier** | [int](../OpCodeType#int)                | The multiplier for said stat  |
+
+Note that **Multiplier** is multiplied by 10, so for example if its set to 0x28 (40), the stat will be multiplied by 0x28 \* 0x0A = 0x190 (40 \* 10 = 400)
 
 ---
 
