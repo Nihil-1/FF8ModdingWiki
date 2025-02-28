@@ -107,5 +107,14 @@ This are variable that can be reused anywhere in the game. Here the list known a
 | 98         | 0x62       | GlobalVar98  | ElvoretAppeared                                 |
 | 102        | 0x66       | GlobalVar102 | FirstBugSeen                                    |
 
+## Stat
 
+| Opcode dec | Opcode hex | Text     |
+|------------|------------|----------|
+| 0          | 0x00       | Strength |
+| 1          | 0x01       | Vitality |
+| 2          | 0x02       | Magic    |
+| 3          | 0x03       | Spirit   |
+| 4          | 0x04       | Speed    |
+| 5          | 0x05       | Evade    |
 
