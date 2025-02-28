@@ -241,7 +241,7 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
 ### Summary
 
 This opcode defines a target, it must be used before any opcode that requires a target (like launching an ability).  
-If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted instead, if the original target was slot 0, the new target will be slot 1 instead.  
+If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted, if the original target was slot 0, the new target will be slot 1 instead.  
 Note that the original target will still be targeted by opcodes **_draw_** and **_blowAway_**.
 
 | Opcode | IfritAI name | Size | Short Description |
@@ -568,7 +568,7 @@ Each text has an ID, starting from 0 and incrementing with each subsequent text.
 ### Summary
 
 Sets a multiplier that changes a selected stat.  
-The base stat does not get changed, so if for example we use *_statChange_* to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
+The base stat does not get changed, so if for example we use **_statChange_** to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
