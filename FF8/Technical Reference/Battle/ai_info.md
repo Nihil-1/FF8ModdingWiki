@@ -16,7 +16,8 @@ Each section contains code that is executed at different times during the battle
 The order of execution when a monster is attacked is: **pre-counter** -> **death** (if killed) -> **counter**.  
 Note: **pre-counter** code will **ONLY** be executed after an attack that kills a monster if the monster's **death** section has code in it (apart from "return").  
 Note: if the **death** section is empty, it will function like a **_die_** opcode.  
-Note: if the **death** section is empty, it is mandatory for it to eventually execute a **_die_** opcode, otherwise the monster will continue, even on 0 HP, making the battle unwinnable for the player and forcing them to run. If running is not an option, this results in a soft lock.  
+Note: if the **death** section is empty, it is mandatory for it to eventually execute a **_die_** opcode, otherwise the monster will continue fighting, even on 0 HP, making the battle unwinnable for the player and forcing them to run.  
+If running is not an option, this results in a soft lock.  
 
 
 1. TOC
@@ -63,7 +64,7 @@ Displays a battle message.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspondss to this ID.  
+**TextID** corresponds to this ID.  
 Note that battle message speed is ignored.
 
 ---
@@ -241,7 +242,7 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
 ### Summary
 
 This opcode defines a target, it must be used before any opcode that requires a target (like launching an ability).  
-If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted instead, if the original target was slot 0, the new target will be slot 1 instead.  
+If the target is a specific playable character who isn't currently targetable, the character in the slot of the original target -1 will be targeted, if the original target was slot 0, the new target will be slot 1 instead.  
 Note that the original target will still be targeted by opcodes **_draw_** and **_blowAway_**.
 
 | Opcode | IfritAI name | Size | Short Description |
@@ -479,7 +480,7 @@ Displays a battle message, respecting the _battle message speed_ setting.
 
 Texts are defined in [section 7](../FileFormat_DAT#section-7-informations--stats) of c0mxxx.dat files.  
 Each text has an ID, starting from 0 and incrementing with each subsequent text.  
-**TextID** correspondss to this ID.
+**TextID** corresponds to this ID.
 
 ---
 
@@ -499,7 +500,7 @@ Makes the monster in a specified encounter slot leave combat.
 |----------|------|------------|--------------------------|------------------------------|
 | 1        | 1    | **Target** | [int](../OpCodeType#int) | Monster that's made to leave |
 
-**Target** refers to the slot in which the monster currently is in the fight.  
+**Target** is the slot in which the monster currently is in the fight.  
 Note that if 200 is used, the monster executing this opcode will be used as **Target**.
 
 ---
@@ -517,11 +518,11 @@ Whilst possible, it is not advisable to use **_enter_** on an encounter slot if 
 
 ### Parameters
 
-| Position | Size | Name       | Type                     | Short Description            |
-|----------|------|------------|--------------------------|------------------------------|
-| 1        | 1    | **Target** | [int](../OpCodeType#int) | Monster that's made to enter |
+| Position | Size | Name       | Type                     | Short Description             |
+|----------|------|------------|--------------------------|-------------------------------|
+| 1        | 1    | **Target** | [int](../OpCodeType#int) | Encounter slot of the monster |
 
-**Target** refers to the encounter slot of the monster, as defined in [scene.out](../BattleStructure).  
+**Target** is the monster's encounter slot, as defined in [scene.out](../BattleStructure).  
 
 ---
 
@@ -568,7 +569,7 @@ Each text has an ID, starting from 0 and incrementing with each subsequent text.
 ### Summary
 
 Sets a multiplier that changes a selected stat.  
-The base stat does not get changed, so if for example we use *_statChange_* to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
+The base stat does not get changed, so if for example we use **_statChange_** to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
@@ -640,3 +641,52 @@ None
 
 ---
 
+## Opcode 0x2F (47) - targetable
+
+### Summary
+
+Sets this monster's NOT Targetable flag to _False_.
+
+| Opcode | IfritAI name   | Size | Short Description          |
+|--------|----------------|------|----------------------------|
+| 0x2F   | targetable     | 1    | Makes monster targetable   |
+
+### Parameters
+
+None
+
+---
+
+## Opcode 0x30 (48) - untargetable
+
+### Summary
+
+Sets this monster's NOT Targetable flag to _True_.
+
+| Opcode | IfritAI name     | Size | Short Description          |
+|--------|------------------|------|----------------------------|
+| 0x30   | untargetable     | 1    | Makes monster untargetable |
+
+### Parameters
+
+None
+
+---
+
+## Opcode 0x34 (52) - enable
+
+### Summary
+
+Sets this monster's Enabled flag to _True_.
+
+| Opcode | IfritAI name     | Size | Short Description |
+|--------|------------------|------|-------------------|
+| 0x30   | untargetable     | 1    | Enables monster   |
+
+### Parameters
+
+| Position | Size | Name       | Type                     | Short Description             |
+|----------|------|------------|--------------------------|-------------------------------|
+| 1        | 1    | **Target** | [int](../OpCodeType#int) | Encounter slot of the monster |
+
+**Target** is the monster's encounter slot, as defined in [scene.out](../BattleStructure).  
