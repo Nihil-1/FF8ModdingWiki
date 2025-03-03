@@ -1,8 +1,6 @@
 console.log('Turlututu');
 
 
-  const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
   // Function to set the theme and save it to localStorage
   function setTheme(theme) {
     jtd.setTheme(theme);
@@ -25,10 +23,4 @@ console.log('Turlututu');
   // Initialize the theme when the page loads
   initializeTheme();
 
-  // Toggle the theme on button click
-  jtd.addEvent(toggleDarkMode, 'click', function () {
-    const currentTheme = jtd.getTheme();
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-  });
 
