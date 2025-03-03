@@ -407,3 +407,30 @@ This ID define which list should be check. Seifer is a special case for seifer b
 | 381  | 0x17D | Tornado                                   |
 | 382  | 0x17E | Unnamed                                   |
 | 383  | 0x17F | Unnamed                                   |
+
+
+
+# Chara abilities
+
+| Bit Position | Ability        |
+|--------------|----------------|
+| 1            | Mug            |
+| 2            | Med Data       |
+| 3            | Counter        |
+| 4            | Return Damage  |
+| 5            | Cover          |
+| 6            | Initiative     |
+| 7            | Move-HP Up     |
+| 8            | HP Bonus       |
+| 9            | Str Bonus      |
+| 10           | Vit Bonus      |
+| 11           | Mag Bonus      |
+| 12           | Spr Bonus      |
+| 13           | Auto-Protect   |
+| 14           | Auto-Shell     |
+| 15           | Auto-Reflect   |
+| 16           | Auto-Haste     |
+| 17           | Auto-Potion    |
+| 18           | Expendx2-1     |
+| 19           | Expendx3-1     |
+| 20           | Ribbon         |

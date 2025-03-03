@@ -1,23 +1,23 @@
 ## Junctionable Abilities Unlocker
 
-| ID    | Description |
-| ----  | ----------- |
-| 0x00  | None        |
-| 0x01  | GF Level 1  |
-| 0x02  | GF Level 2  |
-| 0x03  | GF Level 3  |
-| 0x04  | GF Level 4  |
-| 0x05  | GF Level 5  |
-| 0x06  | GF Level 6  |
-| 0x07  | GF Level 7  |
-| 0x08  | GF Level 8  |
-| 0x09  | GF Level 9  |
-| 0x0A  | GF Level 10 |
-| 0x0B  | GF Level 11 |
-| 0x0C  | GF Level 12 |
-| 0x0D  | GF Level 13 |
-| 0x0E  | GF Level 14 |
-| 0x0F  | GF Level 15 |
+| ID   | Description  |
+|------|--------------|
+| 0x00 | None         |
+| 0x01 | GF Level 1   |
+| 0x02 | GF Level 2   |
+| 0x03 | GF Level 3   |
+| 0x04 | GF Level 4   |
+| 0x05 | GF Level 5   |
+| 0x06 | GF Level 6   |
+| 0x07 | GF Level 7   |
+| 0x08 | GF Level 8   |
+| 0x09 | GF Level 9   |
+| 0x0A | GF Level 10  |
+| 0x0B | GF Level 11  |
+| 0x0C | GF Level 12  |
+| 0x0D | GF Level 13  |
+| 0x0E | GF Level 14  |
+| 0x0F | GF Level 15  |
 | 0x10 | GF Level 16  |
 | 0x11 | GF Level 17  |
 | 0x12 | GF Level 18  |

@@ -205,3 +205,17 @@ parent: List
 | 0xC4    | Occult Fan II     |
 | 0xC5    | Occult Fan III    |
 | 0xC6    | Occult Fan IV     |
+
+enum MonsterDatFileInfoSection
+{
+
+  MONSTER_INFO_HP1 = 24,
+  MONSTER_INFO_HP2 = 25,
+  MONSTER_INFO_HP3 = 26,
+  MONSTER_INFO_HP4 = 27,
+  MONSTER_INFO_ABILITY_LOW = 52,
+  MONSTER_INFO_MED_LEVEL_START = 0xF4,
+  MONSTER_INFO_HIGH_LEVEL_START = 0xF5,
+  MONSTER_INFO_BYTE_FLAG_1 = 247,
+  MONSTER_INFO_BYTE_FLAG_2 = 254,
+};
