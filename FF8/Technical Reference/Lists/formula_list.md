@@ -30,9 +30,8 @@ $$
 $$
 
 {: .note }
-Demi power = 4
-
-Percent = 15
+>Demi power = 4
+>Percent = 15
 
 # GF
 
