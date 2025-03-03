@@ -1,4 +1,4 @@
-    console.log('Script loaded');
+console.log('Turlututu');
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){

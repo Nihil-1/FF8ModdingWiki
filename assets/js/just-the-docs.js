@@ -616,5 +616,6 @@ jtd.onReady(function(){
 {%- endif %}
 
 })(window.jtd = window.jtd || {});
-
+console.log('1');
 {% include js/custom.js %}
+console.log('2');
