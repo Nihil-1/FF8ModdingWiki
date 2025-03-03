@@ -24,9 +24,14 @@ layout: table_wrappers
 
   // Function to set the theme and save it to localStorage
   function setTheme(theme) {
-    jtd.setTheme(theme);
-    localStorage.setItem('theme', theme); // Save the theme preference
-    toggleDarkMode.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+    try {
+      jtd.setTheme(theme); // Apply the theme
+      localStorage.setItem('theme', theme); // Save the theme preference
+      toggleDarkMode.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+      console.log(`Theme set to: ${theme}`); // Debugging: Log the theme
+    } catch (error) {
+      console.error('Error setting theme:', error); // Debugging: Log errors
+    }
   }
 
   // Function to initialize the theme based on localStorage
