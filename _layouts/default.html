@@ -17,66 +17,21 @@ layout: table_wrappers
     {% include components/sidebar.html %}
   {% endif %}
   <div class="main" id="top">
+      
+<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+      <script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
-<button class="btn js-toggle-dark-mode">Dark/Light mod</button>
-<script>
-  console.log('Script loaded'); // Debugging: Confirm script is running
-
-  const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-  if (!toggleDarkMode) {
-    console.error('Button not found!'); // Debugging: Check if button exists
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Preview dark color scheme';
   } else {
-    console.log('Button found:', toggleDarkMode); // Debugging: Confirm button is selected
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Return to the light side';
   }
-
-  // Check if `jtd` is defined
-  if (typeof jtd === 'undefined') {
-    console.error('jtd is not defined!'); // Debugging: Check if Just-the-Docs JS is loaded
-  } else {
-    console.log('jtd is defined:', jtd); // Debugging: Confirm jtd is available
-  }
-
-  // Function to set the theme and save it to localStorage
-  function setTheme(theme) {
-    try {
-      jtd.setTheme(theme); // Apply the theme
-      localStorage.setItem('theme', theme); // Save the theme preference
-      toggleDarkMode.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-      console.log(`Theme set to: ${theme}`); // Debugging: Log the theme
-    } catch (error) {
-      console.error('Error setting theme:', error); // Debugging: Log errors
-    }
-  }
-
-  // Function to initialize the theme based on localStorage
-  function initializeTheme() {
-    const savedTheme = localStorage.getItem('theme'); // Retrieve the saved theme
-    if (savedTheme) {
-      setTheme(savedTheme); // Apply the saved theme
-    } else {
-      // Default to system preference or light mode
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDark ? 'dark' : 'light');
-    }
-  }
-
-  // Initialize the theme when the page loads
-  initializeTheme();
-
-  // Toggle the theme on button click
-  if (toggleDarkMode && typeof jtd !== 'undefined') {
-    jtd.addEvent(toggleDarkMode, 'click', function () {
-      const currentTheme = jtd.getTheme();
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      setTheme(newTheme);
-    });
-  } else {
-    console.error('Button or jtd not available.'); // Debugging: Log if button or jtd is missing
-  }
+});
 </script>
-
-
     {% include components/header.html %}
     <div class="main-content-wrap">
       {% include components/breadcrumbs.html %}
