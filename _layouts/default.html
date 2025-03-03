@@ -20,7 +20,22 @@ layout: table_wrappers
 
 <button class="btn js-toggle-dark-mode">Dark/Light mod</button>
 <script>
+  console.log('Script loaded'); // Debugging: Confirm script is running
+
   const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+  if (!toggleDarkMode) {
+    console.error('Button not found!'); // Debugging: Check if button exists
+  } else {
+    console.log('Button found:', toggleDarkMode); // Debugging: Confirm button is selected
+  }
+
+  // Check if `jtd` is defined
+  if (typeof jtd === 'undefined') {
+    console.error('jtd is not defined!'); // Debugging: Check if Just-the-Docs JS is loaded
+  } else {
+    console.log('jtd is defined:', jtd); // Debugging: Confirm jtd is available
+  }
 
   // Function to set the theme and save it to localStorage
   function setTheme(theme) {
@@ -50,11 +65,15 @@ layout: table_wrappers
   initializeTheme();
 
   // Toggle the theme on button click
-  jtd.addEvent(toggleDarkMode, 'click', function () {
-    const currentTheme = jtd.getTheme();
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-  });
+  if (toggleDarkMode && typeof jtd !== 'undefined') {
+    jtd.addEvent(toggleDarkMode, 'click', function () {
+      const currentTheme = jtd.getTheme();
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  } else {
+    console.error('Button or jtd not available.'); // Debugging: Log if button or jtd is missing
+  }
 </script>
 
 
