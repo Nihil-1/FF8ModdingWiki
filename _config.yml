@@ -48,3 +48,41 @@ mermaid:
   # for (<v10):
   # path: "/assets/js/mermaid.min.js"
   # Note: copy both `mermaid.esm.min.mjs` (v10+) or `mermaid.min.js` (<v10) and the associated `.map` file from the specified version of `mermaid/dist` to `/assets/js/`.
+
+
+callouts:
+  admonition:
+    # title:
+    color: grey-lt
+  attention:
+    title: Attention
+    color: purple
+  caution:
+    title: Caution
+    color: yellow
+  danger:
+    title: Danger
+    color: red
+  error:
+    title: Error
+    color: red
+  highlight:
+    color: yellow
+    opacity: 0.5
+  hint:
+    title: Hint
+    color: grey-dk
+  important:
+    title: Important
+    color: green
+  note:
+    title: Note
+    color: blue
+    # color: pink
+    opacity: 0.3
+  tip:
+    title: Tip
+    color: grey-dk
+  warning:
+    title: Warning
+    color: red

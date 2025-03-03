@@ -30,7 +30,8 @@ $$
 $$
 
 {: .note }
-Demi power = 4  
+Demi power = 4
+
 Percent = 15
 
 # GF
@@ -45,8 +46,8 @@ Damage = Damage * (100 + SummonMagBonus) / 100
 Damage = Damage * ([0..32] + 240) / 256   
 
 $$
-\text{Damage} = \left( \left( \left( \left( \left( \left( \text{LevelMod} \times 
-\frac{\text{Level}}{10} + \text{Power} + \text{PowerMod} \right) \times \frac{265 - 
+\text{Damage} = \left (\left (\left (\left (\left (\left (\text{LevelMod} \times 
+\frac{\text{Level}}{10} + \text{Power} + \text{PowerMod} \right) \times \frac{265 -- 
 \text{TargetSpr}}{8} \right) \times \frac{\text{Power}}{256} \right) \times \frac{\text{Boost}}{100} 
 \right) \times \frac{100 + \text{SummonMagBonus}}{100} \right) \times \frac{[0..32] + 240}{256}
 $$
