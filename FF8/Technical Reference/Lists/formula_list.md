@@ -79,5 +79,10 @@ $$
 \text{Damage} = \frac{\text{TargetMaxHP} \times \text{Level}}{\text{PowerMod} - \text{LevelMod} + 100}
 $$
 
+{: .note }
+>Diablos_PowerMod = 0  
+>Diablos_LevelMod = 0
+
+
 
 
