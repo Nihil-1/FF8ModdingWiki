@@ -1,6 +1,8 @@
 ---
 layout: null
 ---
+
+console.log('Script loaded 2');
 (function (jtd, undefined) {
 
 // Event handling
