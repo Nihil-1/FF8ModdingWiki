@@ -16,8 +16,8 @@ Damage = Damage * Power / 256
 Damage = Damage * ([0..32] + 240) / 256   
 
 $$
-\text{Damage} = \left (\left (\left (\text{AttackerMag} + \text{Power} \right) 
-\times \frac{265 - \text{TargetSpr}}{4} \right) \times \frac{\text{Power}}{256} \right) 
+\text{Damage} =(\left (\text{AttackerMag} + \text{Power} \right) 
+\times \frac{265 - \text{TargetSpr}}{4} \times \frac{\text{Power}}{256} 
 \times \frac{[0..32] + 240}{256}
 $$
 
@@ -47,13 +47,10 @@ Damage = Damage * ([0..32] + 240) / 256
 $$
 \text{Damage} = 
 \left
-(\left
-(\left
-(\left 
 (\text{LevelMod} \times 
 \frac{\text{Level}}{10} + \text{Power} + \text{PowerMod} \right) \times \frac{265 - 
-\text{TargetSpr}}{8} \right) \times \frac{\text{Power}}{256} \times \frac{\text{Boost}}{100} 
-\right) \times \frac{100 + \text{SummonMagBonus}}{100} \right) \times \frac{[0..32] + 240}{256}
+\text{TargetSpr}}{8} \times \frac{\text{Power}}{256} \times \frac{\text{Boost}}{100} 
+\times \frac{100 + \text{SummonMagBonus}}{100} \times \frac{[0..32] + 240}{256}
 $$
 
 ### Modifiers
