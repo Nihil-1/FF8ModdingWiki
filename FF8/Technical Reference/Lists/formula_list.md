@@ -16,8 +16,8 @@ Damage = Damage * Power / 256
 Damage = Damage * ([0..32] + 240) / 256   
 
 $$
-\text{Damage} = \left( \left( \left( \text{AttackerMag} + \text{Power} \right) 
-\times \frac{265 - \text{TargetSpr}}{4} \right) \times \frac{\text{Power}}{256} \right) 
+\text{Damage} = \left (\left (\left (\text{AttackerMag} + \text{Power} \right) 
+\times \frac{265 -- \text{TargetSpr}}{4} \right) \times \frac{\text{Power}}{256} \right) 
 \times \frac{[0..32] + 240}{256}
 $$
 
