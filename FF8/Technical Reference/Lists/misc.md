@@ -4,6 +4,9 @@ title: Misc
 parent: List
 ---
 
+
+# Locked byte
+
 | Bit   | Description            |
 |-------|------------------------|
 | Bit 0 | Item Locked            |

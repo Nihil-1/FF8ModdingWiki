@@ -412,8 +412,8 @@ parent: Kernel
 | 0x07   | 1 byte  | Attack power              |
 | 0x08   | 1 byte  | Attack flags              |
 | 0x09   | 1 byte  | Unknown                   |
-| 0x0A   | 1 byte  | Element                   |
-| 0x0B   | 1 byte  | Unknown                   |
+| 0x0A   | 1 byte  | Attack Element            |
+| 0x0B   | 1 byte  | Attack crit bonus         |
 | 0x0C   | 1 byte  | Status attack enabler     |
 | 0x0D   | 1 byte  | Attack Parameter          |
 | 0x0E   | 2 bytes | status_0; //statuses 0-7  |

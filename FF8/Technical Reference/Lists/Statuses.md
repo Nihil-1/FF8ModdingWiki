@@ -16,8 +16,8 @@ parent: List
 | 5         | 0x0020 | Berserk     |
 | 6         | 0x0040 | Zombie      |
 | 7         | 0x0080 | Unused      |
-| 8         | 0x0100 | Unused      |
-| 9         | 0x0200 | Unused      |
+| 8         | 0x0100 | HP < 25%    |
+| 9         | 0x0200 | HP < 50%    |
 | 10        | 0x0400 | Unused      |
 | 11        | 0x0800 | Unused      |
 | 12        | 0x1000 | Unused      |

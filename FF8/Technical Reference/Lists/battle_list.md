@@ -62,28 +62,11 @@ parent: List
 | 6            | 0x40       | Gravity Immunity      |
 | 7 (MSB)      | 0x80       | Always obtains card   |
 
-# Attack flag
-
-| ID   | Meaning          |
-|------|------------------|
-| 0x01 | Shelled          |
-| 0x02 | ?                |
-| 0x04 | ?                |
-| 0x08 | BreakDamageLimit |
-| 0x10 | Reflected        |
-| 0x20 | ?                |
-| 0x40 | ?                |
-| 0x80 | Revive?          |
 
 
-enum MonsterInfoByteFlags0
-{
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN0 = 0x1,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN1 = 0x2,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN2 = 0x4,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN3 = 0x8,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN4= 0x10,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN5= 0x20,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN6= 0x40,
-  MONSTER_INFO_BYTE_FLAG0_UNKNOWN7= 0x80,
-};
+
+
+
+
+
+

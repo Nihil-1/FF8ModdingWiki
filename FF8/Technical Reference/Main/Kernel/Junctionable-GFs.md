@@ -43,7 +43,8 @@ parent: Kernel
 | 0x0007 | 1 byte  | GF power (used in damage formula)      |
 | 0x0008 | 2 bytes | Unknown                                |
 | 0x000A | 1 byte  | Attack Flags                           |
-| 0x000B | 2 bytes | Unknown                                |
+| 0x000B | 1 bytes | Unknown                                |
+| 0x000B | 1 bytes | Hit count                              |
 | 0x000D | 1 byte  | [[Element                              |Elements]] |
 | 0x000E | 2 bytes | [[Statuses 0                           |Statuses 0]] |
 | 0x0010 | 4 bytes | [[Statuses 1                           |Statuses 1]] |
