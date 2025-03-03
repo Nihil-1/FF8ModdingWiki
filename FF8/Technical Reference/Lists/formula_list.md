@@ -65,6 +65,8 @@ Damage = Damage / 2
 
 ## Diablos
 
+Damage = TargetMaxHP * Level / (PowerMod - LevelMod + 100)
+
 
 
 
