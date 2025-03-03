@@ -18,17 +18,17 @@ layout: table_wrappers
   {% endif %}
   <div class="main" id="top">
 
-<button class="btn js-toggle-dark-mode">Change Dark/Light mod</button>
+<button class="btn js-toggle-dark-mode">Dark/Light mod</button>
       <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = 'Dark/Light mod';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Dark/Light mod';
   }
 });
 </script>
