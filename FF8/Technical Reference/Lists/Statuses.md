@@ -4,7 +4,66 @@ title: Status flags
 parent: List
 ---
 
-## AI status
+# Status 1
+
+| bit index | Flag   | Description |
+|-----------|--------|-------------|
+| 0         | 0x0001 | Death       | 
+| 1         | 0x0002 | Poison      |
+| 2         | 0x0004 | Petrify     |
+| 3         | 0x0008 | Darkness    |
+| 4         | 0x0010 | Silence     |
+| 5         | 0x0020 | Berserk     |
+| 6         | 0x0040 | Zombie      |
+| 7         | 0x0080 | Unused      |
+| 8         | 0x0100 | Unused      |
+| 9         | 0x0200 | Unused      |
+| 10        | 0x0400 | Unused      |
+| 11        | 0x0800 | Unused      |
+| 12        | 0x1000 | Unused      |
+| 13        | 0x2000 | Unused      |
+| 14        | 0x4000 | Unused      |
+| 15        | 0x8000 | Unused      |             
+
+
+# Status 2
+
+| bit index | Flag       | Description     |
+|-----------|------------|-----------------|
+| 0         | 0x00000001 | Sleep           |
+| 1         | 0x00000002 | Haste           |
+| 2         | 0x00000004 | Slow            |
+| 3         | 0x00000008 | Stop            |
+| 4         | 0x00000010 | Regen           |
+| 5         | 0x00000020 | Protect         |
+| 6         | 0x00000040 | Shell           |
+| 7         | 0x00000080 | Reflect         |
+| 8         | 0x00000100 | Aura            |
+| 9         | 0x00000200 | Curse           |
+| 10        | 0x00000400 | Doom            |
+| 11        | 0x00000800 | Invincible      |
+| 12        | 0x00001000 | Gradual petrify |
+| 13        | 0x00002000 | Float           |
+| 14        | 0x00004000 | Confusion       |
+| 15        | 0x00008000 | Drain           |
+| 16        | 0x00010000 | Eject           |
+| 17        | 0x00020000 | Double          |
+| 18        | 0x00040000 | Triple          |
+| 19        | 0x00080000 | Defend          |
+| 20        | 0x00100000 | Unknown         |
+| 21        | 0x00200000 | Unknown         |
+| 22        | 0x00400000 | Charged         |
+| 23        | 0x00800000 | Back attack     |
+| 24        | 0x01000000 | Vit0            |
+| 25        | 0x02000000 | Angel Wing      |
+| 26        | 0x04000000 | Unknown         |
+| 27        | 0x08000000 | Unknown         |
+| 28        | 0x10000000 | Unknown         |
+| 29        | 0x20000000 | Unknown         |
+| 30        | 0x40000000 | Has Magic       |
+| 31        | 0x80000000 | SummonGF        |
+
+# Ai status
 
 | ID  | Hex    | Name                          |
 |-----|--------|-------------------------------|
@@ -94,75 +153,4 @@ parent: List
 | 236 | 0xEC   | Lowest Holy resistance        |
 
 
-## Status 1 flag
 
-| ID     | Description |
-|--------|-------------|
-| 0x0000 | None        |
-| 0x0001 | Death       |
-| 0x0002 | Poison      |
-| 0x0004 | Petrify     |
-| 0x0008 | Darkness    |
-| 0x0010 | Silence     |
-| 0x0020 | Berserk     |
-| 0x0040 | Zombie      |
-| 0x0080 | Unused      |
-| 0x0100 | Unused      |
-| 0x0200 | Unused      |
-| 0x0400 | Unused      |
-| 0x0800 | Unused      |
-| 0x1000 | Unused      |
-| 0x2000 | Unused      |
-| 0x4000 | Unused      |
-| 0x8000 | Unused      |
-
-## Status 2 flag
-
-| ID         | Description |
-|------------|-------------|
-| 0x00000000 | None        |
-| 0x00000001 | Sleep       |
-| 0x00000002 | Haste       |
-| 0x00000004 | Slow        |
-| 0x00000008 | Stop        |
-| 0x00000010 | Regen       |
-| 0x00000020 | Protect     |
-| 0x00000040 | Shell       |
-| 0x00000080 | Reflect     |
-| 0x00000100 | Aura        |
-| 0x00000200 | Curse       |
-| 0x00000400 | Doom        |
-| 0x00000800 | Invincible  |
-| 0x00001000 | Petrifying  |
-| 0x00002000 | Float       |
-| 0x00004000 | Confusion   |
-| 0x00008000 | Drain       |
-| 0x00010000 | Eject       |
-| 0x00020000 | Double      |
-| 0x00040000 | Triple      |
-| 0x00080000 | Defend      |
-| 0x00100000 | Unknown     |
-| 0x00200000 | Unknown     |
-| 0x00400000 | Charged     |
-| 0x00800000 | Back Attack |
-| 0x01000000 | Vit0        |
-| 0x02000000 | Angel Wing  |
-| 0x04000000 | Unknown     |
-| 0x08000000 | Unknown     |
-| 0x10000000 | Unknown     |
-| 0x20000000 | Unknown     |
-| 0x40000000 | Has Magic   |
-| 0x80000000 | Summon GF   |
-
-## Attack flag
-
-| ID   | Meaning          |
-|------|------------------|
-| 0x01 | Shelled          |
-| 0x02 | ?                |
-| 0x04 | ?                |
-| 0x08 | BreakDamageLimit |
-| 0x10 | Reflected        |
-| 0x20 | ?                |
-| 0x40 | ?                |
-| 0x80 | Revive?          |
