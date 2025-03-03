@@ -64,16 +64,16 @@ parent: List
 
 ## GF/ Magic Type damage
 
-| Value | Description      |
-|-------|------------------|
-| 0x00  |                  |
-| 0x01  | % Current HP     |
-| 0x02  |                  |
-| 0x04  | Diablos damage   |
-| 0x05  | GF damage        |
-| 0x06  | Magic ignore SPR |
-| 0x0A  | Magic damage     |
-| 0x11  |                  |
+| Value | Description                     |
+|-------|---------------------------------|
+| 0x00  | Magic unmissable                |
+| 0x01  | % Current HP                    |
+| 0x02  | GF damage                       |
+| 0x04  | Diablos damage                  |
+| 0x05  | GF damage ignore SPR            |
+| 0x06  | Magic ignore SPR and unmissable |
+| 0x0A  | Magic damage                    |
+| 0x11  |                                 |
 
 
 
