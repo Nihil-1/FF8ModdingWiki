@@ -62,6 +62,19 @@ parent: List
 | 6            | 0x40       | Gravity Immunity      |
 | 7 (MSB)      | 0x80       | Always obtains card   |
 
+## GF/ Magic Type damage
+
+| Value | Description      |
+|-------|------------------|
+| 0x00  |                  |
+| 0x01  | % Current HP     |
+| 0x02  |                  |
+| 0x04  | Diablos damage   |
+| 0x05  | GF damage        |
+| 0x06  | Magic ignore SPR |
+| 0x0A  | Magic damage     |
+| 0x11  |                  |
+
 
 
 

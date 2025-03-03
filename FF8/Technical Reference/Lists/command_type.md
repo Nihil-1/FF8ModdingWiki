@@ -5,6 +5,8 @@ parent: List
 author: hobbitdur, nihil
 ---
 
+Check means condition check in AI
+
 | ID (Dec) | ID (Hex) | Data                    | Comment                                                                              |
 |----------|----------|-------------------------|--------------------------------------------------------------------------------------|
 | 0        | 0x00     | Kamikaze/Phoenix Pinion | Command failed can't actually be checked for                                         |
@@ -33,9 +35,16 @@ author: hobbitdur, nihil
 | 33       | 0x21     | LV Down                 | becomes 0 if it fails, but this can't be checked for                                 |
 | 34       | 0x22     | LV Up                   | becomes 0 if it fails, but this can't be checked for                                 |
 | 38       | 0x26     | MiniMog                 | becomes 0 if MiniMog is not available, but this can't be checked for                 |
+| 237      | 0xED     | Shot on hit             |                                                                                      |
+| 238      | 0xEE     | Shot time expire        |                                                                                      |
 | 240      | 0xF0     | Angelo Automove         |                                                                                      |
 | 241      | 0xF1     | Duel                    |                                                                                      |
+| 243      | 0xF3     | Darkside gunblade       |                                                                                      |
 | 244      | 0xF4     | Chocobo                 |                                                                                      |
 | 245      | 0xF5     | Odin/Gilgamesh          |                                                                                      |
+| 246      | 0xF6     | Doom finished           |                                                                                      |
+| 249      | 0xF9     | Renzokuken finisher     |                                                                                      |
 | 250      | 0xFA     | Renzokuken              | becomes 251 on hit and 249 on finisher use, but these can't be checked for           |
+| 251      | 0xFB     | Renzokuken on hit       |                                                                                      |
+| 253      | 0xFD     | Gunblade on hit         |                                                                                      |
 | 254      | 0xFE     | G-Force                 |                                                                                      |

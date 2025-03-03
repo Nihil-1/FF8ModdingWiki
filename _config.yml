@@ -32,6 +32,7 @@ enable_copy_code_button: true
 logo: "/assets/images/ff8-mod-logo.png"
 
 permalink: pretty
+math: katex
 
 
 # By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
