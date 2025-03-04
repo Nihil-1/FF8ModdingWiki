@@ -280,3 +280,490 @@ Items in grey are unused by field scripts (some of them may be used in battle sc
     2.  Selphie's current action when escaping from Deling's mansion (changes the dialogue)
     3.  FH Concert Crappiness
     4.  Something in B-Garden classroom during the paratrooper attack.
+
+
+struct GameVariables
+{
+    // 0x00 - 0x03: Unused in fields (always "FF-8")
+    __int8 unused1[4];
+
+    // 0x04: Steps (used to generate random encounters)
+    __int32 Steps;
+
+    // 0x08: Payslip
+    __int32 Payslip;
+
+    // 0x0C - 0x0F: Unused in fields
+    __int8 unused2[4];
+
+    // 0x10: SeeD rank points?
+    __int16 SeeDRankPoints;
+
+    // 0x12 - 0x13: Unused in fields
+    __int8 unused3[2];
+
+    // 0x14: Battles won (affects the basketball shot in Trabia)
+    __int32 BattlesWon;
+
+    // 0x18 - 0x19: Unused in fields
+    __int8 unused4[2];
+
+    // 0x1A: Battles escaped
+    __int16 BattlesEscaped;
+
+    // 0x1C: Enemies killed by Squall
+    __int16 SquallKills;
+
+    // 0x1E: Enemies killed by Zell
+    __int16 ZellKills;
+
+    // 0x20: Enemies killed by Irvine
+    __int16 IrvineKills;
+
+    // 0x22: Enemies killed by Quistis
+    __int16 QuistisKills;
+
+    // 0x24: Enemies killed by Rinoa
+    __int16 RinoaKills;
+
+    // 0x26: Enemies killed by Selphie
+    __int16 SelphieKills;
+
+    // 0x28: Enemies killed by Seifer
+    __int16 SeiferKills;
+
+    // 0x2A: Enemies killed by Edea
+    __int16 EdeaKills;
+
+    // 0x2C: Squall death count
+    __int16 SquallDeaths;
+
+    // 0x2E: Zell death count
+    __int16 ZellDeaths;
+
+    // 0x30: Irvine death count
+    __int16 IrvineDeaths;
+
+    // 0x32: Quistis death count
+    __int16 QuistisDeaths;
+
+    // 0x34: Rinoa death count
+    __int16 RinoaDeaths;
+
+    // 0x36: Selphie death count
+    __int16 SelphieDeaths;
+
+    // 0x38: Seifer death count
+    __int16 SeiferDeaths;
+
+    // 0x3A: Edea death count
+    __int16 EdeaDeaths;
+
+    // 0x3C - 0x43: Unused in fields
+    __int8 unused5[8];
+
+    // 0x44: Enemies killed
+    __int32 TotalEnemiesKilled;
+
+    // 0x48: Amount of Gil the party currently has
+    __int32 PartyGil;
+
+    // 0x4C: Amount of Gil Laguna's party has
+    __int32 LagunaPartyGil;
+
+    // 0x50: Number of frames since the current movie started playing
+    __int32 MovieFrameCount;
+
+    // 0x54: Last area visited
+    __int16 LastAreaVisited;
+
+    // 0x56: Current car rent
+    __int8 CurrentCarRent;
+
+    // 0x57: Built-in engine variable (related to music)
+    __int8 EngineVar1;
+
+    // 0x58: Built-in engine variable (used on save points)
+    __int8 EngineVar2;
+
+    // 0x59 - 0x67: Unused in fields
+    __int8 unused6[15];
+
+    // 0x68: Related to SARALYDISPON/SARALYON/MUSICLOAD/PHSPOWER opcodes
+    __int32 OpcodeRelated1;
+
+    // 0x6C: Music related
+    __int32 MusicRelated;
+
+    // 0x70: Unused in fields
+    __int32 unused7;
+
+    // 0x74 - 0x93: Draw points in field
+    __int8 FieldDrawPoints[44];
+
+    // 0x94 - 0xB3: Draw points in worldmap
+    __int8 WorldmapDrawPoints[44];
+
+    // 0xB4 - 0xFF: Unused in fields
+    __int8 unused8[76];
+
+    // 0x100: Main Story quest progress
+    __int16 MainStoryProgress;
+
+    // 0x102: Not investigated
+    __int8 Unknown1;
+
+    // 0x103 - 0x104: Unused in fields
+    __int8 unused9[2];
+
+    // 0x105: Not investigated
+    __int8 Unknown2;
+
+    // 0x106 - 0x107: Unused in fields
+    __int8 unused10[2];
+
+    // 0x108: Not investigated
+    __int8 Unknown3;
+
+    // 0x109: Not investigated
+    __int8 Unknown4;
+
+    // 0x10A: World map version? (3 = Esthar locations unlocked)
+    __int8 WorldMapVersion;
+
+    // 0x10B: Unused in fields
+    __int8 unused11;
+
+    // 0x10C: Not investigated
+    __int8 Unknown5;
+
+    // 0x10D: Not investigated
+    __int8 Unknown6;
+
+    // 0x10E: Not investigated
+    __int8 Unknown7;
+
+    // 0x10F: Unused in fields
+    __int8 unused12;
+
+    // 0x110 - 0x12B: Card game variables
+    __int8 CardGameVars[28];
+
+    // 0x12C: Card Queen re-cards
+    __int8 CardQueenRecards;
+
+    // 0x12D - 0x12F: Unused in fields
+    __int8 unused13[3];
+
+    // 0x130 - 0x131: Timber Maniacs issues found
+    __int8 TimberManiacsIssues[2];
+
+    // 0x132 - 0x13F: Reserved for Hacktuar / FF8Voice
+    __int8 Reserved1[14];
+
+    // 0x140 - 0x14C: Ultimecia Gallery related (pictures viewed?)
+    __int8 UltimeciaGallery[13];
+
+    // 0x14D: Ultimecia Armory chest flags
+    __int8 UltimeciaArmory;
+
+    // 0x14E: Ultimecia Castle seals
+    __int8 UltimeciaSeals;
+
+    // 0x14F: Card related
+    __int8 CardRelated;
+
+    // 0x150: Deling City bus related
+    __int8 DelingBus;
+
+    // 0x152 - 0x154: Deling Sewer gates opened
+    __int8 DelingSewerGates[3];
+
+    // 0x155: Does lots of things
+    __int8 MultiPurposeVar1;
+
+    // 0x156: Deling City bus system
+    __int8 DelingBusSystem;
+
+    // 0x157: G-Garden door/event flags
+    __int8 GGardenFlags1;
+
+    // 0x158: B-Garden / G-Garden event flags (during GvG)
+    __int8 GGardenFlags2;
+
+    // 0x159: G-Garden door/event flags
+    __int8 GGardenFlags3;
+
+    // 0x15A - 0x15D: FH Instrument (Zell, Irvine, Selphie, Quistis)
+    __int8 FHInstruments[4];
+
+    // 0x15E - 0x164: Health Bars (Garden mech fight)
+    __int16 HealthBars[4];
+
+    // 0x166: Space station talk flags, Centra ruins related (beat Odin?)
+    __int8 SpaceStationFlags;
+
+    // 0x167: Centra ruins related (beat Odin?)
+    __int8 CentraRuinsFlags;
+
+    // 0x168: Choice of FH music
+    __int32 FHMusicChoice;
+
+    // 0x16C - 0x170: Randomly generated code for Centra Ruins
+    __int8 CentraRuinsCode[5];
+
+    // 0x171 - 0x172: Ultimecia Castle flags
+    __int8 UltimeciaCastleFlags[2];
+
+    // 0x173: Unused in fields
+    __int8 unused14;
+
+    // 0x174 - 0x178: Ultimecia boss/timer/item flags
+    __int8 UltimeciaBossFlags[5];
+
+    // 0x179: Ultimecia organ note controller
+    __int8 UltimeciaOrgan;
+
+    // 0x17A: Centra Ruins timer (controls blackout messages from Odin)
+    __int8 CentraRuinsTimer;
+
+    // 0x17B: Unused in fields
+    __int8 unused15;
+
+    // 0x17C: Squall health during mech fight
+    __int16 SquallMechHealth;
+
+    // 0x17E - 0x17F: Unused in fields
+    __int8 unused16[2];
+
+    // 0x180: Something about Laguna's time periods and GFs
+    __int8 LagunaTimePeriods;
+
+    // 0x181: Laguna dialogue in pub
+    __int8 LagunaPubDialogue;
+
+    // 0x183: Winhill progress?
+    __int8 WinhillProgress;
+
+    // 0x184: Timber Maniacs HQ talk flags (main lobby)
+    __int8 TimberManiacsLobby;
+
+    // 0x185: Timber Maniacs HQ talk flags (office room)
+    __int8 TimberManiacsOffice;
+
+    // 0x186: Edea talk flags at her house
+    __int8 EdeaHouseFlags;
+
+    // 0x187: Laguna talk flags (in his office, disc 3)
+    __int8 LagunaOfficeFlags;
+
+    // 0x188: Unknown (used in Edea's house and Balamb Garden computer system)
+    __int8 Unknown8;
+
+    // 0x189 - 0x18F: Unused in fields
+    __int8 unused17[7];
+
+    // 0x190 - 0x193: Related to monsters killed in Winhill
+    __int32 WinhillMonsters;
+
+    // 0x194: Unused in fields
+    __int8 unused18;
+
+    // 0x195: Balamb Garden computer system
+    __int8 BalambComputer;
+
+    // 0x196 - 0x1AF: Unused in fields
+    __int8 unused19[26];
+
+    // 0x1B0: BG Main hall flags
+    __int8 BGHallFlags;
+
+    // 0x1B1 - 0x1B3: Flags (switches assigned all over BG)
+    __int8 BGFlags[3];
+
+    // 0x1B4: Moomba friendship level in the prison
+    __int8 MoombaFriendship;
+
+    // 0x1B5: In BG on Disc 2, keeps track of who's in your party
+    __int8 PartyTracking;
+
+    // 0x1B6 - 0x1B7: Cid vs Norg event flags
+    __int8 CidNorgFlags[2];
+
+    // 0x1B8: Event flags
+    __int8 EventFlags;
+
+    // 0x1B9: Cid vs Norg event flags
+    __int8 CidNorgFlags2;
+
+    // 0x1BA: Rinoa Garden tour flags
+    __int8 RinoaTourFlags;
+
+    // 0x1BB: Zell Health in Prison (Hacktuar)
+    __int16 ZellPrisonHealth;
+
+    // 0x1BD - 0x1BF: Propagator defeated flags
+    __int8 PropagatorFlags[3];
+
+    // 0x1C0: Unknown
+    __int16 Unknown9;
+
+    // 0x1C2 - 0x1C3: Various magazine/talk flags
+    __int8 MagazineFlags[2];
+
+    // 0x1C4: Lunatic Pandora areas visited?
+    __int8 LunaticPandora;
+
+    // 0x1C5 - 0x1C7: Moomba teleport variables
+    __int8 MoombaTeleport[3];
+
+    // 0x1C8 - 0x1C9: Unused in fields
+    __int8 unused20[2];
+
+    // 0x1CA - 0x1CB: Used with MUSICSKIP in some Balamb Garden areas
+    __int8 MusicSkipFlags[2];
+
+    // 0x1CC: Random flags (some used for Card Club)
+    __int8 RandomFlags1;
+
+    // 0x1CD - 0x1DF: Unused in fields
+    __int8 unused21[19];
+
+    // 0x1E0: Random flags (some used for Card Club)
+    __int8 RandomFlags2;
+
+    // 0x1E1 - 0x1E4: CC Group variables
+    __int8 CCGroupVars[4];
+
+    // 0x1E5: If set to 0, disables all random battles during area loading
+    __int8 DisableRandomBattles;
+
+    // 0x1E6: State of students in classroom
+    __int8 ClassroomState;
+
+    // 0x1E7: Controls a conversation in the cafeteria
+    __int8 CafeteriaConversation;
+
+    // 0x1E8: Error ratio of missiles
+    __int16 MissileErrorRatio;
+
+    // 0x1EA: Missile Base progression?
+    __int8 MissileBaseProgress;
+
+    // 0x1EB: ToUK Progression
+    __int8 ToUKProgress;
+
+    // 0x1EC: ToUK room? (used to control map jumps in the maze)
+    __int8 ToUKRoom;
+
+    // 0x1ED: Missile base progression
+    __int8 MissileBaseProgress2;
+
+    // 0x1EE: Alternate Party Flags
+    __int8 AlternatePartyFlags;
+
+    // 0x1EF: Random talk flags?
+    __int8 RandomTalkFlags;
+
+    // 0x1F0: Cafeteria cutscene
+    __int8 CafeteriaCutscene;
+
+    // 0x1F1: ToUK stuff
+    __int8 ToUKStuff;
+
+    // 0x1F2: Door opener for the missile base
+    __int8 MissileBaseDoor;
+
+    // 0x1F3: Missile base timer related?
+    __int8 MissileBaseTimer;
+
+    // 0x1F4 - 0x20F: Unused in fields
+    __int8 unused22[28];
+
+    // 0x210: Sub-story progression
+    __int16 SubStoryProgress;
+
+    // 0x212: X-ATM related (defeated it in battle?)
+    __int8 XATMDefeated;
+
+    // 0x213: Functionally unused
+    __int8 UnusedVar1;
+
+    // 0x214: Controls footstep sounds at Dollet
+    __int8 DolletFootsteps;
+
+    // 0x215 - 0x21B: Not investigated
+    __int8 Unknown10[7];
+
+    // 0x21C - 0x24F: Unused in fields
+    __int8 unused23[52];
+
+    // 0x250 - 0x251: Controls angles and character facing
+    __int8 AngleControl[2];
+
+    // 0x252: Unused in fields
+    __int8 unused24;
+
+    // 0x253 - 0x267: Not investigated
+    __int8 Unknown11[21];
+
+    // 0x268: Balamb visited flags
+    __int8 BalambVisitedFlags;
+
+    // 0x269 - 0x26F: Not investigated
+    __int8 Unknown12[7];
+
+    // 0x270: Unused in fields
+    __int8 unused25;
+
+    // 0x271 - 0x27F: Not investigated
+    __int8 Unknown13[15];
+
+    // 0x280: Squall's costume
+    __int8 SquallCostume;
+
+    // 0x281: Zell's Costume
+    __int8 ZellCostume;
+
+    // 0x282: Selphie's costume
+    __int8 SelphieCostume;
+
+    // 0x283: Quistis' Costume
+    __int8 QuistisCostume;
+
+    // 0x284: Dollet mission time
+    __int16 DolletMissionTime;
+
+    // 0x286: Not investigated
+    __int16 Unknown14;
+
+    // 0x288: Does lots of things
+    __int8 MultiPurposeVar2;
+
+    // 0x289: Not investigated
+    __int8 Unknown15;
+
+    // 0x28A: Flags
+    __int8 Flags1;
+
+    // 0x28B: Unused in fields
+    __int8 unused26;
+
+    // 0x28C: Not investigated
+    __int16 Unknown16;
+
+    // 0x28E: Split Party Flags
+    __int8 SplitPartyFlags;
+
+    // 0x28F: Not investigated
+    __int8 Unknown17;
+
+    // 0x290 - 0x2FF: Unused in fields
+    __int8 unused27[112];
+
+    // 0x300: Not investigated
+    __int8 Unknown18;
+
+    // 0x301 - 0x3FF: Unused in fields
+    __int8 unused28[255];
+};

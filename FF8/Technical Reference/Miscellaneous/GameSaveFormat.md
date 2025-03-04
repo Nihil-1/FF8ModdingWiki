@@ -59,8 +59,10 @@ PC steam version: Offsets start from at 384 (0x0180). File is compressed with LZ
 | 0x0B04 | 4 bytes             | Party (0xFF terminated)                                                             |
 | 0x0B08 | 4 bytes             | Known weapons                                                                       |
 | 0x0B0C | 12 bytes            | Griever name (FF8 text format)                                                      |
-| 0x0B18 | 2 bytes             | Unknown (always 7966?)                                                              |
-| 0x0B1A | 2 bytes             | Unknown                                                                             |
+| 0x0B18 | 1 bytes             | Weapon ID Laguna                                                                    |
+| 0x0B19 | 1 bytes             | Weapon ID Kiros                                                                     |
+| 0x0B1A | 1 bytes             | Weapon ID Ward                                                                      |
+| 0x0B1B | 1 bytes             | Unknown                                                                             |
 | 0x0B1C | 4 bytes             | Amount of Gil                                                                       |
 | 0x0B20 | 4 bytes             | Amount of Gil (Laguna)                                                              |
 | 0x0B24 | 2 bytes             | **Limit Break** Quistis                                                             |
@@ -105,7 +107,7 @@ PC steam version: Offsets start from at 384 (0x0180). File is compressed with LZ
 | 0x0D68 | 3\*1 bytes          | Direction (party1, party2, party3)                                                  |
 | 0x0D6B | 1 byte              | *Padding*                                                                           |
 | 0x0D6C | 4 bytes             | Unknown                                                                             |
-| 0x0D70 | 256 + 1024 bytes    | [Field vars](Variables)                                              |
+| 0x0D70 | 256 + 1024 bytes    | [Field vars](../Variables)                                                          |
 | 0x1270 | 128 bytes           | Worldmap (TODO)                                                                     |
 | 0x12F0 | 128 bytes           | Triple Triad (TODO)                                                                 |
 | 0x1370 | 64 bytes            | Chocobo World (TODO)                                                                |
@@ -181,11 +183,57 @@ Squall, Zell, Irvine, Quistis, Rinoa, Selphie, Seifer, Edea. For each character:
 
 ### Worldmap
 
-1.  TODO
+| Offset | Size  | Data                                                                                          |
+|--------|-------|-----------------------------------------------------------------------------------------------|
+| 0x00   | 12    | `char_pos[6]` (Character position: x, z, y, ?, ?, rotation (0->4095))                         |
+| 0x0C   | 12    | `uknown_pos1[6]` (Unknown position 1)                                                         |
+| 0x18   | 12    | `ragnarok_pos[6]` (Ragnarok position)                                                         |
+| 0x24   | 12    | `bgu_pos[6]` (Balamb Garden University position)                                              |
+| 0x30   | 12    | `car_pos[6]` (Car position)                                                                   |
+| 0x3C   | 12    | `uknown_pos2[6]` (Unknown position 2)                                                         |
+| 0x48   | 12    | `uknown_pos3[6]` (Unknown position 3)                                                         |
+| 0x54   | 12    | `uknown_pos4[6]` (Unknown position 4)                                                         |
+| 0x60   | 2     | `steps_related` (Steps related)                                                               |
+| 0x62   | 1     | `car_rent` (Car rent status)  0x00:forbidden ,0xFF:none,0x51:balamb1,0x52:balamb2,0x57:esthar |
+| 0x63   | 7     | `u1[7]` (Unknown, `u1[6]` = deep sea?)                                                        |
+| 0x6A   | 2     | `u2` (Always 0xFFFF?)                                                                         |
+| 0x6C   | 2     | `u3` (`u3[1]` = deep sea?)                                                                    |
+| 0x6E   | 1     | `disp_map_config` (0: none, 1: minisphere, 2: minimap)                                        |
+| 0x6F   | 1     | `u4` (Unknown)                                                                                |
+| 0x70   | 2     | `car_steps_related` (Car steps related)                                                       |
+| 0x72   | 2     | `car_steps_related2` (Car steps related)                                                      |
+| 0x74   | 1     | `vehicles_instructions_worldmap` Car,Unused,BGU,Chocobo,Hydre,???,???,Unused                  |
+| 0x75   | 1     | `koyok_quest` (Koyok quest flags)04 : Mandy Beach,Winhill,Trabia,Kashkabald Desert,UFO? Battu,80 : Koyo K Battu/Soigné/Mangé                                                             |
+| 0x76   | 8     | `obel_quest` (Obel quest flags)                                                               |
+| 0x7E   | 2     | `u6[2]` (Unknown)                                                                             |
+
+#### Obel quest flag
+
+[0] => avoir fredonné twice|???|Unused|Unused|n ricochets|infini ricochets|Vu ryo|Vu ryo² ("100x + de ricochets que toi !")
+[1] => Ryo a donné tablette|Unused|Indices ombre pour trouver l'idiot|Unused|Unused|Unused|Indice ombre pour Eldbeak|Eldbeak trouvé
+[2] => Trésor île Minde|Trésor Plaine de Mordor|Unused|Unused|Unused|Unused|Unused|Unused
+[3] => ???|Pierre Balamb|Pierre Ryo|Pierre Timber|Pierre Galbadia|Toutes les pierres|Indice Ombre pour Balamb|???
+[4] => ??? (mordor var?)
+[5] => ???|???|???|???|Block access Lunatic Pandora|???|Block access Lunatic Pandora|???
+[6] => avoir parlé à l'ombre|Accepter de chercher l'idiot|Avoir vu l'idiot|...
+[7] => ??? (temp var)
+
+
+
 
 ### Triple Triad
 
-1.  TODO
+| Offset | Size  | Data                                                                 |
+|--------|-------|----------------------------------------------------------------------|
+| 0x00   | 77    | `cards[77]` (Array of 77 cards)                                        |
+| 0x4D   | 33    | `card_locations[33]` (Array of 33 card locations)                     |
+| 0x6E   | 5     | `cards_rare[5]` (Array of 5 rare cards)                                |
+| 0x73   | 1     | `u1` (Padding or unknown)                                              |
+| 0x74   | 2     | `tt_victory_count` (TT victory count)                                 |
+| 0x76   | 2     | `tt_defeat_count` (TT defeat count)                                   |
+| 0x78   | 2     | `tt_egality_count` (TT egality count)                                 |
+| 0x7A   | 2     | `u2` (Unknown)                                                        |
+| 0x7C   | 4     | `u3` (Unknown)                                                        |
 
 ### Chocobo World
 
@@ -212,3 +260,31 @@ Squall, Zell, Irvine, Quistis, Rinoa, Selphie, Seifer, Edea. For each character:
 | 0x2E   | 1 byte             | Unknown                                                                                                        |
 | 0x2F   | 1 byte             | Home walking                                                                                                   |
 | 0x30   | 16 bytes           | Unknown (unused?)                                                                                              |
+
+
+### Configuration
+
+| Offset | Size | Data                                                                                  |
+|--------|------|---------------------------------------------------------------------------------------|
+| 0x00   | 1    | `vts_combat` (VTS combat setting)                                                     |
+| 0x01   | 1    | `vts_msg_combat` (VTS message combat setting)                                         |
+| 0x02   | 1    | `vts_msg` (VTS message setting)                                                       |
+| 0x03   | 1    | `analog_volume` (Analog volume setting)                                               |
+| 0x04   | 1    | `divers` (Miscellaneous settings) joystick,vibration,manette,???,???,pointeur,son,ATB |
+| 0x05   | 1    | `scan` (Scan setting)                                                                 |
+| 0x06   | 1    | `camera` (Camera setting)                                                             |
+| 0x07   | 1    | MAP SEAL                                                                              |
+| 0x08   | 1    | `L2` (L2 button mapping)                                                              |
+| 0x09   | 1    | `R2` (R2 button mapping)                                                              |
+| 0x0A   | 1    | `L1` (L1 button mapping)                                                              |
+| 0x0B   | 1    | `R1` (R1 button mapping)                                                              |
+| 0x0C   | 1    | `TRIANGLE` (Triangle button mapping)                                                  |
+| 0x0D   | 1    | `ROND` (Circle button mapping)                                                        |
+| 0x0E   | 1    | `CROIX` (Cross button mapping)                                                        |
+| 0x0F   | 1    | `CARRE` (Square button mapping)                                                       |
+| 0x10   | 1    | `SELECT` (Select button mapping)                                                      |
+| 0x11   | 1    | `u4` (Unknown)                                                                        |
+| 0x12   | 1    | `u5` (Unknown)                                                                        |
+| 0x13   | 1    | `START` (Start button mapping)                                                        |
+
+
