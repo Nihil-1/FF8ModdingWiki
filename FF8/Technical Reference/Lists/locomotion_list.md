@@ -5,6 +5,7 @@ parent: List
 ---
 
 # Locomotion
+
 | Value | Description                       |
 |-------|-----------------------------------|
 | 0     | Squall - On Feet                  |
@@ -23,33 +24,3 @@ parent: List
 | 48    | Balamb Garden                     |
 | 49    | *CRASH*                           |
 | 50    | Ragnarok                          |
-
-
-# Map seal (ultimecia castle)
-
-
-| Bit   | Description             |
-|-------|-------------------------|
-| Bit 0 | 	Item Locked            |
-| Bit 1 | 	Magic Locked           |
-| Bit 2 | 	GF Locked              |
-| Bit 3 | 	Draw Locked            |
-| Bit 4 | 	Command Ability Locked |
-| Bit 5 | 	Limit Break Locked     |
-| Bit 6 | 	Resurrection Locked    |
-| Bit 7 | 	Save Locked            |
-
-# Battle seal (ultimecia castle)
-
-Address: 1CFF6E8
-
-| Bit   | Description             |
-|-------|-------------------------|
-| Bit 0 | 	Item Locked            |
-| Bit 1 | 	Magic Locked           |
-| Bit 2 | 	GF Locked              |
-| Bit 3 | 	Draw Locked            |
-| Bit 4 | 	Command Ability Locked |
-| Bit 5 | 	Limit Break Locked     |
-| Bit 6 | 	Resurrection Locked    |
-| Bit 7 | 	Save Locked            |

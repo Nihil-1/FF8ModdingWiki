@@ -33,7 +33,8 @@ parent: Kernel
 | Offset | Length  | Description           |
 |--------|---------|-----------------------|
 | 0x0000 | 2 bytes | Magic ID              |
-| 0x0002 | 2 bytes | Unknown               |
+| 0x0002 | 1 bytes | Unknown               |
+| 0x0002 | 1 bytes | Animation triggered   |
 | 0x0004 | 1 byte  | Attack type           |
 | 0x0005 | 1 byte  | Attack power          |
 | 0x0006 | 1 byte  | Attack flags          |

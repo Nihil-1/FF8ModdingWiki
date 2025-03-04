@@ -407,7 +407,7 @@ parent: Kernel
 | 0x00   | 2 bytes | Offset to attack name     |
 | 0x02   | 2 bytes | Magic ID                  |
 | 0x04   | 1 byte  | Camera Change             |
-| 0x05   | 1 byte  | Unknown                   |
+| 0x05   | 1 byte  | Animation triggered       |
 | 0x06   | 1 byte  | Attack type               |
 | 0x07   | 1 byte  | Attack power              |
 | 0x08   | 1 byte  | Attack flags              |

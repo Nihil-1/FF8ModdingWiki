@@ -80,7 +80,7 @@ parent: Kernel
 | 0x0000 | 2 bytes | Offset to spell name                                           |
 | 0x0002 | 2 bytes | Offset to spell description                                    |
 | 0x0004 | 2 bytes | [[Magic ID                                                     |MagicID]]       |
-| 0x0006 | 1 byte  | Unknown                                                        |
+| 0x0006 | 1 byte  | Animation triggered                                            |
 | 0x0007 | 1 byte  | Attack type                                                    |
 | 0x0008 | 1 byte  | Spell power (used in damage formula)                           |
 | 0x0009 | 1 byte  | Unknown                                                        |

@@ -40,8 +40,8 @@ $$
 $$
 
 ### Modifiers
-
 #### Monsters
+
 If monster: 
 Damage = Damage / 2
 
@@ -89,26 +89,26 @@ $$
 ## Curative item
 
 $$
-\text{DamageHeal} = 50 \time Powers
+\text{DamageHeal} = 50 \times Powers
 $$
 
 # Magic
-
 ## Curative magic
 
+$$
 \text{DamageHeal} = \text{Power} \times  \frac{\text{Power} + \text{AttackerMagic} }{2} \times \frac{[0..32] + 240}{256} 
+$$
 
 ### Protective magic:
 If Shell:
 DamageHeal = Damage / 2
 
 ## Blue magic
-
 ### White wind
 
 
 $$
-\text{DamageHeal} = QuistisMaxHP - QuistisCurrentHP
+\text{DamageHeal} = \text{QuistisMaxHP} - \text{QuistisCurrentHP}
 $$ 
 
 # Physical

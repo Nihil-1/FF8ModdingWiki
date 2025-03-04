@@ -183,29 +183,29 @@ Squall, Zell, Irvine, Quistis, Rinoa, Selphie, Seifer, Edea. For each character:
 
 ### Worldmap
 
-| Offset | Size  | Data                                                                                          |
-|--------|-------|-----------------------------------------------------------------------------------------------|
-| 0x00   | 12    | `char_pos[6]` (Character position: x, z, y, ?, ?, rotation (0->4095))                         |
-| 0x0C   | 12    | `uknown_pos1[6]` (Unknown position 1)                                                         |
-| 0x18   | 12    | `ragnarok_pos[6]` (Ragnarok position)                                                         |
-| 0x24   | 12    | `bgu_pos[6]` (Balamb Garden University position)                                              |
-| 0x30   | 12    | `car_pos[6]` (Car position)                                                                   |
-| 0x3C   | 12    | `uknown_pos2[6]` (Unknown position 2)                                                         |
-| 0x48   | 12    | `uknown_pos3[6]` (Unknown position 3)                                                         |
-| 0x54   | 12    | `uknown_pos4[6]` (Unknown position 4)                                                         |
-| 0x60   | 2     | `steps_related` (Steps related)                                                               |
-| 0x62   | 1     | `car_rent` (Car rent status)  0x00:forbidden ,0xFF:none,0x51:balamb1,0x52:balamb2,0x57:esthar |
-| 0x63   | 7     | `u1[7]` (Unknown, `u1[6]` = deep sea?)                                                        |
-| 0x6A   | 2     | `u2` (Always 0xFFFF?)                                                                         |
-| 0x6C   | 2     | `u3` (`u3[1]` = deep sea?)                                                                    |
-| 0x6E   | 1     | `disp_map_config` (0: none, 1: minisphere, 2: minimap)                                        |
-| 0x6F   | 1     | `u4` (Unknown)                                                                                |
-| 0x70   | 2     | `car_steps_related` (Car steps related)                                                       |
-| 0x72   | 2     | `car_steps_related2` (Car steps related)                                                      |
-| 0x74   | 1     | `vehicles_instructions_worldmap` Car,Unused,BGU,Chocobo,Hydre,???,???,Unused                  |
-| 0x75   | 1     | `koyok_quest` (Koyok quest flags)04 : Mandy Beach,Winhill,Trabia,Kashkabald Desert,UFO? Battu,80 : Koyo K Battu/Soigné/Mangé                                                             |
-| 0x76   | 8     | `obel_quest` (Obel quest flags)                                                               |
-| 0x7E   | 2     | `u6[2]` (Unknown)                                                                             |
+| Offset | Size | Data                                                                                                                         |
+|--------|------|------------------------------------------------------------------------------------------------------------------------------|
+| 0x00   | 12   | `char_pos[6]` (Character position: x, z, y, ?, ?, rotation (0->4095))                                                        |
+| 0x0C   | 12   | `uknown_pos1[6]` (Unknown position 1)                                                                                        |
+| 0x18   | 12   | `ragnarok_pos[6]` (Ragnarok position)                                                                                        |
+| 0x24   | 12   | `bgu_pos[6]` (Balamb Garden University position)                                                                             |
+| 0x30   | 12   | `car_pos[6]` (Car position)                                                                                                  |
+| 0x3C   | 12   | `uknown_pos2[6]` (Unknown position 2)                                                                                        |
+| 0x48   | 12   | `uknown_pos3[6]` (Unknown position 3)                                                                                        |
+| 0x54   | 12   | `uknown_pos4[6]` (Unknown position 4)                                                                                        |
+| 0x60   | 2    | `steps_related` (Steps related)                                                                                              |
+| 0x62   | 1    | `car_rent` (Car rent status)  0x00:forbidden ,0xFF:none,0x51:balamb1,0x52:balamb2,0x57:esthar                                |
+| 0x63   | 7    | `u1[7]` (Unknown, `u1[6]` = deep sea?)                                                                                       |
+| 0x6A   | 2    | `u2` (Always 0xFFFF?)                                                                                                        |
+| 0x6C   | 2    | `u3` (`u3[1]` = deep sea?)                                                                                                   |
+| 0x6E   | 1    | `disp_map_config` (0: none, 1: minisphere, 2: minimap)                                                                       |
+| 0x6F   | 1    | `u4` (Unknown)                                                                                                               |
+| 0x70   | 2    | `car_steps_related` (Car steps related)                                                                                      |
+| 0x72   | 2    | `car_steps_related2` (Car steps related)                                                                                     |
+| 0x74   | 1    | `vehicles_instructions_worldmap` Car,Unused,BGU,Chocobo,Hydre,???,???,Unused                                                 |
+| 0x75   | 1    | `koyok_quest` (Koyok quest flags)04 : Mandy Beach,Winhill,Trabia,Kashkabald Desert,UFO? Battu,80 : Koyo K Battu/Soigné/Mangé |
+| 0x76   | 8    | `obel_quest` (Obel quest flags)                                                                                              |
+| 0x7E   | 2    | `u6[2]` (Unknown)                                                                                                            |
 
 #### Obel quest flag
 
@@ -223,17 +223,17 @@ Squall, Zell, Irvine, Quistis, Rinoa, Selphie, Seifer, Edea. For each character:
 
 ### Triple Triad
 
-| Offset | Size  | Data                                                                 |
-|--------|-------|----------------------------------------------------------------------|
-| 0x00   | 77    | `cards[77]` (Array of 77 cards)                                        |
-| 0x4D   | 33    | `card_locations[33]` (Array of 33 card locations)                     |
-| 0x6E   | 5     | `cards_rare[5]` (Array of 5 rare cards)                                |
-| 0x73   | 1     | `u1` (Padding or unknown)                                              |
-| 0x74   | 2     | `tt_victory_count` (TT victory count)                                 |
-| 0x76   | 2     | `tt_defeat_count` (TT defeat count)                                   |
-| 0x78   | 2     | `tt_egality_count` (TT egality count)                                 |
-| 0x7A   | 2     | `u2` (Unknown)                                                        |
-| 0x7C   | 4     | `u3` (Unknown)                                                        |
+| Offset | Size | Data                                              |
+|--------|------|---------------------------------------------------|
+| 0x00   | 77   | `cards[77]` (Array of 77 cards)                   |
+| 0x4D   | 33   | `card_locations[33]` (Array of 33 card locations) |
+| 0x6E   | 5    | `cards_rare[5]` (Array of 5 rare cards)           |
+| 0x73   | 1    | `u1` (Padding or unknown)                         |
+| 0x74   | 2    | `tt_victory_count` (TT victory count)             |
+| 0x76   | 2    | `tt_defeat_count` (TT defeat count)               |
+| 0x78   | 2    | `tt_egality_count` (TT egality count)             |
+| 0x7A   | 2    | `u2` (Unknown)                                    |
+| 0x7C   | 4    | `u3` (Unknown)                                    |
 
 ### Chocobo World
 
