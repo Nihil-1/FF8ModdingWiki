@@ -62,7 +62,7 @@ parent: List
 | 6            | 0x40       | Gravity Immunity      |
 | 7 (MSB)      | 0x80       | Always obtains card   |
 
-## GF/ Magic Type damage
+## GF/ Magic / Item Type damage
 
 | Value | Description                     |
 |-------|---------------------------------|
@@ -72,11 +72,28 @@ parent: List
 | 0x04  | Diablos damage                  |
 | 0x05  | GF damage ignore SPR            |
 | 0x06  | Magic ignore SPR and unmissable |
+| 0x07  | Curative magic                  |
+| 0x09  | White wind (Quistis blue magic) |
 | 0x0A  | Magic damage                    |
-| 0x11  |                                 |
+| 0x0A  | Depends HIT% (100*Power-Hit%)   |
+| 0x0C  | Target Current HP - 1 (Moomba)  |
+| 0x0D  | Based on GF level (Cactuar)     |
+| 0x0E  | Curative item                   |
+| 0x0F  | Angelo recover                  |
+| 0x11  | ?                               |
+| 0x12  | 1 HP (Excalipoor)               |
 
 
-
+enum GFMagicDamageType : __int8 {
+    GF_MAGIC_DAMAGE_TYPE_MAGIC_UNMISSABLE               = 0x00, // Magic unmissable
+    GF_MAGIC_DAMAGE_TYPE_PERCENT_CURRENT_HP             = 0x01, // % Current HP
+    GF_MAGIC_DAMAGE_TYPE_GF_DAMAGE                      = 0x02, // GF damage
+    GF_MAGIC_DAMAGE_TYPE_DIABLOS_DAMAGE                 = 0x04, // Diablos damage
+    GF_MAGIC_DAMAGE_TYPE_GF_DAMAGE_IGNORE_SPR           = 0x05, // GF damage ignore SPR
+    GF_MAGIC_DAMAGE_TYPE_MAGIC_IGNORE_SPR_AND_UNMISSABLE = 0x06, // Magic ignore SPR and unmissable
+    GF_MAGIC_DAMAGE_TYPE_MAGIC_DAMAGE                   = 0x0A, // Magic damage
+    GF_MAGIC_DAMAGE_TYPE_UNKNOWN                        = 0x11  // (Unknown)
+};
 
 
 

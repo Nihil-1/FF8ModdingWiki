@@ -10,20 +10,13 @@ Here you'll find all formula as found in the game
 
 ## Classic
 
-Damage = AttackerMag + Power  
-Damage = Damage * (265 - TargetSpr) / 4  
-Damage = Damage * Power / 256  
-Damage = Damage * ([0..32] + 240) / 256   
-
 $$
-\text{Damage} =(\left (\text{AttackerMag} + \text{Power} \right) 
+\text{Damage} =\left (\text{AttackerMag} + \text{Power} \right) 
 \times \frac{265 - \text{TargetSpr}}{4} \times \frac{\text{Power}}{256} 
 \times \frac{[0..32] + 240}{256}
 $$
 
 ## Demi, Percent
-
-Damage = AttackPower * TargetCurrentHP / 16
 
 $$
 \text{Damage} = \frac{\text{AttackPower} \times \text{TargetCurrentHP}}{16}
@@ -36,13 +29,6 @@ $$
 # GF
 
 ## Classic damage:
-
-Damage = LevelMod * Level / 10 + Power + PowerMod  
-Damage = Damage * (265 - TargetSpr) / 8  
-Damage = Damage * Power / 256  
-Damage = Damage * Boost / 100  
-Damage = Damage * (100 + SummonMagBonus) / 100  
-Damage = Damage * ([0..32] + 240) / 256   
 
 $$
 \text{Damage} = 
@@ -68,9 +54,6 @@ If Shell:
 Damage = Damage / 2
 
 ## Diablos
-
-Damage = TargetMaxHP * Level / (PowerMod - LevelMod + 100)
-
 $$
 \text{Damage} = \frac{\text{TargetMaxHP} \times \text{Level}}{\text{PowerMod} - \text{LevelMod} + 100}
 $$
@@ -80,5 +63,57 @@ $$
 >Diablos LevelMod = 0
 
 
+## Cactuar
+
+$$
+\text{Damage} = 1000 \times \left(\frac{\text{AttackPower} \times \text{GFLevel}}{1000} + 1\right)
+$$
+
+{: .note }
+>Cactuar AttackPower = 90
+
+## Moomba
+
+$$
+\text{Damage} = TargetCurrentHP - 1
+$$
+
+## Angelo recover
+
+$$
+\text{DamageHeal} = \frac{Power \times TargetMaxHP}{16}
+$$
+
+# Item
+
+## Curative item
+
+$$
+\text{DamageHeal} = 50 \time Powers
+$$
+
+# Magic
+
+## Curative magic
+
+\text{DamageHeal} = \text{Power} \times  \frac{\text{Power} + \text{AttackerMagic} }{2} \times \frac{[0..32] + 240}{256} 
+
+### Protective magic:
+If Shell:
+DamageHeal = Damage / 2
+
+## Blue magic
+
+### White wind
+
+
+$$
+\text{DamageHeal} = QuistisMaxHP - QuistisCurrentHP
+$$ 
+
+# Physical
+## Compute crit
+
+  v1 = 255 * (RELATED_TO_CRIT_BONUS + (unsigned __int8)BCI_LUCK[208 * p_attacker_slot_id]) / 255;
 
 
