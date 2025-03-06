@@ -3,8 +3,7 @@ layout: table_wrappers
 ---
 
 <!DOCTYPE html>
-{% assign slug = page.title | slugify %}
-<meta http-equiv="refresh" content="0; url={{ slug }}">
+{% assign slug = page.title | slugify: 'ascii' %}
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
 <body>
