@@ -34,11 +34,12 @@ parent: Kernel
 |--------|---------|-----------------------|
 | 0x0000 | 2 bytes | Magic ID              |
 | 0x0002 | 1 bytes | Unknown               |
-| 0x0002 | 1 bytes | Animation triggered   |
+| 0x0003 | 1 bytes | Animation triggered   |
 | 0x0004 | 1 byte  | Attack type           |
 | 0x0005 | 1 byte  | Attack power          |
 | 0x0006 | 1 byte  | Attack flags          |
 | 0x0007 | 1 byte  | Hit Count             |
 | 0x0008 | 1 byte  | Element               |
 | 0x0009 | 1 byte  | Status attack enabler |
-| 0x000A | 6 bytes | Statuses              |
+| 0x000A | 2 bytes | Status1               |
+| 0x000C | 4 bytes | Status2               |

@@ -154,3 +154,6 @@ parent: Kernel
 | 0x0080 | 2 bytes | Unknown                                |
 | 0x0082 | 1 byte  | Power Mod (used in damage formula)     |
 | 0x0083 | 1 byte  | Level Mod (used in damage formula)     |
+
+
+

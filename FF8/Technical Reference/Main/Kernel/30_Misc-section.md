@@ -13,7 +13,6 @@ parent: Kernel
 |--------|----------|--------------|
 | 0x4CCC | 6        | Various      |
 
-<br/>
 
 ## Sections
 
@@ -26,7 +25,6 @@ parent: Kernel
 | 0x4CFC | Duel Timers and Start Moves | 8 bytes  |
 | 0x4D04 | Shot Timers                 | 4 bytes  |
 
-<br/>
 
 ## Section Structure
 

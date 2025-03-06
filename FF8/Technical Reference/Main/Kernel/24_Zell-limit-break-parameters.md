@@ -9,7 +9,7 @@ parent: Kernel
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
-| 0x49F8 | 1        | 64 bytes     |
+| 0x49F8 | 1        | 116 bytes    |
 
 ## Section Structure
 
