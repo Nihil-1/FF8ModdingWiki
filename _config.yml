@@ -31,12 +31,7 @@ enable_copy_code_button: true
 
 logo: "/assets/images/ff8-mod-logo.png"
 
-defaults:
-  - scope:
-      path: "" # Applies to all files
-    values:
-      permalink: /:slug/
-      
+permalink: pretty
 math: katex
 
 

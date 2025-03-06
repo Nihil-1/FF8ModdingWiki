@@ -3,7 +3,6 @@ layout: default
 title: Header
 nav_order: 1
 parent: Kernel
-slug: header
 ---
 
 ## General
