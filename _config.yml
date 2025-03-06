@@ -34,6 +34,12 @@ logo: "/assets/images/ff8-mod-logo.png"
 permalink: pretty
 math: katex
 
+defaults:
+  - scope:
+      path: "" # Applies to all files in the project
+    values:
+      custom_link: "/default-link" # Set a default link (can be overridden per page)
+
 
 # By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
 mermaid:
