@@ -4,7 +4,6 @@ title: Header
 nav_order: 1
 parent: Kernel
 slug: header
-permalink: /:categories/:slug/
 ---
 
 ## General
