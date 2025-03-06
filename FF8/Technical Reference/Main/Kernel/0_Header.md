@@ -3,7 +3,8 @@ layout: default
 title: Header
 nav_order: 1
 parent: Kernel
-permalink: /:categories/:title/
+slug: header
+permalink: /:categories/:slug/
 ---
 
 ## General
