@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Header
+title: "Header"
 nav_order: 1
 parent: Kernel
-slug: header
+slug: "header"
 ---
 
 ## General
