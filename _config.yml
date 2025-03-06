@@ -31,7 +31,7 @@ enable_copy_code_button: true
 
 logo: "/assets/images/ff8-mod-logo.png"
 
-permalink: /:categories/:slug/
+permalink: pretty
 math: katex
 
 
