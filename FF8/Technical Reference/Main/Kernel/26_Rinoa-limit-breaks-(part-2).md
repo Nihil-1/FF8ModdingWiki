@@ -9,7 +9,7 @@ parent: Kernel
 
 | Offset | Sections | Section Size |
 |--------|----------|--------------|
-| 0x4A6C | 33       | 20 bytes     |
+| 0x4A6C | 5        | 20 bytes     |
 
 
 ## Sections
