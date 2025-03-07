@@ -3,7 +3,7 @@ layout: default
 title: Header
 nav_order: 1
 parent: Kernel
-slug: header
+slug: "fracture-announces-exclusive-3-year-deal-with-drake-and-morgan"
 ---
 
 ## General
