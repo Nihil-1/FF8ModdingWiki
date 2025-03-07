@@ -2,7 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap Camera
-permalink: /technical-reference/worldmap/worldmapcamera/
+permalink: /technical-reference/worldmap/worldmap-camera/
 ---
 
 By MaKiPL. :\*

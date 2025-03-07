@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: Price (price.bin)
-permalink: /technical-reference/menu/menu-price-bin/
+permalink: /technical-reference/menu/price-pricebin/
 ---
 
 ### price.bin

@@ -2,7 +2,7 @@
 layout: default
 title: GF
 parent: List
-permalink: /technical-reference/list/gf-list/
+permalink: /technical-reference/list/gf/
 ---
 
 # GF

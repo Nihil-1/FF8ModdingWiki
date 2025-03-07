@@ -2,7 +2,7 @@
 layout: default
 title: Locomotion
 parent: List
-permalink: /technical-reference/list/locomotion-list/
+permalink: /technical-reference/list/locomotion/
 ---
 
 # Locomotion

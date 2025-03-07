@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: FF8 String
-permalink: /technical-reference/miscellaneous/ff8string/
+permalink: /technical-reference/miscellaneous/ff8-string/
 ---
 
 # Description

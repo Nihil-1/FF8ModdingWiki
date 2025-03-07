@@ -2,7 +2,7 @@
 layout: default
 title: Special Action List
 parent: List
-permalink: /technical-reference/list/specialaction-list/
+permalink: /technical-reference/list/special-action-list/
 ---
 
 | ID  | Name                                  |

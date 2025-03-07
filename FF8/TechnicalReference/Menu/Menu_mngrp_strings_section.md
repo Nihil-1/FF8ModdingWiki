@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: Mngrp String Section
-permalink: /technical-reference/menu/menu-mngrp-strings-section/
+permalink: /technical-reference/menu/mngrp-string-section/
 ---
 # Header String Offsets
 

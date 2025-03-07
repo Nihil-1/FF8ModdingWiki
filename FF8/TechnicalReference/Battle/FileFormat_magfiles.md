@@ -3,7 +3,7 @@ layout: default
 parent: Battle
 title: Mag File Format
 author: MaKiPL
-permalink: /technical-reference/battle/fileformat-magfiles/
+permalink: /technical-reference/battle/mag-file-format/
 ---
 
 There is no unified format for MAG files. Every file has their own naming, even extension. You can't really distinguish them.

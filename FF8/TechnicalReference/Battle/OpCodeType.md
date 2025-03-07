@@ -3,7 +3,7 @@ layout: default
 parent: Battle
 title: Opcode Type List
 author: nihil, hobbitdur
-permalink: /technical-reference/battle/opcodetype/
+permalink: /technical-reference/battle/opcode-type-list/
 ---
 
 # Type list

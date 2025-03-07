@@ -3,7 +3,7 @@ layout: default
 title: Non battle item name and description offset
 nav_order: 10
 parent: Kernel
-permalink: /technical-reference/main/kernel/9-non-battle-item-name-and-description-offsets/
+permalink: /technical-reference/main/kernel/non-battle-item-name-and-description-offset/
 ---
 
 ## General

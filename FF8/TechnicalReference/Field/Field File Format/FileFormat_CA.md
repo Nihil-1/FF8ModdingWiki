@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Camera
-permalink: /technical-reference/field/field-file-format/fileformat-ca/
+permalink: /technical-reference/field/field-file-format/field-camera/
 ---
 
 By myst6re.

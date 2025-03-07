@@ -2,7 +2,7 @@
 layout: default
 title: Kernel
 parent: List
-permalink: /technical-reference/list/kernel-list/
+permalink: /technical-reference/list/kernel/
 ---
 
 ## Target info

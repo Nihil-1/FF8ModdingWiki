@@ -2,7 +2,7 @@
 layout: default
 title: Status flags
 parent: List
-permalink: /technical-reference/list/statuses/
+permalink: /technical-reference/list/status-flags/
 ---
 
 # Status 1

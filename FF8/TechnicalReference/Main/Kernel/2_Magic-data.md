@@ -3,7 +3,7 @@ layout: default
 title: Magic
 nav_order: 3
 parent: Kernel
-permalink: /technical-reference/main/kernel/2-magic-data/
+permalink: /technical-reference/main/kernel/magic/
 ---
 
 ## General

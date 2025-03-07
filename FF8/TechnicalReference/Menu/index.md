@@ -3,7 +3,7 @@ layout: default
 title: Menu
 nav_order: 5
 parent: Technical Reference
-permalink: /technical-reference/menu/index/
+permalink: /technical-reference/menu/menu/
 ---
 TODO: Put all the wiki here
 For text menu, there is a dedicated wiki in the [ShumiTranslator](https://github.com/HobbitDur/ShumiTranslator/wiki) tool done by HobbitDur which detail the following files (link are kept here to the old wiki for archive purpose):

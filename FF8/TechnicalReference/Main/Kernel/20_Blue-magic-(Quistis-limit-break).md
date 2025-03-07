@@ -3,7 +3,7 @@ layout: default
 title: Blue magic
 nav_order: 21
 parent: Kernel
-permalink: /technical-reference/main/kernel/20-blue-magic-quistis-limit-break/
+permalink: /technical-reference/main/kernel/blue-magic/
 ---
 
 ## General

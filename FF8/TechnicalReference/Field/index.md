@@ -1,5 +1,5 @@
 ---
-permalink: /technical-reference/field/index/
+permalink: /technical-reference/field/field/
 layout: default
 title: Field
 nav_order: 2

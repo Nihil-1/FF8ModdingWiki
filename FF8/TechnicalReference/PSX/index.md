@@ -1,5 +1,5 @@
 ---
-permalink: /technical-reference/psx/index/
+permalink: /technical-reference/psx/psx/
 layout: default
 title: PSX
 nav_order: 12
