@@ -1,0 +1,42 @@
+name: Compute Permalinks
+
+on:
+  push:
+    branches: ["main"]  # Change this to your default branch
+  pull_request:
+    branches: ["main"]  # Change this to your default branch
+
+jobs:
+  compute-permalinks:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Use the Python version you prefer
+
+      # Install dependencies (if any)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .github/scripts/requirements.txt  # Add a requirements.txt file if needed
+
+      # Run the permalink generation script
+      - name: Generate permalinks
+        run: |
+          python .github/scripts/generate_permalinks.py
+
+      # Commit the changes (if any)
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Automatically generate permalinks"
+          git push
