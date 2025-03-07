@@ -90,7 +90,7 @@ callouts:
 collections:
   FF8:
     output: true
-    permalink: "/:collection/:slug/"
+    permalink: "/:collection/:path/:slug/"
     nav_exclude: false  # Make sure it's not excluded
 
 just_the_docs:
