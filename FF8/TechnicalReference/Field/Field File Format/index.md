@@ -1,5 +1,5 @@
 ---
-permalink: /technical-reference/field/field-file-format/field-file-format/
+permalink: /technical-reference/field/field-file-format/
 layout: default
 title: Field File Format
 parent: Field
