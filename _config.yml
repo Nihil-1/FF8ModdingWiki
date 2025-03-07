@@ -14,6 +14,10 @@ gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into t
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%e %b %Y at %I:%M" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
+collections:
+  FF8:
+    output: true
+
 color_scheme: light
 
 favicon_ico: "/assets/images/favicon.ico"
