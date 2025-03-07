@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02B_SETMODEL
-permalink: /technicalreferencefieldfield-opcodes02b-setmodel/
+permalink: /technicalreference/field/field-opcodes/02b-setmodel/
 ---
 
 -   Opcode: **0x02B**

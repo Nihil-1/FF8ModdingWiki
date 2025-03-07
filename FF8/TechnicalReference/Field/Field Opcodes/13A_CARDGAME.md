@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 13A_CARDGAME
-permalink: /technicalreferencefieldfield-opcodes13a-cardgame/
+permalink: /technicalreference/field/field-opcodes/13a-cardgame/
 ---
 
 -   Opcode: **0x13A**

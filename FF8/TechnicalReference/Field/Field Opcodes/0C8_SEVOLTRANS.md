@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C8_SEVOLTRANS
-permalink: /technicalreferencefieldfield-opcodes0c8-sevoltrans/
+permalink: /technicalreference/field/field-opcodes/0c8-sevoltrans/
 ---
 
 -   Opcode: **0x0C8**

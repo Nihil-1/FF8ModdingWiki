@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03D_MSPEED
-permalink: /technicalreferencefieldfield-opcodes03d-mspeed/
+permalink: /technicalreference/field/field-opcodes/03d-mspeed/
 ---
 
 -   Opcode: **0x03D**

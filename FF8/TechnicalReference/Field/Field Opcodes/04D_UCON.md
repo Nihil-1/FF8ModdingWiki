@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04D_UCON
-permalink: /technicalreferencefieldfield-opcodes04d-ucon/
+permalink: /technicalreference/field/field-opcodes/04d-ucon/
 ---
 
 -   Opcode: **0x04D**

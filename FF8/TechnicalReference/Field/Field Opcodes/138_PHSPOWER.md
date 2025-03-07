@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 138_PHSPOWER
-permalink: /technicalreferencefieldfield-opcodes138-phspower/
+permalink: /technicalreference/field/field-opcodes/138-phspower/
 ---
 
 -   Opcode: **0x138**

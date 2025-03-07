@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 071_DSCROLL
-permalink: /technicalreferencefieldfield-opcodes071-dscroll/
+permalink: /technicalreference/field/field-opcodes/071-dscroll/
 ---
 
 -   Opcode: **0x071**

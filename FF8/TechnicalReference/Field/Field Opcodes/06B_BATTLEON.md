@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06B_BATTLEON
-permalink: /technicalreferencefieldfield-opcodes06b-battleon/
+permalink: /technicalreference/field/field-opcodes/06b-battleon/
 ---
 
 -   Opcode: **0x06B**

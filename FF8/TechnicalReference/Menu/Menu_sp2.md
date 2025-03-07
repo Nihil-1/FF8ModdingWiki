@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: .sp1, .sp2 File Format
-permalink: /technicalreferencemenumenu-sp2/
+permalink: /technicalreference/menu/menu-sp2/
 ---
 
 by MaKi  

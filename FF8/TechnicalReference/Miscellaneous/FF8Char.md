@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: FF8 Char
-permalink: /technicalreferencemiscellaneousff8char/
+permalink: /technicalreference/miscellaneous/ff8char/
 ---
 
 # Font files

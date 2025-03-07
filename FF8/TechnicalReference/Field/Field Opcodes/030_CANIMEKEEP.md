@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 030_CANIMEKEEP
-permalink: /technicalreferencefieldfield-opcodes030-canimekeep/
+permalink: /technicalreference/field/field-opcodes/030-canimekeep/
 ---
 
 -   Opcode: **0x030**

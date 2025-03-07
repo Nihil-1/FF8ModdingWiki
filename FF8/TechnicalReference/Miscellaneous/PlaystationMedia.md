@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: Playstation Media
-permalink: /technicalreferencemiscellaneousplaystationmedia/
+permalink: /technicalreference/miscellaneous/playstationmedia/
 ---
 
 By myst6re

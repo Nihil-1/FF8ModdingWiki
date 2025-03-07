@@ -2,7 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap Music
-permalink: /technicalreferenceworldmapworldmap-music/
+permalink: /technicalreference/worldmap/worldmap-music/
 ---
 
 musicN.obj (where n is 0,1,2,3,4 and 5) is file, that contains AKAO frames. AKAO are probably the same as in FF7: [AKAO frames](../FF7/AKAOframes).

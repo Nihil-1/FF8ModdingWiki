@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05A_PUSHOFF
-permalink: /technicalreferencefieldfield-opcodes05a-pushoff/
+permalink: /technicalreference/field/field-opcodes/05a-pushoff/
 ---
 
 -   Opcode: **0x05A**

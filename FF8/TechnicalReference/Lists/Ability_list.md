@@ -2,7 +2,7 @@
 layout: default
 title: Ability List
 parent: List
-permalink: /technicalreferencelistsability-list/
+permalink: /technicalreference/lists/ability-list/
 ---
 
 # Ability list

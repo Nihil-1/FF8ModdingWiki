@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 059_PUSHON
-permalink: /technicalreferencefieldfield-opcodes059-pushon/
+permalink: /technicalreference/field/field-opcodes/059-pushon/
 ---
 
 -   Opcode: **0x059**

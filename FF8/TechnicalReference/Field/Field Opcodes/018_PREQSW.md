@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 018_PREQSW
-permalink: /technicalreferencefieldfield-opcodes018-preqsw/
+permalink: /technicalreference/field/field-opcodes/018-preqsw/
 ---
 
 -   Opcode: **0x018**
