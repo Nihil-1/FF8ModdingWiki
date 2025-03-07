@@ -3,7 +3,7 @@ layout: default
 title: Kernel
 parent: Main
 nav_order: 1
-permalink: /technicalreference/main/kernel/kernel/
+permalink: /technical-reference/main/kernel/index/
 ---
 
 **Kernel.bin** documentation was originally held on external wiki of [Doomtrain github](https://github.com/alexfilth/doomtrain/wiki/Kernel.bin)

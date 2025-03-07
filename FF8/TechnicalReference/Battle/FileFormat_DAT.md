@@ -8,7 +8,7 @@ author:
   - random_npc
   - myst6re
   - HobbitDur
-permalink: /technicalreference/battle/fileformat-dat/
+permalink: /technical-reference/battle/fileformat-dat/
 ---
 
 ## Header

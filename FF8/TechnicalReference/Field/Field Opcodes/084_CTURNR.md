@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 084_CTURNR
-permalink: /technicalreference/field/field-opcodes/084-cturnr/
+permalink: /technical-reference/field/field-opcodes/084-cturnr/
 ---
 
 -   Opcode: **0x084**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 11D_GETPARTY
-permalink: /technicalreference/field/field-opcodes/11d-getparty/
+permalink: /technical-reference/field/field-opcodes/11d-getparty/
 ---
 
 -   Opcode: **0x11D**

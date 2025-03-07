@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 181_UNKNOWN16
-permalink: /technicalreference/field/field-opcodes/181-unknown16/
+permalink: /technical-reference/field/field-opcodes/181-unknown16/
 ---
 
 -   Opcode: **0x181**

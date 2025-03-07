@@ -1,5 +1,5 @@
 ---
-permalink: /technicalreference/worldmap/worldmap/
+permalink: /technical-reference/worldmap/index/
 layout: default
 title: WorldMap
 nav_order: 6

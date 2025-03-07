@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 100_FACEDIRLIMIT
-permalink: /technicalreference/field/field-opcodes/100-facedirlimit/
+permalink: /technical-reference/field/field-opcodes/100-facedirlimit/
 ---
 
 -   Opcode: **0x100**

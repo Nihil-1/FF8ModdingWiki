@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: PC Media
-permalink: /technicalreference/miscellaneous/pc-media/
+permalink: /technical-reference/miscellaneous/pc-media/
 ---
 
 # Data File Format

@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: Variables
-permalink: /technicalreference/miscellaneous/variables/
+permalink: /technical-reference/miscellaneous/variables/
 ---
 
 By [Shard](../User:Shard).

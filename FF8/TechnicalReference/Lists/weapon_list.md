@@ -2,7 +2,7 @@
 layout: default
 title: Weapon
 parent: List
-permalink: /technicalreference/lists/weapon-list/
+permalink: /technical-reference/list/weapon-list/
 ---
 
 # Renzokuken finish

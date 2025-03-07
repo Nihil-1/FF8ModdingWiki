@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 025_LADDERUP
-permalink: /technicalreference/field/field-opcodes/025-ladderup/
+permalink: /technical-reference/field/field-opcodes/025-ladderup/
 ---
 
 -   Opcode: **0x025**

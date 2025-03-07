@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 159_SEALEDOFF
-permalink: /technicalreference/field/field-opcodes/159-sealedoff/
+permalink: /technical-reference/field/field-opcodes/159-sealedoff/
 ---
 
 -   Opcode: **0x159**

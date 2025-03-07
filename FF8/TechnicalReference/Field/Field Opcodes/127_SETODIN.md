@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 127_SETODIN
-permalink: /technicalreference/field/field-opcodes/127-setodin/
+permalink: /technical-reference/field/field-opcodes/127-setodin/
 ---
 
 -   Opcode: **0x127**

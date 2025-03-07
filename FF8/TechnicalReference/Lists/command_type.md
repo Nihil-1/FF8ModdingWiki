@@ -3,7 +3,7 @@ layout: default
 title: Command type
 parent: List
 author: hobbitdur, nihil
-permalink: /technicalreference/lists/command-type/
+permalink: /technical-reference/list/command-type/
 ---
 
 Check means condition check in AI

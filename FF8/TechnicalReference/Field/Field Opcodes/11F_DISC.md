@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 11F_DISC
-permalink: /technicalreference/field/field-opcodes/11f-disc/
+permalink: /technical-reference/field/field-opcodes/11f-disc/
 ---
 
 -   Opcode: **0x11F**

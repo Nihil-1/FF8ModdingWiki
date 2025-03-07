@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 022_FOOTSTEP
-permalink: /technicalreference/field/field-opcodes/022-footstep/
+permalink: /technical-reference/field/field-opcodes/022-footstep/
 ---
 
 -   Opcode: **0x022**

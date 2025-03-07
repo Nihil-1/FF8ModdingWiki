@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 058_TALKOFF
-permalink: /technicalreference/field/field-opcodes/058-talkoff/
+permalink: /technical-reference/field/field-opcodes/058-talkoff/
 ---
 
 -   Opcode: **0x058**

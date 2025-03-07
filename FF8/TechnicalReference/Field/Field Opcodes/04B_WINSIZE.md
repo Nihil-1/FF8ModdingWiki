@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04B_WINSIZE
-permalink: /technicalreference/field/field-opcodes/04b-winsize/
+permalink: /technical-reference/field/field-opcodes/04b-winsize/
 ---
 
 -   Opcode: **0x04B**

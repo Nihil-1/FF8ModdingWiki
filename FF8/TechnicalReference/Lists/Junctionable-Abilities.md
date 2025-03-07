@@ -2,7 +2,7 @@
 layout: default
 title: Junctionable Abilities
 parent: List
-permalink: /technicalreference/lists/junctionable-abilities/
+permalink: /technical-reference/list/junctionable-abilities/
 ---
 
 | ID   | Description   |

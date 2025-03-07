@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 153_ADDSEEDLEVEL
-permalink: /technicalreference/field/field-opcodes/153-addseedlevel/
+permalink: /technical-reference/field/field-opcodes/153-addseedlevel/
 ---
 
 -   Opcode: **0x153**

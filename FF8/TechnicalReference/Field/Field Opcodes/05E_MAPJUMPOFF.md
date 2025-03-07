@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05E_MAPJUMPOFF
-permalink: /technicalreference/field/field-opcodes/05e-mapjumpoff/
+permalink: /technical-reference/field/field-opcodes/05e-mapjumpoff/
 ---
 
 -   Opcode: **0x05E**

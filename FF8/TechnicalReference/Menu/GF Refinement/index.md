@@ -1,5 +1,5 @@
 ---
-permalink: /technicalreference/menu/gf-refinement/gf-refinement/
+permalink: /technical-reference/menu/gf-refinement/index/
 layout: default
 title: GF Refinement
 parent: Menu

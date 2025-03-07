@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0E7_ANIMESPEED
-permalink: /technicalreference/field/field-opcodes/0e7-animespeed/
+permalink: /technical-reference/field/field-opcodes/0e7-animespeed/
 ---
 
 -   Opcode: **0x0E7**

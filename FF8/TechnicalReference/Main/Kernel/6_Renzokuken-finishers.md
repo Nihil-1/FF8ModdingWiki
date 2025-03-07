@@ -3,7 +3,7 @@ layout: default
 title: Renzokuken finishers
 nav_order: 7
 parent: Kernel
-permalink: /technicalreference/main/kernel/6-renzokuken-finishers/
+permalink: /technical-reference/main/kernel/6-renzokuken-finishers/
 ---
 
 ## General

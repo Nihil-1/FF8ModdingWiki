@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0CD_SESTOP
-permalink: /technicalreference/field/field-opcodes/0cd-sestop/
+permalink: /technical-reference/field/field-opcodes/0cd-sestop/
 ---
 
 -   Opcode: **0x0CD**

@@ -3,7 +3,7 @@ layout: default
 title: Misc
 nav_order: 31
 parent: Kernel
-permalink: /technicalreference/main/kernel/30-misc-section/
+permalink: /technical-reference/main/kernel/30-misc-section/
 ---
 
 # Misc Data Section

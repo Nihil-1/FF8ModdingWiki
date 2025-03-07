@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 158_LASTOUT
-permalink: /technicalreference/field/field-opcodes/158-lastout/
+permalink: /technical-reference/field/field-opcodes/158-lastout/
 ---
 
 -   Opcode: **0x158**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 070_PGETINFO
-permalink: /technicalreference/field/field-opcodes/070-pgetinfo/
+permalink: /technical-reference/field/field-opcodes/070-pgetinfo/
 ---
 
 -   Opcode: **0x070**

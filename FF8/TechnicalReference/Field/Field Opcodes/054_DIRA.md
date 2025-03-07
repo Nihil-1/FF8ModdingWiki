@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 054_DIRA
-permalink: /technicalreference/field/field-opcodes/054-dira/
+permalink: /technical-reference/field/field-opcodes/054-dira/
 ---
 
 -   Opcode: **0x054**

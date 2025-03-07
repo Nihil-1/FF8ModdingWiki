@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03E_MOVE
-permalink: /technicalreference/field/field-opcodes/03e-move/
+permalink: /technical-reference/field/field-opcodes/03e-move/
 ---
 
 -   Opcode: **0x03E**

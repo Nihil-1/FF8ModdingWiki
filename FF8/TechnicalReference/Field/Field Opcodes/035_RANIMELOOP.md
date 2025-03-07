@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 035_RANIMELOOP
-permalink: /technicalreference/field/field-opcodes/035-ranimeloop/
+permalink: /technical-reference/field/field-opcodes/035-ranimeloop/
 ---
 
 -   Opcode: **0x035**

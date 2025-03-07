@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 055_PDIRA
-permalink: /technicalreference/field/field-opcodes/055-pdira/
+permalink: /technical-reference/field/field-opcodes/055-pdira/
 ---
 
 -   Opcode: **0x055**

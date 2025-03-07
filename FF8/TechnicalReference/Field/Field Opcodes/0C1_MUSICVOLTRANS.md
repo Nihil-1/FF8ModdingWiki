@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C1_MUSICVOLTRANS
-permalink: /technicalreference/field/field-opcodes/0c1-musicvoltrans/
+permalink: /technical-reference/field/field-opcodes/0c1-musicvoltrans/
 ---
 
 -   Opcode: **0x0C1**

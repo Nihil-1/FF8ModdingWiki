@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02D_ANIME
-permalink: /technicalreference/field/field-opcodes/02d-anime/
+permalink: /technical-reference/field/field-opcodes/02d-anime/
 ---
 
 -   Opcode: **0x02D**

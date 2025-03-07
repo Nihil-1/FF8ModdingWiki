@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 166_UNKNOWN1
-permalink: /technicalreference/field/field-opcodes/166-unknown1/
+permalink: /technical-reference/field/field-opcodes/166-unknown1/
 ---
 
 -   Opcode: **0x166**

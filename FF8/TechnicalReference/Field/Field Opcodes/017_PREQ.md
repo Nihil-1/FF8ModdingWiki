@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 017_PREQ
-permalink: /technicalreference/field/field-opcodes/017-preq/
+permalink: /technical-reference/field/field-opcodes/017-preq/
 ---
 
 -   Opcode: **0x017**

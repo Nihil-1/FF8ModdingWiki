@@ -3,7 +3,7 @@ layout: default
 title: Shot (irvine limit breaks)
 nav_order: 23
 parent: Kernel
-permalink: /technicalreference/main/kernel/22-shot-irvine-limit-break/
+permalink: /technical-reference/main/kernel/22-shot-irvine-limit-break/
 ---
 
 ## General

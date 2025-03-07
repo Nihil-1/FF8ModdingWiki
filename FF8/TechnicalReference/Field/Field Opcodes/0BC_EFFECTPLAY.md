@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0BC_EFFECTPLAY
-permalink: /technicalreference/field/field-opcodes/0bc-effectplay/
+permalink: /technical-reference/field/field-opcodes/0bc-effectplay/
 ---
 
 -   Opcode: **0x0BC**

@@ -3,7 +3,7 @@ layout: default
 title: Exe data
 parent: ExeData
 author: SegaChief, HobbitDur
-permalink: /technicalreference/exedata/exe-data-chart/
+permalink: /technical-reference/exedata/exe-data-chart/
 ---
 
 Here will be put all info on the exe editing. The base is version 2013 in english.  

@@ -3,7 +3,7 @@ layout: default
 title: Blue magic parameters
 nav_order: 22
 parent: Kernel
-permalink: /technicalreference/main/kernel/21-quistis-limit-break-parameters/
+permalink: /technical-reference/main/kernel/21-quistis-limit-break-parameters/
 ---
 
 ## General

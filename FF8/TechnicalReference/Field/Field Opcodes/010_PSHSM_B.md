@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 010_PSHSM_B
-permalink: /technicalreference/field/field-opcodes/010-pshsm-b/
+permalink: /technical-reference/field/field-opcodes/010-pshsm-b/
 ---
 
 -   Opcode: **0x010**

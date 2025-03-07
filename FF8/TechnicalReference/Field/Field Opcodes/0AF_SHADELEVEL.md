@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0AF_SHADELEVEL
-permalink: /technicalreference/field/field-opcodes/0af-shadelevel/
+permalink: /technical-reference/field/field-opcodes/0af-shadelevel/
 ---
 
 \_\_NOTOC\_\_

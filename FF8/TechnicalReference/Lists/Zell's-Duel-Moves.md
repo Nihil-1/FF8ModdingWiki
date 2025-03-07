@@ -2,7 +2,7 @@
 layout: default
 title: Zell duel moves
 parent: List
-permalink: /technicalreference/lists/zells-duel-moves/
+permalink: /technical-reference/list/zells-duel-moves/
 ---
 
 | Offset | Description     |

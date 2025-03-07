@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 038_DISCJUMP
-permalink: /technicalreference/field/field-opcodes/038-discjump/
+permalink: /technical-reference/field/field-opcodes/038-discjump/
 ---
 
 -   Opcode: **0x038**

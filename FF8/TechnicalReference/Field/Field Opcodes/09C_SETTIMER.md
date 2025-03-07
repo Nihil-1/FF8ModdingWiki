@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 09C_SETTIMER
-permalink: /technicalreference/field/field-opcodes/09c-settimer/
+permalink: /technical-reference/field/field-opcodes/09c-settimer/
 ---
 
 -   Opcode: **0x09C**

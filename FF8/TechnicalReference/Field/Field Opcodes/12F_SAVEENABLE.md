@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 12F_SAVEENABLE
-permalink: /technicalreference/field/field-opcodes/12f-saveenable/
+permalink: /technical-reference/field/field-opcodes/12f-saveenable/
 ---
 
 -   Opcode: **0x12F**

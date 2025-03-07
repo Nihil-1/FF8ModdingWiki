@@ -3,7 +3,7 @@ layout: default
 title: Temporary characters limit breaks
 nav_order: 20
 parent: Kernel
-permalink: /technicalreference/main/kernel/19-temporary-character-limit-breaks/
+permalink: /technical-reference/main/kernel/19-temporary-character-limit-breaks/
 ---
 
 ## General

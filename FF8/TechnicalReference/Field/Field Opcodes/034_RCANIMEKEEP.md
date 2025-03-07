@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 034_RCANIMEKEEP
-permalink: /technicalreference/field/field-opcodes/034-rcanimekeep/
+permalink: /technical-reference/field/field-opcodes/034-rcanimekeep/
 ---
 
 -   Opcode: **0x034**

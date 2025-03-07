@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01B_DEBUG
-permalink: /technicalreference/field/field-opcodes/01b-debug/
+permalink: /technical-reference/field/field-opcodes/01b-debug/
 ---
 
 -   Opcode: **0x01B**

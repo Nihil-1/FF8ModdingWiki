@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 170_UNKNOWN5
-permalink: /technicalreference/field/field-opcodes/170-unknown5/
+permalink: /technical-reference/field/field-opcodes/170-unknown5/
 ---
 
 -   Opcode: **0x16A**

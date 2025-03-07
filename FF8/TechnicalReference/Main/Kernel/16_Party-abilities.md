@@ -3,7 +3,7 @@ layout: default
 title: Party abilities
 nav_order: 17
 parent: Kernel
-permalink: /technicalreference/main/kernel/16-party-abilities/
+permalink: /technical-reference/main/kernel/16-party-abilities/
 ---
 
 ## General
