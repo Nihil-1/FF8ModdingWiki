@@ -14,9 +14,6 @@ gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into t
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%e %b %Y at %I:%M" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-collections:
-  FF8:
-    output: true
 
 color_scheme: light
 
@@ -90,3 +87,16 @@ callouts:
   warning:
     title: Warning
     color: red
+
+collections:
+  FF8:
+    output: true
+    permalink: "/:collection/:path/"
+    nav_exclude: false  # Make sure it's not excluded
+    
+just_the_docs:
+  collections:
+    FF8:
+      name: "Final Fantasy VIII Docs"
+      nav_order: 1
+  enable_collection_nav: true
