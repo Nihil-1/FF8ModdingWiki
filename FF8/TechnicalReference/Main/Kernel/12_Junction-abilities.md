@@ -3,7 +3,7 @@ layout: default
 title: Junction abilities
 nav_order: 13
 parent: Kernel
-permalink: /technicalreference/main/kernel/junction-abilities/
+permalink: /technicalreference/main/kernel/12-junction-abilities/
 ---
 
 ## General

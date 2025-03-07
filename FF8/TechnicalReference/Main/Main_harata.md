@@ -2,7 +2,7 @@
 layout: default
 parent: Main
 title: harata.cnf File Format
-permalink: /technicalreference/main/haratacnf-file-format/
+permalink: /technicalreference/main/main-harata/
 ---
 
 By MaKiPL

@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Background Image Data
-permalink: /technicalreference/field/field-file-format/field-background-image-data/
+permalink: /technicalreference/field/field-file-format/fileformat-mim/
 ---
 
 By Aali.

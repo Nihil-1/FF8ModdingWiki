@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Character Models
-permalink: /technicalreference/field/field-file-format/field-character-models/
+permalink: /technicalreference/field/field-file-format/fileformat-mch/
 ---
 
 <small>Authors: [Koral](User:Koral "wikilink"), [JWP](http://forums.qhimm.com/index.php?topic=6961.msg86318#msg86318) and [Vehek](http://forums.qhimm.com/index.php?topic=13261.msg184344#msg184344)</small>

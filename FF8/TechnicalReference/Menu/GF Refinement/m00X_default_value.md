@@ -2,7 +2,7 @@
 layout: default
 parent: GF Refinement
 title: Refine abilities default values
-permalink: /technicalreference/menu/gf-refinement/refine-abilities-default-values/
+permalink: /technicalreference/menu/gf-refinement/m00x-default-value/
 ---
 
 Here you will find the default values for the refinement:

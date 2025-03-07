@@ -2,7 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap Rail (train movement)
-permalink: /technicalreference/worldmap/worldmap-rail-train-movement/
+permalink: /technicalreference/worldmap/worldmap-rail/
 ---
 
 By MaKiPL
