@@ -2,7 +2,7 @@
 layout: default
 parent: GF Refinement
 title: Refine abilities
-permalink: /technicalreference/menu/gf-refinement/fileformat-m00x/
+permalink: /refine-abilities/
 ---
 
 

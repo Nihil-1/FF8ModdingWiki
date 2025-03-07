@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Mask files
-permalink: /technicalreference/field/field-file-format/fileformat-msk/
+permalink: /mask-files/
 ---
 
 By myst6re.

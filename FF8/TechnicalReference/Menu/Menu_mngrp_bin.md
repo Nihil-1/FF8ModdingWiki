@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: mngrp.bin File Format
-permalink: /technicalreference/menu/menu-mngrp-bin/
+permalink: /mngrpbin-file-format/
 ---
 
 This file is an archive which contains 117 files, that will be called section in this wiki.

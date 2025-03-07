@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0E6_SPLIT
-permalink: /technicalreference/field/field-opcodes/0e6-split/
+permalink: /0e6-split/
 ---
 
 -   Opcode: **0x0E6**

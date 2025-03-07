@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 133_SETPLACE
-permalink: /technicalreference/field/field-opcodes/133-setplace/
+permalink: /133-setplace/
 ---
 
 -   Opcode: **0x0133**

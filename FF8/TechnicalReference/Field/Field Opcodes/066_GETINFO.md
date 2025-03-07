@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 066_GETINFO
-permalink: /technicalreference/field/field-opcodes/066-getinfo/
+permalink: /066-getinfo/
 ---
 
 -   Opcode: **0x066**

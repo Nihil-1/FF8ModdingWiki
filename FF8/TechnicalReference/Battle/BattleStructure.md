@@ -3,7 +3,7 @@ layout: default
 parent: Battle
 title: Battle Structure (Scene.out)
 author: JeMaCheHi
-permalink: /technicalreference/battle/battlestructure/
+permalink: /battle-structure-sceneout/
 ---
 
 Scene.out contains enemy placement data and flags for each of the game's battle encounters.

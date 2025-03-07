@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 013_PSHAC
-permalink: /technicalreference/field/field-opcodes/013-pshac/
+permalink: /013-pshac/
 ---
 
 -   Opcode: **0x013**

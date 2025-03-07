@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 021_EFFECTPLAY2
-permalink: /technicalreference/field/field-opcodes/021-effectplay2/
+permalink: /021-effectplay2/
 ---
 
 -   Opcode: **0x021**

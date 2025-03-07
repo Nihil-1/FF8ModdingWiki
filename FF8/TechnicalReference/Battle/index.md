@@ -1,5 +1,5 @@
 ---
-permalink: /technicalreference/battle/index/
+permalink: /battle/
 layout: default
 title: Battle
 nav_order: 3

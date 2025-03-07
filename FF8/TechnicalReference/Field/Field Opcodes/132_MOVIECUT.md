@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 132_MOVIECUT
-permalink: /technicalreference/field/field-opcodes/132-moviecut/
+permalink: /132-moviecut/
 ---
 
 -   Opcode: **0x132**

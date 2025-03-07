@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01A_UNUSE
-permalink: /technicalreference/field/field-opcodes/01a-unuse/
+permalink: /01a-unuse/
 ---
 
 -   Opcode: **0x01A**

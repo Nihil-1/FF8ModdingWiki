@@ -7,7 +7,7 @@ author:
   - shakotay2 (XeNTaX)
   - Halfer
   - Yagami Light
-permalink: /technicalreference/battle/fileformat-x/
+permalink: /battle-stage-x/
 ---
 
 Complete list of original battle stages: [List of battle stages](../BS_list)

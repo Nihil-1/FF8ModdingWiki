@@ -1,7 +1,7 @@
 ---
 title: HRC
 parent: PSX
-permalink: /technicalreference/psx/hrc/
+permalink: /hrc/
 ---
 
 ## HRC Hierarchy data format

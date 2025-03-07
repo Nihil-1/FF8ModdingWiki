@@ -3,7 +3,7 @@ layout: default
 title: User Guide Introduction
 nav_order: 1
 parent: User Guide
-permalink: /user-guide/introduction/
+permalink: /user-guide-introduction/
 ---
 
 You'll find here an overview of what exist and what is happening in the FF8 community.

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0AD_GAMEOVER
-permalink: /technicalreference/field/field-opcodes/0ad-gameover/
+permalink: /0ad-gameover/
 ---
 
 -   Opcode: **0x0AD**

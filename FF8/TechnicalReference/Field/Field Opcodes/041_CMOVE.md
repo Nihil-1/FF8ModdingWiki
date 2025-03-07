@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 041_CMOVE
-permalink: /technicalreference/field/field-opcodes/041-cmove/
+permalink: /041-cmove/
 ---
 
 -   Opcode: **0x041**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Particle Image Data
-permalink: /technicalreference/field/field-file-format/fileformat-pmp/
+permalink: /particle-image-data/
 ---
 
 By myst6re.

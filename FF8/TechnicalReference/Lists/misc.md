@@ -2,7 +2,7 @@
 layout: default
 title: Misc
 parent: List
-permalink: /technicalreference/lists/misc/
+permalink: /misc/
 ---
 
 

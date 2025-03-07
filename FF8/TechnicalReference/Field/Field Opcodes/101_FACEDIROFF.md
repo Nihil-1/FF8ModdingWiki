@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 101_FACEDIROFF
-permalink: /technicalreference/field/field-opcodes/101-facediroff/
+permalink: /101-facediroff/
 ---
 
 -   Opcode: **0x101**

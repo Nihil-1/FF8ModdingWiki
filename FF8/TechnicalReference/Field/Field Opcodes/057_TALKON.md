@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 057_TALKON
-permalink: /technicalreference/field/field-opcodes/057-talkon/
+permalink: /057-talkon/
 ---
 
 -   Opcode: **0x057**

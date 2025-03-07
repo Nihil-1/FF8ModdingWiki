@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 029_MAPJUMP
-permalink: /technicalreference/field/field-opcodes/029-mapjump/
+permalink: /029-mapjump/
 ---
 
 -   Opcode: **0x029**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 009_POPI_L
-permalink: /technicalreference/field/field-opcodes/009-popi-l/
+permalink: /009-popi-l/
 ---
 
 -   Opcode: **0x009**

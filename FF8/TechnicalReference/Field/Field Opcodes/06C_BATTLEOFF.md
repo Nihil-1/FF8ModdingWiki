@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06C_BATTLEOFF
-permalink: /technicalreference/field/field-opcodes/06c-battleoff/
+permalink: /06c-battleoff/
 ---
 
 -   Opcode: **0x06C**

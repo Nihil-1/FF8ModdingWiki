@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C4_ALLSEVOLTRANS
-permalink: /technicalreference/field/field-opcodes/0c4-allsevoltrans/
+permalink: /0c4-allsevoltrans/
 ---
 
 -   Opcode: **0x0C4**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 065_AMES
-permalink: /technicalreference/field/field-opcodes/065-ames/
+permalink: /065-ames/
 ---
 
 -   Opcode: **0x065**

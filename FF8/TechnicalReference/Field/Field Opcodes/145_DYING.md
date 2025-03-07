@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 145_DYING
-permalink: /technicalreference/field/field-opcodes/145-dying/
+permalink: /145-dying/
 ---
 
 -   Opcode: **0x145**

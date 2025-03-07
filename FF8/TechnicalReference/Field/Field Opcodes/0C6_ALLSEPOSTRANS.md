@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C6_ALLSEPOSTRANS
-permalink: /technicalreference/field/field-opcodes/0c6-allsepostrans/
+permalink: /0c6-allsepostrans/
 ---
 
 -   Opcode: **0x0C6**

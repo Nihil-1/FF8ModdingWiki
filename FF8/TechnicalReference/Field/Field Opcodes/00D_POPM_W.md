@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00D_POPM_W
-permalink: /technicalreference/field/field-opcodes/00d-popm-w/
+permalink: /00d-popm-w/
 ---
 
 -   Opcode: **0x00D**

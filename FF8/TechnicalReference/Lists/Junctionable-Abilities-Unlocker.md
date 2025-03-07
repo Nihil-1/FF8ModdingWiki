@@ -2,7 +2,7 @@
 layout: default
 title: Junctionable Abilities unlocker
 parent: List
-permalink: /technicalreference/lists/junctionable-abilities-unlocker/
+permalink: /junctionable-abilities-unlocker/
 ---
 
 | ID   | Description  |

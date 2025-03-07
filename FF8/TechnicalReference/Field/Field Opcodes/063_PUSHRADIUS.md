@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 063_PUSHRADIUS
-permalink: /technicalreference/field/field-opcodes/063-pushradius/
+permalink: /063-pushradius/
 ---
 
 -   Opcode: **0x063**

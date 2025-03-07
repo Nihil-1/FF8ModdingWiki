@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 064_AMESW
-permalink: /technicalreference/field/field-opcodes/064-amesw/
+permalink: /064-amesw/
 ---
 
 -   Opcode: **0x064**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0E5_USE
-permalink: /technicalreference/field/field-opcodes/0e5-use/
+permalink: /0e5-use/
 ---
 
 -   Opcode: **0x0E5**

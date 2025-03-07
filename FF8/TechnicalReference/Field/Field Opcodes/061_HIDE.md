@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 061_HIDE
-permalink: /technicalreference/field/field-opcodes/061-hide/
+permalink: /061-hide/
 ---
 
 -   Opcode: **0x061**

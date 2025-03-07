@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: Shop (shop.bin)
-permalink: /technicalreference/menu/menu-shop/
+permalink: /shop-shopbin/
 ---
 
 # Shop.bin doc

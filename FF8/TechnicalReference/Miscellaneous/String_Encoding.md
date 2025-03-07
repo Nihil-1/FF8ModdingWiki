@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: String_Encoding
-permalink: /technicalreference/miscellaneous/string-encoding/
+permalink: /string-encoding/
 ---
  For String encoding, you can  find the info on the wiki of the [ShumiTranslator](https://github.com/HobbitDur/ShumiTranslator/wiki/FF8_char) tool done by HobbitDur which detail the following file (link is kept here to the old wiki for archive purpose):
 

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 068_THROUGHOFF
-permalink: /technicalreference/field/field-opcodes/068-throughoff/
+permalink: /068-throughoff/
 ---
 
 -   Opcode: **0x068**

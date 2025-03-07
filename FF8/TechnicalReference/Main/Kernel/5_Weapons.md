@@ -3,7 +3,7 @@ layout: default
 title: Weapons
 nav_order: 6
 parent: Kernel
-permalink: /technicalreference/main/kernel/5-weapons/
+permalink: /weapons/
 ---
 
 ## General

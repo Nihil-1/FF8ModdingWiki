@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02F_CANIME
-permalink: /technicalreference/field/field-opcodes/02f-canime/
+permalink: /02f-canime/
 ---
 
 -   Opcode: **0x02F**

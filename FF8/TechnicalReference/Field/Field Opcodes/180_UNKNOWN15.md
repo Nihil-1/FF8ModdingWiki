@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 180_UNKNOWN15
-permalink: /technicalreference/field/field-opcodes/180-unknown15/
+permalink: /180-unknown15/
 ---
 
 -   Opcode: **0x180**

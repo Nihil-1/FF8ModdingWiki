@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 007_PSHN_L
-permalink: /technicalreference/field/field-opcodes/007-pshn-l/
+permalink: /007-pshn-l/
 ---
 
 -   Opcode: **0x007**

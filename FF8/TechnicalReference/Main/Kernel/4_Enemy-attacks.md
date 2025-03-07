@@ -3,7 +3,7 @@ layout: default
 title: Enemy attacks
 nav_order: 5
 parent: Kernel
-permalink: /technicalreference/main/kernel/4-enemy-attacks/
+permalink: /enemy-attacks/
 ---
 
 ## General

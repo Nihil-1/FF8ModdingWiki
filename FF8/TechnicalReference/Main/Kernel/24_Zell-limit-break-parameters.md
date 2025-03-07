@@ -3,7 +3,7 @@ layout: default
 title: Duel parameters
 nav_order: 24
 parent: Kernel
-permalink: /technicalreference/main/kernel/24-zell-limit-break-parameters/
+permalink: /duel-parameters/
 ---
 
 ## General

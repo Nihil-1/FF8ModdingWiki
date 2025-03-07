@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: Video (.pak)
-permalink: /technicalreference/miscellaneous/fileformat-pak/
+permalink: /video-pak/
 ---
 
 Final Fantasy VIII's movie files are stored within pak files. This is for the CD 2000 version only. Steam 2013 version uses avi files. **publish.pak** contains the message "Published by Square Electronic Arts L.L.C.". **disc1.pak**, **disc2.pak**, **disc3.pak**, and **disc4.pak** hold the rest of the FMV movies.
