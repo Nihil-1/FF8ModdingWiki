@@ -3,7 +3,7 @@ layout: default
 title: Menu abilities
 nav_order: 19
 parent: Kernel
-permalink: /technicalreference/main/kernel/menu-abilities/
+permalink: /technicalreference/main/kernel/18-menu-abilities/
 ---
 
 ## General

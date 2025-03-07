@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Scripts
-permalink: /technicalreference/field/field-file-format/field-scripts/
+permalink: /technicalreference/field/field-file-format/fileformat-jsm/
 ---
 
 By myst6re.

@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Sound IDs
-permalink: /technicalreference/field/field-file-format/sound-ids/
+permalink: /technicalreference/field/field-file-format/fileformat-sfx/
 ---
 
 By myst6re.

@@ -3,7 +3,7 @@ layout: default
 title: Command abilities GF
 nav_order: 14
 parent: Kernel
-permalink: /technicalreference/main/kernel/command-abilities-gf/
+permalink: /technicalreference/main/kernel/13-command-abilities-gf/
 ---
 
 ## General

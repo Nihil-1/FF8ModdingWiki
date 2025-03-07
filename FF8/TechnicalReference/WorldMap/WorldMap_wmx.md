@@ -2,7 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap wmx file Format
-permalink: /technicalreference/worldmap/worldmap-wmx-file-format/
+permalink: /technicalreference/worldmap/worldmap-wmx/
 ---
 
 By MaKiPL, Updated 27.5.2016 by Halfer. All thanks goes to Halfer, for rich research progress on world map file. This wiki page is also based on Blue's wmx2obj source code.
