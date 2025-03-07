@@ -3,7 +3,7 @@ layout: default
 title: Header
 nav_order: 1
 parent: Kernel
-permalink: /technical-reference/main/kernel/header/
+permalink: /technical-reference/main/kernel/header2/
 ---
 
 ## General
