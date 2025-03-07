@@ -13,8 +13,8 @@ def get_title_from_index(folder_path):
     return None
 
 
-def generate_permalink(file_path):
-    """Generate the permalink using titles from index.md files in the folder structure."""
+def generate_permalink(file_path, title):
+    """Generate the permalink using titles from index.md files in the folder structure and the file's title."""
     # Remove the base directory (FF8) and file extension
     relative_path = file_path.replace('FF8/', '').replace('.md', '')
 
@@ -24,12 +24,12 @@ def generate_permalink(file_path):
     # Traverse the folder structure and get titles from index.md files
     clean_components = []
     current_path = 'FF8'
-    for component in path_components:
+    for component in path_components[:-1]:  # Exclude the filename
         current_path = os.path.join(current_path, component)
-        title = get_title_from_index(current_path)
-        if title:
+        index_title = get_title_from_index(current_path)
+        if index_title:
             # Clean the title: lowercase, replace spaces/underscores with hyphens, remove special characters
-            clean_title = title.lower().replace(' ', '-').replace('_', '-')
+            clean_title = index_title.lower().replace(' ', '-').replace('_', '-')
             clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
             clean_components.append(clean_title)
         else:
@@ -37,6 +37,11 @@ def generate_permalink(file_path):
             clean_component = component.lower().replace(' ', '-').replace('_', '-')
             clean_component = re.sub(r'[^a-z0-9\-]', '', clean_component)
             clean_components.append(clean_component)
+
+    # Use the file's title for the last part of the permalink
+    clean_title = title.lower().replace(' ', '-').replace('_', '-')
+    clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
+    clean_components.append(clean_title)
 
     # Join the components with slashes to form the permalink
     clean_path = '/'.join(clean_components)
@@ -47,8 +52,19 @@ def update_front_matter(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
+    # Extract the title from the front matter
+    title = None
+    for line in content:
+        if line.strip().startswith('title:'):
+            title = line.strip().replace('title:', '').strip().strip('"').strip("'")
+            break
+
+    if not title:
+        print(f"Skipping {file_path}: No title found in front matter.")
+        return
+
     # Generate the new permalink using the folder structure and titles
-    new_permalink = generate_permalink(file_path)
+    new_permalink = generate_permalink(file_path, title)
 
     # Check if the file already has a permalink
     has_permalink = False
