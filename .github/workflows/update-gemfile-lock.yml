@@ -1,0 +1,33 @@
+name: Update Gemfile.lock
+
+on:
+  push:
+    branches:
+      - main  # Change if you're using a different default branch
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-gemfile-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Update Gemfile.lock
+        run: bundle install
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add Gemfile.lock
+          git commit -m "Update Gemfile.lock via GitHub Actions" || echo "No changes to commit"
+          git push
