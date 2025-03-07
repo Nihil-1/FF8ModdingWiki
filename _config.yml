@@ -91,9 +91,9 @@ callouts:
 collections:
   FF8:
     output: true
-    permalink: "/:collection/:path/"
+    permalink: pretty
     nav_exclude: false  # Make sure it's not excluded
-    
+
 just_the_docs:
   collections:
     FF8:

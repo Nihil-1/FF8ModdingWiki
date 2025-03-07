@@ -2,7 +2,7 @@
 title: FF8 Home
 layout: default
 nav_order: 1
-permalink: /
+permalink: /FF8/
 ---
 
 
