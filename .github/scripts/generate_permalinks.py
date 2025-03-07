@@ -3,8 +3,8 @@ import re
 
 
 def generate_permalink(file_path):
-    # Remove the base directory and file extension
-    relative_path = file_path.replace('_docs/', '').replace('.md', '')
+    # Remove the base directory (FF8) and file extension
+    relative_path = file_path.replace('FF8/', '').replace('.md', '')
 
     # Convert to lowercase and replace spaces/underscores with hyphens
     clean_path = relative_path.lower().replace(' ', '-').replace('_', '-')
@@ -44,5 +44,5 @@ def process_directory(directory):
 
 
 if __name__ == '__main__':
-    docs_directory = '_docs'  # Change this to your docs directory
+    docs_directory = 'FF8'  # Change this to your FF8 directory
     process_directory(docs_directory)
