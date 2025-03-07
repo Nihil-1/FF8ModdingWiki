@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 040_PMOVEA
-permalink: /040-pmovea/
+permalink: /technicalreference/field/field-opcodes/040-pmovea/
 ---
 
 -   Opcode: **0x040**

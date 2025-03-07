@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0BF_MUSICSTOP
-permalink: /0bf-musicstop/
+permalink: /technicalreference/field/field-opcodes/0bf-musicstop/
 ---
 
 -   Opcode: **0x0BF**

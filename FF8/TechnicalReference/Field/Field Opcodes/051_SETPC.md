@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 051_SETPC
-permalink: /051-setpc/
+permalink: /technicalreference/field/field-opcodes/051-setpc/
 ---
 
 -   Opcode: **0x051**

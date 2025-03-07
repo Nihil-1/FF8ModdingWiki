@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02E_ANIMEKEEP
-permalink: /02e-animekeep/
+permalink: /technicalreference/field/field-opcodes/02e-animekeep/
 ---
 
 -   Opcode: **0x02E**

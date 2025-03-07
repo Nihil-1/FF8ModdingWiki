@@ -2,7 +2,7 @@
 layout: default
 title: Item List
 parent: List
-permalink: /item-list/
+permalink: /technicalreference/lists/item-list/
 ---
 
 | Item ID | Description       |

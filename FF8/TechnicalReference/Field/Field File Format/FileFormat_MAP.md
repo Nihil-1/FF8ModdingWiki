@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Background Tile Data
-permalink: /field-background-tile-data/
+permalink: /technicalreference/field/field-file-format/field-background-tile-data/
 ---
 
 By Aali.

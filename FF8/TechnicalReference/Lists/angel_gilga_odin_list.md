@@ -2,7 +2,7 @@
 layout: default
 title: Angel Gilgamesh Odin
 parent: List
-permalink: /angel-gilgamesh-odin/
+permalink: /technicalreference/lists/angel-gilgamesh-odin/
 ---
 
 ## Angel Gilgamesh Odin Flags

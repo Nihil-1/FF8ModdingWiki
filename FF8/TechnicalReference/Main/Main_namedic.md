@@ -2,7 +2,7 @@
 layout: default
 parent: Main
 title: Game region (namedic.bin)
-permalink: /game-region-namedicbin/
+permalink: /technicalreference/main/game-region-namedicbin/
 ---
 
 ## Format

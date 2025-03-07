@@ -3,7 +3,7 @@ layout: default
 title: Junctionable GFs
 nav_order: 4
 parent: Kernel
-permalink: /junctionable-gfs/
+permalink: /technicalreference/main/kernel/junctionable-gfs/
 ---
 
 ## General

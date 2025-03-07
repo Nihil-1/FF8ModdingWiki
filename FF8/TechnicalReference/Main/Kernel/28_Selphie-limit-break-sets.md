@@ -3,7 +3,7 @@ layout: default
 title: Slot sets
 nav_order: 29
 parent: Kernel
-permalink: /slot-sets/
+permalink: /technicalreference/main/kernel/slot-sets/
 ---
 
 ## General

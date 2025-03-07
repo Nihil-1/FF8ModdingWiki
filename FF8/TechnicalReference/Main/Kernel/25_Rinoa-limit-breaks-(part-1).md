@@ -3,7 +3,7 @@ layout: default
 title: Rinoa commands
 nav_order: 26
 parent: Kernel
-permalink: /rinoa-commands/
+permalink: /technicalreference/main/kernel/rinoa-commands/
 ---
 
 ## General

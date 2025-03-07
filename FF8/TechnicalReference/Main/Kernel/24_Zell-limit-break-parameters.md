@@ -3,7 +3,7 @@ layout: default
 title: Duel parameters
 nav_order: 24
 parent: Kernel
-permalink: /duel-parameters/
+permalink: /technicalreference/main/kernel/duel-parameters/
 ---
 
 ## General

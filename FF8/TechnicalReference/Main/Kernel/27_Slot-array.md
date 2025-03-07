@@ -3,7 +3,7 @@ layout: default
 title: Slot array
 nav_order: 28
 parent: Kernel
-permalink: /slot-array/
+permalink: /technicalreference/main/kernel/slot-array/
 ---
 
 

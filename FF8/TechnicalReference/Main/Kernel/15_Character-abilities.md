@@ -3,7 +3,7 @@ layout: default
 title: Characters abilities
 nav_order: 16
 parent: Kernel
-permalink: /characters-abilities/
+permalink: /technicalreference/main/kernel/characters-abilities/
 ---
 
 ## General

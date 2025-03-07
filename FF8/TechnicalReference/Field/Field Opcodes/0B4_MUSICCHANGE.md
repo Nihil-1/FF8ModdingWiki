@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0B4_MUSICCHANGE
-permalink: /0b4-musicchange/
+permalink: /technicalreference/field/field-opcodes/0b4-musicchange/
 ---
 
 -   Opcode: **0x0B4**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 12D_ACTORMODE
-permalink: /12d-actormode/
+permalink: /technicalreference/field/field-opcodes/12d-actormode/
 ---
 
 -   Opcode: **0x12D**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00B_POPM_B
-permalink: /00b-popm-b/
+permalink: /technicalreference/field/field-opcodes/00b-popm-b/
 ---
 
 -   Opcode: **0x00B**

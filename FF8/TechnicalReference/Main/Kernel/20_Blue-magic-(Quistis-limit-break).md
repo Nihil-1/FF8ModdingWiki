@@ -3,7 +3,7 @@ layout: default
 title: Blue magic
 nav_order: 21
 parent: Kernel
-permalink: /blue-magic/
+permalink: /technicalreference/main/kernel/blue-magic/
 ---
 
 ## General

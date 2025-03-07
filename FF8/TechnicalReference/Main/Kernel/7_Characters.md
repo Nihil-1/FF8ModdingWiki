@@ -3,7 +3,7 @@ layout: default
 title: Characters
 nav_order: 8
 parent: Kernel
-permalink: /characters/
+permalink: /technicalreference/main/kernel/characters/
 ---
 
 ## General

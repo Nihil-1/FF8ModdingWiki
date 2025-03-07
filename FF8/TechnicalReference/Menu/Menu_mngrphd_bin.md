@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: Mngrphd.bin File Format
-permalink: /mngrphdbin-file-format/
+permalink: /technicalreference/menu/mngrphdbin-file-format/
 ---
 
 This is the map for [Mngrp.bin](../Menu_mngrp_bin). Locations to data and the size of the section.

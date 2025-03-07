@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 109_JUNCTION
-permalink: /109-junction/
+permalink: /technicalreference/field/field-opcodes/109-junction/
 ---
 
 -   Opcode: **0x0109**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 056_SPUREADY
-permalink: /056-spuready/
+permalink: /technicalreference/field/field-opcodes/056-spuready/
 ---
 
 -   Opcode: **0x056**

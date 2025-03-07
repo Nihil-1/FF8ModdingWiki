@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01C_HALT
-permalink: /01c-halt/
+permalink: /technicalreference/field/field-opcodes/01c-halt/
 ---
 
 -   Opcode: **0x01C**

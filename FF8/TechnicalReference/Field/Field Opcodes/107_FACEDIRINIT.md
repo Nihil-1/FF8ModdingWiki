@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 107_FACEDIRINIT
-permalink: /107-facedirinit/
+permalink: /technicalreference/field/field-opcodes/107-facedirinit/
 ---
 
 -   Opcode: **0x107**

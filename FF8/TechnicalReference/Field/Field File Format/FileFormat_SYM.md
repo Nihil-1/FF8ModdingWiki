@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Script entity
-permalink: /script-entity/
+permalink: /technicalreference/field/field-file-format/script-entity/
 ---
 
 By myst6re.

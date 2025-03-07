@@ -3,7 +3,7 @@ layout: default
 parent: Technical Reference
 title: Tools
 nav_order: 10
-permalink: /tools/
+permalink: /technicalreference/tools/
 ---
 # Tools list
 -  **Cactilio**: _FFVIII Battle Structure Editor_

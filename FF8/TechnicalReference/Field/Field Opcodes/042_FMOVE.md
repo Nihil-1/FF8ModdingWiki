@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 042_FMOVE
-permalink: /042-fmove/
+permalink: /technicalreference/field/field-opcodes/042-fmove/
 ---
 
 -   Opcode: **0x042**

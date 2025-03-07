@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02C_BASEANIME
-permalink: /02c-baseanime/
+permalink: /technicalreference/field/field-opcodes/02c-baseanime/
 ---
 
 -   Opcode: **0x02C**

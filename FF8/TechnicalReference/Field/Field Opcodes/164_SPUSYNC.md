@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 164_SPUSYNC
-permalink: /164-spusync/
+permalink: /technicalreference/field/field-opcodes/164-spusync/
 ---
 
 -   Opcode: **0x164**

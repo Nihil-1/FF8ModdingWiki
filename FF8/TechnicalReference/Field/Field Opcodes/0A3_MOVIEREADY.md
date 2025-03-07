@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0A3_MOVIEREADY
-permalink: /0a3-movieready/
+permalink: /technicalreference/field/field-opcodes/0a3-movieready/
 ---
 
 -   Opcode: **0x0A3**

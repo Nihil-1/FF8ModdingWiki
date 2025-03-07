@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 105_SARALYDISPON
-permalink: /105-saralydispon/
+permalink: /technicalreference/field/field-opcodes/105-saralydispon/
 ---
 
 -   Opcode: **0x069**

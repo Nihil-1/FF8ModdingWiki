@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 037_LADDERANIME
-permalink: /037-ladderanime/
+permalink: /technicalreference/field/field-opcodes/037-ladderanime/
 ---
 
 -   Opcode: **0x037**

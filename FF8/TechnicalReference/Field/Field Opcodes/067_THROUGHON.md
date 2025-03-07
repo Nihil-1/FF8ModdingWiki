@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 067_THROUGHON
-permalink: /067-throughon/
+permalink: /technicalreference/field/field-opcodes/067-throughon/
 ---
 
 -   Opcode: **0x067**

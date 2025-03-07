@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 011_PSHSM_W
-permalink: /011-pshsm-w/
+permalink: /technicalreference/field/field-opcodes/011-pshsm-w/
 ---
 
 -   Opcode: **0x011**

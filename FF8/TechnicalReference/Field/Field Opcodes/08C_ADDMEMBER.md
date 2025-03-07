@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 08C_ADDMEMBER
-permalink: /08c-addmember/
+permalink: /technicalreference/field/field-opcodes/08c-addmember/
 ---
 
 -   Opcode: **0x08C**

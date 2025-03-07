@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0CB_SETBATTLEMUSIC
-permalink: /0cb-setbattlemusic/
+permalink: /technicalreference/field/field-opcodes/0cb-setbattlemusic/
 ---
 
 -   Opcode: **0x0CB**

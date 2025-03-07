@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 015_REQSW
-permalink: /015-reqsw/
+permalink: /technicalreference/field/field-opcodes/015-reqsw/
 ---
 
 -   Opcode: **0x015**
