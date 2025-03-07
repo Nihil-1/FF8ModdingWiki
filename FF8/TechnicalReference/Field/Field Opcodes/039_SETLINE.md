@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 039_SETLINE
-permalink: /technicalreferencefieldfield-opcodes039-setline/
+permalink: /technicalreference/field/field-opcodes/039-setline/
 ---
 
 -   Opcode: **0x039**

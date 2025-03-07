@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 023_JUMP
-permalink: /technicalreferencefieldfield-opcodes023-jump/
+permalink: /technicalreference/field/field-opcodes/023-jump/
 ---
 
 -   Opcode: **0x023**

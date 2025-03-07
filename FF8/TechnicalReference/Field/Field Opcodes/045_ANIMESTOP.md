@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 045_ANIMESTOP
-permalink: /technicalreferencefieldfield-opcodes045-animestop/
+permalink: /technicalreference/field/field-opcodes/045-animestop/
 ---
 
 -   Opcode: **0x045**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00A_PSHM_B
-permalink: /technicalreferencefieldfield-opcodes00a-pshm-b/
+permalink: /technicalreference/field/field-opcodes/00a-pshm-b/
 ---
 
 -   Opcode: **0x00A**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C3_ALLSEVOL
-permalink: /technicalreferencefieldfield-opcodes0c3-allsevol/
+permalink: /technicalreference/field/field-opcodes/0c3-allsevol/
 ---
 
 -   Opcode: **0x0C3**

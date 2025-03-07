@@ -3,7 +3,7 @@ layout: default
 title: Rinoa combine limit break
 nav_order: 27
 parent: Kernel
-permalink: /technicalreferencemainkernel26-rinoa-limit-breaks-part-2/
+permalink: /technicalreference/main/kernel/26-rinoa-limit-breaks-part-2/
 ---
 
 ## General

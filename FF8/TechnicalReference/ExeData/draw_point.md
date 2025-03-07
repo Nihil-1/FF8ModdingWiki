@@ -3,7 +3,7 @@ layout: default
 title: Draw point
 parent: ExeData
 author: HobbitDur
-permalink: /technicalreferenceexedatadraw-point/
+permalink: /technicalreference/exedata/draw-point/
 ---
 
 1. TOC

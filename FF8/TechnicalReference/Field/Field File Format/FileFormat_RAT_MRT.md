@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Battle related
-permalink: /technicalreferencefieldfield-file-formatfileformat-rat-mrt/
+permalink: /technicalreference/field/field-file-format/fileformat-rat-mrt/
 ---
 
 By myst6re.

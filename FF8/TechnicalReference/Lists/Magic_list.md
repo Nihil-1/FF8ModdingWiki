@@ -2,7 +2,7 @@
 layout: default
 title: Magic List
 parent: List
-permalink: /technicalreferencelistsmagic-list/
+permalink: /technicalreference/lists/magic-list/
 ---
 
 # Element

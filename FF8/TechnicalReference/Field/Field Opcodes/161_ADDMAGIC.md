@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 161_ADDMAGIC
-permalink: /technicalreferencefieldfield-opcodes161-addmagic/
+permalink: /technicalreference/field/field-opcodes/161-addmagic/
 ---
 
 -   Opcode: **0x161**

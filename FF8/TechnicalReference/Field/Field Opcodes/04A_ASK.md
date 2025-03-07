@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04A_ASK
-permalink: /technicalreferencefieldfield-opcodes04a-ask/
+permalink: /technicalreference/field/field-opcodes/04a-ask/
 ---
 
 -   Opcode: **0x04A**

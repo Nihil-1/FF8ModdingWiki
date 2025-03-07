@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 044_ANIMESYNC
-permalink: /technicalreferencefieldfield-opcodes044-animesync/
+permalink: /technicalreference/field/field-opcodes/044-animesync/
 ---
 
 -   Opcode: **0x044**

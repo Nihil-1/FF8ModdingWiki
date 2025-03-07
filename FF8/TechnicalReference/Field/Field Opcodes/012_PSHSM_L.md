@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 012_PSHSM_L
-permalink: /technicalreferencefieldfield-opcodes012-pshsm-l/
+permalink: /technicalreference/field/field-opcodes/012-pshsm-l/
 ---
 
 -   Opcode: **0x012**

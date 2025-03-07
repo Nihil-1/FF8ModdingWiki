@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 09F_SETGETA
-permalink: /technicalreferencefieldfield-opcodes09f-setgeta/
+permalink: /technicalreference/field/field-opcodes/09f-setgeta/
 ---
 
 -   Opcode: **0x09F**

@@ -2,7 +2,7 @@
 layout: default
 title: Encounter Misc
 parent: List
-permalink: /technicalreferencelistsencounter-misc-list/
+permalink: /technicalreference/lists/encounter-misc-list/
 ---
 
 # Encounter ID

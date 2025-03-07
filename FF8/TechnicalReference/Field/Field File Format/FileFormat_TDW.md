@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Extra font
-permalink: /technicalreferencefieldfield-file-formatfileformat-tdw/
+permalink: /technicalreference/field/field-file-format/fileformat-tdw/
 ---
 
 By myst6re.

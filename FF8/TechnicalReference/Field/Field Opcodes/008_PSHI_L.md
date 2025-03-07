@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 008_PSHI_L
-permalink: /technicalreferencefieldfield-opcodes008-pshi-l/
+permalink: /technicalreference/field/field-opcodes/008-pshi-l/
 ---
 
 -   Opcode: **0x008**

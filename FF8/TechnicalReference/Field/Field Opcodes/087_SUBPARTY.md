@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 087_SUBPARTY
-permalink: /technicalreferencefieldfield-opcodes087-subparty/
+permalink: /technicalreference/field/field-opcodes/087-subparty/
 ---
 
 -   Opcode: **0x087**

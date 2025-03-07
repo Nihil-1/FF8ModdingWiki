@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06A_BATTLERESULT
-permalink: /technicalreferencefieldfield-opcodes06a-battleresult/
+permalink: /technicalreference/field/field-opcodes/06a-battleresult/
 ---
 
 -   Opcode: **0x06A**

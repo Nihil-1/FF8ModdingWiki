@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 125_ADDITEM
-permalink: /technicalreferencefieldfield-opcodes125-additem/
+permalink: /technicalreference/field/field-opcodes/125-additem/
 ---
 
 -   Opcode: **0x125**

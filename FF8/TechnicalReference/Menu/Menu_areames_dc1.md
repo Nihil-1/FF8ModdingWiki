@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: areames.dc1 File Format
-permalink: /technicalreferencemenumenu-areames-dc1/
+permalink: /technicalreference/menu/menu-areames-dc1/
 ---
 
 ## Format

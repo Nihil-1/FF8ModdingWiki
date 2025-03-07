@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 073_CSCROLL
-permalink: /technicalreferencefieldfield-opcodes073-cscroll/
+permalink: /technicalreference/field/field-opcodes/073-cscroll/
 ---
 
 -   Opcode: **0x073**

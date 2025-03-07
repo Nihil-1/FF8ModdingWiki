@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0BD_EFFECTLOAD
-permalink: /technicalreferencefieldfield-opcodes0bd-effectload/
+permalink: /technicalreference/field/field-opcodes/0bd-effectload/
 ---
 
 -   Opcode: **0x0BD**

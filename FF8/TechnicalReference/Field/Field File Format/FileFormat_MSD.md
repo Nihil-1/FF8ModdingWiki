@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Dialogs
-permalink: /technicalreferencefieldfield-file-formatfileformat-msd/
+permalink: /technicalreference/field/field-file-format/fileformat-msd/
 ---
 
 By myst6re.

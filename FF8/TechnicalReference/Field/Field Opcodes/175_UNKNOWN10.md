@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 175_UNKNOWN10
-permalink: /technicalreferencefieldfield-opcodes175-unknown10/
+permalink: /technicalreference/field/field-opcodes/175-unknown10/
 ---
 
 -   Opcode: **0x175**

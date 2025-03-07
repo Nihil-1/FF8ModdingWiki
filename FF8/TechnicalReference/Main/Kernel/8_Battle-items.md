@@ -3,7 +3,7 @@ layout: default
 title: Battle items
 nav_order: 9
 parent: Kernel
-permalink: /technicalreferencemainkernel8-battle-items/
+permalink: /technicalreference/main/kernel/8-battle-items/
 ---
 
 ## General

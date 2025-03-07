@@ -3,7 +3,7 @@ layout: default
 title: Memory info
 parent: ExeData
 author: HobbitDur
-permalink: /technicalreferenceexedatamemory-info/
+permalink: /technicalreference/exedata/memory-info/
 ---
 
 1. TOC

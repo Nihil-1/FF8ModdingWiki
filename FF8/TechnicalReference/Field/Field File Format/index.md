@@ -1,5 +1,5 @@
 ---
-permalink: /technicalreferencefieldfield-file-formatindex/
+permalink: /technicalreference/field/field-file-format/index/
 layout: default
 title: Field File Format
 parent: Field

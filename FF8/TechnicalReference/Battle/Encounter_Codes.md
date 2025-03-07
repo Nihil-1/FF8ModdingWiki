@@ -2,7 +2,7 @@
 layout: default
 parent: Battle
 title: Encounter Codes
-permalink: /technicalreferencebattleencounter-codes/
+permalink: /technicalreference/battle/encounter-codes/
 ---
 
 ## Usable Encounters
