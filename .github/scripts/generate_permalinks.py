@@ -38,10 +38,15 @@ def generate_permalink(file_path, title):
             clean_component = re.sub(r'[^a-z0-9\-]', '', clean_component)
             clean_components.append(clean_component)
 
-    # Use the file's title for the last part of the permalink
-    clean_title = title.lower().replace(' ', '-').replace('_', '-')
-    clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
-    clean_components.append(clean_title)
+    # If the file is an index.md, exclude the filename from the permalink
+    if file_path.lower().endswith('index.md'):
+        # Use the folder structure up to this point
+        pass
+    else:
+        # Use the file's title for the last part of the permalink
+        clean_title = title.lower().replace(' ', '-').replace('_', '-')
+        clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
+        clean_components.append(clean_title)
 
     # Join the components with slashes to form the permalink
     clean_path = '/'.join(clean_components)
