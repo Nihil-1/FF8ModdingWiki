@@ -2,6 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Gateways
+permalink: /technicalreferencefieldfield-file-formatfileformat-inf/
 ---
 
 By myst6re.

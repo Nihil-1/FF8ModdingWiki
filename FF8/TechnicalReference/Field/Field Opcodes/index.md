@@ -7,6 +7,7 @@ author:
   - Aali
   - myst6re
   - Shard
+permalink: /technicalreferencefieldfield-opcodesindex/
 ---
 
 ## The language

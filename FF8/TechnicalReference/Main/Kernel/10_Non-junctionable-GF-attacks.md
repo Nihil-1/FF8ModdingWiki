@@ -3,6 +3,7 @@ layout: default
 title: Non junctionable GF attacks
 nav_order: 11
 parent: Kernel
+permalink: /technicalreferencemainkernel10-non-junctionable-gf-attacks/
 ---
 
 ## General

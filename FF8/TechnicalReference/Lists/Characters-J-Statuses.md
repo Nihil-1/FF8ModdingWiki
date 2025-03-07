@@ -2,6 +2,7 @@
 layout: default
 title: Characters J Statuses
 parent: List
+permalink: /technicalreferencelistscharacters-j-statuses/
 ---
 
 | ID     | Description              |

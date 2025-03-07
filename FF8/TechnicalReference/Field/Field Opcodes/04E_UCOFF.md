@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04E_UCOFF
+permalink: /technicalreferencefieldfield-opcodes04e-ucoff/
 ---
 
 -   Opcode: **0x04E**

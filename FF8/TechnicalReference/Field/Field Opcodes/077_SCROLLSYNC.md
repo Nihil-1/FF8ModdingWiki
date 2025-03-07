@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 077_SCROLLSYNC
+permalink: /technicalreferencefieldfield-opcodes077-scrollsync/
 ---
 
 -   Opcode: **0x077**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 130_PHSENABLE
+permalink: /technicalreferencefieldfield-opcodes130-phsenable/
 ---
 
 -   Opcode: **0x130**

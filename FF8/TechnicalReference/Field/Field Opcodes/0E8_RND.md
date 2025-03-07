@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0E8_RND
+permalink: /technicalreferencefieldfield-opcodes0e8-rnd/
 ---
 
 -   Opcode: **0x0E8**

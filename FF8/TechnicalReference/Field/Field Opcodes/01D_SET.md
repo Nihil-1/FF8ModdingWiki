@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01D_SET
+permalink: /technicalreferencefieldfield-opcodes01d-set/
 ---
 
 -   Opcode: **0x01D**

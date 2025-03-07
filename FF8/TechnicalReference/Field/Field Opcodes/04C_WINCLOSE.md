@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04C_WINCLOSE
+permalink: /technicalreferencefieldfield-opcodes04c-winclose/
 ---
 
 -   Opcode: **0x04C**

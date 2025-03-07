@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 15E_SETCARD
+permalink: /technicalreferencefieldfield-opcodes15e-setcard/
 ---
 
 -   Opcode: **0x15E**

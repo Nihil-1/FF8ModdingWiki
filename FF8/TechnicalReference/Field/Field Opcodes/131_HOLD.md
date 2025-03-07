@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 131_HOLD
+permalink: /technicalreferencefieldfield-opcodes131-hold/
 ---
 
 -   Opcode: **0x0131**

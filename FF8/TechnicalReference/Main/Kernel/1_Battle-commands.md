@@ -3,6 +3,7 @@ layout: default
 title: Battle commands
 nav_order: 2
 parent: Kernel
+permalink: /technicalreferencemainkernel1-battle-commands/
 ---
 
 ## General

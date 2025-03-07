@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C5_ALLSEPOS
+permalink: /technicalreferencefieldfield-opcodes0c5-allsepos/
 ---
 
 -   Opcode: **0x0C5**

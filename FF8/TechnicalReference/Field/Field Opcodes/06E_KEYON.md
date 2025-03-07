@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06E_KEYON
+permalink: /technicalreferencefieldfield-opcodes06e-keyon/
 ---
 
 -   Opcode: **0x06E**

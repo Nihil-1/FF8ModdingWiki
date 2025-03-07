@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 157_LASTIN
+permalink: /technicalreferencefieldfield-opcodes157-lastin/
 ---
 
 -   Opcode: **0x157**

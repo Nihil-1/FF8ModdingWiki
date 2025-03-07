@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 033_RCANIME
+permalink: /technicalreferencefieldfield-opcodes033-rcanime/
 ---
 
 -   Opcode: **0x033**

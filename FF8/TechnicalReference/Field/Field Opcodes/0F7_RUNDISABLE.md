@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0F7_RUNDISABLE
+permalink: /technicalreferencefieldfield-opcodes0f7-rundisable/
 ---
 
 -   Opcode: **0x0F7**

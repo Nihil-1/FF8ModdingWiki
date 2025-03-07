@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 11A_MENUNORMAL
+permalink: /technicalreferencefieldfield-opcodes11a-menunormal/
 ---
 
 -   Opcode: **0x11A**

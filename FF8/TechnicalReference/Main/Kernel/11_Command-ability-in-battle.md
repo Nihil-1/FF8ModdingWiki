@@ -3,6 +3,7 @@ layout: default
 title: Command abilities in battle
 nav_order: 12
 parent: Kernel
+permalink: /technicalreferencemainkernel11-command-ability-in-battle/
 ---
 
 ## General

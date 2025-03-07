@@ -2,6 +2,7 @@
 layout: default
 parent: Menu
 title: TknmnesX.bin File Format
+permalink: /technicalreferencemenumenu-tkmnmes/
 ---
 These files have a good deal of the Menu text.
 

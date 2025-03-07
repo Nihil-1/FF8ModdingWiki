@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 07E_CLEAR
+permalink: /technicalreferencefieldfield-opcodes07e-clear/
 ---
 
 -   Opcode: **0x07E**

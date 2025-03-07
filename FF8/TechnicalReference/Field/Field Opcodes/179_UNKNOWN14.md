@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 179_UNKNOWN14
+permalink: /technicalreferencefieldfield-opcodes179-unknown14/
 ---
 
 -   Opcode: **0x179**

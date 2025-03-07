@@ -1,6 +1,7 @@
 ---
 title: RSD
 parent: PSX
+permalink: /technicalreferencepsxrsd/
 ---
 
 ## RSD resource data format

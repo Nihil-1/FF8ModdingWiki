@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 046_MESW
+permalink: /technicalreferencefieldfield-opcodes046-mesw/
 ---
 
 -   Opcode: **0x046**

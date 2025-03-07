@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05D_MAPJUMPON
+permalink: /technicalreferencefieldfield-opcodes05d-mapjumpon/
 ---
 
 -   Opcode: **0x05D**

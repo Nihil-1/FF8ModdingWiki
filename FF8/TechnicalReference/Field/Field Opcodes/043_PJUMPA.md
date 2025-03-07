@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 043_PJUMPA
+permalink: /technicalreferencefieldfield-opcodes043-pjumpa/
 ---
 
 -   Opcode: **0x043**

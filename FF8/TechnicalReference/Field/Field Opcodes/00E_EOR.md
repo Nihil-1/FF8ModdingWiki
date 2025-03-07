@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00E_EOR
+permalink: /technicalreferencefieldfield-opcodes00e-eor/
 ---
 
 -   CAL Opcode: **0x00E EOR**

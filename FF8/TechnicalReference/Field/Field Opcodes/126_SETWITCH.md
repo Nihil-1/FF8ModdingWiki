@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 126_SETWITCH
+permalink: /technicalreferencefieldfield-opcodes126-setwitch/
 ---
 
 -   Opcode: **0x0126**

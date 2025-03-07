@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 09D_DISPTIMER
+permalink: /technicalreferencefieldfield-opcodes09d-disptimer/
 ---
 
 -   Opcode: **0x09D**

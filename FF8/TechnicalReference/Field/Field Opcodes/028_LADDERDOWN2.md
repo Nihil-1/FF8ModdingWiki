@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 028_LADDERDOWN2
+permalink: /technicalreferencefieldfield-opcodes028-ladderdown2/
 ---
 
 -   Opcode: **0x028**

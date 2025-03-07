@@ -3,6 +3,7 @@ layout: default
 title: Slot sets
 nav_order: 29
 parent: Kernel
+permalink: /technicalreferencemainkernel28-selphie-limit-break-sets/
 ---
 
 ## General

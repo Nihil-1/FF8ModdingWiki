@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 13F_WHOAMI
+permalink: /technicalreferencefieldfield-opcodes13f-whoami/
 ---
 
 -   Opcode: **0x13F**

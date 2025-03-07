@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 032_RANIMEKEEP
+permalink: /technicalreferencefieldfield-opcodes032-ranimekeep/
 ---
 
 -   Opcode: **0x032**

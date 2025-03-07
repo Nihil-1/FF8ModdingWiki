@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 092_PCTURN
+permalink: /technicalreferencefieldfield-opcodes092-pcturn/
 ---
 
 -   Opcode: **0x092**

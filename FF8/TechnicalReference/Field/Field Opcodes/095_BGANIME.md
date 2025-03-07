@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 095_BGANIME
+permalink: /technicalreferencefieldfield-opcodes095-bganime/
 ---
 
 -   Opcode: **0x095**

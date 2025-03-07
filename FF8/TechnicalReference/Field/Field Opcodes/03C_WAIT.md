@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03C_WAIT
+permalink: /technicalreferencefieldfield-opcodes03c-wait/
 ---
 
 -   Opcode: **0x03C**

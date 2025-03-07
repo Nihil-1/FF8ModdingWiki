@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 08A_SETPARTY
+permalink: /technicalreferencefieldfield-opcodes08a-setparty/
 ---
 
 -   Opcode: **0x08A**

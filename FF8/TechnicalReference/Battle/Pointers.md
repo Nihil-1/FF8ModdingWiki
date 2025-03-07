@@ -2,6 +2,7 @@
 layout: default
 parent: Battle
 title: Battle Stage Pointers
+permalink: /technicalreferencebattlepointers/
 ---
 
 By MaKiPL.

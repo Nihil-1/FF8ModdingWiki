@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 103_SARALYON
+permalink: /technicalreferencefieldfield-opcodes103-saralyon/
 ---
 
 -   Opcode: **0x067**

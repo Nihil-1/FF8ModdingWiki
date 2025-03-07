@@ -2,6 +2,7 @@
 layout: default
 title: Card List
 parent: List
+permalink: /technicalreferencelistscard-list/
 ---
 
 ## Card Types

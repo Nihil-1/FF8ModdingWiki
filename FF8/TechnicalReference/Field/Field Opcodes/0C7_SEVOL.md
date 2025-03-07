@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C7_SEVOL
+permalink: /technicalreferencefieldfield-opcodes0c7-sevol/
 ---
 
 -   Opcode: **0x0C7;**

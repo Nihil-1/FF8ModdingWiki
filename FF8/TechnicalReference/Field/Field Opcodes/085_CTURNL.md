@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 085_CTURNL
+permalink: /technicalreferencefieldfield-opcodes085-cturnl/
 ---
 
 -   Opcode: **0x085**

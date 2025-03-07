@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03F_MOVEA
+permalink: /technicalreferencefieldfield-opcodes03f-movea/
 ---
 
 -   Opcode: **0x03F**

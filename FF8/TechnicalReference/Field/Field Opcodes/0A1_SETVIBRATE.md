@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0A1_SETVIBRATE
+permalink: /technicalreferencefieldfield-opcodes0a1-setvibrate/
 ---
 
 -   Opcode: **0x0A1**

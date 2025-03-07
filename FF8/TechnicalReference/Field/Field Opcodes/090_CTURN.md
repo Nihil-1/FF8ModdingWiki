@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 090_CTURN
+permalink: /technicalreferencefieldfield-opcodes090-cturn/
 ---
 
 -   Opcode: **0x090**

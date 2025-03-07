@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05B_ISTOUCH
+permalink: /technicalreferencefieldfield-opcodes05b-istouch/
 ---
 
 -   Opcode: **0x05B**

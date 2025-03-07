@@ -2,6 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap wmset File Format
+permalink: /technicalreferenceworldmapworldmap-wmset/
 ---
 
 ## File general info

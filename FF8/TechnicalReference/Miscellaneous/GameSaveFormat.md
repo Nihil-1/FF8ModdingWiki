@@ -2,6 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: Game Save Format
+permalink: /technicalreferencemiscellaneousgamesaveformat/
 ---
 
 By myst6re.

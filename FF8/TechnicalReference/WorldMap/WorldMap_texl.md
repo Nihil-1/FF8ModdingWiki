@@ -2,6 +2,7 @@
 layout: default
 parent: WorldMap
 title: WorldMap Texl File Format
+permalink: /technicalreferenceworldmapworldmap-texl/
 ---
 
 Contains 20 [.TIM](../PSX/TIM_file). Part between next 0x12800 and previous texture end is just filled with 0.

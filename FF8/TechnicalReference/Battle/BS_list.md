@@ -3,6 +3,7 @@ layout: default
 parent: Battle
 title: Battle Stage List
 author: kaspar01
+permalink: /technicalreferencebattlebs-list/
 ---
 
 | Name        | Description                                        |

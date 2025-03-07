@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05C_MAPJUMPO
+permalink: /technicalreferencefieldfield-opcodes05c-mapjumpo/
 ---
 
 -   Opcode: **0x05C**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0CC_BATTLEMODE
+permalink: /technicalreferencefieldfield-opcodes0cc-battlemode/
 ---
 
 -   Opcode: **0x0CC**

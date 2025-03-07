@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06F_AASK
+permalink: /technicalreferencefieldfield-opcodes06f-aask/
 ---
 
 -   Opcode: **0x06F**

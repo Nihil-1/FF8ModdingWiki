@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00C_AND
+permalink: /technicalreferencefieldfield-opcodes00c-and/
 ---
 
 -   CAL Opcode: **0x00C AND**

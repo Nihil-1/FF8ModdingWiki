@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00E_PSHM_L
+permalink: /technicalreferencefieldfield-opcodes00e-pshm-l/
 ---
 
 -   Opcode: **0x00E**

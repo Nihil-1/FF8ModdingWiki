@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00D_OR
+permalink: /technicalreferencefieldfield-opcodes00d-or/
 ---
 
 -   CAL Opcode: **0x00D OR**

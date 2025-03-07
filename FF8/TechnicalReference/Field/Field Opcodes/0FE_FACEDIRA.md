@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0FE_FACEDIRA
+permalink: /technicalreferencefieldfield-opcodes0fe-facedira/
 ---
 
 -   Opcode: **0x0FE**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 020_IDUNLOCK
+permalink: /technicalreferencefieldfield-opcodes020-idunlock/
 ---
 
 -   Opcode: **0x020**

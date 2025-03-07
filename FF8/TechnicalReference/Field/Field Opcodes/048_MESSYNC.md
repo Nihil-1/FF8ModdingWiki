@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 048_MESSYNC
+permalink: /technicalreferencefieldfield-opcodes048-messync/
 ---
 
 -   Opcode: **0x048**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 019_PREQEW
+permalink: /technicalreferencefieldfield-opcodes019-preqew/
 ---
 
 -   Opcode: **0x019**

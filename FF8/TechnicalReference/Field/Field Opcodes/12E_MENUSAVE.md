@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 12E_MENUSAVE
+permalink: /technicalreferencefieldfield-opcodes12e-menusave/
 ---
 
 -   Opcode: **0x12E**

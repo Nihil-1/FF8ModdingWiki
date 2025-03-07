@@ -2,6 +2,7 @@
 layout: default
 parent: Battle
 title: MAG_t File Format
+permalink: /technicalreferencebattlefileformat-mag-t/
 ---
 
 By MaKiPL

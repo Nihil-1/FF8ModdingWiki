@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 069_BATTLE
+permalink: /technicalreferencefieldfield-opcodes069-battle/
 ---
 
 -   Opcode: **0x069**

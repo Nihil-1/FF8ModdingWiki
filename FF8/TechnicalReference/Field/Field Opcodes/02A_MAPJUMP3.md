@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 02A_MAPJUMP3
+permalink: /technicalreferencefieldfield-opcodes02a-mapjump3/
 ---
 
 -   Opcode: **0x02A**

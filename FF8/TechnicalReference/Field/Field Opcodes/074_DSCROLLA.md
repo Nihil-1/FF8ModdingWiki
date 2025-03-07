@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 074_DSCROLLA
+permalink: /technicalreferencefieldfield-opcodes074-dscrolla/
 ---
 
 -   Opcode: **0x074**

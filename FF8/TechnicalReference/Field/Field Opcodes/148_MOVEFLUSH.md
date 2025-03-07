@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 148_MOVEFLUSH
+permalink: /technicalreferencefieldfield-opcodes148-moveflush/
 ---
 
 -   Opcode: **0x148**

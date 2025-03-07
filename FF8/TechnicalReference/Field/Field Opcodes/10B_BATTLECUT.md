@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 10B_BATTLECUT
+permalink: /technicalreferencefieldfield-opcodes10b-battlecut/
 ---
 
 -   Opcode: **0x10B**

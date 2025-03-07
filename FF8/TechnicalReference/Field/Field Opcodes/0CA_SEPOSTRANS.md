@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0CA_SEPOSTRANS
+permalink: /technicalreferencefieldfield-opcodes0ca-sepostrans/
 ---
 
 -   Opcode: **0x0CA**

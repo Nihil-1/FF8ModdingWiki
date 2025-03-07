@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 150_KEYSIGHNCHANGE
+permalink: /technicalreferencefieldfield-opcodes150-keysighnchange/
 ---
 
 -   Opcode: **0x150**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03B_LINEOFF
+permalink: /technicalreferencefieldfield-opcodes03b-lineoff/
 ---
 
 -   Opcode: **0x03B**

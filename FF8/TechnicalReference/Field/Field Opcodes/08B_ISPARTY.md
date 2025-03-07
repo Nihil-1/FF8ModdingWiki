@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 08B_ISPARTY
+permalink: /technicalreferencefieldfield-opcodes08b-isparty/
 ---
 
 -   Opcode: **0x08B**

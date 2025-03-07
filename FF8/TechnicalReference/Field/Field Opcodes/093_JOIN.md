@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 093_JOIN
+permalink: /technicalreferencefieldfield-opcodes093-join/
 ---
 
 -   Opcode: **0x093**

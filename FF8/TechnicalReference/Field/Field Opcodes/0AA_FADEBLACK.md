@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0AA_FADEBLACK
+permalink: /technicalreferencefieldfield-opcodes0aa-fadeblack/
 ---
 
 -   Opcode: **0x0AA**

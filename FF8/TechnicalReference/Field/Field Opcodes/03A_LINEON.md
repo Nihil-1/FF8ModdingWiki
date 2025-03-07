@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 03A_LINEON
+permalink: /technicalreferencefieldfield-opcodes03a-lineon/
 ---
 
 -   Opcode: **0x03A**

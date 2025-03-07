@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 10D_WORLDMAPJUMP
+permalink: /technicalreferencefieldfield-opcodes10d-worldmapjump/
 ---
 
 -   Opcode: **0x10D**

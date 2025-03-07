@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0F6_RUNENABLE
+permalink: /technicalreferencefieldfield-opcodes0f6-runenable/
 ---
 
 -   Opcode: **0x0F6**

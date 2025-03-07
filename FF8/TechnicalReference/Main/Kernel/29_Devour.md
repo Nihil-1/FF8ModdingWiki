@@ -3,6 +3,7 @@ layout: default
 title: Devour
 nav_order: 30
 parent: Kernel
+permalink: /technicalreferencemainkernel29-devour/
 ---
 
 ## General

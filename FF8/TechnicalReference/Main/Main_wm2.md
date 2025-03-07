@@ -2,6 +2,7 @@
 layout: default
 parent: Main
 title: wm2field.tbl File Format
+permalink: /technicalreferencemainmain-wm2/
 ---
 
 By MaKiPL

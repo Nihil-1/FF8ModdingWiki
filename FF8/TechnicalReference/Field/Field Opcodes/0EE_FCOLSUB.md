@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0EE_FCOLSUB
+permalink: /technicalreferencefieldfield-opcodes0ee-fcolsub/
 ---
 
 \_\_NOTOC\_\_

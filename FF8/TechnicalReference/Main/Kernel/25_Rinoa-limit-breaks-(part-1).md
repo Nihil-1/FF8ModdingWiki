@@ -3,6 +3,7 @@ layout: default
 title: Rinoa commands
 nav_order: 26
 parent: Kernel
+permalink: /technicalreferencemainkernel25-rinoa-limit-breaks-part-1/
 ---
 
 ## General

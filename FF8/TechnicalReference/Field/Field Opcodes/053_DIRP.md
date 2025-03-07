@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 053_DIRP
+permalink: /technicalreferencefieldfield-opcodes053-dirp/
 ---
 
 -   Opcode: **0x053**

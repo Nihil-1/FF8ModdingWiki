@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 102_SARALYOFF
+permalink: /technicalreferencefieldfield-opcodes102-saralyoff/
 ---
 
 -   Opcode: **0x066**

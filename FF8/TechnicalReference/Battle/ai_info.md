@@ -3,6 +3,7 @@ layout: default
 parent: Battle
 title: Battle Scripts
 author: nihil, hobbitdur
+permalink: /technicalreferencebattleai-info/
 ---
 
 FF8 monster battle scripts are divided into 5 sections, **init**, **turn**, **counter**, **death** and **pre-counter**.  

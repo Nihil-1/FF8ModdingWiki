@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 062_TALKRADIUS
+permalink: /technicalreferencefieldfield-opcodes062-talkradius/
 ---
 
 -   Opcode: **0x062**

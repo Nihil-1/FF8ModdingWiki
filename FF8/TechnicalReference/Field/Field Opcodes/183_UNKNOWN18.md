@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 183_UNKNOWN18
+permalink: /technicalreferencefieldfield-opcodes183-unknown18/
 ---
 
 -   Opcode: **0x183**

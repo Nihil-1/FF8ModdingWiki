@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 060_SHOW
+permalink: /technicalreferencefieldfield-opcodes060-show/
 ---
 
 -   Opcode: **0x060**

@@ -2,6 +2,7 @@
 layout: default
 title: Formula
 parent: List
+permalink: /technicalreferencelistsformula-list/
 ---
 
 Here you'll find all formula as found in the game

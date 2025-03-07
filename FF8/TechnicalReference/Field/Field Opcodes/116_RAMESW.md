@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 116_RAMESW
+permalink: /technicalreferencefieldfield-opcodes116-ramesw/
 ---
 
 -   Opcode: **0x116**

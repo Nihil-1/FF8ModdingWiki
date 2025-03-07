@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 11B_MENUPHS
+permalink: /technicalreferencefieldfield-opcodes11b-menuphs/
 ---
 
 -   Opcode: **0x11B**

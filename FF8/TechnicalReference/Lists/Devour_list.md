@@ -2,6 +2,7 @@
 layout: default
 title: Devour List
 parent: List
+permalink: /technicalreferencelistsdevour-list/
 ---
 
 ## Devour Effects

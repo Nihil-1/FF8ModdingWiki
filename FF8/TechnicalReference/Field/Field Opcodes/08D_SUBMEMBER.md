@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 08D_SUBMEMBER
+permalink: /technicalreferencefieldfield-opcodes08d-submember/
 ---
 
 -   Opcode: **0x08D**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0B5_MUSICLOAD
+permalink: /technicalreferencefieldfield-opcodes0b5-musicload/
 ---
 
 -   Opcode: **0x0B5**

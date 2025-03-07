@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 06D_KEYSCAN
+permalink: /technicalreferencefieldfield-opcodes06d-keyscan/
 ---
 
 -   Opcode: **0x06D**

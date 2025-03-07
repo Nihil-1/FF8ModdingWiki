@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 016_REQEW
+permalink: /technicalreferencefieldfield-opcodes016-reqew/
 ---
 
 -   Opcode: **0x016**

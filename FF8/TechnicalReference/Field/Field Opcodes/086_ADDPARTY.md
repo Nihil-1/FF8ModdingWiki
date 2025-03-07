@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 086_ADDPARTY
+permalink: /technicalreferencefieldfield-opcodes086-addparty/
 ---
 
 -   Opcode: **0x086**

@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 04F_MOVIE
+permalink: /technicalreferencefieldfield-opcodes04f-movie/
 ---
 
 -   Opcode: **0x04F**

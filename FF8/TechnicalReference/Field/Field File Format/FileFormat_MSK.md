@@ -2,6 +2,7 @@
 layout: default
 parent: Field File Format
 title: Mask files
+permalink: /technicalreferencefieldfield-file-formatfileformat-msk/
 ---
 
 By myst6re.

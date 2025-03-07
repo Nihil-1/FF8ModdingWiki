@@ -2,6 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 05F_SETMESSPEED
+permalink: /technicalreferencefieldfield-opcodes05f-setmesspeed/
 ---
 
 -   Opcode: **0x05F**
