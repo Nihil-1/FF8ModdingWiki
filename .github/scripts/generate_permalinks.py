@@ -9,10 +9,6 @@ def generate_permalink(file_path, title):
     # Split the path into components (folders and filename)
     path_components = relative_path.split('/')
 
-    # If the file is named "index.md", exclude it from the permalink
-    if path_components[-1].lower() == 'index':
-        path_components = path_components[:-1]
-
     # Clean each folder component: lowercase, replace spaces/underscores with hyphens, remove special characters
     clean_components = []
     for component in path_components:
