@@ -1,5 +1,6 @@
 import os
 import re
+import argparse
 
 
 def get_title_from_index(folder_path):
@@ -53,7 +54,7 @@ def generate_permalink(file_path, title):
     return f'/{clean_path}/'
 
 
-def update_front_matter(file_path):
+def update_front_matter(file_path, overwrite):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
@@ -76,8 +77,9 @@ def update_front_matter(file_path):
     for i, line in enumerate(content):
         if line.strip().startswith('permalink:'):
             has_permalink = True
-            # Replace the existing permalink with the new one
-            content[i] = f'permalink: {new_permalink}\n'
+            if overwrite:
+                # Replace the existing permalink with the new one
+                content[i] = f'permalink: {new_permalink}\n'
             break
 
     # If no permalink exists, inject it into the front matter
@@ -90,13 +92,18 @@ def update_front_matter(file_path):
         file.writelines(content)
 
 
-def process_directory(directory):
+def process_directory(directory, overwrite):
     for root, _, files in os.walk(directory):
         for file in files:
             if file.endswith('.md'):
-                update_front_matter(os.path.join(root, file))
+                update_front_matter(os.path.join(root, file), overwrite)
 
 
 if __name__ == '__main__':
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description='Generate permalinks for Markdown files.')
+    parser.add_argument('--overwrite', action='store_true', help='Overwrite existing permalinks')
+    args = parser.parse_args()
+
     docs_directory = 'FF8'  # Change this to your FF8 directory
-    process_directory(docs_directory)
+    process_directory(docs_directory, args.overwrite)
