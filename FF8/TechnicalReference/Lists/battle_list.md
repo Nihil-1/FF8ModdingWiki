@@ -2,7 +2,7 @@
 layout: default
 title: Battle
 parent: List
-permalink: /battle/
+permalink: /technicalreference/lists/battle/
 ---
 
 

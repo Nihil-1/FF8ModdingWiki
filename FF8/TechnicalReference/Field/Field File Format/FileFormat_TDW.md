@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Extra font
-permalink: /extra-font/
+permalink: /technicalreference/field/field-file-format/extra-font/
 ---
 
 By myst6re.

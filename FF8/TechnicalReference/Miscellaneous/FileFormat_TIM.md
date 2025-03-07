@@ -2,7 +2,7 @@
 layout: default
 parent: Miscellaneous
 title: Tim File Format
-permalink: /tim-file-format/
+permalink: /technicalreference/miscellaneous/tim-file-format/
 ---
 
 # Introduction

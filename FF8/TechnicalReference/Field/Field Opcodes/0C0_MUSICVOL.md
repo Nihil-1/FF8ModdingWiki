@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C0_MUSICVOL
-permalink: /0c0-musicvol/
+permalink: /technicalreference/field/field-opcodes/0c0-musicvol/
 ---
 
 -   Opcode: **0x0C0**

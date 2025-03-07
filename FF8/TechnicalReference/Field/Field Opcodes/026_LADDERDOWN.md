@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 026_LADDERDOWN
-permalink: /026-ladderdown/
+permalink: /technicalreference/field/field-opcodes/026-ladderdown/
 ---
 
 -   Opcode: **0x026**

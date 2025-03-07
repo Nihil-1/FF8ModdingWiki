@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 0C9_SEPOS
-permalink: /0c9-sepos/
+permalink: /technicalreference/field/field-opcodes/0c9-sepos/
 ---
 
 -   Opcode: **0x0C9**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 137_DRAWPOINT
-permalink: /137-drawpoint/
+permalink: /technicalreference/field/field-opcodes/137-drawpoint/
 ---
 
 -   Opcode: **0x137**

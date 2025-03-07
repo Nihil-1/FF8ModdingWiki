@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 104_SARALYDISPOFF
-permalink: /104-saralydispoff/
+permalink: /technicalreference/field/field-opcodes/104-saralydispoff/
 ---
 
 -   Opcode: **0x068**

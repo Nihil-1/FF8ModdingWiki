@@ -1,7 +1,7 @@
 ---
 title: Tim File Format
 parent: PSX
-permalink: /tim-file-format/
+permalink: /technicalreference/psx/tim-file-format/
 ---
 
 ## Introduction

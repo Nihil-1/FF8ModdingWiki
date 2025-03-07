@@ -2,7 +2,7 @@
 layout: default
 parent: GF Refinement
 title: Refine abilities
-permalink: /refine-abilities/
+permalink: /technicalreference/menu/gf-refinement/refine-abilities/
 ---
 
 

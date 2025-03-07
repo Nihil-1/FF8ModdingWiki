@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 036_RCANIMELOOP
-permalink: /036-rcanimeloop/
+permalink: /technicalreference/field/field-opcodes/036-rcanimeloop/
 ---
 
 -   Opcode: **0x036**

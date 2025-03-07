@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 050_MOVIESYNC
-permalink: /050-moviesync/
+permalink: /technicalreference/field/field-opcodes/050-moviesync/
 ---
 
 -   Opcode: **0x050**

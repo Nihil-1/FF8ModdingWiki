@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 171_UNKNOWN6
-permalink: /171-unknown6/
+permalink: /technicalreference/field/field-opcodes/171-unknown6/
 ---
 
 -   Opcode: **0x171**

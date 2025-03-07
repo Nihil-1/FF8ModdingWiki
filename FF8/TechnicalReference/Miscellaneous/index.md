@@ -1,5 +1,5 @@
 ---
-permalink: /miscellaneous/
+permalink: /technicalreference/miscellaneous/miscellaneous/
 layout: default
 title: Miscellaneous
 nav_order: 11

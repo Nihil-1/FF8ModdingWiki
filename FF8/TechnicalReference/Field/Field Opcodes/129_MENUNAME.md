@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 129_MENUNAME
-permalink: /129-menuname/
+permalink: /technicalreference/field/field-opcodes/129-menuname/
 ---
 
 -   Opcode: **0x0129**

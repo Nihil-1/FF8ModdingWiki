@@ -3,7 +3,7 @@ layout: default
 title: Misc text pointers
 nav_order: 32
 parent: Kernel
-permalink: /misc-text-pointers/
+permalink: /technicalreference/main/kernel/misc-text-pointers/
 ---
 
 ## General

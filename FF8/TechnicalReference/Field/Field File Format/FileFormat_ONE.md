@@ -2,7 +2,7 @@
 layout: default
 parent: Field File Format
 title: Field Character Models Container
-permalink: /field-character-models-container/
+permalink: /technicalreference/field/field-file-format/field-character-models-container/
 ---
 
 By myst6re.

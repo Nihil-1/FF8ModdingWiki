@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 169_UNKNOWN4
-permalink: /169-unknown4/
+permalink: /technicalreference/field/field-opcodes/169-unknown4/
 ---
 
 -   Opcode: **0x169**

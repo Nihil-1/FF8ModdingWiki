@@ -3,7 +3,7 @@ layout: default
 title: Duel (zell limit break)
 nav_order: 25
 parent: Kernel
-permalink: /duel-zell-limit-break/
+permalink: /technicalreference/main/kernel/duel-zell-limit-break/
 ---
 
 ## General

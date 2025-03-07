@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 031_RANIME
-permalink: /031-ranime/
+permalink: /technicalreference/field/field-opcodes/031-ranime/
 ---
 
 -   Opcode: **0x031**

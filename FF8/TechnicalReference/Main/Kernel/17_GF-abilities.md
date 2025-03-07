@@ -3,7 +3,7 @@ layout: default
 title: GF abilities
 nav_order: 18
 parent: Kernel
-permalink: /gf-abilities/
+permalink: /technicalreference/main/kernel/gf-abilities/
 ---
 
 ## General

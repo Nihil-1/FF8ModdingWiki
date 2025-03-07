@@ -3,7 +3,7 @@ layout: default
 title: Stat percentage increasing abilities
 nav_order: 15
 parent: Kernel
-permalink: /stat-percentage-increasing-abilities/
+permalink: /technicalreference/main/kernel/stat-percentage-increasing-abilities/
 ---
 
 ## General

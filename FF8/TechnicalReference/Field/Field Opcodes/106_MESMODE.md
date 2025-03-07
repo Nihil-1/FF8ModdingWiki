@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 106_MESMODE
-permalink: /106-mesmode/
+permalink: /technicalreference/field/field-opcodes/106-mesmode/
 ---
 
 -   Opcode: **0x106**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01F_IDLOCK
-permalink: /01f-idlock/
+permalink: /technicalreference/field/field-opcodes/01f-idlock/
 ---
 
 -   Opcode: **0x01F**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 072_LSCROLL
-permalink: /072-lscroll/
+permalink: /technicalreference/field/field-opcodes/072-lscroll/
 ---
 
 -   Opcode: **0x072**

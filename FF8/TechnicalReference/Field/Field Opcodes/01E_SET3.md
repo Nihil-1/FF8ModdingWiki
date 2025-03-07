@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 01E_SET3
-permalink: /01e-set3/
+permalink: /technicalreference/field/field-opcodes/01e-set3/
 ---
 
 -   Opcode: **0x01E**

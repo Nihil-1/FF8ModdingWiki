@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 07D_MOVESYNC
-permalink: /07d-movesync/
+permalink: /technicalreference/field/field-opcodes/07d-movesync/
 ---
 
 -   Opcode: **0x07D**

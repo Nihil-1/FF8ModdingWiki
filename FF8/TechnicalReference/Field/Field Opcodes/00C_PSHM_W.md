@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 00C_PSHM_W
-permalink: /00c-pshm-w/
+permalink: /technicalreference/field/field-opcodes/00c-pshm-w/
 ---
 
 -   Opcode: **0x00C**

@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 155_SETDRAWPOINT
-permalink: /155-setdrawpoint/
+permalink: /technicalreference/field/field-opcodes/155-setdrawpoint/
 ---
 
 -   Opcode: **0x155**

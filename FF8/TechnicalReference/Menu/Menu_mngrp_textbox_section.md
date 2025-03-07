@@ -2,7 +2,7 @@
 layout: default
 parent: Menu
 title: Mngrp Textbox Section
-permalink: /mngrp-textbox-section/
+permalink: /technicalreference/menu/mngrp-textbox-section/
 ---
 
 # TextBox

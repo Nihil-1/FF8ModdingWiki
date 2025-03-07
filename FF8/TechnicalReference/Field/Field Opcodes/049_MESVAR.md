@@ -2,7 +2,7 @@
 layout: default
 parent: Field Opcodes
 title: 049_MESVAR
-permalink: /049-mesvar/
+permalink: /technicalreference/field/field-opcodes/049-mesvar/
 ---
 
 -   Opcode: **0x049**
