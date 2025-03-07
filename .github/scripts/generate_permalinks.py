@@ -6,8 +6,12 @@ def generate_permalink(file_path, title):
     # Remove the base directory (FF8) and file extension
     relative_path = file_path.replace('FF8/', '').replace('.md', '')
 
-    # Split the path into components (folders)
-    path_components = relative_path.split('/')[:-1]  # Exclude the filename
+    # Split the path into components (folders and filename)
+    path_components = relative_path.split('/')
+
+    # If the file is named "index.md", exclude it from the permalink
+    if path_components[-1].lower() == 'index':
+        path_components = path_components[:-1]
 
     # Clean each folder component: lowercase, replace spaces/underscores with hyphens, remove special characters
     clean_components = []
@@ -16,12 +20,14 @@ def generate_permalink(file_path, title):
         clean_component = re.sub(r'[^a-z0-9\-]', '', clean_component)
         clean_components.append(clean_component)
 
-    # Clean the title for the last part of the permalink
-    clean_title = title.lower().replace(' ', '-').replace('_', '-')
-    clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
+    # If the file is an index file, use the title for the last part of the permalink
+    if file_path.lower().endswith('index.md'):
+        clean_title = title.lower().replace(' ', '-').replace('_', '-')
+        clean_title = re.sub(r'[^a-z0-9\-]', '', clean_title)
+        clean_components[-1] = clean_title  # Replace the last component with the cleaned title
 
-    # Join the folder components and the cleaned title to form the permalink
-    clean_path = '/'.join(clean_components + [clean_title])
+    # Join the components with slashes to form the permalink
+    clean_path = '/'.join(clean_components)
     return f'/{clean_path}/'
 
 
