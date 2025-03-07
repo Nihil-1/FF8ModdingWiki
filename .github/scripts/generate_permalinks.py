@@ -6,12 +6,20 @@ def generate_permalink(file_path):
     # Remove the base directory (FF8) and file extension
     relative_path = file_path.replace('FF8/', '').replace('.md', '')
 
-    # Convert to lowercase and replace spaces/underscores with hyphens
-    clean_path = relative_path.lower().replace(' ', '-').replace('_', '-')
+    # Split the path into components (folders and filename)
+    path_components = relative_path.split('/')
 
-    # Remove numbers and special characters (optional)
-    clean_path = re.sub(r'[^a-z0-9\-]', '', clean_path)
+    # Clean each component: lowercase, replace spaces/underscores with hyphens, remove special characters
+    clean_components = []
+    for component in path_components:
+        # Convert to lowercase and replace spaces/underscores with hyphens
+        clean_component = component.lower().replace(' ', '-').replace('_', '-')
+        # Remove special characters (except hyphens)
+        clean_component = re.sub(r'[^a-z0-9\-]', '', clean_component)
+        clean_components.append(clean_component)
 
+    # Join the components with slashes to form the permalink
+    clean_path = '/'.join(clean_components)
     return f'/{clean_path}/'
 
 
@@ -19,17 +27,22 @@ def update_front_matter(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
+    # Generate the new permalink
+    new_permalink = generate_permalink(file_path)
+
     # Check if the file already has a permalink
-    has_permalink = any(line.strip().startswith('permalink:') for line in content)
-    if has_permalink:
-        return
+    has_permalink = False
+    for i, line in enumerate(content):
+        if line.strip().startswith('permalink:'):
+            has_permalink = True
+            # Replace the existing permalink with the new one
+            content[i] = f'permalink: {new_permalink}\n'
+            break
 
-    # Generate the permalink
-    permalink = generate_permalink(file_path)
-
-    # Inject the permalink into the front matter
-    front_matter_end = content.index('---\n', 1) if '---\n' in content[1:] else 1
-    content.insert(front_matter_end, f'permalink: {permalink}\n')
+    # If no permalink exists, inject it into the front matter
+    if not has_permalink:
+        front_matter_end = content.index('---\n', 1) if '---\n' in content[1:] else 1
+        content.insert(front_matter_end, f'permalink: {new_permalink}\n')
 
     # Write the updated content back to the file
     with open(file_path, 'w', encoding='utf-8') as file:
