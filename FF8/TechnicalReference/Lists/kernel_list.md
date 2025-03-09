@@ -76,9 +76,3 @@ permalink: /technical-reference/list/kernel/
 | 0x40 | ?                |
 | 0x80 | Revive?          |
 
-## Divers
-
-For devour:
-v7 = (unsigned __int8)K_BATTLE_COMMAND_ABILITY_DATA_ID[8 * (unsigned __int8)p_command_type];
-
-

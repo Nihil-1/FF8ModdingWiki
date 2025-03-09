@@ -2,12 +2,7 @@
 title: Monster files (c0mxxx.dat)
 layout: default
 parent: Battle
-author:
-  - Mirex
-  - JWP
-  - random_npc
-  - myst6re
-  - HobbitDur
+author: Mirex, JWP, random_npc, myst6re, HobbitDur
 permalink: /technical-reference/battle/monster-files-c0mxxxdat/
 ---
 
@@ -396,45 +391,3 @@ Contains some [TIMs]({{site.baseurl}}/FF8/Technical Reference/PSX/TIM_Format).
 | 4               | nbTIMs \* 4 bytes | TIMs Positions |
 | 4 + nbTIMs \* 4 | 4 bytes           | End of file    |
 | 8 + nbTIMs \* 4 | Varies \* nbTIMs  | TIMs           |
-
-
-struct kernel_header
-{
-  char name[24];
-  BYTE hp[4];
-  BYTE str[4];
-  BYTE vit[4];
-  BYTE mag[4];
-  BYTE spr[4];
-  BYTE spd[4];
-  BYTE eva[4];
-  ff8_ability_action ability_low_level[16];
-  ff8_ability_action ability_med_level[16];
-  ff8_ability_action ability_high_level[16];
-  BYTE med_level_start;
-  BYTE high_level_start;
-  BYTE flag_byte_0_unknown;
-  BYTE flag_byte_1;
-  BYTE Card[3];
-  BYTE Devour[3];
-  BYTE flag_byte_2;
-  BYTE flag_byte_3_unknown;
-  WORD extra_xp;
-  WORD xp;
-  ff8_id_quantity_storage LowLvlDraw[4];
-  ff8_id_quantity_storage MedLvlDraw[4];
-  ff8_id_quantity_storage HighLvlDraw[4];
-  ff8_id_quantity_storage LowLvlMug[4];
-  ff8_id_quantity_storage MedLvlMug[4];
-  ff8_id_quantity_storage HighLvlMug[4];
-  ff8_id_quantity_storage LowLvlDrop[4];
-  ff8_id_quantity_storage MedLvlDrop[4];
-  ff8_id_quantity_storage HighLvDrop[4];
-  BYTE MugRate;
-  BYTE DropRate;
-  BYTE padding;
-  BYTE ap;
-  BYTE renzokuken_data[16];
-  BYTE ElemRes[8];
-  BYTE StatusRes[20];
-};
