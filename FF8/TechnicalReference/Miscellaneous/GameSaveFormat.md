@@ -140,47 +140,47 @@ For each G-F:
 
 Squall, Zell, Irvine, Quistis, Rinoa, Selphie, Seifer, Edea. For each character:
 
-| Offset | Size          | Data                                         |
-|--------|---------------|----------------------------------------------|
-| 0x00   | 2 bytes       | Current HPs                                  |
-| 0x02   | 2 bytes       | Max HPs                                      |
-| 0x04   | 4 bytes       | Experience                                   |
-| 0x08   | 1 byte        | Model ID                                     |
-| 0x09   | 1 byte        | Weapon ID                                    |
-| 0x0A   | 1 byte        | STR                                          |
-| 0x0B   | 1 byte        | VIT                                          |
-| 0x0C   | 1 byte        | MAG                                          |
-| 0x0D   | 1 byte        | SPR                                          |
-| 0x0E   | 1 byte        | SPD                                          |
-| 0x0F   | 1 byte        | LCK                                          |
-| 0x10   | 2\*32 bytes   | Magics                                       |
-| 0x50   | 3 bytes       | Commands                                     |
-| 0x53   | 1 byte        | *Padding or unused command*                  |
-| 0x54   | 4 bytes       | Abilities                                    |
-| 0x58   | 2 bytes       | Junctionned GFs                              |
-| 0x5A   | 1 byte        | Unknown                                      |
-| 0x5B   | 1 byte        | Alternative model (Normal, SeeD, Soldier...) |
-| 0x5C   | 1 byte        | Junction HP                                  |
-| 0x5D   | 1 byte        | Junction STR                                 |
-| 0x5E   | 1 byte        | Junction VIT                                 |
-| 0x5F   | 1 byte        | Junction MAG                                 |
-| 0x60   | 1 byte        | Junction SPR                                 |
-| 0x61   | 1 byte        | Junction SPD                                 |
-| 0x62   | 1 byte        | Junction EVA                                 |
-| 0x63   | 1 byte        | Junction HIT                                 |
-| 0x64   | 1 byte        | Junction LCK                                 |
-| 0x65   | 1 byte        | Junction elemental attack                    |
-| 0x66   | 1 byte        | Junction mental attack                       |
-| 0x67   | 4 bytes       | Junction elemental defense                   |
-| 0x6B   | 4 bytes       | Junction mental defense                      |
-| 0x6F   | 1 byte        | Unknown (padding?)                           |
-| 0x70   | 16 \* 2 bytes | Compatibility with GFs                       |
-| 0x90   | 2 bytes       | Number of kills                              |
-| 0x92   | 2 bytes       | Number of KOs                                |
-| 0x94   | 1 byte        | Exists                                       |
-| 0x95   | 1 byte        | Unknown                                      |
-| 0x96   | 1 byte        | Mental Status                                |
-| 0x97   | 1 byte        | Unknown                                      |
+| Offset | Size          | Data                                                                                                                            |
+|--------|---------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 0x00   | 2 bytes       | Current HPs                                                                                                                     |
+| 0x02   | 2 bytes       | Max HPs                                                                                                                         |
+| 0x04   | 4 bytes       | Experience                                                                                                                      |
+| 0x08   | 1 byte        | Model ID                                                                                                                        |
+| 0x09   | 1 byte        | Weapon ID                                                                                                                       |
+| 0x0A   | 1 byte        | STR                                                                                                                             |
+| 0x0B   | 1 byte        | VIT                                                                                                                             |
+| 0x0C   | 1 byte        | MAG                                                                                                                             |
+| 0x0D   | 1 byte        | SPR                                                                                                                             |
+| 0x0E   | 1 byte        | SPD                                                                                                                             |
+| 0x0F   | 1 byte        | LCK                                                                                                                             |
+| 0x10   | 2\*32 bytes   | Magics                                                                                                                          |
+| 0x50   | 3 bytes       | Commands                                                                                                                        |
+| 0x53   | 1 byte        | *Padding or unused command*                                                                                                     |
+| 0x54   | 4 bytes       | Abilities                                                                                                                       |
+| 0x58   | 2 bytes       | Junctionned GFs                                                                                                                 |
+| 0x5A   | 1 byte        | Unknown                                                                                                                         |
+| 0x5B   | 1 byte        | Alternative model (Normal, SeeD, Soldier...)                                                                                    |
+| 0x5C   | 1 byte        | Junction HP                                                                                                                     |
+| 0x5D   | 1 byte        | Junction STR                                                                                                                    |
+| 0x5E   | 1 byte        | Junction VIT                                                                                                                    |
+| 0x5F   | 1 byte        | Junction MAG                                                                                                                    |
+| 0x60   | 1 byte        | Junction SPR                                                                                                                    |
+| 0x61   | 1 byte        | Junction SPD                                                                                                                    |
+| 0x62   | 1 byte        | Junction EVA                                                                                                                    |
+| 0x63   | 1 byte        | Junction HIT                                                                                                                    |
+| 0x64   | 1 byte        | Junction LCK                                                                                                                    |
+| 0x65   | 1 byte        | Junction elemental attack                                                                                                       |
+| 0x66   | 1 byte        | Junction mental attack                                                                                                          |
+| 0x67   | 4 bytes       | Junction elemental defense                                                                                                      |
+| 0x6B   | 4 bytes       | Junction mental defense                                                                                                         |
+| 0x6F   | 1 byte        | Unknown (padding?)                                                                                                              |
+| 0x70   | 16 \* 2 bytes | Compatibility with GFs                                                                                                          |
+| 0x90   | 2 bytes       | Number of kills                                                                                                                 |
+| 0x92   | 2 bytes       | Number of KOs                                                                                                                   |
+| 0x94   | 1 byte        | Exists                                                                                                                          |
+| 0x95   | 1 byte        | Unknown                                                                                                                         |
+| 0x96   | 1 byte        | Mental Status  tr("Mort") << tr("Poison") << tr("Fossile") << tr("Darkness") << tr("Aphasie") << tr("Trouble") << tr("Zombie"); |
+| 0x97   | 1 byte        | Unknown                                                                                                                         |
 
 ### Worldmap
 

@@ -29,40 +29,40 @@ permalink: /technical-reference/list/status-flags/
 
 # Status 2
 
-| bit index | Flag       | Description     |
-|-----------|------------|-----------------|
-| 0         | 0x00000001 | Sleep           |
-| 1         | 0x00000002 | Haste           |
-| 2         | 0x00000004 | Slow            |
-| 3         | 0x00000008 | Stop            |
-| 4         | 0x00000010 | Regen           |
-| 5         | 0x00000020 | Protect         |
-| 6         | 0x00000040 | Shell           |
-| 7         | 0x00000080 | Reflect         |
-| 8         | 0x00000100 | Aura            |
-| 9         | 0x00000200 | Curse           |
-| 10        | 0x00000400 | Doom            |
-| 11        | 0x00000800 | Invincible      |
-| 12        | 0x00001000 | Gradual petrify |
-| 13        | 0x00002000 | Float           |
-| 14        | 0x00004000 | Confusion       |
-| 15        | 0x00008000 | Drain           |
-| 16        | 0x00010000 | Eject           |
-| 17        | 0x00020000 | Double          |
-| 18        | 0x00040000 | Triple          |
-| 19        | 0x00080000 | Defend          |
-| 20        | 0x00100000 | Unknown         |
-| 21        | 0x00200000 | Unknown         |
-| 22        | 0x00400000 | Charged         |
-| 23        | 0x00800000 | Back attack     |
-| 24        | 0x01000000 | Vit0            |
-| 25        | 0x02000000 | Angel Wing      |
-| 26        | 0x04000000 | Unknown         |
-| 27        | 0x08000000 | Unknown         |
-| 28        | 0x10000000 | Unknown         |
-| 29        | 0x20000000 | Unknown         |
-| 30        | 0x40000000 | Has Magic       |
-| 31        | 0x80000000 | SummonGF        |
+| bit index | Flag       | Description            |
+|-----------|------------|------------------------|
+| 0         | 0x00000001 | Sleep                  |
+| 1         | 0x00000002 | Haste                  |
+| 2         | 0x00000004 | Slow                   |
+| 3         | 0x00000008 | Stop                   |
+| 4         | 0x00000010 | Regen                  |
+| 5         | 0x00000020 | Protect                |
+| 6         | 0x00000040 | Shell                  |
+| 7         | 0x00000080 | Reflect                |
+| 8         | 0x00000100 | Aura                   |
+| 9         | 0x00000200 | Curse                  |
+| 10        | 0x00000400 | Doom                   |
+| 11        | 0x00000800 | Invincible             |
+| 12        | 0x00001000 | Gradual petrify        |
+| 13        | 0x00002000 | Float                  |
+| 14        | 0x00004000 | Confusion              |
+| 15        | 0x00008000 | Drain                  |
+| 16        | 0x00010000 | Eject                  |
+| 17        | 0x00020000 | Double                 |
+| 18        | 0x00040000 | Triple                 |
+| 19        | 0x00080000 | Defend                 |
+| 20        | 0x00100000 | Immune Physical attack |
+| 21        | 0x00200000 | Immune Magic attack    |
+| 22        | 0x00400000 | Charged                |
+| 23        | 0x00800000 | Back attack            |
+| 24        | 0x01000000 | Vit0                   |
+| 25        | 0x02000000 | Angel Wing             |
+| 26        | 0x04000000 | Unknown                |
+| 27        | 0x08000000 | Unknown                |
+| 28        | 0x10000000 | Unknown                |
+| 29        | 0x20000000 | Unknown                |
+| 30        | 0x40000000 | Has Magic              |
+| 31        | 0x80000000 | Invocation pending     |
 
 # Ai status
 
