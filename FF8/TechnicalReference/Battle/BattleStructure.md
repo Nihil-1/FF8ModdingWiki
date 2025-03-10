@@ -30,7 +30,7 @@ Scene.out contains no header. It is a raw list of 1024 encounters. Each encounte
 | 0x50   | 16     | Still under research, but this is usually the same as the previous field's value.                                                                                                                                                                                                                                         |
 | 0x60   | 16     | unknown                                                                                                                                                                                                                                                                                                                   |
 | 0x70   | 8      | unknown                                                                                                                                                                                                                                                                                                                   |
-| 0x78   | 8      | Enemy level. Each enemy level is 1 byte. Numbers from 1 to 100 are fixed levels. From 101 to 199 are max levels fixed (min level remains 1). When 255, it is disabled (standard behaviour). And 215 (Deep Sea), 210 (Deep Sea), 251 (Final Bosses), 252 (Ultimecia Castle), 254 (Scripted battles)... Still don't know... |
+| 0x78   | 8      | [Ennemy level](#ennemy-level) |
 
 ## Notes
 
@@ -62,13 +62,6 @@ In 0x04, 0x05, 0x06, and 0x07
 An important note: If you put an enemy that "summons" another one (Ultimecia summoning Griever, Sphinxara summoning jelleye...) it will summon the enemy from certain slot. This means that if you put that enemy in another battle, it will still summon that slot, because (I think) that summoning is scripted in its AI (in c9m???.dat)
 
 
-
-## On going note
-
-So for the enemy level (last 8 byte), what I have found:
-252: Full random level
-255: Some randomness (either at min or at max) (final_level = partyAverageLevel +- partyAverageLevel/5)
-
 ## Battle flag 1
 
 | Flag Value | Description         |
@@ -81,3 +74,17 @@ So for the enemy level (last 8 byte), what I have found:
 | 0x20       | Surprise Attack     |
 | 0x40       | Back Attack         |
 | 0x80       | Scripted Battle     |
+
+## Ennemy level
+
+Each ennemy level is 1 byte.<br>
+By default, the ennemy level is determined by the average level of the current team `team level`, and the game adds or substracts `team level / 5`.
+
+- Numbers from 0 to 100 are fixed levels `N +- (N / 5)`. 
+- From 101 to 200 are max levels fixed `min(team level +- (team level / 5), N)`
+- From 201 to 250 are added values `team level + (N - 200)  +- ((team level + (N - 200)) / 5)`
+- 251 is level between 1 to 65, but the game exceptionnaly doesn't divide the result by +-5, it adds or substracts a random value between 0 and 3 `min(team level +- rand(0, 3), 65)`
+- 252 is completely random `rand(1, 100)`
+- 253 is not used in the game, but the formula is random with a constraint `rand(1, team level +- (team level / 5))`
+- 254 is the average team level, period, no division per 5 `team level`
+- 255 is the standard formula `team level +- (team level / 5)`
