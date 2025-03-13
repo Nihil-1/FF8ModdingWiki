@@ -548,6 +548,7 @@ None
 ### Summary
 
 Sets the extra scan text to a specific battle text.
+This text can be found in the bottom left section of the scan screen, where info such as HP, monster name, level and elemental affinities is shown.
 
 | Opcode | IfritAI name | Size | Short Description       |
 |--------|--------------|------|-------------------------|
@@ -569,8 +570,9 @@ Each text has an ID, starting from 0 and incrementing with each subsequent text.
 
 ### Summary
 
-Sets a multiplier that changes a selected stat.  
-The base stat does not get changed, so if for example we use **_statChange_** to change a stat to 500% of its original value, we just need to set the multiplier back to 100% to set it back to its base value.
+Sets the multiplier for a chosen stat.  
+The base stat itself remains unchanged, but for calculations during battle, the stat used is affected by the multiplier.  
+For example, if **_statChange_** is used to increase a stat to 500% of its original value, setting the multiplier back to 100% will restore it to its base value.
 
 | Opcode | IfritAI name | Size | Short Description        |
 |--------|--------------|------|--------------------------|
@@ -591,8 +593,8 @@ Note that **Multiplier** is multiplied by 10, so for example if its set to 0x28 
 
 ### Summary
 
-Makes previous ability draw magic from target (use after opcode **_useRandom_** or **_use_**).  
-This magic is stored, and if **_draw_** is used again, it will replace the previously stored magic.  
+Makes previous ability draw and store a randomly selected magic from target (use after opcode **_useRandom_** or **_use_**).  
+Since monsters can only hold one drawn magic at a time, using **_draw_** again will overwrite the previously stored magic.  
 In the case where **_draw_** is used on a playable character that has no magic or a monster, the message showing what magic was stolen will appear only the first time and a nameless magic with no effect that looks and sounds like _Cure_ will be stored.  
 If a monster uses **_draw_** on itself and then uses **_cast_**, the game will crash.
 
@@ -611,8 +613,9 @@ None
 ### Summary
 
 Casts magic that's been stored by using the **_draw_** opcode.  
+If no magic is stored, does nothing.  
 Using this after the monster used **_draw_** on itself will crash the game.  
-Note that if no magic has been stored, this opcode will do nothing.
+Note that casting magic with this opcode will not consume the stored magic.
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
@@ -628,9 +631,9 @@ None
 
 ### Summary
 
-Makes previous ability blow away magic from target (use after opcode **_useRandom_** or **_use_**).  
-Note that blown away magic is removed from junctions too.  
-Does nothing if the target has no magic.  
+Makes previous ability remove a randomly selected magic from the target's inventory (use after opcode **_useRandom_** or **_use_**).  
+Note that if the blown-away magic was junctioned to a stat, Elemental Attack/Defense, or Status Attack/Defense, the affected attribute will lose its junction bonus.  
+Does nothing if the target has no magic.
 
 | Opcode | IfritAI name | Size | Short Description |
 |--------|--------------|------|-------------------|
