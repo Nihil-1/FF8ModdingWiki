@@ -77,13 +77,13 @@ $$
 ## Moomba
 
 $$
-\text{Damage} = TargetCurrentHP - 1
+\text{Damage} = \text{TargetCurrentHP} - 1
 $$
 
 ## Angelo recover
 
 $$
-\text{DamageHeal} = \frac{Power \times TargetMaxHP}{16}
+\text{DamageHeal} = \frac{\text{Power} \times \text{TargetMaxHP}}{16}
 $$
 
 # Item
@@ -91,7 +91,7 @@ $$
 ## Curative item
 
 $$
-\text{DamageHeal} = 50 \times Powers
+\text{DamageHeal} = 50 \times \text{Powers}
 $$
 
 # Magic
@@ -142,7 +142,7 @@ $$
 strBonus is 0 if we don't compute STR
 
 $$
-\text{statResult} = \frac{\text{charaLvl} \times \text{charaLvl}}{\text{stat}_3}
+\text{statResult} = \frac{\text{charaLvl}^2}{\text{stat}_3}
 $$
 
 $$
