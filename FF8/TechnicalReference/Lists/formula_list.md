@@ -55,6 +55,7 @@ If Shell:
 Damage = Damage / 2
 
 ## Diablos
+
 $$
 \text{Damage} = \frac{\text{TargetMaxHP} \times \text{Level}}{\text{PowerMod} - \text{LevelMod} + 100}
 $$
@@ -140,13 +141,13 @@ $$
 
 strBonus is 0 if we don't compute STR
 
-$$
-\text{statResult} = \frac{\text{charalvl} \times \text{charalvl}}{\text{stat}_3}
+$\text{statResult} = \frac{\text{charaLvl} \times \text{charaLvl}}{\text{stat}_3}$
 
+$$
 \text{statResult} = \text{CapTo255}\left( \text{strBonus} 
 + \frac{\text{stat}_2 
-+ \frac{\text{charalvl} \times \text{stat}_0}{10} 
-+ \frac{\text{charalvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult})
++ \frac{\text{charaLvl} \times \text{stat}_0}{10} 
++ \frac{\text{charaLvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult})
 - \text{getHigh32bit}(\text{statResult})}{2} \right)}{4}
 + \text{charaBasedStat} 
 + \frac{\text{magicJunctionnedValue} \times \text{magicAmount}}{100} 
@@ -160,7 +161,7 @@ $$
     + \text{hp}_2 
     + \text{charaLvl} \times \text{hp}_0 
     + \text{magicAmount} \times \text{magicJunctionnedValue} 
-    - \frac{10 \times \text{charaLvl} \times \text{charaLvl}}{\text{hp}_1}
+    - \frac{10 \times \text{charaLvl}^2}{\text{hp}_1}
 $$
 
 
