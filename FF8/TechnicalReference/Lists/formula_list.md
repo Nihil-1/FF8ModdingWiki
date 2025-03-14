@@ -164,8 +164,7 @@ $$
 + \text{charaLvl} \times \text{hp}_0 
 - \frac{10 \times \text{charaLvl}^2}{\text{hp}_1}
 + \text{hp}_2
-+ \text{magicAmount} \times \text{magicJunctionnedValue} 
-  
++ \text{magicAmount} \times \text{magicJunctionnedValue}
 $$
 
 

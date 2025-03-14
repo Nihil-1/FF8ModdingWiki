@@ -307,15 +307,16 @@ Code: [Select]
 # Others 
 ## Crisis Level 
 
-#Random MOD 0-255 + 160 (Set to 0 for no variance)
-942E7 = 83 E1 00 90 90 90
-#Default: +160, Current = 255
-942F2 = 81 C1 FF 00 00 00
-#Change this to EB 09 (or JMP 494329) to set 'fixed' crisis level proc
-#or deactivate limits altogether with 0
-#49431E
+#Random MOD 0-255 + 160 (Set to 0 for no variance)  
+942E7 = 83 E1 00 90 90 90  
+#Default: +160, Current = 255  
+942F2 = 81 C1 FF 00 00 00  
+#Change this to EB 09 (or JMP 494329) to set 'fixed' crisis level proc  
+#or deactivate limits altogether with 0  
+#49431E  
 
-#494329 - Where crisis level 4 checked for, can be changed to any level or 0
+#494329 - Where crisis level 4 checked for, can be changed to any level or 0  
+
 ```
 0x0941F0: Crisis Level checks start here
 
@@ -324,104 +325,106 @@ Code: [Select]
 ```
 
 ## Add VIT0 resist
-#Author - JWP
-#Adds check for 20th status resist byte [VIT0] for enemies
-#Called 'prcnt' in ifrit editor
-#USE AT OWN RISK
+#Author - JWP  
+#Adds check for 20th status resist byte [VIT0] for enemies  
+#Called 'prcnt' in ifrit editor  
+#USE AT OWN RISK  
 
-#Default: B90A 0A0A 0A
-#8BEE8 = E9A8 0000 00
+#Default: B90A 0A0A 0A  
+#8BEE8 = E9A8 0000 00  
 
-#Default: 9090 9090 9090 9090
-#8BF95 = 8A87 7B01 0000 EB77
+#Default: 9090 9090 9090 9090  
+#8BF95 = 8A87 7B01 0000 EB77  
 
-#Default: 9090 9090 9090 9090 9090 90
-#8C014 = 8886 C07B D201 E912 0100 00
+#Default: 9090 9090 9090 9090 9090 90  
+#8C014 = 8886 C07B D201 E912 0100 00  
 
-#Default: 9090 9090 9090 9090 9090
-#8C131 = B90A 0A0A 0AE9 B2FD FFFF
+#Default: 9090 9090 9090 9090 9090  
+#8C131 = B90A 0A0A 0AE9 B2FD FFFF  
 
 ## Add new attack
-#Author - JWP
-#The space in the jump table - around 0x492AB8 (0x92AB8 in exe).
-#There's room for 1 more attack type without any major changes.
-#New Attack Type: Offence, removes statuses
+#Author - JWP  
+#The space in the jump table - around 0x492AB8 (0x92AB8 in exe).  
+#There's room for 1 more attack type without any major changes.  
+#New Attack Type: Offence, removes statuses  
 
-#Default: 11
-#91C19 = 12
+#Default: 11  
+#91C19 = 12  
 
-#Default: E8 7B 00 00
-#92010: E9 1F 69 6D
+#Default: E8 7B 00 00  
+#92010: E9 1F 69 6D  
 
-#Default: 90
-#9208A: 00
+#Default: 90  
+#9208A: 00  
 
-#Default: 24
-#922D9 = 25
+#Default: 24  
+#922D9 = 25  
 
-#Default: 90 90 90 90
-#92AB8 = 5E 89 B6 00
+#Default: 90 90 90 90  
+#92AB8 = 5E 89 B6 00  
 
-#Default: All 0s
-#768934 = 80 7C E4 38 12 74 07 E8 50 97 92 FF EB 17 FF 35 34 A2 D2 01 66 A1 3E #A2 D2 01 50 55 51 E8 CA 8E 92 FF 83 C4 10 E9 B7 96 92 FF 6A 12 8B 4C 24 30 8B #54 24 28 51 56 52 E8 60 91 92 FF 83 C4 10 8B F8 E9 58 9C 92 FF
+#Default: All 0s  
+#768934 = 80 7C E4 38 12 74 07 E8 50 97 92 FF EB 17 FF 35 34 A2 D2 01 66 A1 3E #A2 D2 01 50 55 51 E8 CA 8E 92 FF 83 C4 10 E9 B7 96 92 FF 6A 12 8B 4C 24 30 8B #54 24 28 51 56 52 E8 60 91 92 FF 83 C4 10 8B F8 E9 58 9C 92 FF  
 
-#if (magic_attack_type != 0x12) {
-#inflict_status_function(caster_id, target_id, 1) - 1 means it's a magic attack, 0 is for physical attacks
-#}
-#else {
-#cure_status_function(target_id, spell_power, status_word, status_dword)
-#}
+```
+if (magic_attack_type != 0x12) {
+inflict_status_function(caster_id, target_id, 1) - 1 means it's a magic attack, 0 is for physical attacks
+}
+else {
+cure_status_function(target_id, spell_power, status_word, status_dword)
+}
+```
 
 ## Disable flash
 
-#For disabling certain flashes like critical attacks
-1067BC = 90:5
+#For disabling certain flashes like critical attacks  
+1067BC = 90:5  
 
-#Disable all battle flashes
-1712C0 = C3
+#Disable all battle flashes  
+1712C0 = C3  
 
-#Hextlaunch addresses for flash disable (when game is running)
-Code: [Select]
-#For certain flashes like critical attacks
-5067BC = 90:5
+#Hextlaunch addresses for flash disable (when game is running)  
+Code: [Select]  
+#For certain flashes like critical attacks  
+5067BC = 90:5  
 
-#Disable all battle flashes
-5712C0 = C3
+#Disable all battle flashes  
+5712C0 = C3  
 
 
 ## Angel wing
 The spell used under Angel Wing is decided in function 0x483D60.
 
-From your post, it looks like you want the following weightings:
-Code: [Select]
-Firaga - 11
-Blizzaga - 11
-Thundaga - 10
-Water - 6
-Bio - 6
-Pain - 6
-Meltdown - 6
-Demi - 6
-Tornado - 32
-Quake - 32
-Flare - 48
-Holy - 48
-Meteor - 16
-Ultima - 18
+From your post, it looks like you want the following weightings:  
+Code: [Select]  
+Firaga - 11  
+Blizzaga - 11  
+Thundaga - 10  
+Water - 6  
+Bio - 6  
+Pain - 6  
+Meltdown - 6  
+Demi - 6  
+Tornado - 32  
+Quake - 32  
+Flare - 48  
+Holy - 48  
+Meteor - 16  
+Ultima - 18  
 
-0x483D67 - does the lookup
-e8 b4 b2 00 00 25 ff 00 00 00 b3 40 31 c9 31 d2 02 91 86 3D 48 00 41 39 c2 7e f5 89 c8 eb 74
+0x483D67 - does the lookup  
+e8 b4 b2 00 00 25 ff 00 00 00 b3 40 31 c9 31 d2 02 91 86 3D 48 00 41 39 c2 7e f5 89 c8 eb 74  
 
-0x483D86 - spell table
-00 00 0B 00 00 0B 00 00 0A 06
-00 06 06 30 30 10 20 20 12 00
-00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00
-00 00 00 00 06 00 00 00 06 00
-00 00 00 00 00 00
+0x483D86 - spell table  
+00 00 0B 00 00 0B 00 00 0A 06  
+00 06 06 30 30 10 20 20 12 00  
+00 00 00 00 00 00 00 00 00 00  
+00 00 00 00 00 00 00 00 00 00  
+00 00 00 00 06 00 00 00 06 00  
+00 00 00 00 00 00  
 
-0x483E09 - patch to ignore a jump
-90 90
+0x483E09 - patch to ignore a jump  
+90 90  
 
-0x48D819 - hacky patch that needs to be improved
-EB 25
+0x48D819 - hacky patch that needs to be improved  
+EB 25  
