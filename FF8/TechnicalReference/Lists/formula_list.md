@@ -144,8 +144,7 @@ $$
 \begin{aligned}
 \text{statResult} &= \frac{\text{charalvl} \times \text{charalvl}}{\text{stat}_3} \\
 \text{statResult} &= \text{CapTo255}\left( \text{strBonus} 
-    + \frac{\text{stat}_2 + \frac{\text{charalvl} \times \text{stat}_0}{10} + \frac{\text{charalvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult}) - \text{getHigh32bit}(\text{statResult})}{2} \right)}
-    {4} \\
+    + \frac{\text{stat}_2 + \frac{\text{charalvl} \times \text{stat}_0}{10} + \frac{\text{charalvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult}) - \text{getHigh32bit}(\text{statResult})}{2} \right)}{4} \\
     &\quad + \text{charaBasedStat} 
     + \frac{\text{magicJunctionnedValue} \times \text{magicAmount}}{100} \right)
 \end{aligned}
