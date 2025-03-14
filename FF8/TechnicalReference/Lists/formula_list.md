@@ -137,7 +137,7 @@ $$
 $$
 
 
-## STR & VIT & MAG
+## STR & VIT & MAG & SPR
 
 strBonus is 0 if we don't compute STR
 
