@@ -118,3 +118,50 @@ $$
   v1 = 255 * (RELATED_TO_CRIT_BONUS + (unsigned __int8)BCI_LUCK[208 * p_attacker_slot_id]) / 255;
 
 
+# Stat
+
+## LCK & SPD
+
+magicJunctionnedValue is the junction value defined in kernel.bin for the stat.
+
+$$
+\text{charaStat} = \text{CapTo255}\left( 
+\text{charaBasedStat} 
++ \text{charaLvl} \times \text{stat}_0 
++ \frac{\text{charaLvl}}{\text{stat}_1}
++ \text{stat}_2 
+- \frac{\text{charaLvl}}{\text{stat}_3}
++ \frac{\text{magicJunctionnedValue} \times \text{magicAmount}}{100} 
+\right)
+$$
+
+
+## STR & VIT & MAG
+
+strBonus is 0 if we don't compute STR
+
+$$
+\begin{aligned}
+\text{statResult} &= \frac{\text{charalvl} \times \text{charalvl}}{\text{stat}_3} \\
+\text{statResult} &= \text{CapTo255}\left( \text{strBonus} 
+    + \frac{\text{stat}_2 + \frac{\text{charalvl} \times \text{stat}_0}{10} + \frac{\text{charalvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult}) - \text{getHigh32bit}(\text{statResult})}{2} \right)}
+    {4} \\
+    &\quad + \text{charaBasedStat} 
+    + \frac{\text{magicJunctionnedValue} \times \text{magicAmount}}{100} \right)
+\end{aligned}
+$$
+
+## HP
+
+$$
+\text{charaHP} = \text{charaBaseMaxHP} 
+    + \text{hp}_2 
+    + \text{charaLvl} \times \text{hp}_0 
+    + \text{magicAmount} \times \text{magicJunctionnedValue} 
+    - \frac{10 \times \text{charaLvl} \times \text{charaLvl}}{\text{hp}_1}
+$$
+
+
+
+
+
