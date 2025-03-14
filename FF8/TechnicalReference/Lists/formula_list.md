@@ -146,12 +146,13 @@ $$
 $$
 
 $$
-\text{statResult} = \text{CapTo255}\left( \text{strBonus} 
+\text{statResult} = \text{CapTo255}\left( 
+\text{charaBasedStat} 
++ \text{strBonus} 
 + \frac{\text{stat}_2 
 + \frac{\text{charaLvl} \times \text{stat}_0}{10} 
 + \frac{\text{charaLvl}}{\text{stat}_1} - \left( \frac{\text{getLow32bit}(\text{statResult})
 - \text{getHigh32bit}(\text{statResult})}{2} \right)}{4}
-+ \text{charaBasedStat} 
 + \frac{\text{magicJunctionnedValue} \times \text{magicAmount}}{100} 
 \right)
 $$
@@ -160,10 +161,11 @@ $$
 
 $$
 \text{charaHP} = \text{charaBaseMaxHP} 
-    + \text{hp}_2 
-    + \text{charaLvl} \times \text{hp}_0 
-    + \text{magicAmount} \times \text{magicJunctionnedValue} 
-    - \frac{10 \times \text{charaLvl}^2}{\text{hp}_1}
++ \text{charaLvl} \times \text{hp}_0 
+- \frac{10 \times \text{charaLvl}^2}{\text{hp}_1}
++ \text{hp}_2
++ \text{magicAmount} \times \text{magicJunctionnedValue} 
+  
 $$
 
 
