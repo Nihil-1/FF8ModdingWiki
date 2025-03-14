@@ -141,7 +141,9 @@ $$
 
 strBonus is 0 if we don't compute STR
 
-$\text{statResult} = \frac{\text{charaLvl} \times \text{charaLvl}}{\text{stat}_3}$
+$$
+\text{statResult} = \frac{\text{charaLvl} \times \text{charaLvl}}{\text{stat}_3}
+$$
 
 $$
 \text{statResult} = \text{CapTo255}\left( \text{strBonus} 
