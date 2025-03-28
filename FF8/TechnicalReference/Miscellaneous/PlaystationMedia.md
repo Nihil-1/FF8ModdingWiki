@@ -31,27 +31,40 @@ In the case of a PAL iso, there are 5 unknown sectors (a sector = 2048 bytes in 
 | ID           | Filename (from PC version)                             | Notes                             |
 |--------------|--------------------------------------------------------|-----------------------------------|
 | 0            | ? + packcode.bin                                       | Contains a font file (tim format) |
-| 2            | [field.bin](#field-files)                   | LZSed                             |
+| 1            | images.lzs                                             | Main images (CD + credits)        |
+| 2            | [field.bin](#field-files)                              | LZSed                             |
 | 3            | wm2field.tbl                                           | size= 72\*24 bytes                |
 | 4            | ? + mmagic.bin + mitem.bin + areames.dc1 + ?           |                                   |
+| 5            | ? + mmagic.bin + mitem.bin + areames.dc1 + ?           |                                   |
+| 6            | Menu (pty)                                             |                                   |
 | 7            | ? + pet\_exp.bin + ?                                   |                                   |
+| 8            | Menu (abilities)                                       |                                   |
 | 9            | ? + mwepon.bin + mwepon.msg + shop.bin + price.bin + ? |                                   |
+| 10           | Menu (ext)                                             |                                   |
 | 11           | ? + mmag.bin + mthomas.bin                             |                                   |
 | 12           | ? + magsort.bin                                        |                                   |
+| 13           | Menu (GF)                                              |                                   |
+| 14           | Menu (jnc2)                                            |                                   |
 | 15           | ? + mmag2.bin + cyocobo.bin                            |                                   |
 | 16           | ? + cardanm.sp2                                        |                                   |
 | 17           | ? + mtmag.bin                                          |                                   |
+| 18           | Menu (mag)                                             |                                   |
+| 19           | Menu (ips)                                             |                                   |
+| 20           | Menu (est)                                             |                                   |
 | 21           | mngrp.bin                                              |                                   |
 | 22           | init.out                                               |                                   |
 | 23           | Triple Triad (in ff8.exe in PC version)                | Some Triple Triad tims (LZSed)    |
+| 24           | battle_font.bin (not present in PC version)            |                                   |
 | 25           | battle.bin (not present in PC version)                 |                                   |
-| 26           | world.bin (not present in PC version)                  |                                   |
+| 26           | [world.bin](#world-files)                              | LZSed                             |
+| 27 -&gt; 28  | AKAO files (music/sound)                               |                                   |
+| 29           |                                                        |                                   |
 | 30 -&gt; 127 | AKAO files (music)                                     |                                   |
 | 128          | kernel.bin                                             |                                   |
 | 129          | sysfnt.tdw                                             |                                   |
 | 130          | icon.tim                                               |                                   |
 | 131          | namedic.tim                                            |                                   |
-
+| 132          | AKAO file (music/sound)                                |                                   |
   
 
 ## Field Files
@@ -100,3 +113,24 @@ There are three LZSed files for each field: EXAMPLE.MIM, EXAMPLE.DAT and EXAMPLE
 ### Third file (\*.LZK)
 
 Almost like the [chara.one](../Field/Field%20File%20Format/FileFormat_ONE) file. The main difference is that the models data are compressed.
+
+
+## World Files
+
+Like the field.bin, inside the world.bin (not sure exactly where) you have a series of sectors that point to subfiles.
+
+
+| ID           | Filename (from PC version)                             | Notes                             |
+|--------------|--------------------------------------------------------|-----------------------------------|
+| 0            | wmx.obj                                                |                                   |
+| 1            | wmy.obj                                                |                                   |
+| 2            | texl.obj                                               |                                   |
+| 3            | rail.obj                                               |                                   |
+| 4            | wmsetXX.obj                                            |                                   |
+| 5            | chara.one                                              | LZSed                             |
+| 6            | music0.obj                                             |                                   |
+| 7            | music1.obj                                             |                                   |
+| 8            | music2.obj                                             |                                   |
+| 9            | music3.obj                                             |                                   |
+| 10           | music4.obj                                             |                                   |
+| 11           | music5.obj                                             |                                   |
