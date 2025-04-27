@@ -20,98 +20,98 @@ PC steam version: Offsets start from at 384 (0x0180). File is compressed with LZ
 | 0x0008 | 2 bytes             | **Preview:** 1st character's max HP                                                 |
 | 0x000A | 2 bytes             | **Preview:** save count                                                             |
 | 0x000C | 4 bytes             | **Preview:** Amount of Gil                                                          |
-| 0x0020 | 4 bytes             | **Preview:** Total number of seconds played                                         |
-| 0x0024 | 1 byte              | **Preview:** 1st character's level                                                  |
-| 0x0025 | 1 byte              | **Preview:** 1st character's portrait                                               |
-| 0x0026 | 1 byte              | **Preview:** 2nd character's portrait                                               |
-| 0x0027 | 1 byte              | **Preview:** 3rd character's portrait                                               |
-| 0x0028 | 12 bytes            | **Preview:** Squall's name (0x00 terminated)                                        |
-| 0x0034 | 12 bytes            | **Preview:** Rinoa's name (0x00 terminated)                                         |
-| 0x0040 | 12 bytes            | **Preview:** Angelo's name (0x00 terminated)                                        |
-| 0x004C | 12 bytes            | **Preview:** Boko's name (0x00 terminated)                                          |
-| 0x0058 | 4 bytes             | **Preview:** Current Disk (0 based)                                                 |
-| 0x005C | 4 bytes             | **Preview:** Current save (last saved game)                                         |
-| 0x0060 | 68 bytes            | **Guardian Forces:** Quetzalcoatl                                                   |
-| 0x00A4 | 68 bytes            | **Guardian Forces:** Shiva                                                          |
-| 0x00E8 | 68 bytes            | **Guardian Forces:** Ifrit                                                          |
-| 0x012C | 68 bytes            | **Guardian Forces:** Siren                                                          |
-| 0x0170 | 68 bytes            | **Guardian Forces:** Brothers                                                       |
-| 0x01B4 | 68 bytes            | **Guardian Forces:** Diablos                                                        |
-| 0x01F8 | 68 bytes            | **Guardian Forces:** Carbuncle                                                      |
-| 0x023C | 68 bytes            | **Guardian Forces:** Leviathan                                                      |
-| 0x0280 | 68 bytes            | **Guardian Forces:** Pandemonia                                                     |
-| 0x02C4 | 68 bytes            | **Guardian Forces:** Cerberus                                                       |
-| 0x0308 | 68 bytes            | **Guardian Forces:** Alexander                                                      |
-| 0x034C | 68 bytes            | **Guardian Forces:** Doomtrain                                                      |
-| 0x0390 | 68 bytes            | **Guardian Forces:** Bahamut                                                        |
-| 0x03D4 | 68 bytes            | **Guardian Forces:** Cactuar                                                        |
-| 0x0418 | 68 bytes            | **Guardian Forces:** Tonberry                                                       |
-| 0x045C | 68 bytes            | **Guardian Forces:** Eden                                                           |
-| 0x04A0 | 152 bytes           | **Characters:** Squall                                                              |
-| 0x0538 | 152 bytes           | **Characters:** Zell                                                                |
-| 0x05D0 | 152 bytes           | **Characters:** Irvine                                                              |
-| 0x0668 | 152 bytes           | **Characters:** Quistis                                                             |
-| 0x0700 | 152 bytes           | **Characters:** Rinoa                                                               |
-| 0x0798 | 152 bytes           | **Characters:** Selphie                                                             |
-| 0x0830 | 152 bytes           | **Characters:** Seifer                                                              |
-| 0x08C8 | 152 bytes           | **Characters:** Edea                                                                |
-| 0x0960 | 400 bytes           | Shops                                                                               |
-| 0x0AF0 | 20 bytes            | Configuration                                                                       |
-| 0x0B04 | 4 bytes             | Party (0xFF terminated)                                                             |
-| 0x0B08 | 4 bytes             | Known weapons                                                                       |
-| 0x0B0C | 12 bytes            | Griever name (FF8 text format)                                                      |
-| 0x0B18 | 1 bytes             | Weapon ID Laguna                                                                    |
-| 0x0B19 | 1 bytes             | Weapon ID Kiros                                                                     |
-| 0x0B1A | 1 bytes             | Weapon ID Ward                                                                      |
-| 0x0B1B | 1 bytes             | Unknown                                                                             |
-| 0x0B1C | 4 bytes             | Amount of Gil                                                                       |
-| 0x0B20 | 4 bytes             | Amount of Gil (Laguna)                                                              |
-| 0x0B24 | 2 bytes             | **Limit Break** Quistis                                                             |
-| 0x0B26 | 2 bytes             | **Limit Break** Zell                                                                |
-| 0x0B28 | 1 byte              | **Limit Break** Irvine                                                              |
-| 0x0B29 | 1 byte              | **Limit Break** Selphie                                                             |
-| 0x0B2A | 1 byte              | **Limit Break** Angelo completed                                                    |
-| 0x0B2B | 1 byte              | **Limit Break** Angelo known                                                        |
-| 0x0B2C | 8 bytes             | **Limit Break** Angelo points                                                       |
-| 0x0B34 | 32 bytes            | **Items** battle order                                                              |
-| 0x0B54 | 396 bytes           | **Items** 198 items (Item ID and Quantity)                                          |
-| 0x0CE0 | 4 bytes             | Game time                                                                           |
-| 0x0CE4 | 4 bytes             | Countdown                                                                           |
-| 0x0CE8 | 4 bytes             | Unknown                                                                             |
-| 0x0CEC | 4 bytes             | **Battle:** victory count                                                           |
-| 0x0CF0 | 2 bytes             | Unknown                                                                             |
-| 0x0CF2 | 2 bytes             | **Battle:** battle escaped                                                          |
-| 0x0CF4 | 4 bytes             | Unknown                                                                             |
-| 0x0CF8 | 4 bytes             | **Battle:** Tonberry killed count                                                   |
-| 0x0CFC | 4 bytes             | **Battle:** Tonberry Sr killed (yeah, this is a boolean)                            |
-| 0x0D00 | 4 bytes             | Unknown                                                                             |
-| 0x0D04 | 4 bytes             | **Battle:** First "Bug" battle (R1 tip)                                             |
-| 0x0D08 | 4 bytes             | **Battle:** First "Bomb" battle (Elemental tip)                                     |
-| 0x0D0C | 4 bytes             | **Battle:** First "T-Rex" battle (Mental tip)                                       |
-| 0x0D10 | 4 bytes             | **Battle:** First "Irvine" battle (Irvine's limit break tip)                        |
-| 0x0D14 | 8 bytes             | **Battle:** Magic drawn once                                                        |
-| 0x0D1C | 20 bytes            | **Battle:** Ennemy scanned once                                                     |
-| 0x0D30 | 1 byte              | **Battle:** Renzokuken auto                                                         |
-| 0x0D31 | 1 byte              | **Battle:** Renzokuken indicator                                                    |
-| 0x0D32 | 1 byte              | **Battle:** dream/Odin/Phoenix/Gilgamesh/Angelo disabled/Angel Wing enabled/???/??? |
-| 0x0D33 | 16 bytes            | Tutorial infos                                                                      |
-| 0x0D43 | 1 byte              | SeeD test level                                                                     |
-| 0x0D44 | 4 bytes             | Unknown                                                                             |
-| 0x0D48 | 4 bytes             | Party (last byte always = 255)                                                      |
-| 0x0D4C | 4 bytes             | Unknown                                                                             |
-| 0x0D50 | 2 bytes             | Module (1= field, 2= worldmap, 3= battle)                                           |
-| 0x0D52 | 2 bytes             | Current field                                                                       |
-| 0x0D54 | 2 bytes             | Previous field                                                                      |
-| 0x0D56 | 3\*2 bytes (signed) | Coord X (party1, party2, party3)                                                    |
-| 0x0D5C | 3\*2 bytes (signed) | Coord Y (party1, party2, party3)                                                    |
-| 0x0D62 | 3\*2 bytes          | Triangle ID (party1, party2, party3)                                                |
-| 0x0D68 | 3\*1 bytes          | Direction (party1, party2, party3)                                                  |
-| 0x0D6B | 1 byte              | *Padding*                                                                           |
-| 0x0D6C | 4 bytes             | Unknown                                                                             |
-| 0x0D70 | 256 + 1024 bytes    | [Field vars](../Variables)                                                          |
-| 0x1270 | 128 bytes           | Worldmap (TODO)                                                                     |
-| 0x12F0 | 128 bytes           | Triple Triad (TODO)                                                                 |
-| 0x1370 | 64 bytes            | Chocobo World (TODO)                                                                |
+| 0x0010 | 4 bytes             | **Preview:** Total number of seconds played                                         |
+| 0x0014 | 1 byte              | **Preview:** 1st character's level                                                  |
+| 0x0015 | 1 byte              | **Preview:** 1st character's portrait                                               |
+| 0x0016 | 1 byte              | **Preview:** 2nd character's portrait                                               |
+| 0x0017 | 1 byte              | **Preview:** 3rd character's portrait                                               |
+| 0x0018 | 12 bytes            | **Preview:** Squall's name (0x00 terminated)                                        |
+| 0x0024 | 12 bytes            | **Preview:** Rinoa's name (0x00 terminated)                                         |
+| 0x0030 | 12 bytes            | **Preview:** Angelo's name (0x00 terminated)                                        |
+| 0x003C | 12 bytes            | **Preview:** Boko's name (0x00 terminated)                                          |
+| 0x0048 | 4 bytes             | **Preview:** Current Disk (0 based)                                                 |
+| 0x004C | 4 bytes             | **Preview:** Current save (last saved game)                                         |
+| 0x0050 | 68 bytes            | **Guardian Forces:** Quetzalcoatl                                                   |
+| 0x00B4 | 68 bytes            | **Guardian Forces:** Shiva                                                          |
+| 0x00D8 | 68 bytes            | **Guardian Forces:** Ifrit                                                          |
+| 0x011C | 68 bytes            | **Guardian Forces:** Siren                                                          |
+| 0x0160 | 68 bytes            | **Guardian Forces:** Brothers                                                       |
+| 0x01A4 | 68 bytes            | **Guardian Forces:** Diablos                                                        |
+| 0x01E8 | 68 bytes            | **Guardian Forces:** Carbuncle                                                      |
+| 0x022C | 68 bytes            | **Guardian Forces:** Leviathan                                                      |
+| 0x0270 | 68 bytes            | **Guardian Forces:** Pandemonia                                                     |
+| 0x02B4 | 68 bytes            | **Guardian Forces:** Cerberus                                                       |
+| 0x02F8 | 68 bytes            | **Guardian Forces:** Alexander                                                      |
+| 0x033C | 68 bytes            | **Guardian Forces:** Doomtrain                                                      |
+| 0x0380 | 68 bytes            | **Guardian Forces:** Bahamut                                                        |
+| 0x03C4 | 68 bytes            | **Guardian Forces:** Cactuar                                                        |
+| 0x0408 | 68 bytes            | **Guardian Forces:** Tonberry                                                       |
+| 0x044C | 68 bytes            | **Guardian Forces:** Eden                                                           |
+| 0x0490 | 152 bytes           | **Characters:** Squall                                                              |
+| 0x0528 | 152 bytes           | **Characters:** Zell                                                                |
+| 0x05C0 | 152 bytes           | **Characters:** Irvine                                                              |
+| 0x0658 | 152 bytes           | **Characters:** Quistis                                                             |
+| 0x06F0 | 152 bytes           | **Characters:** Rinoa                                                               |
+| 0x0788 | 152 bytes           | **Characters:** Selphie                                                             |
+| 0x0820 | 152 bytes           | **Characters:** Seifer                                                              |
+| 0x08B8 | 152 bytes           | **Characters:** Edea                                                                |
+| 0x0950 | 400 bytes           | Shops                                                                               |
+| 0x0AE0 | 20 bytes            | Configuration                                                                       |
+| 0x0AF4 | 4 bytes             | Party (0xFF terminated)                                                             |
+| 0x0AF8 | 4 bytes             | Known weapons                                                                       |
+| 0x0AFC | 12 bytes            | Griever name (FF8 text format)                                                      |
+| 0x0B08 | 1 bytes             | Weapon ID Laguna                                                                    |
+| 0x0B09 | 1 bytes             | Weapon ID Kiros                                                                     |
+| 0x0B0A | 1 bytes             | Weapon ID Ward                                                                      |
+| 0x0B0B | 1 bytes             | Unknown                                                                             |
+| 0x0B0C | 4 bytes             | Amount of Gil                                                                       |
+| 0x0B10 | 4 bytes             | Amount of Gil (Laguna)                                                              |
+| 0x0B14 | 2 bytes             | **Limit Break** Quistis                                                             |
+| 0x0B16 | 2 bytes             | **Limit Break** Zell                                                                |
+| 0x0B18 | 1 byte              | **Limit Break** Irvine                                                              |
+| 0x0B19 | 1 byte              | **Limit Break** Selphie                                                             |
+| 0x0B1A | 1 byte              | **Limit Break** Angelo completed                                                    |
+| 0x0B1B | 1 byte              | **Limit Break** Angelo known                                                        |
+| 0x0B1C | 8 bytes             | **Limit Break** Angelo points                                                       |
+| 0x0B24 | 32 bytes            | **Items** battle order                                                              |
+| 0x0B44 | 396 bytes           | **Items** 198 items (Item ID and Quantity)                                          |
+| 0x0CD0 | 4 bytes             | Game time                                                                           |
+| 0x0CD4 | 4 bytes             | Countdown                                                                           |
+| 0x0CD8 | 4 bytes             | Unknown                                                                             |
+| 0x0CDC | 4 bytes             | **Battle:** victory count                                                           |
+| 0x0CE0 | 2 bytes             | Unknown                                                                             |
+| 0x0CE2 | 2 bytes             | **Battle:** battle escaped                                                          |
+| 0x0CE4 | 4 bytes             | Unknown                                                                             |
+| 0x0CE8 | 4 bytes             | **Battle:** Tonberry killed count                                                   |
+| 0x0CEC | 4 bytes             | **Battle:** Tonberry Sr killed (yeah, this is a boolean)                            |
+| 0x0CF0 | 4 bytes             | Unknown                                                                             |
+| 0x0CF4 | 4 bytes             | **Battle:** First "Bug" battle (R1 tip)                                             |
+| 0x0CF8 | 4 bytes             | **Battle:** First "Bomb" battle (Elemental tip)                                     |
+| 0x0CFC | 4 bytes             | **Battle:** First "T-Rex" battle (Mental tip)                                       |
+| 0x0D00 | 4 bytes             | **Battle:** First "Irvine" battle (Irvine's limit break tip)                        |
+| 0x0D04 | 8 bytes             | **Battle:** Magic drawn once                                                        |
+| 0x0D0C | 20 bytes            | **Battle:** Ennemy scanned once                                                     |
+| 0x0D20 | 1 byte              | **Battle:** Renzokuken auto                                                         |
+| 0x0D21 | 1 byte              | **Battle:** Renzokuken indicator                                                    |
+| 0x0D22 | 1 byte              | **Battle:** dream/Odin/Phoenix/Gilgamesh/Angelo disabled/Angel Wing enabled/???/??? |
+| 0x0D23 | 16 bytes            | Tutorial infos                                                                      |
+| 0x0D33 | 1 byte              | SeeD test level                                                                     |
+| 0x0D34 | 4 bytes             | Unknown                                                                             |
+| 0x0D38 | 4 bytes             | Party (last byte always = 255)                                                      |
+| 0x0D3C | 4 bytes             | Unknown                                                                             |
+| 0x0D40 | 2 bytes             | Module (1= field, 2= worldmap, 3= battle)                                           |
+| 0x0D42 | 2 bytes             | Current field                                                                       |
+| 0x0D44 | 2 bytes             | Previous field                                                                      |
+| 0x0D46 | 3\*2 bytes (signed) | Coord X (party1, party2, party3)                                                    |
+| 0x0D4C | 3\*2 bytes (signed) | Coord Y (party1, party2, party3)                                                    |
+| 0x0D52 | 3\*2 bytes          | Triangle ID (party1, party2, party3)                                                |
+| 0x0D58 | 3\*1 bytes          | Direction (party1, party2, party3)                                                  |
+| 0x0D5B | 1 byte              | *Padding*                                                                           |
+| 0x0D5C | 4 bytes             | Unknown                                                                             |
+| 0x0D60 | 256 + 1024 bytes    | [Field vars](../Variables)                                                          |
+| 0x1260 | 128 bytes           | Worldmap (TODO)                                                                     |
+| 0x12E0 | 128 bytes           | Triple Triad (TODO)                                                                 |
+| 0x1360 | 64 bytes            | Chocobo World (TODO)                                                                |
 
   
 
