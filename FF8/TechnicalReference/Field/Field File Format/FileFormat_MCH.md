@@ -72,7 +72,7 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 `    (for each bone)`  
   
 `        SHORT: parent bone (1-based)`  
-`        SHORT:   (unknown)`  
+`        SHORT: parent bone data offset (multiple of 64)`  
 `        DWORD:   (unknown)`  
 `        SHORT: bone length`  
 `        DWORD * 15:   (unknown)`  
@@ -81,23 +81,31 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 `    Vertex Data:`  
 `    (for each vertex)`  
   
-`        SHORT * 3: Vertex XYZ Position`  
+`        SHORT: Vertex X Position`  
+`        SHORT: Vertex Y Position`  
+`        SHORT: Vertex Z Position`  
 `        SHORT:   (unknown)`  
-`        DWORD * 4:   (unknown)`  
 `          `
+
+`    UV_pair:`  
+`struct`  
+`{`  
+`   BYTE: Coordinate 1`  
+`   BYTE: Coordinate 2`
+`};`
 
 `    Texture-animations Data:`  
 `struct`  
 `{`  
-`   byte unknown`  
-`   byte total_textures?`  
-`   byte unknown`  
-`   byte uSize`  
-`   byte vSize`  
-`   byte replacement_section_count`  
+`   BYTE: unknown`  
+`   BYTE: Total textures`  
+`   BYTE: unknown`
+`   BYTE: uSize`  
+`   BYTE: vSize`  
+`   BYTE: replacement_coords_count`  
 `   UV_pair original_area_coords`  
 `   byte unknown[2]`  
-`   UV_pair replacement_coords[replacement_section_count]`  
+`   UV_pair Replacement Coordinates[replacement_coords_count]`  
 `};`
 
 `struct face {`  
@@ -110,9 +118,9 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 `   u32 Vertex_Colours[4];`  
 `   TextureMap TextureData[4]; // TextureMap = u16 with the first byte = u and the second byte = v`  
 `   u16 Padding;`  
-`   u16 textureIndex;`  
-`   u32 padding[2]; `  
-`   //64 bytes`  
+`   u16 Texture Index;`  
+`   u32 Padding; `  
+`   u32 Padding; `  
 `};`
 
 `    Unknown Data, Seems to split up the skin-objects, triangles, and quads:`  
@@ -138,7 +146,32 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 `        `
 
   
-<small>todo: notes on skinning, animation data</small>
+
+`    Animations Header ("offset of animation data" above): `  
+`        uint16: number_of_animations`  
+`        Animation: Animation Object[number_of_animations]  
+`        `
+
+
+`    Animation:
+`        uint16: frame_count`  
+`        uint16: bone_count`  
+`        Frame: Frame Object[frame_count]  
+`        `
+
+`    Frame:
+`        uint16: x location transform`  
+`        uint16: y location transform`  
+`        uint16: z location transform`  
+`        Pose: Pose Object[bone_count]  
+`        `
+
+`    Pose:
+`        uint8: byte1`  
+`        uint8: byte2`  
+`        uint8: byte3`  
+`        uint8: byte4`
+`        `
 
 # MCH Model File List
 
