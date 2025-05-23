@@ -102,10 +102,10 @@ They usually contain multiple TIM textures (standard PSX textures), mesh geometr
 `   BYTE: unknown`
 `   BYTE: uSize`  
 `   BYTE: vSize`  
-`   BYTE: Replacement coords count`  
+`   BYTE: replacement_coords_count`  
 `   UV_pair original_area_coords`  
 `   byte unknown[2]`  
-`   (UV_pair * Replacement coords count) Replacement Coordinates`  
+`   UV_pair Replacement Coordinates[replacement_coords_count]`  
 `};`
 
 `struct face {`  
