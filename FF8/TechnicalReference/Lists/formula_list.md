@@ -121,7 +121,11 @@ $$
 
 # Stat
 
-## LCK & SPD
+## Character stat
+Each character stat as 4 part (noted with a low number between 0 and 3)
+Those stat can be seen with [doomtrain](https://github.com/DarkShinryu/doomtrain) for example.
+
+### LCK & SPD
 
 magicJunctionnedValue is the junction value defined in kernel.bin for the stat.
 
@@ -137,7 +141,7 @@ $$
 $$
 
 
-## STR & VIT & MAG & SPR
+### STR & VIT & MAG & SPR
 
 strBonus is 0 if we don't compute STR
 
@@ -157,7 +161,7 @@ $$
 \right)
 $$
 
-## HP
+### HP
 
 $$
 \text{charaHP} = \text{charaBaseMaxHP} 
@@ -168,6 +172,20 @@ $$
 $$
 
 
+## Monster stat
+#HP
 
+$$
+\[
+\frac{
+    \left\lfloor 
+        \text{HP}_1 \times \left(\frac{\text{Lvl}^2}{20} + \text{Lvl}\right) 
+    \right\rfloor 
+    + 10 \times \text{HP}_2 
+    + \text{HP}_3 \times 100 \times \text{Lvl} 
+    + 1000 \times \text{HP}_4
+}{100}
+\]
+$$
 
 
