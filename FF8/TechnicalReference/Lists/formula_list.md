@@ -203,7 +203,7 @@ $$
 ### VIT & SPD & EVA
 
 $$
-\text{Lvl}\text{VIT\_SPD\_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_1}\right\rfloor + \text{VIT\_SPD\_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_3}\right\rfloor
+\text{Lvl} \times \text{VIT\_SPD\_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_1}\right\rfloor + \text{VIT\_SPD\_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_3}\right\rfloor
 $$
 
 
