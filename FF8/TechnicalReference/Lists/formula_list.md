@@ -189,15 +189,17 @@ $$
 ### STR MAG
 
 $$
-\left\lfloor \frac{\text{Lvl} \times \text{STR_MAG}_0}{40} \right\rfloor
-+ \left\lfloor \frac{\text{Lvl}}{4 \times \text{STR_MAG}_1} \right\rfloor
-+ \left\lfloor \frac{\text{STR_MAG}_2}{4} \right\rfloor
-+ \left\lfloor \frac{\text{Lvl}^2}{8 \times \text{STR_MAG}_3} \right\rfloor
+\left\lfloor \frac{\text{Lvl} \times \text{STR\_MAG}_0}{40} \right\rfloor
++ \left\lfloor \frac{\text{Lvl}}{4 \times \text{STR\_MAG}_1} \right\rfloor
++ \left\lfloor \frac{\text{STR\_MAG}_2}{4} \right\rfloor
++ \left\lfloor \frac{\text{Lvl}^2}{8 \times \text{STR\_MAG}_3} \right\rfloor
 $$
 
 ### VIT & SPD & EVA
 
 $$
-\text{Lvl}\text{VIT_SPD_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT_SPD_EVA}_1}\right\rfloor + \text{VIT_SPD_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT_SPD_EVA}_3}\right\rfloor
+\text{Lvl}\text{VIT\_SPD\_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_1}\right\rfloor + \text{VIT_SPD_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_3}\right\rfloor
 $$
+
+
 
