@@ -173,6 +173,11 @@ $$
 
 
 ## Monster stat
+
+{: .warning }
+>Monster stat formula have note been read from the code so they might not be exact
+>
+
 ### HP
 
 $$
@@ -198,7 +203,7 @@ $$
 ### VIT & SPD & EVA
 
 $$
-\text{Lvl}\text{VIT\_SPD\_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_1}\right\rfloor + \text{VIT_SPD_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_3}\right\rfloor
+\text{Lvl}\text{VIT\_SPD\_EVA}_0 + \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_1}\right\rfloor + \text{VIT\_SPD\_EVA}_2 - \left\lfloor\frac{\text{Lvl}}{\text{VIT\_SPD\_EVA}_3}\right\rfloor
 $$
 
 
