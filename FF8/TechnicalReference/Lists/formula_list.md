@@ -114,6 +114,13 @@ $$
 $$ 
 
 # Physical
+
+## Classic
+
+$$
+\text{Damage} = \frac{\text{StrAttacker}^2}{16 + \text{StrAttacker}} \times \frac{265 - \text{VitReceiver}}{256} \times \frac{\text{AttackDamage}}{16} \times \frac{[0..32] + 240}{256}
+$$
+
 ## Compute crit
 
   v1 = 255 * (RELATED_TO_CRIT_BONUS + (unsigned __int8)BCI_LUCK[208 * p_attacker_slot_id]) / 255;
