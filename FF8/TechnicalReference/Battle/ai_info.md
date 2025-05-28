@@ -236,6 +236,22 @@ The **ConditionLeftPart** 0xCB (203) is persists across battles
 - **Byte #2:** 0xC8 (Unused?)
 - **Byte #4:** Value to compare against
 
+
+Some info for memory help on variable check for local variable:
+To work as expect, it needs to be 0xC8 (200). But values of 0xCB and value from 220 to 227 (like the local variable ID).
+
+For local var. If var == subjectID, then v93 = BATTLE_VAR
+if 0xC8, v92 = attacker_slot_id
+if 0xCB, v92 = last_attacker_slot_id
+
+---
+
+
+
+## Opcode 0x03 (1) - declareCommandMagic
+
+This Opcode is not used in any monster, but the code seems to indicate it declares a command type as magic. Don't know the impact
+
 ---
 
 ## Opcode 0x04 (4) - target
@@ -271,6 +287,13 @@ Causes monster that executes this opcode to die.
 ### Parameters
 
 None
+
+---
+
+
+## Opcode 0x07 (1) - declareCommandMonsterAttack
+
+This Opcode is not used in any monster, but the code seems to indicate it declares a command type as monster attack. Don't know the impact
 
 ---
 
@@ -310,6 +333,12 @@ Use one ability, requires **_target_** to have been used.
 | Position | Size | Name                   | Type                                                     | Short Description |
 |----------|------|------------------------|----------------------------------------------------------|-------------------|
 | 1        | 1    | **MonsterLineAbility** | [MonsterLineAbility](../OpCodeType#monster-line-ability) | The ability line  |
+
+---
+
+
+## Opcode 0x0D (13) - unknown13
+Seems to jump to the op code 25 (doNothing) and just save the param.
 
 ---
 
@@ -388,6 +417,8 @@ Adds value to local variable that will be only accessible by this monster during
 |----------|------|-----------|-------------------------------------|-----------------------------|
 | 1        | 1    | **Var**   | [LocalVar](../OpCodeType#local-var) | The var to store the data   |
 | 2        | 1    | **Value** | [int](../OpCodeType#int)            | The value to add to the var |
+
+If **Value** is equal to 0xCB (203), then the value add is the slot of the last attacker.
 
 ---
 
@@ -485,6 +516,25 @@ Each text has an ID, starting from 0 and incrementing with each subsequent text.
 
 ---
 
+## Opcode 0x1C (28) - waitText
+
+### Summary
+
+Wait the previous message, with in parameters the number of text to wait.
+
+| Opcode | IfritAI name | Size | Short Description                            |
+|--------|--------------|------|----------------------------------------------|
+| 0x18   | waitText     | 2    | Wait text after printing some                |
+
+### Parameters
+
+| Position | Size | Name       | Type                     | Short Description          |
+|----------|------|------------|--------------------------|----------------------------|
+| 1        | 1    | **NbText** | [int](../OpCodeType#int) | The number of text to wait |
+
+
+---
+
 ## Opcode 0x1D (29) - leave
 
 ### Summary
@@ -524,6 +574,28 @@ Whilst possible, it is not advisable to use **_enter_** on an encounter slot if 
 | 1        | 1    | **Target** | [int](../OpCodeType#int) | Encounter slot of the monster |
 
 **Target** is the monster's encounter slot, as defined in [scene.out](../BattleStructure).  
+
+---
+
+
+## Opcode 0x20 (32) - waitTextFaster
+
+### Summary
+
+This is not used by any monster, analyse oif the code is not complete, but it seems to be like waitText but 2 times faster.
+
+Wait the previous message like wait text
+
+| Opcode | IfritAI name | Size | Short Description                            |
+|--------|--------------|------|----------------------------------------------|
+| 0x20   | waitText     | 2    | Wait text after printing some                |
+
+### Parameters
+
+| Position | Size | Name       | Type                     | Short Description          |
+|----------|------|------------|--------------------------|----------------------------|
+| 1        | 1    | **NbText** | [int](../OpCodeType#int) | The number of text to wait |
+
 
 ---
 
